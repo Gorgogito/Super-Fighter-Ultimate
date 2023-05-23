@@ -1,0 +1,77 @@
+[Info] [WINMUGEN HI-RES VERSION ONLY] [xande-toskomics]
+name = "Tenkaichi Budokai HR"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -176
+boundright = 176
+boundhigh = -350
+boundlow = 0
+verticalfollow = .7.5
+floortension = 120
+tension = 80
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 00
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 00
+p2startz = 0
+p2facing = -1
+
+leftbound = -1000
+rightbound = 1000
+topbound = 0
+botbound = 0
+
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 18
+screenright = 18
+
+[StageInfo]
+zoffset = 205
+autoturn = 1
+resetBG = 1
+hires = 1
+
+[Shadow]
+color = 26,26,26
+yscale = .20
+
+[Music]
+bgmusic = sound/DBZ_Goku_vs_Tien.mp3
+bgvolume = 255
+
+;========================================================
+;-------------------------------------
+; Main background definition
+[BGdef]
+spr = tenkaichiHR.sff
+debugbg = 0
+
+[BG ceu]
+type  = normal
+spriteno = 2, 0
+start = 0, -700
+delta = 1.5, 1.8
+mask = 1
+window = 0,0, 639,479 ;full screen 640X480; x= 0,639 / y = 0,479
+
+[BG casa]
+type  = normal
+spriteno = 0, 0
+start = 0, 110
+delta = 2,2
+mask = 1
+window = 0,0, 639,479 ;full screen 640X480; x= 0,639 / y = 0,479
+tile = 0, 0

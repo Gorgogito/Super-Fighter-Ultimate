@@ -1,0 +1,253 @@
+;=======================================
+[Info]
+name = "Planet Supreme HR"
+;Autor = "Tapion"
+;Foro = "http://www.mugengenerations.foroactivo.info"
+;22/03/2011
+;=======================================
+[Camera]
+startx = 0
+starty = 0
+
+boundleft = -200
+boundright = 200
+
+boundhigh = -100
+boundlow = 0
+
+verticalfollow = 1
+tension = 30
+floortension = 20
+
+;=======================================
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+;--- Player 2 ---
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+;=======================================
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+;=======================================
+[Bound]
+screenleft = 15
+screenright = 15
+
+;=======================================
+[StageInfo]
+zoffset = 200
+autoturn = 1
+resetBG = 1
+hires= 1
+;=======================================
+[Shadow]
+color = 80,80,80
+yscale = 0.3
+reflect = 0
+intensity = 64
+fade.range = -365,-35
+
+[Reflection]
+intensity = 0
+
+;=======================================
+[Music]
+bgmusic = sound/Intros.mp3
+bgvolume = 255
+
+;=======================================
+[BGdef]
+spr = Planeta_Supremo.sff
+debugbg = 0
+
+;=======================================
+
+
+[BG Nubes]
+type        = normal
+spriteno    = 0,1
+layerno     = 0
+start       = 0,-115
+delta       = 0.8,1.7
+trans       = none
+mask        = 0
+tile        = 1,0
+velocity    = 0.3,0
+
+[BG Lunas]
+type        = normal
+spriteno    = 1,0
+layerno     = 0
+start       = -320,180
+delta       = 0.8,1.7
+mask        = 1
+trans       = add
+
+[BG Lunas]
+type        = normal
+spriteno    = 1,1
+layerno     = 0
+start       = -20,0
+delta       = 0.8,1.7
+mask        = 1
+trans       = add
+
+[BG Lunas]
+type        = normal
+spriteno    = 1,2
+layerno     = 0
+start       = 115,90
+delta       = 0.8,1.7
+mask        = 1
+trans       = add
+
+[BG Lunas]
+type        = normal
+spriteno    = 1,3
+layerno     = 0
+start       = 280,-20
+delta       = 0.8,1.7
+mask        = 1
+trans       = add
+
+[BG Lunas]
+type        = normal
+spriteno    = 1,4
+layerno     = 0
+start       = 450,140
+delta       = 0.8,1.7
+mask        = 1
+trans       = add
+
+
+[BG 0]
+type =normal
+spriteno = 2,2
+start = 0,190
+delta       = 0.7,1.7
+mask =1
+tile = 1,0
+trans = add
+velocity = 0.078,0
+
+
+[BG montañas]
+type        = normal
+spriteno    = 0,7
+layerno     = 0
+start       = 0,190
+delta       = 1,1.8
+mask        = 1
+tile        = 1
+
+[BG 0]
+type =normal
+spriteno = 2,1
+start = 0,210
+delta       = 1,1.8
+mask =1
+tile = 1,0
+trans = add
+velocity = 0.080,0
+
+[BG Espadaz]
+type        = normal
+spriteno    = 0,3
+layerno     = 0
+start       = 420, 200
+delta       = 1.3,1.9
+trans       = none
+mask        = 1
+
+[BG colinas]
+type        = normal
+spriteno    = 0,2
+layerno     = 0
+start       = 0, 160
+delta       = 1.5,1.9
+trans       = none
+mask        = 1
+tile        = 1,0
+
+[BG 0]
+type =normal
+spriteno = 2,0
+start = -300,200
+delta       = 1.5,1.9
+mask =1
+tile = 1,0
+trans = add
+velocity = 0.090,0
+
+[BG suelo]
+type        = normal
+spriteno    = 0,0
+layerno     = 0
+start       = 0, 190
+delta       = 2,2
+trans       = none
+mask        = 1
+tile        = 1,0
+
+[BG pastito]
+type = normal
+spriteno    = 10,0
+start = 0, 480
+delta = 1.7, 1.7
+layerno = 1
+trans       = none
+mask        = 1
+
+
+
+
+;=======================================
+
+
+[Begin action 3]
+3,0, 0,0, 4,,A
+3,1, 0,0, 4,,A
+3,2, 0,0, 4,,A
+3,3, 0,0, 4,,A
+3,4, 0,0, 4,,A
+3,5, 0,0, 4,,A
+
+
+[Begin Action 4]
+4,0, 0,0, 10, , AS1D255
+4,0, 0,0, 10, , AS2D255
+4,0, 0,0, 10, , AS3D255
+4,0, 0,0, 10, , AS4D255
+4,0, 0,0, 10, , AS5D255
+4,0, 0,0, 10, , AS6D255
+4,0, 0,0, 10, , AS7D255
+4,0, 0,0, 10, , AS8D255
+4,0, 0,0, 10, , AS9D255
+4,0, 0,0, 10, , AS10D255
+4,0, 0,0, 10, , AS11D255
+4,0, 0,0, 10, , AS12D255
+4,0, 0,0, 10, , AS13D255
+4,0, 0,0, 10, , AS14D255
+4,0, 0,0, 10, , AS15D255
+4,0, 0,0, -1, , AS20D255
+
+
+

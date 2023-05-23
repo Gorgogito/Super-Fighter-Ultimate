@@ -1,0 +1,164 @@
+;========================================================;
+;Kamisama's Temple by b-gg19 & Midnight Fighters Team	 ;
+;========================================================;
+
+;========================================================;
+[Info]							 ;
+name        = "Kami's Lookout HR"			 ;
+author	    = "b-gg19 & Midnight Fighters Team"		 ;
+;email 	    = "b-gg19@hotmail.com"			 ;
+;========================================================;
+
+;============================================================================================;
+;                                     Especial´s thanks					     ;
+;============================================================================================;
+;- A todos mis compañeros del Team Midnight Fighters, por su apoyo y ayuda en este proyecto, ;
+;  Ya q sin su ayuda esta stage jamas hubiera sido terminada.				     ;
+;- A Crazylogic por el cielo que lanzo como recurso OS					     ;
+;- A ti por descargar esta Stage.							     ;
+;- Salu2 y esp-ro q' disfrutes la stage.						     ;							
+;============================================================================================;
+
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -65
+boundright = 65
+boundhigh = -75
+boundlow = 0
+verticalfollow = .7
+;floortension = 160
+tension = 50
+
+[PlayerInfo]
+p1startx = -70         
+p1starty = 0            
+p1startz = 0            
+p1facing = 1           
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;Common
+leftbound  = -1000 
+rightbound =  1000 
+topbound  =  0    
+botbound  =  0     
+
+[Scaling]
+topz     = 0      
+botz     = 50      
+topscale = 1       
+botscale = 1.2     
+
+[Bound]
+screenleft = 15    
+screenright = 15   
+
+[StageInfo]
+zoffset = 200
+autoturn = 1
+resetBG = 1
+Hires = 1
+
+[Shadow]
+intensity = 96
+color = 0,0,0
+yscale = .3
+fade.range = 0,0
+
+[Reflection]
+intensity = 0
+
+[Music]
+bgmusic = sound/DBZ-3.mp3
+bgvolume = 10
+
+[BGdef]
+spr = Kamis_Lookout.sff
+debugbg = 0
+;--------------------------------------------------------
+
+;--------------------------------------------------------
+[BG cielo]
+type = normal
+spriteno =1,0
+start = 0,30
+delta = 2, 2
+mask =1
+tile = 1,1
+velocity = 0.3,0
+
+;--------------------------------------------------------
+[BG Suelo]
+type  = normal
+spriteno = 2, 0
+start = 0, 210
+delta = 2, 2
+mask = 1
+velocity = 0, 0
+tile = 0, 0
+tilespacing = 0, 0
+
+;--------------------------------------------------------
+[BG Torres]
+type  = normal
+spriteno = 3, 0
+start = 3, 137
+delta = 1.8, 2
+mask = 1
+velocity = 0, 0
+tile = 0, 0
+tilespacing = 0, 0
+layerno = 0
+
+;--------------------------------------------------------
+[BG Templo]
+type  = normal
+spriteno = 4, 0
+start = 0, 210
+delta = 2, 2
+mask = 1
+velocity = 0, 0
+tile = 0, 0
+tilespacing = 0, 0
+
+;--------------------------------------------------------
+[BG Mr. Popo]
+type  = anim
+actionno = 1
+start = 120, 270
+delta = 2, 2
+mask = 1
+velocity = 0, 0
+tile = 0, 0
+tilespacing = 0, 0
+
+;--------------------------------------------------------
+[BG Sombra Mr. Popo]
+type  = anim
+actionno = 2
+start = 120, 270
+delta = 2, 2
+mask = 1
+velocity = 0, 0
+tile = 0, 0
+tilespacing = 0, 0
+
+;---------------------------------------------------------
+;ANIMACIONES
+;---------------------------------------------------------
+
+[Begin Action 1]
+5,0, 0,0, 18
+5,1, 0,0, 14
+5,2, 0,0, 18
+5,1, 0,0, 14
+
+[Begin Action 2]
+6,0, 0,0, 18, , AS256D145
+6,1, 0,0, 14, , AS256D145
+6,2, 0,0, 18, , AS256D145
+6,1, 0,0, 14, , AS256D145

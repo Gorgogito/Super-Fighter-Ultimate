@@ -1,0 +1,189 @@
+;auteurs = ken master & ristar87
+;original game = DBZ
+;name = kame house
+;version = 0.1
+;Date = 1/04/2004
+;email = evil.sagat@wanadoo.fr
+;site web = http://perso.wanadoo.fr/evil.sagat
+;Edited by Stig87
+;email = b_blue34@yahoo.com
+;Mugendream.bravehost.com
+;Mugendream.angelfire.com
+
+
+[Info]
+name = "Kame House HR"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -155
+boundright = 155
+boundhigh = -670
+boundlow = -200
+verticalfollow = .7
+floortension = 0
+tension = 50
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -300
+rightbound =  300
+topbound  = 0
+botbound  = 0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 12
+screenright = 12
+
+[StageInfo]
+zoffset = 12
+autoturn = 1
+resetBG = 0
+hires = 1
+
+[Shadow]
+color = 0,0,0
+yscale = .3
+reflect = 0
+
+[Music]
+bgmusic =sound/DBZ_Budokai3_Ultimate_Energy.mp3
+bgvolume =255
+
+[BGdef]
+spr =stages/dbz_kame_house.sff
+DEBUGBG=0
+DEBUG=0
+
+[BG fond]
+type = normal
+spriteno = 0,0
+start = 0, 80
+velocity = 0.1,0
+tile  = 1, 0
+delta = .818181,.699999
+mask = 1
+
+[BG decor]
+type = normal
+spriteno = 1,0
+start = 0, 40
+delta = 1,1
+mask = 1
+
+[BG mer]
+type= anim
+actionno = 1
+start = 0, 40
+delta = 1,1
+mask = 1
+
+[BG mer2]
+type= anim
+actionno = 2
+start = 0, 40
+delta = 1,1
+mask = 1
+
+[BG krilin]
+type= anim
+actionno = 3
+start = 0, 40
+delta = 1,1
+mask = 1
+
+[BG tortue]
+type= anim
+actionno = 4
+start = 0, 40
+delta = 1,1
+mask = 1
+
+[BG tortue genial]
+type= anim
+actionno = 5
+start = 0, 40
+delta = 1,1
+mask = 1
+
+[BG croie]
+type= anim
+actionno = 6
+start = 0, 40
+delta = 1,1
+mask = 1
+
+[BG coq]
+type= anim
+actionno = 7
+start = 0, 40
+delta = 1,1
+mask = 1
+
+[Begin action 1]
+2,0, 0,0, 15
+2,1, 0,0, 15
+2,2, 0,0, 15
+2,3, 0,0, 15
+2,4, 0,0, 15
+2,5, 0,0, 15
+
+[Begin action 2]
+3,0, 0,0, 15
+3,1, 0,0, 15
+3,2, 0,0, 15
+3,3, 0,0, 15
+3,4, 0,0, 15
+3,5, 0,0, 15
+
+[Begin action 3]
+4,0, 0,0, 15
+4,1, 0,0, 15
+
+[Begin action 4]
+5,0, 0,0, 15
+5,1, 0,0, 15
+
+[Begin action 5]
+6,0, 0,0, 15
+6,1, 0,0, 15
+6,2, 0,0, 15
+6,3, 0,0, 15
+6,4, 0,0, 15
+
+[Begin action 6]
+7,0, 0,0, 15
+7,1, 0,0, 15
+7,2, 0,0, 15
+7,3, 0,0, 15
+7,4, 0,0, 15
+7,5, 0,0, 15
+
+[Begin action 7]
+8,0, 0,0, 15
+8,1, 0,0, 15
+8,2, 0,0, 15
+8,3, 0,0, 15
+8,4, 0,0, 15
+8,5, 0,0, 15
+
+
+
+
+

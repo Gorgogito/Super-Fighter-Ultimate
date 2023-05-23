@@ -1,0 +1,125 @@
+; Арена: Throne Room MK1
+; Автор: Emsi-D
+; Рип спрайтов: Fly
+; Улучшения: borg117 (трон), Max Arturo (гонг)
+
+[Info]
+Name = "thr0ner00m"
+Displayname = "Throne Room"
+Mugenversion = 1.1
+
+[Camera]
+boundleft = -459
+boundright = 445
+boundhigh = -12
+tension = 100
+floortension = 30
+verticalfollow = .2
+overdrawhigh = 20
+overdrawlow = 20
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1400
+rightbound = 1400
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+[StageInfo]
+zoffset = 226
+autoturn = 1
+resetBG = 1
+localcoord = 400,254
+
+[Shadow]
+intensity = 87
+yscale = .25
+
+[Music]
+bgmusic = sound/MK1/mk1_throne_room.ogg
+bgmloopstart = 163397
+bgmloopend = -1
+
+[BGdef]
+spr = Throne_Room_&_Goro's_Lair.sff
+bgclearcolor = 115,181,206
+
+
+[BG Горы]
+type = normal
+spriteno = 1,3
+delta = 0,1
+start = -200,87
+mask = 1
+
+[BG Лес и храм]
+type = normal
+spriteno = 1,4
+delta = 0,1
+start = -63,100
+mask = 1
+
+[BG Потолок]
+type = normal
+spriteno = 1,8
+delta = 1,1
+start = 0,-86
+tile = 1,0
+
+[BG Стена]
+type = normal
+spriteno = 10,0
+delta = .77,1
+start = -6,-23
+mask = 1
+scalestart = .88,1
+
+[BG Переход между этажами]
+type = normal
+spriteno = 1,8
+delta = 1,1
+start = 0,247
+tile = 1,0
+
+[BG Пол]
+type = parallax
+spriteno = 1,1
+delta = .77,1
+start = -1,168
+width = 1344,1640
+
+[BG Ковёр]
+type = parallax
+spriteno = 1,0
+delta = .91,1
+start = -1,229
+width = 1344,1580
+
+[BG Трон Шанг Тсунга]
+type = normal
+spriteno = 1,5
+scalestart = 0.74,0.80
+delta = .82,1
+start = -49,60
+mask = 1
+
+[BG Драконы]
+type = normal
+spriteno = 1,6
+delta = .82,1
+start = -5,104
+mask = 1
+
+[BG Колонны]
+type = normal
+spriteno = 1,7
+delta = .94,1
+start = 9,-23
+mask = 1

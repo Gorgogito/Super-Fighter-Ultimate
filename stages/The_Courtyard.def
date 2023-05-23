@@ -1,0 +1,212 @@
+﻿; Арена: The Courtyard MK1
+; Автор: Emsi-D
+; Рип спрайтов: Fly
+
+[Info]
+Name = "c0urty4rd"
+Displayname = "The Courtyard"
+Mugenversion = 1.1
+
+[Camera]
+boundleft = -293
+boundright = 270
+boundhigh = -12
+tension = 100
+floortension = 30
+verticalfollow = .2
+overdrawhigh = 20
+overdrawlow = 20
+
+
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1400
+rightbound = 1400
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+[StageInfo]
+zoffset = 228
+autoturn = 1
+resetBg = 1
+localcoord = 400,254
+
+[Shadow]
+intensity = 167
+yscale = -.08
+
+[Music]
+bgmusic = sound/MK1/mk1_courtyard.ogg
+bgmloopstart = 961727
+bgmloopend = -1
+
+[BGdef]
+spr = The_Courtyard.sff
+bgclearcolor = 165,231,255
+
+
+[BG Горы]
+type = normal
+spriteno = 0,10
+delta = 0,.90
+start = -206,45
+mask = 1
+scalestart = .90,1
+
+[BG Крыша/Задний план]
+type = normal
+spriteno = 0,8
+delta = .31,1
+start = 0,35
+mask = 1
+scalestart = .90,1
+
+[BG Трон Шанг Тсунга]
+type = normal
+spriteno = 0,9
+delta = .342,1
+start = -23,53
+mask = 1
+scalestart = .86,1
+
+[BG Крыша/Передний план]
+type = normal
+spriteno = 0,7
+delta = .343,1
+start = 1,-23
+mask = 1
+
+[BG Флаг слева]
+type = normal
+spriteno = 0,11
+delta = .343,1
+start = -224,17
+mask = 1
+scalestart = .90,1
+
+[BG Флаг справа]
+type = anim
+actionno = 0
+delta = .342,1
+
+[Begin Action 0]
+0,11, 222.5,17, -1, H
+
+[BG Стена]
+type = normal
+spriteno = 0,5
+delta = .375,1
+start = 0,53
+mask = 1
+scalestart = .90,1
+
+[BG Монахи (задний ряд)/Левый угол арены]
+type = anim
+actionno = 1
+delta = .43,1
+start = -322,134
+
+[BG Монахи (задний ряд)/Правый угол арены]
+type = anim
+actionno = 1
+delta = .43,1
+start = 293,134
+
+[BG Монахи (задний ряд)/Правый угол арены]
+type = anim
+actionno = 1
+delta = .43,1
+start = 206,134
+
+[Begin Action 1]
+0,18, 0,1, 8
+0,19, 0,1, 8
+0,20, 0,1, 8
+0,21, 0,1, 8
+0,22, 0,1, 8
+0,23, 0,1, 8
+
+[BG Монахи (передний ряд)/Левый угол арены]
+type = anim
+actionno = 2
+delta = .48,1
+start = -365,147
+
+[BG Монахи (передний ряд)/Правый угол арены]
+type = anim
+actionno = 2
+delta = .48,1
+start = 247,147
+scalestart = 0.95,1
+
+[Begin Action 2]
+0,12, 0,1, 8
+0,13, 0,1, 8
+0,14, 0,1, 8
+0,15, 0,1, 8
+0,16, 0,1, 8
+0,17, 0,1, 8
+
+[BG Ограждение]
+type = normal
+spriteno = 0,1
+delta = .5,1
+start = -9,175
+tile = 1,0
+
+[BG Песок/Левый угол арены]
+type = normal
+spriteno = 0,4
+delta = 1,1
+start = -523,201
+
+[BG Песок/Правый угол арены]
+type = normal
+spriteno = 0,4
+delta = 1,1
+start = 430,201
+
+[BG Стражники по краям]
+type = normal
+spriteno = 0,3
+delta = .5,1
+start = -9,110
+mask = 1
+
+[BG Хрень/Левый угол арены]
+type = normal
+spriteno = 0,6
+delta = 1,1
+start = -480,158
+mask = 1
+scalestart = .90,1
+
+[BG Хрень/Правый угол арены]
+type = anim
+actionno = 3
+delta = 1,1
+
+[Begin Action 3]
+0,6, 444,159, -1, H
+
+[BG Переход между этажами]
+type = normal
+spriteno = 0,2
+delta = 1,1
+start = 0,247
+tile = 1,0
+
+[BG Пол]
+type = normal
+spriteno = 0,0
+delta = 1,1
+start = -18,227
+mask = 1

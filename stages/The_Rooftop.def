@@ -1,0 +1,160 @@
+﻿; Арена: The Rooftop MK3
+; Автор: Emsi-D
+; Рип спрайтов: Fly
+
+[Info]
+Name = "r00ft0p"
+Displayname = "The Rooftop"
+Mugenversion = 1.1
+
+[Camera]
+boundleft = -323
+boundright = 320
+boundhigh = -12
+tension = 100
+floortension = 30
+verticalfollow = .2
+overdrawhigh = 20
+overdrawlow = 20
+startzoom = 1
+zoomin = 1
+zoomout = 0.72
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1400
+rightbound = 1400
+
+[Bound]
+screenleft = 47
+screenright = 47
+
+[StageInfo]
+zoffset = 235
+autoturn = 1
+resetbg = 1
+localcoord = 400,254
+
+[Shadow]
+intensity = 190
+yscale = -.12
+
+[Music]
+bgmusic = sound/MK3/mk3_the_rooftop.ogg
+bgmloopstart = 105678
+bgmloopend = -1
+
+[BGdef]
+spr = The_Bank_&_The_Rooftop.sff
+bgclearcolor = 0,0,0
+
+
+[BG Переход между этажами]
+type = normal
+spriteno = 0,2
+delta = 1,1
+start = 0,247
+tile = 1,0
+
+[BG Пол]
+type = parallax
+spriteno = 1,0
+delta = .90,1
+start = 0,229
+width = 1200,1400
+scalestart = .92,1
+
+[BG Город]
+type = normal
+spriteno = 1,13
+delta = .0,1
+start = 0,45.5
+scalestart = 1.01,1
+tile = 1,0
+mask = 1
+scalestart = .86,1
+
+[BG Портал в небе]
+type = anim
+actionno = 0
+delta = .302,1
+start = 14,-8
+scalestart = .86,1
+
+[Begin Action 0]
+1,14, -89,-23.5, 6
+1,15, -78,-28.5, 6
+1,16, -89,-29.5, 6
+1,17, -85,-24.5, 6
+1,18, -97,-23.5, 6
+1,19, -109,-26.5, 6
+1,20, -100,-24.5, 6
+1,21, -98,-35.5, 6
+1,22, -83,-35.5, 6
+1,23, -79,-26.5, 6
+1,24, -90,-28.5, 6
+1,25, -97,-20.5, 6
+
+[BG Горящее здание]
+type = anim
+actionno = 3
+delta = .302,1
+start = -178,86.5
+scalestart = .86,1
+
+[Begin Action 3]
+1,5, 0,0, 6
+1,6, 0,0, 6
+1,7, 0,0, 6
+1,8, 0,0, 6
+1,9, 0,0, 6
+1,10, 0,0, 6
+1,11, 0,0, 6
+1,12, 0,0, 6
+
+[BG Башня Шао Кана и здания по бокам]
+type = normal
+spriteno = 1,4
+delta = .302,1
+start = 0,5.5
+mask = 1
+scalestart = .86,1
+
+[BG Здания на переднем плане]
+type = normal
+spriteno = 1,3
+delta = .572,1
+start = -116,92.5
+mask = 1
+scalestart = .86,1
+
+[BG Ограждение]
+type = normal
+spriteno = 1,2
+delta = .84,1
+start = 0,130
+mask = 1
+scalestart = .86,1
+
+[BG Статуя/Левый угол арены]
+type = normal
+spriteno = 1,1
+delta = 1.009,1
+start = -558,-4
+mask = 1
+scalestart = .86,1
+
+[BG Статуя/Правый угол арены]
+type = anim
+actionno = 4
+delta = 1.009,1
+scalestart = .86,1
+start = 50,0
+
+[Begin Action 4]
+1,1, 587,-5, -1, H

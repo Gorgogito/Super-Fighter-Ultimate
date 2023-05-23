@@ -1,0 +1,237 @@
+[Info]
+name = "afterpitMK1"
+displayname = "After Pit"
+
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -240
+boundright = 240
+boundhigh = -80
+boundlow = 0;-21
+verticalfollow = .2
+floortension = 30
+tension = 100
+startzoom = 0.88
+zoomin = 1
+zoomout = 0.63
+
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -98          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+;--- Player 2 ---
+p2startx = 96
+p2starty = 0
+p2startz = 0
+p2facing = -1
+;--- Common ---
+leftbound  = -1100 ;Left bound (x-movement)
+rightbound =  1100 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+;--------------------------------------------------------
+[Scaling]
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1.2     ;Scale to use at bottom
+;--------------------------------------------------------
+[Bound]
+screenleft = 40    ;Dist from left of screen that player can move to
+screenright = 40   ;Right edge
+;--------------------------------------------------------
+[StageInfo]
+zoffset        = 22
+zoffsetlink    = 1
+autoturn       = 1
+resetBG        = 1
+localcoord     = 400,254
+;--------------------------------------------------------
+[Shadow]
+intensity = 150
+color = 50,50,50
+yscale = 0.25
+;reflect = 1
+;--------------------------------------------------------
+[Music]
+
+bgmusic = sound/Other/MKThePitRemix.ogg
+bgmloopstart = 677300
+bgmloopend = -1
+bgmvolume = 96
+
+;-------------------------------------
+[BGdef]
+spr = after pit.sff
+debugbg = 0
+;----------
+
+[BG z]
+type  = dummy
+start = 0, 220     ; <-------- initial Z-Offset = 220
+id = 1
+
+[BGCtrl stageID 1]
+type = PosSet
+time = 1
+y = 97842
+ctrlID = 1
+
+; Back to normal
+[BGCtrl stageID 2]
+type = PosSet
+time = 4
+y = -15
+ctrlID = 1
+
+[BG Bridge]
+type  = normal
+spriteno = 4, 0
+start = 0,20
+mask = 0
+
+[BG clouds]
+type = normal
+spriteno = 10,2
+velocity = .09,0
+delta = 1,1
+start = -461,-70
+tile = 1,0
+mask = 1
+scalestart = .45,.50
+;layerno = 1
+trans = addalpha
+alpha = 240,80
+
+[BG clouds]
+type = normal
+spriteno = 10,1
+velocity = .13,0
+delta = 1,1
+start = -461,-110
+tile = 1,0
+mask = 1
+;layerno = 1
+scalestart = .90,1
+
+[BG clouds]
+type = normal
+spriteno = 10,1
+velocity = .11,0
+delta = 1,1
+start = -261,-138
+tile = 1,0
+mask = 1
+;layerno = 1
+scalestart = .73,.80
+trans = addalpha
+alpha = 240,80
+
+[BG clouds]
+type = normal
+spriteno = 11,2
+velocity = .08,0
+delta = 1,1
+start = -245,-37
+tile = 1,0
+mask = 1
+;layerno = 1
+trans = addalpha
+alpha = 240,80
+scalestart = .90,1
+
+[BG Bridge front]
+type  = normal
+spriteno = 10, 3
+start = 0,20
+mask = 1
+scalestart = 1,1.10
+layerno = 1
+
+[BG Bridge1]
+type  = normal
+start = 0,20
+spriteno = 4, 1
+delta = 1.15,1
+mask = 1
+
+[BG Bridge3MOON]
+type  = normal
+spriteno = 6, 0
+;DELTA = 1.8,1
+mask = 1
+scalestart = 1.10,1.15
+layerno = 0
+start = -65,85
+
+[BG Bridge2]
+type  = parallax
+spriteno = 4,2
+delta = 1.15, 1
+xscale = .8, .7
+yscalestart = 100
+mask = 1
+start = 0,20
+
+[BG Bridge3f]
+type  = normal
+spriteno = 4, 3
+mask = 1
+start = 0,20
+
+[BG Bridge3fire1]
+type  = anim
+actionno = 1
+mask = 1
+start = 0,20
+trans = addalpha
+alpha = 240,80
+
+[BG Bridge3fire2]
+type  = anim
+actionno = 2
+mask = 1
+trans = addalpha
+alpha = 240,80
+start = 3,20
+
+[Begin Action 1]
+5, 0, 0, 0, 4
+5, 1, 0, 0, 4
+5, 2, 0, 0, 4
+5, 3, 0, 0, 4
+5, 4, 0, 0, 4
+5, 5, 0, 0, 4
+5, 6, 0, 0, 4
+5, 7, 0, 0, 4
+5, 0, 319, 0, 4, H
+5, 1, 319, 0, 4, H
+5, 2, 320, 0, 4, H
+5, 3, 320, 0, 4, H
+5, 4, 320, 0, 4, H
+5, 5, 320, 0, 4, H
+5, 6, 321, 0, 4, H
+5, 7, 321, 0, 4, H
+
+[Begin Action 2]
+5, 0, 0, 0, 4,H
+5, 1, 0, 0, 4,H
+5, 2, 0, 0, 4,H
+5, 3, 0, 0, 4,H
+5, 4, 0, 0, 4,H
+5, 5, 0, 0, 4,H
+5, 6, 0, 0, 4,H
+5, 7, 0, 0, 4,H
+5, 0, -319, 0, 4
+5, 1, -319, 0, 4
+5, 2, -320, 0, 4
+5, 3, -320, 0, 4
+5, 4, -320, 0, 4
+5, 5, -320, 0, 4
+5, 6, -321, 0, 4
+5, 7, -321, 0, 4
+

@@ -1,0 +1,232 @@
+; Арена: Nethership Interior MK6
+; Автор: Spor/Faust
+
+[Info]
+Name = "n3th3rsh1p_1nter"
+Displayname = "Nethership Interior MK6"
+Mugenversion = 1.1
+
+[Camera]
+boundleft = -201
+boundright = 201
+boundhigh = -32
+boundlow = -20
+floortension = -100
+tension = 90
+verticalfollow = .15
+overdrawhigh = 20
+overdrawlow = 20
+startzoom = 1
+zoomin = 1
+zoomout = 0.80
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1400 
+rightbound = 1400 
+
+[Bound]
+screenleft = 41
+screenright = 41
+
+[StageInfo]
+zoffset = 210
+zoffsetlink = 1
+autoturn = 1
+resetBG = 1
+localcoord = 400,254
+
+[Shadow]
+intensity = 145
+yscale = .2
+
+[Music]
+bgmusic = sound/MK6/mk6_beetle_lair.ogg
+bgmloopstart = 918840
+bgmloopend = -1
+;bgmvolume = 80
+
+[BGdef]
+spr = Nethership_Interior.sff
+
+
+[BG Вода]
+type = anim
+actionno = 0
+delta = 0,1
+sin.y = 20,300
+scalestart = 1.26,1
+
+[Begin Action 0]
+1,0, 0,0, 3
+1,1, 0,0, 3
+1,2, 0,0, 3
+1,3, 0,0, 3
+1,4, 0,0, 3
+1,5, 0,0, 3
+1,6, 0,0, 3
+1,7, 0,0, 3
+1,8, 0,0, 3
+1,9, 0,0, 3
+1,10, 0,0, 3
+1,11, 0,0, 3
+1,12, 0,0, 3
+1,13, 0,0, 3
+1,14, 0,0, 3
+1,15, 0,0, 3
+1,16, 0,0, 3
+1,17, 0,0, 3
+1,18, 0,0, 3
+1,19, 0,0, 3
+
+[BG Небо]
+type = normal
+spriteno = 0,0
+delta = 0,1
+sin.y = 20,300
+scalestart = 1,1
+
+[BG Фрегат на бэкграунде]
+type = normal
+spriteno = 2,0
+velocity = -.1,0
+delta = 0,1
+sin.y = 20,300
+mask = 1
+
+[BG Тень фрегата на воде]
+type = anim
+actionno = 1
+velocity = -.1,0
+delta = 0,1
+sin.y = 20,300
+
+[Begin Action 1]
+2,0, 0,192, 10, V, AS30D200
+
+[BG Гальюнные фигуры]
+type = normal
+spriteno = 0,1
+delta = .67,1
+sin.y = 10,300
+mask = 1
+
+[BG Стёкла]
+type = normal
+spriteno = 0,3
+trans = add1
+delta = .86,1
+sin.y = 5,300
+mask = 1
+scalestart = .93,1
+
+[BG Столбы и потолок]
+type = normal
+spriteno = 0,5
+delta = .86,1
+sin.y = 5,300
+mask = 1
+scalestart = .93,1
+
+[BG Оконные решётки]
+type = normal
+spriteno = 0,6
+delta = .86,1
+sin.y = 5,300
+mask = 1
+scalestart = .93,1
+
+[BG Пол]
+type = parallax
+spriteno = 0,7
+id = 1
+delta = .86,1
+width = 1200,1450
+sin.y = 5,300
+scalestart = .93,1
+
+[BG Отсветы неба на подоконниках и боках столбов]
+type = normal
+spriteno = 0,10
+trans = add1
+delta = .86,1
+sin.y = 5,300
+mask = 1
+scalestart = .93,1
+
+[BG Тени от столбов]
+type = normal
+spriteno = 0,2
+trans = sub
+delta = .86,1
+sin.y = 5,300
+mask = 1
+scalestart = .93,1
+
+[BG Заборчик на переднем плане]
+type = normal
+spriteno = 0,8
+layerno = 1
+delta = 1.2,1
+sin.y = -1,300
+mask = 1
+scalestart = .93,1
+
+[BG Канаты]
+type = normal
+spriteno = 0,9
+layerno = 1
+delta = 1.2,1
+sin.y = -3,300
+mask = 1
+scalestart = .93,1
+
+[BG Канаты]
+type = normal
+spriteno = 0,12
+layerno = 1
+delta = 1.2,1
+sin.y = -3,300
+mask = 1
+scalestart = .93,1
+
+[BG Канаты]
+type = normal
+spriteno = 0,13
+layerno = 1
+delta = 1.2,1
+sin.y = -3,300
+mask = 1
+scalestart = .93,1
+
+[BG Канаты]
+type = normal
+spriteno = 0,14
+layerno = 1
+delta = 1.2,1
+sin.y = -3,300
+mask = 1
+scalestart = .93,1
+
+[BG Канаты]
+type = normal
+spriteno = 0,15
+layerno = 1
+delta = 1.2,1
+sin.y = -3,300
+mask = 1
+scalestart = .93,1
+
+[BG Канаты]
+type = normal
+spriteno = 0,16
+layerno = 1
+delta = 1.2,1
+sin.y = -3,300
+mask = 1
+scalestart = .93,1

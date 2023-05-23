@@ -1,0 +1,142 @@
+
+[Info]
+Name = "theswampEvi1"
+displayname = "The Swamp of the Evil"
+versiondate = 12,18,2017
+mugenversion = 1.1
+author = "Adriano GT"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -349
+boundright = 350
+boundhigh = -14
+boundlow = 0
+floortension = 30
+verticalfollow = .2
+overdrawhigh = 20
+overdrawlow = 20
+;floortension = 50
+tension = 100
+startzoom = 1
+zoomin = 1
+zoomout = 0.80
+
+[PlayerInfo]
+p1startx = -98
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 96
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000 
+rightbound =  1000 
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz     = 0       
+botz     = 50     
+topscale = 1       
+botscale = 1.2     
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+[StageInfo]
+zoffset     = 237
+zoffsetlink = 1
+autoturn    = 1
+resetBG     = 1
+localcoord = 400,254
+xscale = .36
+yscale = .36
+
+[Shadow]
+intensity = 170
+color = 150,150,150
+yscale = -.15
+fade.range = -30,0
+
+[Music]
+bgmusic = sound/MK2/mk2_living_forestSolanomix.ogg
+bgmloopstart = 301245
+bgmloopend = -1
+bgmvolume = 100
+
+[BGdef]
+spr = the swamp of evil.sff
+
+[bg fundo]
+type  = normal
+start = 0,-150
+spriteno = 1,2
+delta = .35,.96
+scalestart = 1.15,1.28
+
+[bg agua]
+type = anim
+start = 0,485
+actionno = 1
+delta = .35,.96
+mask = 0
+start = 0,510
+scalestart = 1.15,1
+
+[begin action 1]
+12,0,0,0,5
+12,1,0,0,5
+12,2,0,0,5
+12,3,0,0,5
+12,4,0,0,5
+12,5,0,0,5
+12,6,0,0,5
+12,7,0,0,5
+12,8,0,0,5
+12,9,0,0,5
+12,10,0,0,5
+12,11,0,0,5
+
+[bg chao]
+type = normal
+spriteno = 1,0
+delta = 1,1
+start = 0,588
+tile = 1,0
+
+[bg cerca]
+type = normal
+spriteno = 1,1
+delta = 1,1
+mask = 1
+start = 0,588
+tile = 1,0
+scalestart = 1.20,1.06
+
+[bg cipo1]
+type = normal
+start = 0,-134
+spriteno = 4,0
+delta = 1,.9
+tile = 1,0
+mask = 1
+tilespacing = 256,0
+layerno = 1
+scalestart = 1.14,3.90
+
+[bg cipo2]
+type = normal
+start = 0,-180
+spriteno = 4,1
+delta = 1,.9
+mask = 1
+tile = 1,0
+tilespacing = 256,0
+layerno = 1
+scalestart = 1.14,1.50

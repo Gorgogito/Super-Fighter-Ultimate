@@ -1,0 +1,231 @@
+;By Dead-X 
+
+[Info]
+name = "Lilith's Garden"
+
+[BGdef]
+spr = stages/LilithGarden.sff
+debugbg = 0
+
+[Music]
+bgmusic = sound/Lilithgarden.mp3
+bgvolume = 255
+
+[Camera]
+startx=0
+starty=0
+boundleft = -230
+boundright =200
+boundhigh = -250
+floortension = 75
+verticalfollow = 1
+tension = 60
+
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -70      
+p1starty = 0          
+p1startz = 0            
+p1facing = 1            
+
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound = -1000
+rightbound = 1000 
+topbound = 0 
+botbound = 0 
+
+[Scaling]
+topz     = 0       
+botz     = 50     
+topscale = 1       
+botscale = 1.2     
+
+[Bound]
+screenleft = 10
+screenright = 10
+
+[StageInfo]
+zoffset =200
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+intensity = 20
+color = 30,30,30
+yscale = 0.2	
+fade.range = -50, -30
+
+;----------------------------------------
+[BG sky]
+type  = normal
+spriteno = 0, 0
+layerno = 0                
+start = -250,-220
+delta = .25, .75
+trans = none
+;---------------------------------------
+[BG Moon]
+type  = normal
+spriteno = 6,0
+mask = 1
+start = -200,-80
+delta = .25, .75
+[BG Moonglow]
+type  = normal
+spriteno = 6,1
+mask = 1
+trans = add1
+start = -200,-80
+delta = .25, .75
+
+;---------------------------------------
+[BG 1]
+type  = normal
+spriteno = 1,0
+mask = 1
+start = -390,5
+velocity = 0, 0
+tile = 0, 0
+;--------------------------------------
+[BG 2]
+type  = normal
+spriteno = 5,0
+mask = 1
+start = -390,-40
+velocity = 0, 0
+tile = 0, 0
+;--------------------------------------
+[BG 3]
+type  = normal
+spriteno = 4,0
+mask = 1
+start = -390,170
+velocity = 0, 0
+tile = 0, 0
+[BG floor2]
+type  = normal
+spriteno = 4,1
+mask = 1
+start = -390,218
+;---------------------------------------
+[BG 4]
+type  = normal
+spriteno = 2,0
+mask = 1
+start = -390,87
+velocity = 0, 0
+tile = 0, 0
+;---------------------------------------
+[BG 5]
+type  = anim
+actionno= 1
+mask = 1
+layerno = 1
+start = -390,239
+
+[Begin Action 1]
+3,0, 0,0, 10
+3,1, 0,0, 10
+3,2, 0,0, 10
+3,3, 0,0, 10
+;---------------------------------------
+[BG Bat1]
+type  = anim
+actionno= 3
+mask = 1
+layerno = 0
+start = 70, 100
+[Begin Action 3]
+7,0, 0,0, 5
+7,1, 0,-1, 5
+7,2, 0,-2, 5
+7,1, 0,-3, 5
+7,0, 0,-2, 5
+7,1, 0,-1, 5
+7,2, 0,-1, 5
+7,1, 0,0, 5
+
+[BG Bat2]
+type  = anim
+actionno= 4
+mask = 1
+layerno = 0
+start = -250, 40
+[Begin Action 4]
+7,0, 0,0, 5,H
+7,1, 0,-1, 5,H
+7,2, 0,-2, 5,H
+7,1, 0,-3, 5,H
+7,0, 0,-2, 5,H
+7,1, 0,-1, 5,H
+7,2, 0,-1, 5,H
+7,1, 0,0, 5,H
+
+[BG Bat1]
+type  = anim
+actionno= 5
+mask = 1
+layerno = 0
+start = 200, 80
+[Begin Action 5]
+7,0, 0,0, 5
+7,1, 0,-1, 5
+7,2, 0,-2, 5
+7,1, 0,-3, 5
+7,0, 0,-2, 5
+7,1, 0,-1, 5
+7,2, 0,-1, 5
+7,1, 0,0, 5
+
+[BG Bat1]
+type  = anim
+actionno= 6
+mask = 1
+layerno = 0
+start = 170, 70
+[Begin Action 6]
+7,0, 0,-1, 5,H
+7,1, 0,-2, 5,H
+7,2, 0,-3, 5,H
+7,1, 0,-2, 5,H
+7,0, 0,-1, 5,H
+7,1, 0,0, 5,H
+7,2, 0,-1, 5,H
+7,1, 0,-2, 5,H
+7,0, 0,-3, 5,H
+7,1, 0,-2, 5,H
+7,2, 0,0, 5,H
+7,1, 0,-1, 5,H
+
+[BG Bat1]
+type  = anim
+actionno= 7
+mask = 1
+layerno = 0
+start = -170, 70
+[Begin Action 7]
+7,0, 0,-1, 5
+7,1, 0,-1, 5
+7,2, 0,-2, 5
+7,1, 0,-2, 5
+7,0, 0,-3, 5
+7,1, 0,-3, 5
+7,2, 0,-2, 5
+7,1, 0,-2, 5
+7,0, 0,-1, 5
+7,1, 0,-1, 5
+7,2, 0,0, 5
+7,1, 0,0, 5
+
+
+
+
+
+
+
+

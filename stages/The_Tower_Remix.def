@@ -1,0 +1,283 @@
+;=============== The Tower ======================;
+[Info]
+Name = "t0w3rRemix"
+displayname = "The Tower Remix"
+versiondate = 17,10,2015
+mugenversion = 1.1
+author = "Bathory"
+;================================================;
+
+;================================================;
+[Camera]
+startx = 0
+starty = 0
+boundleft = -480
+boundright = 480
+boundhigh = -19
+boundlow = 10
+verticalfollow = .2
+floortension = 40
+tension = 100
+
+;================================================;
+
+;================================================;
+overdrawhigh = 0
+overdrawlow = 0
+cuthigh = 0
+cutlow = 0
+;================================================;
+
+;================================================;
+[PlayerInfo]
+p1startx = -98
+p1starty = 0
+p1facing = 1
+
+p2startx = 96
+p2starty = 0
+p2facing = -1
+
+p3startx = -150
+p3starty = 0
+p3facing = 1
+
+p4startx = 150
+p4starty = 0
+p4facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+;================================================;
+
+;================================================;
+[Bound]
+screenleft = 40
+screenright = 40
+;================================================;
+
+;================================================;
+[StageInfo]
+zoffset = 237
+autoturn = 1
+resetBG = 0
+localcoord = 400, 254
+xscale = 1
+yscale = 1
+;================================================;
+
+;================================================;
+[Shadow]
+intensity = 170
+color = 140,140,140
+yscale = .2
+;================================================;
+
+;================================================;
+[Reflection]
+intensity = 0
+;================================================;
+
+;================================================;
+[Music]
+bgmusic = sound/Genesis Music/genesis MK2 cloud room.ogg
+bgmloopstart = 173265
+bgmloopend = -1
+bgmvolume = 110
+;================================================;
+
+;================================================;
+[BGdef]
+spr = The_Tower_Remix.sff
+debugbg = 0
+;================================================;
+
+;================================================;
+
+[BG Cielo]
+type = normal
+spriteno = 0,5
+delta = .7, 1
+start = 0,-19
+velocity = 4,0
+tile = 1,0
+scalestart = .90,1
+
+[BG Fondo Azul]
+type = normal
+spriteno = 0,0
+delta = .7, 1
+mask = 1
+start = 0,-19
+scalestart = .90,1
+tile = 1,0
+
+[BG Fondo Rojo]
+type = normal
+spriteno = 0,1
+delta = .7, 1
+trans = add
+start = 0,-19
+scalestart = .90,1
+tile = 1,0
+
+[BG Fondo Verde]
+type = normal
+spriteno = 0,2
+delta = .7, 1
+trans = add
+start = 0,-19
+scalestart = .90,1
+tile = 1,0
+
+[BG Fuego]
+type = anim
+actionno = 1
+delta = .7, 1
+start = -165,78
+scalestart = .90,1
+
+[BG Fuego]
+type = anim
+actionno = 1
+delta = .7, 1
+start = 163,78
+scalestart = .90,1
+
+[BG Olla]
+type = normal
+spriteno = 0,9
+delta = .7, 1
+mask = 1
+scalestart = .90,1
+
+[BG Luz]
+type = normal
+spriteno = 0,10
+delta = .7, 1
+trans = add
+scalestart = .90,1
+
+[BG Suelo]
+type  = parallax
+spriteno = 0,3
+delta = .70, 1
+xscale = .70, 1
+scalestart = .90,1
+
+[BG Undertaker]
+type = anim
+start = 0,77
+actionno = 2
+delta = .7, 1
+sin.y= 10,300
+start = 0, 60
+scalestart = .94,1
+
+[BG Sombra]
+type  = normal
+spriteno = 0,11
+delta = .7, 1
+trans = sub
+
+[BG Terracota estatuas]
+type  = normal
+spriteno = 0,7
+delta = .74, 1
+xscale = .70, 1
+mask = 1
+scalestart = .90,1
+
+[BG Terracota estatuas]
+type  = normal
+spriteno = 0,6
+delta = .80, 1
+xscale = .70, 1
+mask = 1
+scalestart = .90,1
+
+[BG Columnas]
+type  = normal
+spriteno = 0,4
+delta = .80, 1
+xscale = .70, 1
+mask = 1
+scalestart = 1,1.08
+scalestart = .90,1
+
+[BG Filtro]
+type  = normal
+spriteno = 0,8
+delta = 0, 0
+trans = sub
+layerno = 1
+
+[Begin Action 1]
+1,0, 0,0, 3, , A
+1,1, 0,0, 3, , A
+1,2, 0,0, 3, , A
+1,3, 0,0, 3, , A
+1,4, 0,0, 3, , A
+1,5, 0,0, 3, , A
+1,6, 0,0, 3, , A
+1,7, 0,0, 3, , A
+1,8, 0,0, 3, , A
+1,9, 0,0, 3, , A
+1,10, 0,0, 3, , A
+1,11, 0,0, 3, , A
+1,12, 0,0, 3, , A
+1,13, 0,0, 3, , A
+1,14, 0,0, 3, , A
+1,15, 0,0, 3, , A
+1,16, 0,0, 3, , A
+1,17, 0,0, 3, , A
+1,18, 0,0, 3, , A
+1,19, 0,0, 3, , A
+1,20, 0,0, 3, , A
+1,21, 0,0, 3, , A
+1,22, 0,0, 3, , A
+1,23, 0,0, 3, , A
+1,24, 0,0, 3, , A
+1,25, 0,0, 3, , A
+1,26, 0,0, 3, , A
+1,27, 0,0, 3, , A
+1,28, 0,0, 3, , A
+1,29, 0,0, 3, , A
+1,30, 0,0, 3, , A
+1,31, 0,0, 3, , A
+1,32, 0,0, 3, , A
+1,33, 0,0, 3, , A
+1,34, 0,0, 3, , A
+1,35, 0,0, 3, , A
+1,36, 0,0, 3, , A
+1,37, 0,0, 3, , A
+1,38, 0,0, 3, , A
+1,39, 0,0, 3, , A
+1,40, 0,0, 3, , A
+1,41, 0,0, 3, , A
+1,42, 0,0, 3, , A
+1,43, 0,0, 3, , A
+1,44, 0,0, 3, , A
+1,45, 0,0, 3, , A
+1,46, 0,0, 3, , A
+1,47, 0,0, 3, , A
+1,48, 0,0, 3, , A
+1,49, 0,0, 3, , A
+1,50, 0,0, 3, , A
+1,51, 0,0, 3, , A
+1,52, 0,0, 3, , A
+1,53, 0,0, 3, , A
+1,54, 0,0, 3, , A
+1,55, 0,0, 3, , A
+1,56, 0,0, 3, , A
+1,57, 0,0, 3, , A
+1,58, 0,0, 3, , A
+1,59, 0,0, 3, , A
+
+[Begin Action 2]
+2,0, 0,0, 3
+2,1, 0,0, 3
+2,2, 0,0, 3
+2,3, 0,0, 3
+2,4, 0,0, 3
+2,5, 0,0, 3

@@ -1,0 +1,673 @@
+;========================================================
+;Desert Rain 2.0
+;Gracias especiales:
+;A ti por descargar este release
+;a Sawady por sacarme de un apuro con ese fx
+;--------------------------------------------------------
+;enjoy!
+;========================================================
+;--------------------------------------------------------
+[Info]
+ ;Name of the stage.
+name = "Desert Rain"
+author= "crazy_logic"
+;--------------------------------------------------------
+[Camera]
+startx         = 0
+starty         = 0
+boundleft      = -150
+boundright     = 150
+boundhigh      = -70
+boundlow       = 0
+verticalfollow = .7
+floortension   = 0
+tension        = 50
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -60
+p1starty = 0
+p1startz = 0
+p1facing = 1
+;--- Player 2 ---
+p2startx = 60
+p2starty = 0
+p2startz = 0
+p2facing = -1
+;--- Common ---
+leftbound  = -500
+rightbound =  500
+topbound   =  0
+botbound   =  0
+;--------------------------------------------------------
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+;--------------------------------------------------------
+[Bound]
+screenleft  = 15
+screenright = 15
+;--------------------------------------------------------
+[StageInfo]
+zoffset  = 200
+autoturn = 1
+resetBG  = 1
+;--------------------------------------------------------
+[Shadow]
+intensity  = 40
+color      = 80,80,80
+yscale     = .2
+fade.range = 0,0
+
+[Reflection]
+intensity  = 60
+;--------------------------------------------------------
+[Music]
+bgmusic  = sound/dbalegre.mp3
+bgvolume = 255
+;========================================================
+;-------------------------------------
+; Main background definition
+[BGdef]
+spr =Desert_Rain.sff
+debugbg = 0
+;----------
+
+[BG 0]
+type     = normal
+spriteno = 3,16
+layerno  = 0
+start    = 0,-50
+tile     = 1,0
+delta = 1.2,1
+velocity = .1,0
+
+[BG 1]
+type     = normal
+spriteno = 16, 14
+start    = 0,67
+layerno = 1
+trans    = Add
+mask     = 1
+delta = 1.1,1
+sin.x = 8,225
+tile     = 1,0
+
+[BG 1]
+type     = normal
+spriteno = 16, 14
+start    = 0,67
+layerno = 1
+trans    = Add
+mask     = 1
+sin.x = 6,200
+delta = 1.1,1
+tile     = 1,0
+
+[BG 1]
+type     = normal
+spriteno = 16, 14
+start    = 0,67
+layerno = 1
+trans    = Add
+mask     = 1
+delta = 1.1,1
+sin.x = 10,250
+tile     = 1,0
+
+[BG luz]
+type     = anim
+actionno = 3
+layerno  = 1
+mask     = 1
+delta    = 0,0
+start    = 0,0
+
+[BG 1]
+type     = normal
+spriteno = 3, 18
+start    = 0,-50
+trans    = Add
+mask     = 1
+delta = 1.1,1
+tile     = 1,0
+velocity = .2,0
+
+
+[BG 1]
+type     = normal
+spriteno = 1, 1
+start    = 0,95
+trans    = Add
+mask     = 1
+delta = 0.9,1
+tile     = 1,0
+velocity = .2
+
+
+[BG 1]
+type     = normal
+spriteno = 3, 17
+start    = 0,-50
+trans    = Add
+mask     = 1
+delta = 1.1,1
+tile     = 1,0
+velocity = .1
+
+[BG 1]
+type     = normal
+spriteno = 1, 0
+start    = 0,95
+trans    = Add
+mask     = 1
+delta = 0.8,1
+tile     = 1,0
+velocity = -.1
+
+[BG 4]
+type     = anim
+actionno = 8
+layerno  = 0
+start    = -30,95
+mask     = 1
+delta = 1,1
+tile     = 0, 0
+
+[BG 1]
+type     = normal
+spriteno = 16, 14
+start    = 0,695
+layerno = 1
+trans    = Add
+mask     = 1
+delta = 1.1,1
+tile     = 1,0
+sin.x = 15,150
+velocity = .2,0
+
+[BG 4]
+type     = anim
+actionno = 7
+layerno  = 0
+start    = 120,85
+mask     = 1
+delta = 1,1
+tile     = 0, 0
+
+[BG 4]
+type     = anim
+actionno = 7
+layerno  = 0
+start    = -900,95
+mask     = 1
+delta = 1,1
+tile     = 0, 0
+
+[BG 5]
+type     = normal
+spriteno = 0, 16
+layerno  = 0
+trans    = Add
+start    = 0, 95
+delta    = 0.8, 1
+mask     = 1
+velocity = -5, 11
+tile     = 1, 1
+
+[BG 4]
+type     = anim
+actionno = 7
+layerno  = 0
+start    = 0,95
+mask     = 1
+delta = 1,1
+tile     = 0, 0
+
+[BG 2]
+type     = normal
+spriteno = 0, 0
+layerno  = 0
+delta = 1,1
+start    = 0,95
+mask     = 1
+tile     = 0, 0
+
+[BG 4]
+type     = anim
+actionno = 6
+layerno  = 0
+start    = 0,95
+mask     = 1
+delta = 1,1
+tile     = 0, 0
+
+[BG 4]
+type     = anim
+actionno = 5
+layerno  = 0
+start    = 0,95
+mask     = 1
+delta    = 1,1
+tile     = 0, 0
+
+[BG 5]
+type     = normal
+spriteno = 0, 17
+layerno  = 1
+trans    = Add
+start    = 0, 95
+delta    = 0.9, 1
+mask     = 1
+velocity = -4, 10
+tile     = 1, 1
+
+[BG 4]
+type     = anim
+actionno = 4
+layerno  = 0
+start    = 0,95
+mask     = 1
+delta = 1,1
+tile     = 0, 0
+
+[BG 3]
+type     = normal
+spriteno = 0, 1
+layerno  = 0
+start    = 0,95
+mask     = 1
+tile     = 0, 0
+
+[BG 4]
+type     = anim
+actionno = 10
+layerno  = 0
+start    = 0,95
+mask     = 1
+delta = 1,1
+tile     = 0, 0
+
+[BG 5]
+type     = normal
+spriteno = 0, 15
+layerno  = 0
+trans    = Add
+start    = 0, 0
+delta    = 1, 1
+mask     = 1
+velocity = -2, 10
+tile     = 1, 1
+
+[BG 5]
+type     = normal
+spriteno = 0, 15
+layerno  = 1
+trans    = Add
+start    = 0, 95
+delta    = 1, 1
+mask     = 1
+velocity = -3, 9
+tile     = 1, 1
+
+[BG 5]
+type     = normal
+spriteno = 0, 15
+layerno  = 1
+trans    = Add
+start    = 0, 95
+delta    = 1, 1
+mask     = 1
+velocity = -6, 18
+tile     = 1, 1
+
+[BG 5]
+type     = normal
+spriteno = 10,150
+layerno  = 0
+trans    = Add
+start    = 0, -75
+delta    = 1, 1
+mask     = 1
+velocity = .3, 0
+tile     = 1, 0
+
+[BG 5]
+type     = normal
+spriteno = 10,150
+layerno  = 1
+trans    = Add
+start    = 0, -70
+delta    = 1, 1
+mask     = 1
+velocity = .3, 0
+tile     = 1, 0
+
+[BG 5]
+type     = normal
+spriteno = 10,150
+layerno  = 1
+trans    = Add
+start    = 0, -75
+delta    = 1, 1
+mask     = 1
+velocity = .2, 0
+tile     = 1, 0
+
+[Begin Action 10]
+0,2, 0,0, 7, , A
+0,3, 0,0, 7, , A
+0,4, 0,0, 7, , A
+0,3, 0,0, 7, , A
+0,2, 0,0, 7, , A
+0,3, 0,0, 7, , A
+0,4, 0,0, 7, , A
+0,3, 0,0, 7, , A
+
+[BG Niebla]
+type        = normal
+spriteno    = 3,15
+start       = 0,129
+delta       = 0.1,0.9
+trans       = add
+mask        = 1
+tile        = 1,0
+velocity    = 0.2,0
+
+[BG Niebla 2]
+type        = normal
+spriteno    = 3,15
+layerno     = 1
+start       = 0,129
+trans       = add
+mask        = 1
+tile        = 1,0
+velocity    = 0.5,0
+
+[BG Niebla 2]
+type        = normal
+spriteno    = 0,5
+layerno     = 1
+start       = 0,0
+trans       = add
+mask        = 1
+tile        = 1,1
+velocity    = 0.2,0
+
+[BG Gotas]
+type     = anim
+actionno = 0
+layerno  = 0
+mask     = 1
+start    = 0,100
+
+[BG Gotas II]
+type     = anim
+actionno = 0
+layerno  = 0
+mask     = 1
+start    = 100,100
+
+;========================================================
+;                  BG_ANIMATIONS
+;--------------------------------------------------------
+[Begin Action 0]
+10,0, 0,0, 2, ,A
+10,1, 0,0, 2, ,A
+10,2, 0,0, 2, ,A
+10,3, 0,0, 2, ,A
+10,4, 0,0, 2, ,A
+10,5, 0,0, 2, ,A
+10,6, 0,0, 2, ,A
+10,7, 0,0, 2, ,A
+10,8, 0,0, 2, ,A
+10,9, 0,0, 2, ,A
+10,10, 0,0, 2, ,A
+10,11, 0,0, 2, ,A
+10,12, 0,0, 2, ,A
+10,13, 0,0, 2, ,A
+10,14, 0,0, 2, ,A
+10,15, 0,0, 2, ,A
+10,16, 0,0, 2, ,A
+10,17, 0,0, 2, ,A
+10,18, 0,0, 2, ,A
+10,19, 0,0, 2, ,A
+10,20, 0,0, 2, ,A
+10,21, 0,0, 2, ,A
+10,22, 0,0, 2, ,A
+10,23, 0,0, 2, ,A
+10,24, 0,0, 2, ,A
+10,25, 0,0, 2, ,A
+10,26, 0,0, 2, ,A
+10,27, 0,0, 2, ,A
+10,28, 0,0, 2, ,A
+10,29, 0,0, 2, ,A
+10,30, 0,0, 2, ,A
+10,31, 0,0, 2, ,A
+10,32, 0,0, 2, ,A
+10,33, 0,0, 2, ,A
+10,34, 0,0, 2, ,A
+10,35, 0,0, 2, ,A
+10,36, 0,0, 2, ,A
+10,37, 0,0, 2, ,A
+10,38, 0,0, 2, ,A
+10,39, 0,0, 2, ,A
+10,40, 0,0, 2, ,A
+10,41, 0,0, 2, ,A
+10,42, 0,0, 2, ,A
+10,43, 0,0, 2, ,A
+10,44, 0,0, 2, ,A
+10,45, 0,0, 2, ,A
+10,46, 0,0, 2, ,A
+10,47, 0,0, 2, ,A
+10,48, 0,0, 2, ,A
+10,49, 0,0, 2, ,A
+10,50, 0,0, 2, ,A
+10,51, 0,0, 2, ,A
+10,52, 0,0, 2, ,A
+10,53, 0,0, 2, ,A
+10,54, 0,0, 2, ,A
+10,55, 0,0, 2, ,A
+10,56, 0,0, 2, ,A
+10,57, 0,0, 2, ,A
+10,58, 0,0, 2, ,A
+10,59, 0,0, 2, ,A
+10,60, 0,0, 2, ,A
+10,61, 0,0, 2, ,A
+10,62, 0,0, 2, ,A
+10,63, 0,0, 2, ,A
+10,64, 0,0, 2, ,A
+10,65, 0,0, 2, ,A
+10,66, 0,0, 2, ,A
+10,67, 0,0, 2, ,A
+10,68, 0,0, 2, ,A
+10,69, 0,0, 2, ,A
+10,70, 0,0, 2, ,A
+10,71, 0,0, 2, ,A
+10,72, 0,0, 2, ,A
+10,73, 0,0, 2, ,A
+10,74, 0,0, 2, ,A
+10,75, 0,0, 2, ,A
+10,76, 0,0, 2, ,A
+10,77, 0,0, 2, ,A
+10,78, 0,0, 2, ,A
+10,79, 0,0, 2, ,A
+10,80, 0,0, 2, ,A
+10,81, 0,0, 2, ,A
+10,82, 0,0, 2, ,A
+10,83, 0,0, 2, ,A
+10,84, 0,0, 2, ,A
+10,85, 0,0, 2, ,A
+10,86, 0,0, 2, ,A
+10,87, 0,0, 2, ,A
+10,88, 0,0, 2, ,A
+10,89, 0,0, 2, ,A
+10,90, 0,0, 2, ,A
+10,91, 0,0, 2, ,A
+10,92, 0,0, 2, ,A
+10,93, 0,0, 2, ,A
+10,94, 0,0, 2, ,A
+10,95, 0,0, 2, ,A
+10,96, 0,0, 2, ,A
+10,97, 0,0, 2, ,A
+10,98, 0,0, 2, ,A
+10,99, 0,0, 2, ,A
+10,100, 0,0, 2, ,A
+10,101, 0,0, 2, ,A
+10,102, 0,0, 2, ,A
+10,103, 0,0, 2, ,A
+10,104, 0,0, 2, ,A
+10,105, 0,0, 2, ,A
+10,106, 0,0, 2, ,A
+10,107, 0,0, 2, ,A
+10,108, 0,0, 2, ,A
+10,109, 0,0, 2, ,A
+10,110, 0,0, 2, ,A
+10,111, 0,0, 2, ,A
+10,112, 0,0, 2, ,A
+10,113, 0,0, 2, ,A
+10,114, 0,0, 2, ,A
+10,115, 0,0, 2, ,A
+10,116, 0,0, 2, ,A
+10,117, 0,0, 2, ,A
+10,118, 0,0, 2, ,A
+10,119, 0,0, 2, ,A
+10,120, 0,0, 2, ,A
+10,121, 0,0, 2, ,A
+10,122, 0,0, 2, ,A
+10,123, 0,0, 2, ,A
+10,124, 0,0, 2, ,A
+10,125, 0,0, 2, ,A
+10,126, 0,0, 2, ,A
+10,127, 0,0, 2, ,A
+10,128, 0,0, 2, ,A
+10,129, 0,0, 2, ,A
+10,130, 0,0, 2, ,A
+10,131, 0,0, 2, ,A
+10,132, 0,0, 2, ,A
+10,133, 0,0, 2, ,A
+10,134, 0,0, 2, ,A
+10,135, 0,0, 2, ,A
+10,136, 0,0, 2, ,A
+10,137, 0,0, 2, ,A
+10,138, 0,0, 2, ,A
+10,139, 0,0, 2, ,A
+10,140, 0,0, 2, ,A
+10,141, 0,0, 2, ,A
+10,142, 0,0, 2, ,A
+10,143, 0,0, 2, ,A
+10,144, 0,0, 2, ,A
+10,145, 0,0, 2, ,A
+10,146, 0,0, 2, ,A
+10,147, 0,0, 2, ,A
+10,148, 0,0, 2, ,A
+10,149, 0,0, 2, ,A
+
+[Begin Action 2]
+0,5, 0,0, 5, ,A
+0,6, 0,0, 5, ,A
+0,7, 0,0, 5, ,A
+0,8, 0,0, 5, ,A
+0,9, 0,0, 5, ,A
+0,10, 0,0, 5, ,A
+0,11, 0,0, 5, ,A
+0,12, 0,0, 5, ,A
+0,13, 0,0, 5, ,A
+0,14, 0,0, 5, ,A
+-1,14, 0,0, 50, ,A
+
+[Begin Action 3]
+-1,-1, 0,0, 20, , A
+29,2, 0,0, 7, , A
+29,0, 0,0, 2, , A
+21,1, 0,0, 7, , A
+29,2, 0,0, 7, , A
+-1,-1, 0,0, 150, , A
+29,1, 0,0, 6, , A
+29,2, 0,0, 6, , A
+29,1, 0,0, 6, , A
+29,2, 0,0, 6, , A
+29,1, 0,0, 6, , A
+29,2, 0,0, 3, , A
+29,0, 0,0, 2, , A
+
+[Begin Action 4]
+0,6, 0,0, 4, , A
+0,7, 0,0, 5, , A
+0,8, 0,0, 4, , A
+0,7, 0,0, 5, , A
+-1,-1, 0,0, 4, , A
+
+[Begin Action 5]
+16,9, 0,0, 5, , A
+16,10, 0,0, 6, , A
+16,11, 0,0, 5, , A
+16,10, 0,0, 6, , A
+-1,-1, 0,0, 5, , A
+
+[Begin Action 6]
+16,1, 0,0, 2, ,
+16,0, 0,0, 3, ,
+-1,-1, 0,0, 150, ,
+
+[Begin Action 7]
+16,12, 0,0, 2, ,A
+1-1,0, 0,0, 3, ,A
+16,12, 0,0, 2, ,A
+1-1,0, 0,0, 3, ,A
+-1,-1, 0,0, 250, ,A
+
+
+[Begin Action 8]
+16,13, 0,0, 2, ,A
+16,12, 0,0, 3, ,A
+16,13, 0,0, 2, ,A
+1-1,0, 0,0, 3, ,A
+-1,-1, 0,0, 150, ,A
+
+[Begin Action 9]
+-1,-1 , 0,0, 500
+666,401, 0,0, 9, ,A
+666,400, 0,0, 10, ,A
+666,399, 0,0, 11, ,A
+666,398, 0,0, -1, ,A
+
+
+
+
+[Begin Action 7000]
+7000,0, 0,0, 4, , AS0D220
+7000,0, 0,0, 4, , AS50D150
+7000,0, 0,0, 4, , AS70D120
+7000,0, 0,0, 4, , AS100D100
+7000,0, 0,0, 4, , AS150D70
+7000,0, 0,0, 4, , AS200D50
+7000,0, 0,0, 200, , AS255D0
+7000,0, 0,0, 4, , AS200D50
+7000,0, 0,0, 4, , AS150D70
+7000,0, 0,0, 4, , AS100D100
+7000,0, 0,0, 4, , AS70D120
+7000,0, 0,0, 4, , AS50D150
+7000,0, 0,0, 4, , AS0D220
+-1,0,0,0,-1
+
+[Begin Action 7001]
+7001,0, 0,0, 4, , AS0D255
+7001,0, 0,0, 4, , AS50D255
+7001,0, 0,0, 4, , AS70D255
+7001,0, 0,0, 4, , AS90D255
+7001,0, 0,0, 4, , AS130D255
+7001,0, 0,0, 4, , AS150D255
+7001,0, 0,0, 200, , AS255D255
+7001,0, 0,0, 4, , AS150D255
+7001,0, 0,0, 4, , AS130D255
+7001,0, 0,0, 4, , AS90D255
+7001,0, 0,0, 4, , AS70D255
+7001,0, 0,0, 4, , AS50D255
+7001,0, 0,0, 4, , AS0D255
+-1,0,0,0,-1
+
+
+

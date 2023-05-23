@@ -1,0 +1,257 @@
+﻿; Арена: The Pit 3
+; Автор: Emsi-D
+; Рип спрайтов: Fly
+; Улучшения: Max Arturo (летающие фонарики)
+
+[Info]
+Name = "p1t-3"
+Displayname = "The Pit III"
+Mugenversion = 1.1
+
+[Camera]
+boundleft = -365
+boundright = 380
+boundhigh = 0
+boundlow = 2335
+tension = 101
+verticalfollow = 1
+overdrawhigh = 20
+overdrawlow = 9999
+startzoom = 1
+zoomin = 1
+zoomout = 0.75
+
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1400
+rightbound = 1400
+
+[Bound]
+screenleft = 60
+screenright = 60
+
+[StageInfo]
+zoffset = 209
+autoturn = 1
+resetBG = 1
+localcoord = 400,254
+
+[Shadow]
+intensity = 130
+yscale = .10
+fade.range = -20,-20
+
+[Music]
+bgmusic = sound/MK3/mk3_the_pit_3.ogg
+bgmloopstart = 1511650
+bgmloopend = -1
+
+
+[BGdef]
+spr = The_Pit_III.sff
+bgclearcolor = 0,1,0
+
+
+[BG Бэкграунд - Слой 2]
+type = normal
+spriteno = 0,12
+delta = 0,0.046
+start = 0,28
+mask = 1
+
+[BG Бэкграунд - Слой 1]
+type = normal
+spriteno = 0,11
+delta = .4,1
+start = 0,-7
+mask = 1
+scalestart = .91,1
+
+[BG Бэкграунд - Слой 1]
+type = normal
+spriteno = 0,21
+delta = .4,1
+start = 30,-7
+mask = 1
+scalestart = .91,1
+
+[BG Зелёный свет левого фонарика]
+type = normal
+spriteno = 0,19
+trans = add
+delta = .25,0.04
+start = -80,105
+sin.y = 7,150,0
+scalestart = .90,1
+
+[BG Зелёный свет правого фонарика]
+type = normal
+spriteno = 0,19
+trans = add
+delta = .25,0.04
+start = 50,105
+sin.y = 7,150,0
+scalestart = .90,1
+
+
+[BG Летающий фонарик слева]
+type = anim
+actionno = 1
+delta = .25,0.04
+start = -84,108
+sin.y = 7,150,0
+scalestart = .90,1
+
+
+[Begin Action 1]
+0,18, 0,0, 5
+0,17, 0,0, 4
+0,16, 0,0, 5
+0,15, 0,0, 4
+0,14, 0,0, 5
+0,13, 0,0, 4
+
+[BG Летающий фонарик справа]
+type = anim
+actionno = 2
+delta = .25,0.04
+start = 46,108
+sin.y = 7,150,0
+scalestart = .90,1
+
+
+[Begin Action 2]
+0,13, 0,0, 4
+0,14, 0,0, 5
+0,15, 0,0, 4
+0,16, 0,0, 5
+0,17, 0,0, 4
+0,18, 0,0, 5
+
+[BG Вход на мост]
+type = normal
+spriteno = 0,1
+delta = 1,1
+start = -594,-43
+mask = 1
+
+[BG Мост]
+type = normal
+spriteno = 0,0
+delta = 1,1
+start = 6,193
+mask = 1
+scalestart = .89,1
+
+[BG Трон Шао Кана]
+type = normal
+spriteno = 0,2
+delta = 1,1
+start = 456,-19
+mask = 1
+
+[BG Столбы]
+type = normal
+spriteno = 0,3
+delta = 1,1
+start = 0,244
+mask = 1
+scalestart = .90,1
+
+[BG Скалы]
+type = normal
+spriteno = 0,4
+delta = 1,1
+start = 6,224
+mask = 1
+
+[BG Скалы]
+type = normal
+spriteno = 0,20
+delta = 1,1
+start = 6,224
+mask = 1
+
+[BG Вращающиеся лезвия 1]
+type = anim
+actionno = 0
+delta = 1,1
+start = 453,2488
+scalestart = .90,1
+
+[BG Вращающиеся лезвия 2]
+type = anim
+actionno = 0
+delta = 1,1
+start = 325,2488
+scalestart = .90,1
+
+[BG Вращающиеся лезвия 3]
+type = anim
+actionno = 0
+delta = 1,1
+start = 197,2488
+scalestart = .90,1
+
+[BG Вращающиеся лезвия 4]
+type = anim
+actionno = 0
+delta = 1,1
+start = 69,2488
+scalestart = .90,1
+
+[BG Вращающиеся лезвия 5]
+type = anim
+actionno = 0
+delta = 1,1
+start = -59,2488
+scalestart = .90,1
+
+[BG Вращающиеся лезвия 6]
+type = anim
+actionno = 0
+delta = 1,1
+start = -187,2488
+scalestart = .90,1
+
+[BG Вращающиеся лезвия 7]
+type = anim
+actionno = 0
+delta = 1,1
+start = -315,2488
+scalestart = .90,1
+
+[BG Вращающиеся лезвия 8]
+type = anim
+actionno = 0
+delta = 1,1
+start = -443,2488
+scalestart = .90,1
+
+[BG Вращающиеся лезвия 9]
+type = anim
+actionno = 0
+delta = 1,1
+start = -571,2488
+scalestart = .90,1
+
+[BG Вращающиеся лезвия 10]
+type = anim
+actionno = 0
+delta = 1,1
+start = -699,2488
+scalestart = .90,1
+
+[Begin Action 0]
+0,5, 0,0, 1
+0,6, 0,0, 1
+0,7, 0,0, 1
+0,8, 0,0, 1
+0,9, 0,0, 1
+0,10, 0,0, 1

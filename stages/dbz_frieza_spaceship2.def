@@ -1,0 +1,106 @@
+;auteur = ken master
+;original game = DBZ
+;name = devant vaisseau freezer
+;version = 0.1
+;Date = 7/04/2004
+;email = evil.sagat@wanadoo.fr
+;site web = http://perso.wanadoo.fr/evil.sagat
+;Edited by Stig87
+;email = b_blue34@yahoo.com
+;Mugendream.bravehost.com
+;Mugendream.angelfire.com
+
+
+[Info]
+name = "Frieza's Spaceship HR"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -140
+boundright = 140
+boundhigh = -550
+boundlow = -250
+verticalfollow = .7
+floortension = 0
+tension = 50
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  = 0
+botbound  = 0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 24
+screenright = 24
+
+[StageInfo]
+zoffset = -45
+autoturn = 1
+resetBG = 0
+hires = 1
+
+[Shadow]
+color = 0,0,0
+yscale = .3
+reflect = 0
+
+[Music]
+bgmusic =sound/DBZ_Piccolo_vs_Frieza.mp3
+bgvolume =255
+
+[BGdef]
+spr =stages/dbz_frieza_spaceship2.sff
+DEBUGBG=0
+DEBUG=0
+
+[BG fond]
+type = normal
+spriteno = 0,0
+start = -367, -181
+delta = .818181,.699999
+mask = 1
+
+[BG vaisseau]
+type= anim
+actionno = 1
+start = 0, 40
+delta = .818181,.699999
+mask = 1
+
+[BG decor]
+type = normal
+spriteno = 2,0
+start = 0, 0
+delta = 1,1
+mask = 1
+
+
+[Begin action 1]
+1,0, 0,0, 10
+1,1, 0,0, 10
+1,2, 0,0, 10
+1,3, 0,0, 10
+
+
+
+
+
+

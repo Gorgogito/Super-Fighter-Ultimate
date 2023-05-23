@@ -1,0 +1,403 @@
+;BlackCyraxCO
+;--------------------------------------------------------
+
+[Info]
+
+name = "thegraveyardmk2011"
+displayname = "The GraveYard MK 2011"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -321
+boundright = 321
+boundhigh = -65
+boundlow =  0
+floortension = 30
+verticalfollow = .2
+tension = 100
+startzoom = 1
+zoomin = 1
+zoomout = 0.80
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx = -98
+p1starty = 0
+p1startz = 10
+p1facing = 1
+
+p2startx = 96
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1600 
+rightbound = 1600
+topbound  =  0
+botbound  =  0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0      
+botz     = 50     
+topscale = 1       
+botscale = 1.2     
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+;--------------------------------------------------------
+
+[StageInfo]
+zoffset        = 232
+
+autoturn       = 1
+resetBG        = 1
+
+
+;LocalCoord
+localcoord = 400,254
+;Horizontal and vertical scaling factor for drawing.
+xscale = 1
+yscale = 1
+;--------------------------------------------------------
+
+[Shadow]
+color = 70,70,70
+yscale = -0.1
+reflect = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic = sound/MK9/graveyard.ogg
+bgmloopstart = 1460365
+bgmloopend = -1
+bgmvolume = 113
+
+;--------------------------------------------------------
+
+[BGdef]
+spr = TheGraveyard.sff
+debugbg = 0
+
+;--------------------------------------------------------
+
+[BG fundo]
+type  = normal
+spriteno = 0,0
+Delta = 1,1
+start = 0,0
+Tile = 1,1
+
+[BG sun, clouds and buildings]
+type  = normal
+spriteno = 0,1
+Delta = 0.5,1
+start = 0,237
+Mask = 1
+scalestart = 0.90,1.01
+
+[BG Smoke]
+type  = anim
+actionno = 2
+delta = 0.5, 1
+start = 0,237
+Mask = 1
+scalestart = 0.90,1.01
+
+[BG buildings]
+type  = normal
+spriteno = 0,14
+Delta = 0.5,1
+start = 0,250
+Mask = 1
+scalestart = 0.90,1
+
+[BG Mountains]
+type  = normal
+spriteno = 0,13
+Delta = 0.6,1
+start = 0,250
+Mask = 1
+scalestart = .85,1
+
+[BG trees]
+type  = normal
+spriteno = 0,12
+Delta = 0.7,1
+start = 0,250
+Mask = 1
+
+[BG land 2]
+type  = normal
+spriteno = 0,11
+Delta = 0.7,1
+start = 0,250
+Mask = 1
+
+[BG big trees]
+type  = normal
+spriteno = 0,10
+Delta = 0.8,1
+start = 0,250
+Mask = 1
+
+[BG land 1]
+type  = normal
+spriteno = 0,9
+Delta = 0.8,1
+start = 0,254
+Mask = 1
+scalestart = 1,1.06
+
+[BG trees and small house]
+type  = normal
+spriteno = 0,8
+Delta = 0.9,1
+start = 0,250
+Mask = 1
+scalestart = 0.90,1
+
+[BG Gate and fence]
+type  = normal
+spriteno = 0,7
+Delta = 0.9,1
+start = 0,247
+Mask = 1
+scalestart = 1,1.06
+
+[BG weed 2]
+type  = normal
+spriteno = 0,6
+Delta = 1,1
+start = 0,250
+Mask = 1
+
+[BG bats]
+type  = anim
+actionno = 1
+delta = 1, 1
+start = -5000,20
+Layerno = 1
+Velocity = 6,0
+tile = 1,0
+mask = 1
+tilespacing = 10000, 0
+scalestart = 0.90,1
+
+[BG bats]
+type  = anim
+actionno = 1
+delta = 1, 1
+start = -5100,50
+Layerno = 1
+Velocity = 6,0
+tile = 1,0
+mask = 1
+tilespacing = 10000, 0
+scalestart = 0.90,1
+
+[BG bats]
+type  = anim
+actionno = 1
+delta = 1, 1
+start = -5200,90
+Layerno = 1
+Velocity = 6,0
+tile = 1,0
+mask = 1
+tilespacing = 10000, 0
+scalestart = 0.90,1
+
+[BG Graves 2]
+type  = normal
+spriteno = 0,5
+Delta = 1,1
+start = 0,270
+Mask = 1
+scalestart = 1,1.06
+
+[BG Graves 1]
+type  = normal
+spriteno = 0,4
+Delta = 1,1
+start = 0,250
+Mask = 1
+scalestart = .90,1
+
+[BG weed 1]
+type  = normal
+spriteno = 0,3
+Delta = 1,1
+start = 0,250
+Mask = 1
+
+[BG weed 1]
+type  = normal
+spriteno = 0,3
+Delta = 1,1
+start = 1000,250
+Mask = 1
+
+[BG weed 1]
+type  = normal
+spriteno = 0,3
+Delta = 1,1
+start = -1040,250
+Mask = 1
+
+[BG floor]
+type  = normal
+spriteno = 0,2
+Delta = 1,1
+start = 0,250
+Mask = 1
+width = 1240,1500
+
+[BG layer]
+type  = normal
+spriteno = 0,0
+Delta = 1,1
+start = 0,0
+Tile = 1,1
+Trans = sub
+Layerno = 1
+
+[BG grama 1]
+type  = anim
+actionno = 0
+delta = 1, 1
+start = 0,250
+Layerno = 1
+Mask = 1
+
+[BG grama 2]
+type  = anim
+actionno = 0
+delta = 1, 1
+start = 135,250
+Layerno = 1
+Mask = 1
+
+[BG grama 3]
+type  = anim
+actionno = 0
+delta = 1, 1
+start = -135,250
+Layerno = 1
+Mask = 1
+
+[BG grama 3]
+type  = anim
+actionno = 0
+delta = 1, 1
+start = -350,250
+Layerno = 1
+Mask = 1
+
+[BG grama 3]
+type  = anim
+actionno = 0
+delta = 1, 1
+start = -350,201
+Layerno = 0
+Mask = 1
+scalestart = .80,.80
+
+[BG grama 3]
+type  = anim
+actionno = 0
+delta = 1, 1
+start = -260,210
+Layerno = 0
+Mask = 1
+scalestart = .34,.40
+
+
+[BG grama 3]
+type  = anim
+actionno = 0
+delta = 1, 1
+start = -490,210
+Layerno = 0
+Mask = 1
+scalestart = .34,.40
+
+[BG grama 3]
+type  = anim
+actionno = 0
+delta = 1, 1
+start = -100,210
+Layerno = 0
+Mask = 1
+scalestart = .34,.40
+
+[BG grama 3]
+type  = anim
+actionno = 0
+delta = 1, 1
+start = 225,210
+Layerno = 0
+Mask = 1
+scalestart = .34,.40
+
+[BG grama 3]
+type  = anim
+actionno = 0
+delta = 1, 1
+start = 440,210
+Layerno = 0
+Mask = 1
+scalestart = .34,.40
+
+[BG grama 3]
+type  = anim
+actionno = 0
+delta = 1, 1
+start = 215,201
+Layerno = 0
+Mask = 1
+scalestart = .80,.80
+
+
+[BG weed 0]
+type  = normal
+spriteno = 0,6
+Delta = 1,1
+start = 0,320
+Mask = 1
+Layerno = 1
+
+;----Animations-------
+
+[Begin Action 0]
+1,0,0,0,8,,
+1,1,0,0,8,,
+1,2,0,0,8,,
+1,3,0,0,8,,
+
+[Begin Action 1]
+2,0,0,0,3,,
+2,1,0,0,3,,
+2,2,0,0,3,,
+
+[Begin Action 2]
+3,0,0,0,7,,
+3,1,0,0,7,,
+3,2,0,0,7,,
+3,3,0,0,7,,
+3,4,0,0,7,,
+3,5,0,0,7,,
+3,6,0,0,7,,
+
+
+

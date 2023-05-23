@@ -1,0 +1,308 @@
+;Afterlife Tournament(Pikkon Stage)
+;Original by Boris
+;Revamped by Stig87
+;email = b_blue34@yahoo.com
+;www.Mugendream.com
+
+
+
+[Info]
+
+name = "Afterlife Tournament"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -224
+boundright = 224
+boundhigh = -200
+boundlow = 0
+
+verticalfollow = .7
+floortension = 0
+tension = 50
+
+[PlayerInfo]
+p1startx = -80         
+p1starty = 0            
+p1startz = 0           
+p1facing = 1           
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound  = -1000 
+rightbound =  1000
+topbound  =  0     
+botbound  =  0    
+
+[Scaling]
+
+topz     = 0      
+botz     = 50      
+topscale = 1       
+botscale = 1.2     
+
+[Bound]
+screenleft = 15   
+screenright = 15  
+
+[StageInfo]
+zoffset = 210
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+intensity = 80
+color = 60,60,60
+yscale = .1
+fade.range = 0,0
+
+[Reflection]
+intensity = 0
+
+[Music]
+bgmusic = sound/DBZ_Pikkon's_Theme.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/dbz_alife_tourn.sff
+debugbg = 0
+
+[BG Fundo]
+type  = normal
+start = 0, 184
+spriteno = 0,4
+delta = 0.7, .4
+tile= 1,1
+mask = 1
+velocity = .15,0
+
+[BG Fundo]
+type  = normal
+start = 0, 184
+spriteno = 1,0
+delta = .7, .4
+tile= 1,1
+mask = 1
+velocity = .15,0
+
+[BG meteorite]
+type = normal
+spriteno = 0,3
+start = 170,220
+tile=1,0
+delta= .8, .6
+mask=1
+
+[BG stage]
+type = normal
+spriteno = 0,2
+start = 0,185
+tile=1,0
+delta = .75, .7
+mask=1
+velocity=0,0
+
+[BG flagA]
+type  = anim
+actionno = 2
+start = -386,105
+delta = .75, .7
+mask = 1
+
+[BG flagB]
+type  = anim
+actionno = 3
+start = -172, 97
+delta = .75, .7
+mask = 1
+
+[BG flagC]
+type  = anim
+actionno = 4
+start = 62, 105 
+delta = .75, .7
+mask = 1
+
+[BG flagD]
+type  = anim
+actionno = 5
+start = 306, 104
+delta = .75, .7
+mask = 1
+
+[BG SATA]
+type  = anim
+actionno = 6
+start = -323, 120
+delta = .75, .7
+mask = 1
+
+[BG SATB]
+type  = anim
+actionno = 7
+start = 176, 115
+delta = .75, .7
+mask = 1
+
+[BG n kai]
+type = normal
+spriteno = 1,1
+start = 170,190
+delta=1,1
+mask=1
+velocity=0,0
+
+[BG w kai]
+type = normal
+spriteno = 1,2
+start = -195,190
+delta=1,1
+mask=1
+velocity=0,0
+
+[BG Chão]
+type = normal
+spriteno = 0,0
+start = 0,185
+delta=1,1
+mask=1
+velocity=0,0
+
+[Begin action 2]
+2,0, 0,0, 8
+2,1, 0,0, 8
+2,2, 0,0, 8
+2,3, 0,0, 8
+2,4, 0,0, 8
+2,5, 0,0, 8
+2,4, 0,0, 8
+2,3, 0,0, 8
+2,2, 0,0, 8
+2,1, 0,0, 8
+
+[Begin action 3]
+3,0, 0,0, 8
+3,1, 0,0, 8
+3,2, 0,0, 8
+3,3, 0,0, 8
+3,4, 0,0, 8
+3,5, 0,0, 8
+3,4, 0,0, 8
+3,3, 0,0, 8
+3,2, 0,0, 8
+3,1, 0,0, 8
+
+[Begin action 4]
+4,1, 0,0, 8
+4,2, 0,0, 8
+4,3, 0,0, 8
+4,4, 0,0, 8
+4,5, 0,0, 8
+4,0, 0,0, 8
+4,5, 0,0, 8
+4,4, 0,0, 8
+4,3, 0,0, 8
+4,2, 0,0, 8
+
+[Begin action 5]
+5,0, 0,0, 8
+5,1, 0,0, 8
+5,2, 0,0, 8
+5,3, 0,0, 8
+5,4, 0,0, 8
+5,5, 0,0, 8
+5,6, 0,0, 8
+5,5, 0,0, 8
+5,4, 0,0, 8
+5,3, 0,0, 8
+5,2, 0,0, 8
+5,1, 0,0, 8
+
+[Begin action 6]
+6,0, 0,0, 8
+6,1, 0,0, 8
+6,2, 0,0, 8
+6,3, 0,0, 8
+6,4, 0,0, 8
+6,5, 0,0, 8
+6,4, 0,0, 8
+6,3, 0,0, 8
+6,2, 0,0, 8
+6,1, 0,0, 8
+6,0, 0,0, 8
+
+6,1, 0,0, 8
+6,2, 0,0, 8
+6,3, 0,0, 8
+6,4, 0,0, 8
+6,5, 0,0, 8
+6,4, 0,0, 8
+6,3, 0,0, 8
+6,2, 0,0, 8
+6,1, 0,0, 8
+6,0, 0,0, 8
+
+6,1, 0,0, 8
+6,2, 0,0, 8
+6,3, 0,0, 8
+6,4, 0,0, 8
+6,5, 0,0, 8
+6,4, 0,0, 8
+6,3, 0,0, 8
+6,2, 0,0, 8
+6,1, 0,0, 8
+6,0, 0,0, 8
+
+6,1, 0,0, 8
+6,2, 0,0, 8
+6,3, 0,0, 8
+6,4, 0,0, 8
+6,5, 0,0, 8
+6,4, 0,0, 8
+6,3, 0,0, 8
+6,2, 0,0, 8
+6,1, 0,0, 8
+
+[Begin action 7]
+7,0, 0,0, 8
+7,1, 0,0, 8
+7,2, 0,0, 8
+7,3, 0,0, 8
+7,4, 0,0, 8
+7,5, 0,0, 8
+7,4, 0,0, 8
+7,3, 0,0, 8
+7,2, 0,0, 8
+7,1, 0,0, 8
+7,0, 0,0, 8
+7,1, 0,0, 8
+7,2, 0,0, 8
+7,3, 0,0, 8
+7,4, 0,0, 8
+7,5, 0,0, 8
+7,4, 0,0, 8
+7,3, 0,0, 8
+7,2, 0,0, 8
+7,1, 0,0, 8
+7,0, 0,0, 8
+7,1, 0,0, 8
+7,2, 0,0, 8
+7,3, 0,0, 8
+7,4, 0,0, 8
+7,5, 0,0, 8
+7,4, 0,0, 8
+7,3, 0,0, 8
+7,2, 0,0, 8
+7,1, 0,0, 8
+7,0, 0,0, 8
+7,1, 0,0, 8
+7,2, 0,0, 8
+7,3, 0,0, 8
+7,4, 0,0, 8
+7,5, 0,0, 8
+7,4, 0,0, 8
+7,3, 0,0, 8
+7,2, 0,0, 8
+7,1, 0,0, 8

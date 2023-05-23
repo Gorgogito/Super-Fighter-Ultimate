@@ -1,0 +1,104 @@
+﻿; Арена: Jade's Desert UMK3
+; Автор: Emsi-D
+; Рип спрайтов: Fly
+; Edited by IceCold Assassin
+
+[Info]
+Name = "jadesDeser1n1ght"
+Displayname = "Jade's Desert at Night"
+Mugenversion = 1.1
+
+[Camera]
+boundleft = -319
+boundright = 322
+boundhigh = -12
+tension = 100
+floortension = 30
+verticalfollow = .2
+overdrawhigh = 20
+overdrawlow = 20
+startzoom = 1
+zoomin = 1
+zoomout = 0.80
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1400
+rightbound = 1400
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+[StageInfo]
+zoffset = 234
+autoturn = 1
+resetBG = 1
+localcoord = 400,254
+
+[Shadow]
+intensity = 240
+yscale = -.11
+
+[Music]
+bgmusic = sound/Other/MKT - The Roof.ogg
+bgmloopstart = 115405
+bgmloopend = -1
+bgmvolume = 115
+
+[BGdef]
+spr = Jade's_Desert_NIGHT.sff
+bgclearcolor = 0,0,0
+
+
+[BG Облака]
+type = normal
+spriteno = 0,4
+delta = 0,1
+start = 0,66
+mask = 1
+scalestart = .93,1
+
+[BG Песок/Задний план]
+type = normal
+spriteno = 0,3
+delta = .3,1
+start = -2,89
+mask = 1
+scalestart = .93,1
+
+[BG Песок]
+type = normal
+spriteno = 0,2
+delta = .613,1
+start = -2,109
+mask = 1
+scalestart = .93,1
+
+[BG Обломки]
+type = normal
+spriteno = 0,1
+delta = .94,1
+start = 40,138
+mask = 1
+scalestart = .93,1
+
+[BG Переход между этажами]
+type = normal
+spriteno = 0,5
+delta = 1,1
+start = 0,247
+tile = 1,0
+
+[BG Пол]
+type = parallax
+spriteno = 0,0
+delta = .94,1
+start = 0,234
+width = 1220,1360
+scalestart = .93,1

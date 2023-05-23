@@ -1,0 +1,211 @@
+﻿; Арена: Shaolin Temple MK4
+; Автор: Emsi-D
+; Рип текстур: Ratonmalo
+
+[Info]
+Name = "sh4ol1n_t3mple"
+Displayname = "Shaolin Temple MK4"
+Mugenversion = 1.1
+
+[Camera]
+boundleft = -659
+boundright = 659
+boundhigh = -12
+tension = 100
+floortension = 30
+verticalfollow = .2
+overdrawhigh = 20
+overdrawlow = 20
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1600
+rightbound = 1600
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+[StageInfo]
+zoffset = 230
+autoturn = 1
+resetBG = 1
+localcoord = 400,254
+
+[Shadow]
+intensity = 160
+color = 60,60,60
+yscale = -0.2
+
+
+[Music]
+bgmusic = sound/MK4/mk4_shaolin_temple.ogg
+bgmloopstart = 1775970
+bgmloopend = -1
+
+[BGdef]
+spr = Shaolin_Temple.sff
+bgclearcolor = 0,0,0
+
+
+[BG Переход между этажами]
+type = normal
+spriteno = 0,1
+delta = 1,1
+start = 0,247
+tile = 1,0
+
+[BG Пол]
+type = parallax
+spriteno = 0,0
+delta = .83,1
+start = 0,231
+width = 1660,1894
+scalestart = .90,1
+
+[BG Потолок]
+type = normal
+spriteno = 0,6
+delta = .83,1
+start = 0,-87
+scalestart = 1,1
+
+[BG Дождь/Окно слева]
+type = anim
+scalestart = 1.2,1.1
+actionno = 0
+delta = .83,1
+start = -291,34
+scalestart = .90,1
+
+[BG Дождь/Центральное окно]
+type = anim
+scalestart = 1.2,1.1
+actionno = 0
+delta = .83,1
+start = -19,34
+scalestart = .90,1
+
+[BG Дождь/Окно справа]
+type = anim
+scalestart = 1.2,1.1
+actionno = 0
+delta = .83,1
+start = 253,34
+scalestart = .90,1
+
+[Begin Action 0]
+0,8, 0,0, 4
+0,9, 0,0, 4
+0,10, 0,0, 4
+0,11, 0,0, 4
+0,12, 0,0, 4
+0,13, 0,0, 4
+0,14, 0,0, 4
+0,15, 0,0, 4
+0,16, 0,0, 4
+0,17, 0,0, 4
+0,18, 0,0, 4
+0,19, 0,0, 4
+0,20, 0,0, 4
+0,21, 0,0, 4
+0,22, 0,0, 4
+0,23, 0,0, 4
+0,24, 0,0, 4
+0,25, 0,0, 4
+0,26, 0,0, 4
+0,27, 0,0, 4
+0,28, 0,0, 4
+0,29, 0,0, 4
+0,30, 0,0, 4
+0,31, 0,0, 4
+0,32, 0,0, 4
+0,33, 0,0, 4
+0,34, 0,0, 4
+0,35, 0,0, 4
+0,36, 0,0, 4
+0,37, 0,0, 4
+
+[BG Стена]
+type = normal
+spriteno = 0,2
+delta = .83,1
+start = 0,14
+mask = 1
+scalestart = .90,1
+
+[BG Стена]
+type = normal
+spriteno = 0,38
+delta = .83,1
+start = 0,14
+mask = 1
+scalestart = .90,1
+
+[BG Стена]
+type = normal
+spriteno = 0,39
+delta = .83,1
+start = 0,0
+mask = 1
+scalestart = .90,1
+
+[BG Вход слева]
+type = normal
+spriteno = 0,3
+delta = .83,1
+start = -600,14
+mask = 1
+scalestart = .90,1
+
+[BG Левая половина двери/Вход слева]
+type = normal
+spriteno = 0,4
+delta = .83,1
+start = -641,66
+mask = 1
+scalestart = .92,1
+
+[BG Правая половина двери/Вход слева]
+type = normal
+spriteno = 0,5
+delta = .83,1
+start = -600,66
+mask = 1
+scalestart = .92,1
+
+[BG Вход справа]
+type = normal
+spriteno = 0,3
+delta = .83,1
+start = 600,14
+mask = 1
+scalestart = .90,1
+
+[BG Левая половина двери/Вход справа]
+type = normal
+spriteno = 0,4
+delta = .83,1
+start = 559,66
+mask = 1
+scalestart = .92,1
+
+[BG Правая половина двери/Вход справа]
+type = normal
+spriteno = 0,5
+delta = .83,1
+start = 600,66
+mask = 1
+scalestart = .92,1
+
+[BG Столбы со свитками]
+type = normal
+spriteno = 0,7
+delta = .83,1
+mask = 1
+scalestart = .90,1

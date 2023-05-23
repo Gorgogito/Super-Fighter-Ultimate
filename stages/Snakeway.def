@@ -1,0 +1,392 @@
+;STAGE BY TAHATTUS
+
+[info]
+name = "Snakeway New"
+
+; CAMERA!!!
+[camera]
+startx = 0
+starty = 0
+boundleft = -700
+boundright = 700
+boundhigh = -500
+boundlow = 0
+verticalfollow = 1
+floortension = 100
+tension = 50
+
+[playerinfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound  = -1000
+rightbound =  1000
+topbound  = 0
+botbound  = 0
+
+[scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[bound]
+screenleft = 30
+screenright = 30
+
+[stageinfo]
+zoffset   = 190
+autoturn  = 1
+resetbg  = 1
+
+[shadow]
+color = 88,88,88
+yscale = -.2
+reflect = 0
+fade.range = -400,-100
+
+[Music]
+bgmusic = sound\ssj3.mp3
+bgvolume = 255
+
+[StageInfo]
+zoffset = 0
+zoffsetlink = 1
+autoturn = 1
+resetBG = 0
+
+
+;---------------------
+
+; GRÁFICOS
+
+[bgdef]
+spr = Snakeway.sff
+debugbg = 0
+
+;========================================
+;O céu
+;========================================
+
+[bg ceu]
+type  = normal
+spriteno = 1,0
+start = 0,240
+mask = 1
+trans = none
+layerno = 0
+tile = 0, 0
+delta = 0.05, .9
+
+[bg ceu]
+type  = normal
+spriteno = 1,1
+start = 0,240
+mask = 1
+trans = none
+layerno = 0
+tile = 0, 0
+delta = 0.05, .9
+
+[bg ceu]
+type  = normal
+spriteno = 1,2
+start = 0,240
+mask = 1
+trans = none
+layerno = 0
+delta = 0.05, .9
+tile = 0, 0
+
+[bg ceu]
+type  = normal
+spriteno = 1,3
+start = 0,240
+mask = 1
+trans = none
+layerno = 0
+tile = 0, 0
+delta = 0.05, .9
+
+;========================================
+;Nuvens
+;========================================
+
+[bg nuvem 1]
+type=normal
+spriteno = 2,1
+start = 0, 180
+delta = 0.05, .9
+scale = .8,.8
+velocity = 0.2
+mask = 1
+layerno = 0
+tilespacing = 160
+tile = 1, 0
+trans = add
+
+[bg nuvem 2]
+type=normal
+spriteno = 2,2
+start = 120, 200
+delta = 0.05, .9
+scale = .8,.8
+velocity = 0.3
+mask = 1
+layerno = 0
+tilespacing = 180
+tile = 1, 0
+trans = add
+
+
+
+[bg nuvem 3]
+type=normal
+spriteno = 2,2
+start = 220, 200
+delta = 0.05, .9
+scale = .8,.8
+velocity = 0.1
+mask = 1
+layerno = 0
+tilespacing = 80
+tile = 1, 0
+trans = add
+
+
+
+[bg nuvem 1]
+type=normal
+spriteno = 2,1
+start = 0, -280
+delta = 0.05, .7
+scale = .8,.8
+velocity = 0.2
+mask = 1
+layerno = 0
+tilespacing = 160
+tile = 1, 0
+trans = add
+
+[bg nuvem 2]
+type=normal
+spriteno = 2,2
+start = 120, -310
+delta = 0.05, .7
+scale = .8,.8
+velocity = 0.3
+mask = 1
+layerno = 0
+tilespacing = 180
+tile = 1, 0
+trans = add
+
+[bg nuvem 3]
+type=normal
+spriteno = 2,2
+start = 120, -370
+delta = 0.05, .7
+scale = .8,.8
+velocity = 0.2
+mask = 1
+layerno = 0
+tilespacing = 80
+tile = 1, 0
+trans = add
+
+[bg nuvem 3]
+type=normal
+spriteno = 2,2
+start = 220, -260
+delta = 0.05, .7
+scale = .8,.8
+velocity = 0.1
+mask = 1
+layerno = 0
+tilespacing = 80
+tile = 1, 0
+trans = add
+
+;========================================
+;kaioh
+;========================================
+[bg planetinha]
+type= normal
+spriteno = 6,0
+start = 0,-240
+mask = 1
+delta = 0.05, .7
+trans = none
+layerno = 0
+tile = 0, 0
+
+[bg nuvem 1]
+type=normal
+spriteno = 2,1
+start = 100, -180
+delta = 0.05, .7
+scale = .8,.8
+velocity = 0.2
+mask = 1
+layerno = 0
+tilespacing = 160
+tile = 1, 0
+trans = add
+;========================================
+;Caminho
+;========================================
+
+
+[bg caminho horroroso]
+type= normal
+spriteno = 4,0
+start = 0,240
+mask = 1
+delta = 0.05, .7
+trans = none
+layerno = 0
+tile = 0, 0
+
+;========================================
+;Nuvens
+;========================================
+
+[bg nuvem 1]
+type=normal
+spriteno = 2,1
+start = -20, 180
+delta = 0.1, .7
+scale = .8,.8
+velocity = 0.1
+mask = 1
+layerno = 0
+tilespacing = 160
+tile = 1, 0
+trans = add
+
+[bg nuvem 2]
+type=normal
+spriteno = 2,2
+start = 100, 200
+delta = 0.1, .7
+scale = .8,.8
+velocity = 0.1
+mask = 1
+layerno = 0
+tilespacing = 180
+tile = 1, 0
+trans = add
+
+
+
+[bg nuvem 3]
+type=normal
+spriteno = 2,2
+start = 250, 200
+delta = 0.1, .7
+scale = .8,.8
+velocity = 0.1
+mask = 1
+layerno = 0
+tilespacing = 80
+tile = 1, 0
+trans = add
+
+
+[bg nuvem 3 estratégica]
+type=normal
+spriteno = 2,2
+start = -100, 0
+delta = 0.05, .7
+scale = .8,.8
+mask = 1
+layerno = 0
+trans = add
+;========================================
+;Caminho
+;========================================
+
+
+[bg esqueleto]
+type= normal
+spriteno = 0,0
+start = 0,240
+mask = 1
+trans = none
+layerno = 0
+tile = 1, 0
+xscale = -0.078,-0.23
+
+
+
+[bg pavimento]
+type= parallax
+spriteno = 0,1
+start = 0,240
+mask = 1
+trans = none
+layerno = 0
+tile = 0, 0
+delta = 0.8,1
+xscale = 0.18,0.23
+
+[bg escama frente]
+type= normal
+spriteno = 3,0
+start = 0,240
+mask = 1
+trans = none
+layerno = 1
+tile = 1, 0
+delta = 1, 1
+
+[bg escama tras]
+type= normal
+spriteno = 3,1
+start = 0,240
+mask = 1
+delta = 0.8, 1
+trans = none
+layerno = 0
+tile = 1, 0
+
+[bg escama tras]
+type= normal
+spriteno = 5,0
+start = 0,240
+mask = 1
+delta = 1, 1
+trans = none
+layerno = 0
+tile = 1, 0
+
+[bg nuvem 2]
+type=normal
+spriteno = 2,2
+start = 50, 250
+delta = 1, 1
+scale = .8,.8
+velocity = 0.5
+mask = 1
+layerno = 1
+tilespacing = 130
+tile = 1, 0
+trans = add
+
+[bg nuvem 2]
+type=normal
+spriteno = 2,1
+start = 180, 250
+delta = 1, 1
+scale = .8,.8
+velocity = 0.5
+mask = 1
+layerno = 1
+tilespacing = 130
+tile = 1, 0
+trans = add

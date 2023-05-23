@@ -1,0 +1,1172 @@
+;Stage: "Cross Over"              -            feito por/by: DG
+; *e-mail:
+;  .dg_mugen@yahoo.com.br
+; *site:
+;  .http://dgmugen.cjb.net
+;--------------------------------------------------------------
+
+[Info]
+name = "Cross Over"
+author = "DG"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -296
+boundright = 296
+boundhigh = -430
+boundlow = 0
+verticalfollow = .97 ;.68
+floortension = 75    ;0
+tension = 50
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound = -1000
+rightbound = 1000
+topbound = 0
+botbound = 0
+
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 217
+zoffsetlink = 70
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+color = 92,92,92
+yscale = .2
+reflect = 0
+
+[Music]
+bgmusic = sound/cross.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/crossoverDG.sff
+debugbg = 0
+
+
+[BG Background]       		
+type = anim
+id = 1
+actionno = 1
+start = 0, 0
+delta = .22, .63
+mask = 1
+
+[BG Little Stone 4]       		
+type = anim
+id = 13
+actionno = 13
+start = 0, 0
+delta = .58, .65
+mask = 1
+
+[BG Little Stone 5]       		
+type = anim
+id = 14
+actionno = 14
+start = 0, 0
+delta = .58, .65
+mask = 1
+
+[BG Little Stone 6]       		
+type = anim
+id = 15
+actionno = 15
+start = 0, 0
+delta = .58, .65
+mask = 1
+
+[BG Little Stone 7]       		
+type = anim
+id = 16
+actionno = 16
+start = 0, 0
+delta = .58, .65
+mask = 1
+
+[BG Little Stone 8]       		
+type = anim
+id = 17
+actionno = 17
+start = 0, 0
+delta = .58, .65
+mask = 1
+
+[BG Little Stone 9]       		
+type = anim
+id = 18
+actionno = 18
+start = 0, 0
+delta = .58, .65
+mask = 1
+
+[BG Little Stone 10]       		
+type = anim
+id = 19
+actionno = 19
+start = 0, 0
+delta = .58, .65
+mask = 1
+
+[BG Little Stone 11]       		
+type = anim
+id = 20
+actionno = 20
+start = 0, 0
+delta = .58, .65
+mask = 1
+
+[BG Stone]       		
+type = anim
+id = 2
+actionno = 2
+start = 0, 0
+delta = .59, .66
+mask = 1
+
+[BG Stone 2]       		
+type = anim
+id = 3
+actionno = 3
+start = 0, 0
+delta = .63, .66
+mask = 1
+
+[BG Stone 3]       		
+type = anim
+id = 4
+actionno = 4
+start = 0, 0
+delta = .63, .66
+mask = 1
+
+[BG Floor Back]
+type = normal
+id = 5
+spriteno = 10, 1
+start = 0, 130
+delta = .75, .78
+mask = 1
+
+[BG Little Stone]       		
+type = anim
+id = 7
+actionno = 7
+start = 0, 0
+delta = .58, .65
+mask = 1
+
+[BG Little Stone 2]       		
+type = anim
+id = 8
+actionno = 8
+start = 0, 0
+delta = .58, .65
+mask = 1
+
+[BG Little Stone 3]       		
+type = anim
+id = 9
+actionno = 9
+start = 0, 0
+delta = .58, .65
+mask = 1
+
+[BG Floor]
+type = normal
+id = 6
+spriteno = 10, 0
+start = 0, 166
+delta = 1, 1
+mask = 1
+
+[BG Floor Up 2]
+type = anim
+id = 11
+actionno = 11
+start = 0, 0
+delta = .85, .78
+mask = 1
+
+[BG Floor Up]
+type = anim
+id = 10
+actionno = 10
+start = 0, 0
+delta = .55, .58
+mask = 1
+
+[BG Floor Up 3]
+type = anim
+id = 12
+actionno = 12
+start = 0, 0
+delta = .45, .45
+mask = 1
+
+;----------------------
+[BG Evshake] ;code by VIB
+type = dummy
+start = 0, 0
+id = 70
+
+[BGCtrlDef Evshake]
+looptime = 250 
+CtrlID = 6,70
+
+[BGCtrl Start Shake]
+type = SinY
+time = 0 
+value = 2,3,0   ;amplitude, frequenci, start position
+
+[BGCtrl Stop Shake]
+type = SinY
+time = 40 
+value = 0,0,0
+;-----------------------
+
+
+
+;----------------------
+;----------------------
+;----------------------
+[BGCtrlDef 1]
+CtrlID = 1
+
+[BGCtrl 1.2]
+type = Enable
+time = 0
+value = 1
+
+[BGCtrl 1.3] 
+type = PosSet
+time = 0
+x = -15 
+y = -145;-120;-80 
+
+[Begin Action 1]
+0,0, 0,0, 6;6
+0,1, 0,0, 5;6
+0,2, 0,0, 6;6
+0,3, 0,0, 5;6
+0,4, 0,0, 6;6
+0,5, 0,0, 5;6
+0,6, 0,0, 6;6
+0,7, 0,0, 5;6
+
+;----------------------
+[BGCtrlDef 2]
+CtrlID = 2
+looptime = 200
+
+[BGCtrl 2.2]
+type = Enable
+time = 0
+value = 1
+
+[BGCtrl 2.3] 
+type = PosSet
+time = 0
+x = -125 
+y = 150
+
+[BGCtrl 2.4] 
+type = Velset
+time = 1
+y = -.5
+
+[BGCtrl 2.5]
+type = sinX
+value = 2, 5
+
+[BGCtrl 2.6]
+type = Enable
+time = 124
+value = 0
+
+[Begin Action 2]
+11,0, 0,0, 98
+11,1, 0,0, 4
+11,2, 0,0, 4
+11,3, 0,0, 5
+11,4, 0,0, 6
+11,5, 0,0, 7
+
+;----------------------
+[BGCtrlDef 3]
+CtrlID = 3
+looptime = 225
+
+[BGCtrl 3.2]
+type = Enable
+time = 0
+value = 1
+
+[BGCtrl 3.3] 
+type = PosSet
+time = 0
+x = 325 
+y = 155
+
+[BGCtrl 3.4] 
+type = Velset
+time = 1
+y = -.5
+
+[BGCtrl 3.5]
+type = sinX
+value = 2, 5
+
+[BGCtrl 3.6]
+type = Enable
+time = 124
+value = 0
+
+[Begin Action 3]
+11,0, 0,0, 96, H
+11,1, 0,0, 5, H
+11,2, 0,0, 4, H
+11,3, 0,0, 5, H
+11,4, 0,0, 7, H
+11,5, 0,0, 7, H
+
+;----------------------
+[BGCtrlDef 4]
+CtrlID = 4
+looptime = 225
+
+[BGCtrl 4.2]
+type = Enable
+time = 0
+value = 1
+
+[BGCtrl 4.3] 
+type = PosSet
+time = 0
+x = -195 
+y = 150
+
+[BGCtrl 4.4] 
+type = Velset
+time = 1
+y = -.5
+
+[BGCtrl 4.5]
+type = sinX
+value = 2, 5
+
+[BGCtrl 4.6]
+type = Enable
+time = 124
+value = 0
+
+[Begin Action 4]
+11,0, 0,0, 93, H
+11,1, 0,0, 7, H
+11,2, 0,0, 5, H
+11,3, 0,0, 5, H
+11,4, 0,0, 7, H
+11,5, 0,0, 7, H
+
+;----------------------
+[BGCtrlDef 5]
+CtrlID = 5
+
+[BGCtrl 5.2]
+type = SinY
+value = 1, 3
+
+;----------------------
+[BGCtrlDef 7]
+CtrlID = 7
+looptime = 250
+
+[BGCtrl 7.2]
+type = Enable
+time = 0
+value = 1
+
+[BGCtrl 7.3] 
+type = PosSet
+time = 0
+x = -195 
+y = 225
+
+[BGCtrl 7.4] 
+type = Velset
+time = 1
+x = .7
+y = -2.4
+
+[BGCtrl 7.5]
+type = Enable
+time = 81
+value = 0
+
+[Begin Action 7]
+12,0, 0,0, 2 
+12,1, 0,0, 2 
+12,2, 0,0, 2 
+12,3, 0,0, 2
+12,4, 0,0, 2
+12,5, 0,0, 2
+12,6, 0,0, 2 
+12,7, 0,0, 2 
+12,8, 0,0, 2 
+12,9, 0,0, 2
+12,10, 0,0, 2
+12,11, 0,0, 2
+13,0, 0,0, 2 
+13,1, 0,0, 2 
+13,2, 0,0, 2 
+13,3, 0,0, 2
+13,4, 0,0, 2
+13,5, 0,0, 2
+13,6, 0,0, 2 
+13,7, 0,0, 2 
+13,8, 0,0, 2 
+13,9, 0,0, 2
+13,10, 0,0, 2
+13,11, 0,0, 2
+14,0, 0,0, 2 
+14,1, 0,0, 2 
+14,2, 0,0, 2 
+14,3, 0,0, 2
+14,4, 0,0, 2
+14,5, 0,0, 2
+14,6, 0,0, 2 
+14,7, 0,0, 2 
+14,8, 0,0, 2 
+14,9, 0,0, 2
+14,10, 0,0, 2
+14,11, 0,0, 2
+15,0, 0,0, 9
+
+;----------------------
+[BGCtrlDef 8]
+CtrlID = 8
+looptime = 250
+
+[BGCtrl 8.2]
+type = Enable
+time = 0
+value = 1
+
+[BGCtrl 8.3] 
+type = PosSet
+time = 0
+x = 200 
+y = 225
+
+[BGCtrl 8.4] 
+type = Velset
+time = 1
+x = -.4
+y = -2.4
+
+[BGCtrl 8.5]
+type = Enable
+time = 80
+value = 0
+
+[Begin Action 8]
+12,0, 0,0, 2 
+12,1, 0,0, 2 
+12,2, 0,0, 2 
+12,3, 0,0, 2
+12,4, 0,0, 2
+12,5, 0,0, 2
+12,6, 0,0, 2 
+12,7, 0,0, 2 
+12,8, 0,0, 2 
+12,9, 0,0, 2
+12,10, 0,0, 2
+12,11, 0,0, 2
+13,0, 0,0, 2 
+13,1, 0,0, 2 
+13,2, 0,0, 2 
+13,3, 0,0, 2
+13,4, 0,0, 2
+13,5, 0,0, 2
+13,6, 0,0, 2 
+13,7, 0,0, 2 
+13,8, 0,0, 2 
+13,9, 0,0, 2
+13,10, 0,0, 2
+13,11, 0,0, 2
+14,0, 0,0, 2 
+14,1, 0,0, 2 
+14,2, 0,0, 2 
+14,3, 0,0, 2
+14,4, 0,0, 2
+14,5, 0,0, 2
+14,6, 0,0, 2 
+14,7, 0,0, 2 
+14,8, 0,0, 2 
+14,9, 0,0, 2
+14,10, 0,0, 2
+14,11, 0,0, 2
+15,0, 0,0, 8
+
+;----------------------
+[BGCtrlDef 9]
+CtrlID = 9
+looptime = 250
+
+[BGCtrl 9.2]
+type = Enable
+time = 0
+value = 1
+
+[BGCtrl 9.3] 
+type = PosSet
+time = 0
+x = 0 
+y = 225
+
+[BGCtrl 9.4] 
+type = Velset
+time = 1
+x = -.1
+y = -2.4
+
+[BGCtrl 9.5]
+type = Enable
+time = 81
+value = 0
+
+[Begin Action 9]
+12,0, 0,0, 2 
+12,1, 0,0, 2 
+12,2, 0,0, 2 
+12,3, 0,0, 2
+12,4, 0,0, 2
+12,5, 0,0, 2
+12,6, 0,0, 2 
+12,7, 0,0, 2 
+12,8, 0,0, 2 
+12,9, 0,0, 2
+12,10, 0,0, 2
+12,11, 0,0, 2
+13,0, 0,0, 2 
+13,1, 0,0, 2 
+13,2, 0,0, 2 
+13,3, 0,0, 2
+13,4, 0,0, 2
+13,5, 0,0, 2
+13,6, 0,0, 2 
+13,7, 0,0, 2 
+13,8, 0,0, 2 
+13,9, 0,0, 2
+13,10, 0,0, 2
+13,11, 0,0, 2
+14,0, 0,0, 2 
+14,1, 0,0, 2 
+14,2, 0,0, 2 
+14,3, 0,0, 2
+14,4, 0,0, 2
+14,5, 0,0, 2
+14,6, 0,0, 2 
+14,7, 0,0, 2 
+14,8, 0,0, 2 
+14,9, 0,0, 2
+14,10, 0,0, 2
+14,11, 0,0, 2
+15,0, 0,0, 9
+
+;----------------------
+[BGCtrlDef 10]
+CtrlID = 10
+
+[BGCtrl 10.2] 
+type = PosSet
+time = 0
+x = 0 
+y = -120
+
+[BGCtrl 5.2]
+type = SinY
+value = 1, 3
+
+[Begin Action 10]
+10,0, 0,0, 1, V 
+
+;----------------------
+[BGCtrlDef 11]
+CtrlID = 11
+
+[BGCtrl 11.2] 
+type = PosSet
+time = 0
+x = 0 
+y = -146
+
+[BGCtrl 11.3]
+type = SinY
+value = 1, 4
+
+[Begin Action 11]
+10,1, 0,0, 1, V 
+
+;----------------------
+[BGCtrlDef 12]
+CtrlID = 12
+
+[BGCtrl 12.2] 
+type = PosSet
+time = 0
+x = 0 
+y = -124
+
+[Begin Action 12]
+10,2, 0,0, 1, V 
+
+;----------------------
+[BGCtrlDef 13]
+CtrlID = 13
+looptime = 130
+
+[BGCtrl 13.2]
+type = Enable
+time = 0
+value = 1
+
+[BGCtrl 13.3] 
+type = PosSet
+time = 0
+x = 0 
+y = 200
+
+[BGCtrl 13.4] 
+type = Velset
+time = 1
+x = -.1
+y = -2.4
+
+[BGCtrl 13.5]
+type = Enable
+time = 81
+value = 0
+
+[Begin Action 13]
+12,0, 0,0, 2 
+12,1, 0,0, 2 
+12,2, 0,0, 2 
+12,3, 0,0, 2
+12,4, 0,0, 2
+12,5, 0,0, 2
+12,6, 0,0, 2 
+12,7, 0,0, 2 
+12,8, 0,0, 2 
+12,9, 0,0, 2
+12,10, 0,0, 2
+12,11, 0,0, 2
+13,0, 0,0, 2 
+13,1, 0,0, 2 
+13,2, 0,0, 2 
+13,3, 0,0, 2
+13,4, 0,0, 2
+13,5, 0,0, 2
+13,6, 0,0, 2 
+13,7, 0,0, 2 
+13,8, 0,0, 2 
+13,9, 0,0, 2
+13,10, 0,0, 2
+13,11, 0,0, 2
+14,0, 0,0, 2 
+14,1, 0,0, 2 
+14,2, 0,0, 2 
+14,3, 0,0, 2
+14,4, 0,0, 2
+14,5, 0,0, 2
+14,6, 0,0, 2 
+14,7, 0,0, 2 
+14,8, 0,0, 2 
+14,9, 0,0, 2
+14,10, 0,0, 2
+14,11, 0,0, 2
+15,0, 0,0, 9
+
+;----------------------
+[BGCtrlDef 14]
+CtrlID = 14
+looptime = 110
+
+[BGCtrl 14.2]
+type = Enable
+time = 0
+value = 1
+
+[BGCtrl 14.3] 
+type = PosSet
+time = 0
+x = -300 
+y = 200
+
+[BGCtrl 14.4] 
+type = Velset
+time = 1
+x = .8
+y = -2.4
+
+[BGCtrl 14.5]
+type = Enable
+time = 81
+value = 0
+
+[Begin Action 14]
+12,0, 0,0, 2 
+12,1, 0,0, 2 
+12,2, 0,0, 2 
+12,3, 0,0, 2
+12,4, 0,0, 2
+12,5, 0,0, 2
+12,6, 0,0, 2 
+12,7, 0,0, 2 
+12,8, 0,0, 2 
+12,9, 0,0, 2
+12,10, 0,0, 2
+12,11, 0,0, 2
+13,0, 0,0, 2 
+13,1, 0,0, 2 
+13,2, 0,0, 2 
+13,3, 0,0, 2
+13,4, 0,0, 2
+13,5, 0,0, 2
+13,6, 0,0, 2 
+13,7, 0,0, 2 
+13,8, 0,0, 2 
+13,9, 0,0, 2
+13,10, 0,0, 2
+13,11, 0,0, 2
+14,0, 0,0, 2 
+14,1, 0,0, 2 
+14,2, 0,0, 2 
+14,3, 0,0, 2
+14,4, 0,0, 2
+14,5, 0,0, 2
+14,6, 0,0, 2 
+14,7, 0,0, 2 
+14,8, 0,0, 2 
+14,9, 0,0, 2
+14,10, 0,0, 2
+14,11, 0,0, 2
+15,0, 0,0, 9
+
+;----------------------
+[BGCtrlDef 15]
+CtrlID = 15
+looptime = 150
+
+[BGCtrl 15.2]
+type = Enable
+time = 0
+value = 1
+
+[BGCtrl 15.3] 
+type = PosSet
+time = 0
+x = 300 
+y = 200
+
+[BGCtrl 15.4] 
+type = Velset
+time = 1
+x = -.8
+y = -2.4
+
+[BGCtrl 15.5]
+type = Enable
+time = 81
+value = 0
+
+[Begin Action 15]
+12,0, 0,0, 2 
+12,1, 0,0, 2 
+12,2, 0,0, 2 
+12,3, 0,0, 2
+12,4, 0,0, 2
+12,5, 0,0, 2
+12,6, 0,0, 2 
+12,7, 0,0, 2 
+12,8, 0,0, 2 
+12,9, 0,0, 2
+12,10, 0,0, 2
+12,11, 0,0, 2
+13,0, 0,0, 2 
+13,1, 0,0, 2 
+13,2, 0,0, 2 
+13,3, 0,0, 2
+13,4, 0,0, 2
+13,5, 0,0, 2
+13,6, 0,0, 2 
+13,7, 0,0, 2 
+13,8, 0,0, 2 
+13,9, 0,0, 2
+13,10, 0,0, 2
+13,11, 0,0, 2
+14,0, 0,0, 2 
+14,1, 0,0, 2 
+14,2, 0,0, 2 
+14,3, 0,0, 2
+14,4, 0,0, 2
+14,5, 0,0, 2
+14,6, 0,0, 2 
+14,7, 0,0, 2 
+14,8, 0,0, 2 
+14,9, 0,0, 2
+14,10, 0,0, 2
+14,11, 0,0, 2
+15,0, 0,0, 9
+
+;----------------------
+[BGCtrlDef 16]
+CtrlID = 16
+looptime = 90
+
+[BGCtrl 16.2]
+type = Enable
+time = 0
+value = 1
+
+[BGCtrl 16.3] 
+type = PosSet
+time = 0
+x = 150 
+y = 200
+
+[BGCtrl 16.4] 
+type = Velset
+time = 1
+x = -.5
+y = -2.4
+
+[BGCtrl 16.5]
+type = Enable
+time = 81
+value = 0
+
+[Begin Action 16]
+12,0, 0,0, 2 
+12,1, 0,0, 2 
+12,2, 0,0, 2 
+12,3, 0,0, 2
+12,4, 0,0, 2
+12,5, 0,0, 2
+12,6, 0,0, 2 
+12,7, 0,0, 2 
+12,8, 0,0, 2 
+12,9, 0,0, 2
+12,10, 0,0, 2
+12,11, 0,0, 2
+13,0, 0,0, 2 
+13,1, 0,0, 2 
+13,2, 0,0, 2 
+13,3, 0,0, 2
+13,4, 0,0, 2
+13,5, 0,0, 2
+13,6, 0,0, 2 
+13,7, 0,0, 2 
+13,8, 0,0, 2 
+13,9, 0,0, 2
+13,10, 0,0, 2
+13,11, 0,0, 2
+14,0, 0,0, 2 
+14,1, 0,0, 2 
+14,2, 0,0, 2 
+14,3, 0,0, 2
+14,4, 0,0, 2
+14,5, 0,0, 2
+14,6, 0,0, 2 
+14,7, 0,0, 2 
+14,8, 0,0, 2 
+14,9, 0,0, 2
+14,10, 0,0, 2
+14,11, 0,0, 2
+15,0, 0,0, 9
+
+;----------------------
+[BGCtrlDef 17]
+CtrlID = 17
+looptime = 100
+
+[BGCtrl 17.2]
+type = Enable
+time = 0
+value = 1
+
+[BGCtrl 17.3] 
+type = PosSet
+time = 0
+x = 0 
+y = -200
+
+[BGCtrl 17.4] 
+type = Velset
+time = 1
+x = -.1
+y = 2.4
+
+[BGCtrl 17.5]
+type = Enable
+time = 81
+value = 0
+
+[Begin Action 17]
+12,0, 0,0, 2, V 
+12,1, 0,0, 2, V 
+12,2, 0,0, 2, V 
+12,3, 0,0, 2, V
+12,4, 0,0, 2, V
+12,5, 0,0, 2, V
+12,6, 0,0, 2, V
+12,7, 0,0, 2, V 
+12,8, 0,0, 2, V 
+12,9, 0,0, 2, V
+12,10, 0,0, 2, V
+12,11, 0,0, 2, V
+13,0, 0,0, 2, V 
+13,1, 0,0, 2, V 
+13,2, 0,0, 2, V 
+13,3, 0,0, 2, V
+13,4, 0,0, 2, V
+13,5, 0,0, 2, V
+13,6, 0,0, 2, V 
+13,7, 0,0, 2, V 
+13,8, 0,0, 2, V 
+13,9, 0,0, 2, V
+13,10, 0,0, 2, V
+13,11, 0,0, 2, V
+14,0, 0,0, 2, V 
+14,1, 0,0, 2, V 
+14,2, 0,0, 2, V 
+14,3, 0,0, 2, V
+14,4, 0,0, 2, V
+14,5, 0,0, 2, V
+14,6, 0,0, 2, V 
+14,7, 0,0, 2, V 
+14,8, 0,0, 2, V 
+14,9, 0,0, 2, V
+14,10, 0,0, 2, V
+14,11, 0,0, 2, V
+15,0, 0,0, 9, V
+
+;----------------------
+[BGCtrlDef 18]
+CtrlID = 18
+looptime = 90
+
+[BGCtrl 18.2]
+type = Enable
+time = 0
+value = 1
+
+[BGCtrl 18.3] 
+type = PosSet
+time = 0
+x = -300 
+y = -200
+
+[BGCtrl 18.4] 
+type = Velset
+time = 1
+x = .8
+y = 2.4
+
+[BGCtrl 18.5]
+type = Enable
+time = 81
+value = 0
+
+[Begin Action 18]
+12,0, 0,0, 2, V 
+12,1, 0,0, 2, V 
+12,2, 0,0, 2, V 
+12,3, 0,0, 2, V
+12,4, 0,0, 2, V
+12,5, 0,0, 2, V
+12,6, 0,0, 2, V
+12,7, 0,0, 2, V 
+12,8, 0,0, 2, V 
+12,9, 0,0, 2, V
+12,10, 0,0, 2, V
+12,11, 0,0, 2, V
+13,0, 0,0, 2, V 
+13,1, 0,0, 2, V 
+13,2, 0,0, 2, V 
+13,3, 0,0, 2, V
+13,4, 0,0, 2, V
+13,5, 0,0, 2, V
+13,6, 0,0, 2, V 
+13,7, 0,0, 2, V 
+13,8, 0,0, 2, V 
+13,9, 0,0, 2, V
+13,10, 0,0, 2, V
+13,11, 0,0, 2, V
+14,0, 0,0, 2, V 
+14,1, 0,0, 2, V 
+14,2, 0,0, 2, V 
+14,3, 0,0, 2, V
+14,4, 0,0, 2, V
+14,5, 0,0, 2, V
+14,6, 0,0, 2, V 
+14,7, 0,0, 2, V 
+14,8, 0,0, 2, V 
+14,9, 0,0, 2, V
+14,10, 0,0, 2, V
+14,11, 0,0, 2, V
+15,0, 0,0, 9, V
+
+;----------------------
+[BGCtrlDef 19]
+CtrlID = 19
+looptime = 110
+
+[BGCtrl 19.2]
+type = Enable
+time = 0
+value = 1
+
+[BGCtrl 19.3] 
+type = PosSet
+time = 0
+x = 300 
+y = -200
+
+[BGCtrl 19.4] 
+type = Velset
+time = 1
+x = -.8
+y = 2.4
+
+[BGCtrl 19.5]
+type = Enable
+time = 81
+value = 0
+
+[Begin Action 19]
+12,0, 0,0, 2, V 
+12,1, 0,0, 2, V 
+12,2, 0,0, 2, V 
+12,3, 0,0, 2, V
+12,4, 0,0, 2, V
+12,5, 0,0, 2, V
+12,6, 0,0, 2, V
+12,7, 0,0, 2, V 
+12,8, 0,0, 2, V 
+12,9, 0,0, 2, V
+12,10, 0,0, 2, V
+12,11, 0,0, 2, V
+13,0, 0,0, 2, V 
+13,1, 0,0, 2, V 
+13,2, 0,0, 2, V 
+13,3, 0,0, 2, V
+13,4, 0,0, 2, V
+13,5, 0,0, 2, V
+13,6, 0,0, 2, V 
+13,7, 0,0, 2, V 
+13,8, 0,0, 2, V 
+13,9, 0,0, 2, V
+13,10, 0,0, 2, V
+13,11, 0,0, 2, V
+14,0, 0,0, 2, V 
+14,1, 0,0, 2, V 
+14,2, 0,0, 2, V 
+14,3, 0,0, 2, V
+14,4, 0,0, 2, V
+14,5, 0,0, 2, V
+14,6, 0,0, 2, V 
+14,7, 0,0, 2, V 
+14,8, 0,0, 2, V 
+14,9, 0,0, 2, V
+14,10, 0,0, 2, V
+14,11, 0,0, 2, V
+15,0, 0,0, 9, V
+
+;----------------------
+[BGCtrlDef 20]
+CtrlID = 20
+looptime = 85
+
+[BGCtrl 20.2]
+type = Enable
+time = 0
+value = 1
+
+[BGCtrl 20.3] 
+type = PosSet
+time = 0
+x = 150 
+y = -200
+
+[BGCtrl 20.4] 
+type = Velset
+time = 1
+x = -.5
+y = 2.4
+
+[BGCtrl 20.5]
+type = Enable
+time = 81
+value = 0
+
+[Begin Action 20]
+12,0, 0,0, 2, V 
+12,1, 0,0, 2, V 
+12,2, 0,0, 2, V 
+12,3, 0,0, 2, V
+12,4, 0,0, 2, V
+12,5, 0,0, 2, V
+12,6, 0,0, 2, V
+12,7, 0,0, 2, V 
+12,8, 0,0, 2, V 
+12,9, 0,0, 2, V
+12,10, 0,0, 2, V
+12,11, 0,0, 2, V
+13,0, 0,0, 2, V 
+13,1, 0,0, 2, V 
+13,2, 0,0, 2, V 
+13,3, 0,0, 2, V
+13,4, 0,0, 2, V
+13,5, 0,0, 2, V
+13,6, 0,0, 2, V 
+13,7, 0,0, 2, V 
+13,8, 0,0, 2, V 
+13,9, 0,0, 2, V
+13,10, 0,0, 2, V
+13,11, 0,0, 2, V
+14,0, 0,0, 2, V 
+14,1, 0,0, 2, V 
+14,2, 0,0, 2, V 
+14,3, 0,0, 2, V
+14,4, 0,0, 2, V
+14,5, 0,0, 2, V
+14,6, 0,0, 2, V 
+14,7, 0,0, 2, V 
+14,8, 0,0, 2, V 
+14,9, 0,0, 2, V
+14,10, 0,0, 2, V
+14,11, 0,0, 2, V
+15,0, 0,0, 9, V

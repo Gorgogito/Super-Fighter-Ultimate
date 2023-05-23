@@ -1,0 +1,274 @@
+;________________________________________________________
+; Stage   : Lin Kuei Temple X
+; Author  : RU Design Producciones
+; Youtube : RU Design ProduccionesTM
+; Version : 1.1
+;________________________________________________________
+
+[Info]
+name = "L1n_Kue1_X"
+displayname = "Lin Kuei Temple MKX"
+mugenversion = 1.1
+;________________________________________________________
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -390
+boundright = 390
+boundhigh = -75
+boundlow =  0;-10
+verticalfollow = .2
+floortension = 30
+tension = 100
+startzoom = 1
+zoomin = 1
+zoomout = 0.77
+
+
+;________________________________________________________
+
+[PlayerInfo]
+p1startx = -98
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 96
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+;________________________________________________________
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+;________________________________________________________
+
+[Bound]
+screenleft = 40
+screenright = 40
+;________________________________________________________
+
+[StageInfo]
+zoffset = 233
+autoturn = 1
+resetBG = 1
+HiRes = 1
+localcoord = 400,254
+xscale = 0.6
+yscale = 0.6
+;________________________________________________________
+
+[Shadow]
+intensity = 0
+;intensity = 92
+;yscale = .2;-.2
+
+[Reflection]
+intensity = 120
+yscale = -.2
+;________________________________________________________
+
+[Music]
+bgmusic = sound/Other/Lin Kuei Temple.ogg
+;bgmvolume = 140
+bgmloopstart = 1628355
+bgmloopend = -1
+;________________________________________________________
+
+[BGdef]
+spr = LinkueitempleX.sff
+debugbg = 0
+;________________________________________________________
+
+[BG 1]  ;sky
+type  = normal
+start = -16,-11.5
+spriteno = 0,1
+delta = 1.1, 2
+mask = 0
+
+[BG 1]  ;mountains
+type  = normal
+start = -16,-11.5
+spriteno = 9,0
+delta = 1.3, 2.2
+mask = 1
+
+[BG 1]  ;backfloor
+type  = normal
+start = -16,-11.5
+spriteno = 45,0
+delta = 1.6, 2.2
+mask = 1
+
+[BG 1]  ;FrontFloor
+type  = normal
+start = -16,-11.5
+spriteno = 1,0
+delta = 1.6, 2.2
+mask = 1
+
+[BG 1]  ;Temple
+type  = normal
+start = -16,-11.5
+spriteno = 60,0
+delta = 1.6, 2.2
+mask = 1
+
+[BG 1]  ;Statues
+type  = normal
+start = -16,-11.5
+spriteno = 66,0
+delta = 1.6, 2.2
+mask = 1
+
+[BG 1]  ;tree
+type  = normal
+start = -16,-11.5
+spriteno = 81,8
+delta = 1.6, 2.2
+mask = 1
+
+[BG Clouds]
+type  		= normal
+spriteno 	= 79,0
+start 		= 0,0
+tile 		= 1,0
+delta           = 1.6, 2.2
+mask     	= 1
+trans 		= add
+velocity    = 0.5,0
+
+[BG 1]  ;GrandMaster
+type  = normal
+start = -16,-11.5
+spriteno = 80,0
+delta = 1.6, 2.2
+mask = 1
+
+[BG 1]  ;stone
+type  = normal
+start = -16,-11.5
+spriteno = 8, 0
+layerno = 1
+delta = 1.6, 2.2
+mask = 1
+scalestart = 1,1.03
+
+[BG fire]
+type = anim
+actionno = 555
+delta = 1.6, 2.2
+start = 0,-2
+
+[BG fire]
+type = anim
+actionno = 555
+delta = 1.6, 2.2
+start = -244,-2
+
+[BG fire]
+type = anim
+actionno = 555
+delta = 1.6, 2.2
+start = -808,25
+
+[Begin Action 555]
+Loopstart
+555, 0, 0, 0, 1, ,A
+555, 1, 0, 0, 1, ,A
+555, 2, 0, 0, 1, ,A
+555, 3, 0, 0, 1, ,A
+555, 4, 0, 0, 1, ,A
+555, 5, 0, 0, 1, ,A
+555, 6, 0, 0, 1, ,A
+555, 7, 0, 0, 1, ,A
+555, 8, 0, 0, 1, ,A
+555, 9, 0, 0, 1, ,A
+555, 10, 0, 0, 1, ,A
+555, 11, 0, 0, 1, ,A
+555, 12, 0, 0, 1, ,A
+555, 13, 0, 0, 1, ,A
+555, 14, 0, 0, 1, ,A
+
+[BG 1]  ;GrandMaster2
+type  = normal
+start = -16,-11.5
+spriteno = 81,0
+delta = 1.6, 2.2
+mask = 1
+
+[BG Snow 1]
+type  = normal
+spriteno = 0,4
+start = 0, 0
+;spriteno = 2,0
+delta = 1.3, 1
+velocity = 4, 4
+sin.x = 100, 600
+trans = addalpha
+alpha = 120,256
+tile = 1,1
+mask = 1
+scalestart = 0.5,0.5
+layerno = 1
+
+[BG Snow 2]
+type  = normal
+spriteno = 0,4
+start = 50, 20
+;spriteno = 2,0
+delta = 1.3, 1
+velocity = 0.8, 2
+sin.x = 80, 640
+trans = addalpha
+alpha = 120,256
+tile = 1,1
+mask = 1
+scalestart = 0.5,0.5
+layerno = 1
+
+[BG Fog Back]
+type  = normal
+spriteno = 0,7
+start = 0, 181
+delta = 1.2, 1
+velocity = -.3,0
+trans = add
+tile = 1,0
+mask = 1
+
+[BG Fog]
+type  = normal
+spriteno = 0,6
+start = 0, 181
+delta = .7, 1
+velocity = .7,0
+trans = add
+tile = 1,0
+tilespacing = -20,0
+mask = 1
+
+[BG lamplight]
+type = anim
+actionno = 33
+delta = 1.6, 2.2
+start = 0,0
+mask = 1
+layerno = 1
+
+[Begin action 33]
+loopstart
+33,0,0,0,1,,AS60D256
+33,0,0,0,1,,AS40D256
+
+

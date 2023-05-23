@@ -1,0 +1,184 @@
+;--------------------------------------------------------
+; Stage: Valley View
+; Autor: ijkorn (Ivan Juarez)
+;--------------------------------------------------------
+
+
+[Info]
+name = "valleyV1ew"
+displayname = "Valley View"
+
+;--------------------------------------------------------
+
+[Camera]
+startx         = 0
+starty         = 0
+boundleft      = -1134
+boundright     = 1134
+boundhigh      = -50
+boundlow       =  0
+verticalfollow = .2
+floortension  = 40
+tension        = 300
+startzoom = 1
+zoomin = 1
+zoomout = 0.80
+
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx = -323
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 323
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -6000
+rightbound = 6000
+topbound  = 0
+botbound  = 0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz           = 640      
+botz           = 200     
+topscale       = 1       
+botscale       = 1.2 
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft = 80
+screenright = 80
+
+;--------------------------------------------------------
+
+[StageInfo]
+zoffset        = 877
+zoffsetlink    = 1
+autoturn       = 1
+resetBG        = 1
+localcoord     = 1280,960
+;--------------------------------------------------------
+
+[Shadow]
+intensity = 168
+color = 50,50,50
+yscale = -.10
+reflect = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic = sound/Other/Water_Pit.ogg
+bgmloopstart = 694690
+bgmloopend = -1
+bgmvolume = 120
+
+;--------------------------------------------------------
+
+[BGdef]
+spr = Valley_view.sff
+bgclearcolor = 0,0,0
+
+[bg Sky]
+type  = Normal
+spriteno = 0,0
+delta = 0,1
+mask = 1
+
+
+[bg Cloud 1] 
+type = normal
+spriteno = 0,1
+start = 0,305
+delta = 0,1
+trans = add
+tile = 1,0
+velocity = -0.5,0
+scalestart = .90,1
+
+[bg Cloud 2]
+type = normal
+spriteno = 0,1
+start = 0,255
+delta = 0,1
+trans = add
+tile = 1,0
+velocity = -1.0,0
+scalestart = .90,1
+
+
+[bg Tower 1]
+type  = Normal
+spriteno = 1,0
+delta = .23, 1
+mask = 1
+scalestart     = .78,.78
+start = 0,72
+
+[bg Smoke 1]
+type = normal
+spriteno = 0,2
+start = 0,450
+delta = .25,1
+trans = add
+tile = 1,0
+velocity = -0.5,0
+scalestart = .30,.40
+
+
+[bg Rock 1]
+type  = Normal
+spriteno = 2,0
+delta = .33, 1
+mask = 1
+scalestart     = .78,.78
+
+
+[bg Rock 2]
+type  = Normal
+spriteno = 3,0
+delta = .66, 1
+mask = 1
+scalestart     = .78,.78
+
+
+[bg Floor]
+type  = Normal
+spriteno = 4,0
+delta = .99, 1
+mask = 1
+scalestart     = .88,.88
+
+;------------------------------
+
+[Begin action 0]
+5,0, 0,0, 8
+5,1, 0,0, 8
+5,2, 0,0, 8
+5,3, 0,0, 8
+5,4, 0,0, 8
+5,5, 0,0, 8
+5,6, 0,0, 8
+5,7, 0,0, 8
+
+
+[Begin action 2]
+6,0, 0,0, 6
+6,1, 0,0, 6
+6,2, 0,0, 6
+6,3, 0,0, 6
+6,4, 0,0, 6
+6,5, 0,0, 6
+6,6, 0,0, 6
+6,7, 0,0, 6
+
+
+

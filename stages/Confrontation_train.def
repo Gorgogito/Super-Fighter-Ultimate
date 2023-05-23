@@ -1,0 +1,490 @@
+;========================================================
+;Confrontation on the train By Crazy Logic
+;Gracias especiales:
+;A ti por descargar este release
+;a mi por darme tiempo con esto que es mugen
+;Visita: mugengenerations.foroactivo.info
+;========================================================
+;--------------------------------------------------------
+[Info]
+name = "Confrontation on the train HR"
+author= "Crazy_Logic"
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -130
+boundright = 130
+boundhigh = -220
+boundlow = 0
+verticalfollow = .8
+floortension = 60
+tension = 30
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -70         
+p1starty = 0           
+p1startz = 0           
+p1facing = 1           
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+;--- Common ---
+leftbound  = -1000
+rightbound =  1000
+topbound = -1520     
+botbound  =  0     
+;--------------------------------------------------------
+[Scaling]
+topz     = 0       
+botz     = 50      
+topscale = 1       
+botscale = 1.2   
+;--------------------------------------------------------
+[Bound]
+screenleft = 15
+screenright = 15
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 205
+autoturn = 1
+resetBG = 1
+HIRES = 1
+;--------------------------------------------------------
+[Shadow]
+intensity = 96
+color = 40,40,40
+yscale = .3
+fade.range = 0,0
+;--------------------------------------------------------
+[Reflection]
+intensity = 0
+;--------------------------------------------------------
+[Music]
+bgmusic = sound/Piccolo vs. 17.mp3
+bgvolume = 255
+;========================================================
+;-------------------------------------
+[BGdef]
+spr = Confrontation_train.sff
+debugbg = 0
+;----------
+[BG 0]
+type  = normal
+spriteno = 1,0
+delta = 1, 2
+layerno = 0
+velocity = 4
+sin.y= 7,100
+start = 0,95
+tile  = 1,0
+
+[BG 6]
+type  = anim
+actionno = 7004
+layerno = 0
+start = 0,0
+delta = 0, 0
+mask = 1
+
+[BG 1]
+type  = normal
+spriteno = 1, 1
+start = 0,55
+delta = 1,2
+trans = add
+velocity = 4
+sin.y= 7,100
+mask  = 1
+tile  = 1, 0
+
+[BG 1]
+type  = normal
+spriteno = 1, 1
+start = 0,0
+delta = 1,2
+trans = add
+velocity = 5
+mask  = 1
+sin.y= 7,100
+tile  = 1, 0
+
+[BG 5]
+type  = normal
+spriteno = 0, 210
+start = 0,0
+delta = 2, 2
+mask  = 1
+tile  = 1, 0
+sin.y = 10,100
+velocity =5
+
+[BG 5]
+type  = normal
+spriteno = 0, 210
+start = 0,0
+delta = 2, 2
+mask  = 1
+trans = add1
+tile  = 1, 0
+sin.y = 10,100
+velocity =7
+
+[BG 2]
+type  = normal
+spriteno = 0,1134
+delta= 1.2, 2
+layerno = 1
+mask = 1
+start = 0,0
+trans= add
+velocity = 59.9
+sin.y= 11,100
+tile  = 1,0
+
+
+[BG 2]
+type  = normal
+spriteno = 0,1131
+delta= 1.2, 2
+layerno = 1
+mask = 1
+start = 0,-60
+trans= add
+velocity = 20.9
+sin.y= 11,100
+tile  = 1,0
+
+[BG 2]
+type  = normal
+spriteno = 0,1131
+delta= 1.2, 2
+layerno = 0
+mask = 1
+start = 0,0
+trans= add
+velocity = 39.9
+sin.y= 11,100
+tile  = 1,0
+
+[BG 2]
+type  = normal
+spriteno = 0,1131
+delta= 1.2, 2
+layerno = 0
+mask = 1
+start = 0,45
+trans= add
+velocity = 45.9
+sin.y= 11,100
+tile  = 1,0
+
+[BG 2]
+type  = normal
+spriteno = 0,1131
+delta= 1.2, 2
+layerno = 1
+mask = 1
+start = 0,-100
+trans= add
+velocity = 40.9
+sin.y= 11,100
+tile  = 1,0
+
+
+
+[BG 5]
+type  = normal
+spriteno = 1, 2
+layerno = 0
+trans= add
+start = 0,-150
+delta = 2, 2
+mask  = 1
+tile  = 1, 0
+velocity = 50
+sin.y= 3,150
+tilespacing = 0,0
+
+[BG 2]
+type  = normal
+spriteno = 0,1
+delta= 1.2, 2
+layerno = 0
+mask = 1
+start = 0,0
+velocity = 12.9
+sin.y= 10,100
+tile  = 1,0
+
+[BG 2]
+type  = normal
+spriteno = 0,11322
+delta= 1.2, 2
+mask = 1
+start = 0,0
+velocity = 50.9
+sin.y= 4,200
+tile  = 1,0
+tilespacing = 50000,0
+
+[BG 2]
+type  = normal
+spriteno = 0,1132
+delta= 1.2, 2
+mask = 1
+start = 0,0
+velocity = 15.9
+sin.y= 5,100
+tile  = 1,0
+
+
+[BG 4]
+type  = normal
+spriteno = 0, 0
+layerno = 0                
+start = 0,0
+mask  = 1
+tile  = 1, 0
+delta= 1.5, 2
+velocity = 15.9
+sin.y= 7,100
+tilespacing = 0,0
+
+[BG 4]
+type  = normal
+spriteno = 0, 4
+layerno = 0
+start = 0,0
+mask  = 1
+tile  = 1, 0
+delta= 1.5, 2
+velocity = 20.5
+tilespacing = 0,0
+
+[BG 2]
+type  = normal
+spriteno = 0,14
+delta= 1.2, 2
+layerno = 0
+mask = 1
+start = 0,60
+velocity = 14
+tile  = 1,0
+
+[BG 2]
+type  = normal
+spriteno = 0,15
+delta= 1.2, 2
+layerno = 0
+mask = 1
+start = 0,60
+velocity = 15.9
+tile  = 1,0
+
+[BG 2]
+type  = normal
+spriteno = 0,16
+delta= 1.2, 2
+layerno = 0
+mask = 1
+start = 0,60
+velocity = 19
+tile  = 1,0
+
+[BG 2]
+type  = normal
+spriteno = 0,17
+delta= 1.2, 2
+layerno = 0
+mask = 1
+start = 0,60
+velocity = 25.2
+tile  = 1,0
+
+
+[BG 5]
+type  = normal
+spriteno = 1, 2
+layerno = 0
+trans= add
+start = 0,10
+delta = 2, 2
+mask  = 1
+tile  = 1, 0
+velocity = 40
+sin.y= 3,150
+tilespacing = 0,0
+
+[BG 5]
+type  = normal
+spriteno = 1, 2
+layerno = 0
+trans= add
+start = 0,20
+delta = 2, 2
+mask  = 1
+tile  = 1, 0
+velocity = 50
+sin.y= 3,150
+tilespacing = 0,0
+
+[BG 5]
+type  = normal
+spriteno = 0, 9
+layerno = 0
+start = 0,95
+delta = 2, 2
+mask  = 1
+tile  = 1, 0
+velocity =20
+tilespacing = 2900,0
+
+[BG 5]
+type  = normal
+spriteno = 0, 2
+layerno = 0
+start = 0,95
+delta = 2, 2
+mask  = 1
+tile  = 1, 0
+sin.y= 1,10
+tilespacing = 0,0
+
+[BG 5]
+type  = normal
+spriteno = 0, 3
+layerno = 1
+start = 0,95
+delta = 2, 2
+mask  = 1
+tile  = 1, 0
+sin.y= 1,10
+tilespacing = 0,0
+
+[BG 5]
+type  = normal
+spriteno = 0, 6
+layerno = 1
+trans= add
+start = 0,0
+delta = 2, 2
+mask  = 1
+tile  = 1, 0
+velocity =50
+sin.y= 3,150
+tilespacing = 0,0
+
+[BG 5]
+type  = normal
+spriteno = 0, 6
+layerno = 1
+trans= add
+start = 0,70
+delta = 2, 2
+mask  = 1
+tile  = 1, 0
+velocity =60
+sin.y= 3,150
+tilespacing = 0,0
+
+[BG 5]
+type  = normal
+spriteno = 0, 5
+layerno = 1
+start = 0,95
+delta = 2, 2
+mask  = 1
+tile  = 1, 0
+velocity =35
+tilespacing = 2900,0
+
+[BG 5]
+type  = normal
+spriteno = 0, 21
+layerno = 1
+start = 0,95
+delta = 2, 2
+mask  = 1
+tile  = 1, 0
+velocity =35
+tilespacing = 4000,0
+
+[BG 5]
+type  = normal
+spriteno = 0, 412
+layerno = 1
+start = 0,0
+delta = 2, 2
+mask  = 1
+tile  = 1, 0
+velocity =60
+tilespacing = 30000,0
+
+
+[BG 6]
+type  = anim
+actionno = 7
+layerno = 1
+start = 0,95
+delta = 1.1, 1.1
+mask = 1
+
+[BG 6]
+type  = anim
+actionno = 7000
+layerno = 1
+start = 0,0
+delta = 0, 0
+mask = 1
+
+
+
+;========================================================
+;                  BG_ANIMATIONS
+;--------------------------------------------------------
+[Begin action 7]
+1,3,0,0,70,,A
+0,-1,0,0,150,,A
+1,3,0,0,40,,A
+0,-1,0,0,100,,A
+
+[Begin Action 7000]
+0,-1,0,0,1000,,A
+7000,0, 0,0, 1000, ,AS4D255
+7000,0, 0,0, 1000, ,AS50D255
+7000,0, 0,0, 2000, ,AS60D255
+7000,0, 0,0, -1, ,AS70D255
+
+[Begin Action 7004]
+0,-1,0,0,1000,,A
+7000,0, 0,0, 1000, ,AS4D255
+7000,0, 0,0, 1000, ,AS50D255
+7000,0, 0,0, 2000, ,AS60D255
+7000,6, 0,0, -1, ,AS70D255
+
+[Begin Action 7005]
+0,-1,0,0,1000,,A
+0,211, 0,0, 1000, ,AS4D255
+0,211, 0,0, 1000, ,AS50D255
+0,211, 0,0, 2000, ,AS60D255
+0,211, 0,0, -1, ,AS70D255
+
+[Begin Action 7001]
+7001,0, 0,0, 4, , AS0D255
+7001,0, 0,0, 4, , AS50D255
+7001,0, 0,0, 4, , AS70D255
+7001,0, 0,0, 4, , AS90D255
+7001,0, 0,0, 4, , AS130D255
+7001,0, 0,0, 4, , AS150D255
+7001,0, 0,0, 200, , AS255D255
+7001,0, 0,0, 4, , AS150D255
+7001,0, 0,0, 4, , AS130D255
+7001,0, 0,0, 4, , AS90D255
+7001,0, 0,0, 4, , AS70D255
+7001,0, 0,0, 4, , AS50D255
+7001,0, 0,0, 4, , AS0D255
+-1,0,0,0,-1

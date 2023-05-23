@@ -1,0 +1,172 @@
+;--------------------------------------------------------
+[Info]
+name = "Boat near Kame House"
+author = "MIMCHOU"
+
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -280
+boundright = 280
+boundhigh = 0
+boundlow = 0
+verticalfollow = .65
+floortension = 50
+tension = 60
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2startz = -100
+p2facing = -1
+leftbound  = -1200
+rightbound =  1200
+topbound  =  0
+botbound  =  0
+
+;--------------------------------------------------------
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 15
+screenright = 15
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 200
+autoturn = 1
+resetBG = 0
+Hires = 1
+
+;--------------------------------------------------------
+[Shadow]
+intensity = 64
+yscale = 0.4
+fade.range = -200,-50
+
+;--------------------------------------------------------
+[Reflection]
+intensity = 0
+
+[Music]
+bgmusic = sound/DragonBall_Heroes_Instrumental.mp3
+bgvolume = 255
+
+[BGdef]
+spr = DBKameHouse.sff
+debugbg = 0
+
+;----------
+
+[BG SKY]
+type = normal
+spriteno = 10,0
+start = -1300,-150
+delta = 1.8,2
+mask = 1
+tile = 1,0
+
+[BG CLOUDS LEFT]
+type = normal
+spriteno = 11,0
+start = -900,-150
+delta = 1.8,2
+mask = 1
+
+[BG CLOUDS RIGHT]
+type = normal
+spriteno = 11,1
+start = -550,-40
+delta = 1.8,2
+mask = 1
+
+[BG SEA]
+type = normal
+spriteno = 13,0
+start = -350,150
+delta = 1.9,2
+mask = 1
+tile = 1,0
+
+[BG KAME HOUSE]
+type = normal
+spriteno = 12,0
+start = -800,150
+delta = 1.9,2
+mask = 1
+
+[BG BIRD]
+type = anim
+actionno = 0
+start = 0,100
+delta = 1.9,2
+mask = 1
+velocity = -0.5
+
+[Begin Action 0]
+15,0, 0,0, 10
+15,1, 0,2, 10
+
+
+[BG BIRD]
+type = anim
+actionno = 1
+start = 200,80
+delta = 1.9,2
+mask = 1
+velocity = -0.6
+
+[BG BIRD]
+type = anim
+actionno = 1
+start = 170,70
+delta = 1.9,2
+mask = 1
+velocity = -0.6
+
+[Begin Action 1]
+15,0, 0,0, 12
+15,1, 0,2, 12
+15,0, 0,4, 12
+15,1, 0,6, 12
+15,0, 0,4, 12
+15,1, 0,2, 12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[BG BOAT]
+type = normal
+spriteno = 14,0
+start = -1000,220
+delta = 2,2
+mask = 1
+sin.y = -4, 260
+
+

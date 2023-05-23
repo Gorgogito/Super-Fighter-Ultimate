@@ -1,0 +1,205 @@
+﻿; Арена: Noob's Dorfen MK3
+; Автор: Emsi-D
+; Рип спрайтов: Fly
+; Улучшения: Max Arturo (летающие фонарики, мерцание светильников)
+
+[Info]
+Name = "n00bs_d0rfen"
+Displayname = "Noob's Dorfen"
+Mugenversion = 1.1
+
+[Camera]
+boundleft = -420
+boundright = 418
+boundhigh = -12
+tension = 90
+floortension = 30
+verticalfollow = .2
+overdrawhigh = 20
+overdrawlow = 20
+startzoom = 1
+zoomin = 1
+zoomout = 0.85
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1400
+rightbound = 1400
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+[StageInfo]
+zoffset = 235
+autoturn = 1
+resetbg = 1
+localcoord = 400,254
+
+[Shadow]
+intensity = 190
+yscale = -0.20
+
+[Music]
+bgmusic = sound/MK3/mk3_hidden_portal.ogg
+
+[BGdef]
+spr = The_Balcony,Soul_Chamber_&_Noob's_Dorfen.sff
+bgclearcolor = 0,0,0
+
+
+[BG Светильники на бэкграунде]
+type = anim
+actionno = 1
+delta = .315,1
+start = 0,55
+scalestart = .90,1
+
+[Begin Action 1]
+1,17, 0,0, 3
+1,18, 0,0, 3
+1,19, 0,0, 3
+1,20, 0,0, 3
+1,21, 0,0, 3
+1,22, 0,0, 3
+1,21, 0,0, 3
+1,20, 0,0, 3
+1,19, 0,0, 3
+1,20, 0,0, 3
+1,21, 0,0, 3
+1,22, 0,0, 3
+1,21, 0,0, 3
+1,20, 0,0, 3
+1,19, 0,0, 3
+1,18, 0,0, 3
+
+[BG Колонны]
+type = normal
+spriteno = 1,11
+delta = .336,1
+start = 0,-51
+mask = 1
+scalestart = .90,1
+
+[BG Светильники между колоннами]
+type = anim
+actionno = 2
+delta = .336,1
+start = 0,-51
+scalestart = .90,1
+
+[Begin Action 2]
+1,12, 0,0, 3
+1,13, 0,0, 3
+1,14, 0,0, 3
+1,15, 0,0, 3
+1,16, 0,0, 3
+1,15, 0,0, 3
+1,14, 0,0, 3
+1,15, 0,0, 3
+1,16, 0,0, 3
+1,15, 0,0, 3
+1,14, 0,0, 3
+1,15, 0,0, 3
+1,16, 0,0, 3
+1,15, 0,0, 3
+1,14, 0,0, 3
+1,13, 0,0, 3
+1,12, 0,0, 3
+-1,0, 0,0, 3
+
+[BG Колодец]
+type = normal
+spriteno = 1,8
+delta = .364,1
+start = 1,123
+mask = 1
+scalestart = .90,1
+
+[BG Переход между этажами]
+type = normal
+spriteno = 0,18
+delta = 1,1
+start = 0,247
+tile = 1,0
+
+[BG Стенка в левом углу]
+type = normal
+spriteno = 1,9
+delta = .83,1
+start = -549,-22
+mask = 1
+scalestart = .90,1
+
+[BG Стенка в правом углу]
+type = anim
+actionno = 3
+delta = .83,1
+start = 54,0
+scalestart = .90,1
+
+[Begin Action 3]
+1,9, 547,-22, -1, H
+
+[BG Пол]
+type = parallax
+spriteno = 1,0
+delta = .94,1
+start = 0,232
+width = 1290,1400
+;scalestart = .90,1
+
+[BG Зелёный свет левого фонарика]
+type = normal
+spriteno = 2,7
+trans = add
+delta = .35,1
+start = -89,95
+sin.y = 7,150,0
+scalestart = .90,1
+
+[BG Зелёный свет правого фонарика]
+type = normal
+spriteno = 2,7
+trans = add
+delta = .35,1
+start = 59,95
+sin.y = 7,150,0
+scalestart = .90,1
+
+[BG Летающий фонарик слева]
+type = anim
+actionno = 4
+delta = .35,1
+start = -93,98
+sin.y = 7,150,0
+scalestart = .90,1
+
+[Begin Action 4]
+2,6, 0,0, 5
+2,5, 0,0, 4
+2,4, 0,0, 5
+2,3, 0,0, 4
+2,2, 0,0, 5
+2,1, 0,0, 4
+
+[BG Летающий фонарик справа]
+type = anim
+actionno = 5
+delta = .35,1
+start = 55,98
+sin.y = 7,150,0
+scalestart = .90,1
+
+[Begin Action 5]
+2,1, 0,0, 4
+2,2, 0,0, 5
+2,3, 0,0, 4
+2,4, 0,0, 5
+2,5, 0,0, 4
+2,6, 0,0, 5

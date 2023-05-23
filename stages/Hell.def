@@ -1,0 +1,507 @@
+;layer cuts, delta edits by borg117
+;Update sprites and animations by Bathory
+
+[Info]
+Name = "d0wn2h3ll"
+Displayname = "Down To Hell MK7"
+Mugenversion = 1.1
+
+[Camera]
+boundleft = -370
+boundright = 370
+boundhigh = -12
+boundlow = 0
+;floortension = 0
+tension = 100
+floortension = 30
+verticalfollow = .2
+overdrawhigh = 20
+overdrawlow = 20
+startzoom = 1
+zoomin = 1
+zoomout = 0.64
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1 
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1400
+rightbound = 1400
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+[StageInfo]
+zoffset = 232
+autoturn = 1
+resetBG = 0
+localcoord = 400,254
+
+[Shadow]
+intensity = 166
+yscale = .14
+
+[Music]
+bgmusic = sound/MK7/mk7_down_to_hell.ogg
+;bgmvolume = 70
+bgmloopstart = 529313
+bgmloopend = -1
+
+[BGdef]
+spr = Hell.sff
+
+[BG lavae]
+type = normal
+spriteno = 2,2
+velocity = 1.5,-1
+delta = 0.5,1
+start = 0,-90
+tile = 1,1
+tilespacing = 0,228
+scalestart = 1,0.7
+
+[BG lavae]
+type = normal
+spriteno = 2,2
+velocity = 0.5,-1
+delta = 0.5,1
+start = 0,-90
+tile = 1,1
+tilespacing = 0,228
+scalestart = 1,0.7
+trans = addalpha
+alpha = 128,128
+
+[BG brickwall]
+type = normal
+spriteno = 2,3
+velocity = 0.87,-0.87
+delta = 0.2,1
+start = 0,-50
+tile = 1,1
+tilespacing = 0,63;98
+scalestart = 0.7,0.7
+
+[BG pillar]
+type = normal
+spriteno = 4,0
+velocity = 0.935,-0.934935
+delta = 0.35,1
+start = 75,-73
+mask = 1
+tile = 1,1
+tilespacing = 134,124.45;149,120
+scalestart = 0.6,0.7
+
+[BG wall]
+type = normal
+spriteno = 2,0
+velocity = 1,-1
+delta = 0.5,1
+start = 0,-90
+mask = 1
+tile = 1,1
+scalestart = 0.6,0.7
+
+[BG skull]
+type = normal
+spriteno = 1,1
+velocity = 1,-1
+delta = 0.5,1
+start = 80,-40
+mask = 1
+tile = 1,1
+scalestart = 0.65,0.7
+tilespacing = 760,635
+
+[BG spark b]
+type = normal
+spriteno = 3,0
+velocity = 1,-2
+sin.x = 100,633
+trans = addalpha
+alpha = 160,256
+;scalestart = 0.5,0.5
+tile = 1,1
+mask = 1
+
+[BG corpse]
+type = anim
+actionno = 2
+start = 230,-250
+delta = .8,.97
+mask = 1
+id = 3
+scalestart = 0.63,0.8
+
+[BG corpse fire]
+type = anim
+actionno = 3
+start = 230,-250
+delta = .8,.97
+id = 3
+scalestart = 0.8,0.8
+
+[BGCtrlDef Caida]
+ctrlID = 3
+loopTime = 550
+
+[BGCtrl]
+type = VelSet
+time = 100
+x = 0
+y= 6
+
+[BGCtrl stageID 1]
+type = PosSet
+time = 330
+y = -300
+ctrlID = 3
+
+[BG corpse]
+type = anim
+actionno = 2
+start = -140,-250
+delta = .8,.97
+mask = 1
+id = 2
+scalestart = 0.8,0.8
+
+[BG corpse fire]
+type = anim
+actionno = 3
+start = -140,-250
+delta = .8,.97
+id = 2
+scalestart = 0.8,0.8
+
+[BGCtrlDef Caida]
+ctrlID = 2
+loopTime = 720
+
+[BGCtrl]
+type = VelSet
+time = 50
+x = 0
+y= 5
+
+[BGCtrl stageID 1]
+type = PosSet
+time = 550
+y = -550
+ctrlID = 2
+
+[BG corpse]
+type = normal
+spriteno = 2,4
+start = 0,-250
+delta = .8,.97
+mask = 1
+id = 1
+scalestart = 0.8,0.8
+
+[BG corpse fire]
+type = anim
+actionno = 1
+start = 0,-250
+delta = .8,.97
+id = 1
+scalestart = 0.8,0.8
+
+[BGCtrlDef Caida]
+ctrlID = 1
+loopTime = 500
+
+[BGCtrl]
+type = VelSet
+time = 1
+x = 0
+y= 6
+
+[BGCtrl stageID 1]
+type = PosSet
+time = 400
+y = -400
+ctrlID = 1
+
+[BG Fof]
+type = normal
+spriteno = 3,2
+delta = .80,1
+start = 0,40;26
+trans = add
+velocity = 0,-3
+tile = 0,1
+tilespacing = 0,400
+
+[BG Fof]
+type = normal
+spriteno = 3,2
+delta = .80,1
+start = -300,40;26
+trans = add
+velocity = 0,-3
+tile = 0,1
+tilespacing = 0,600
+
+[BG Fof]
+type = normal
+spriteno = 3,2
+delta = .80,1
+start = 300,40;26
+trans = add
+velocity = 0,-3
+tile = 0,1
+tilespacing = 0,600
+
+[BG spike]
+type = normal
+spriteno = 0,0
+delta = 1,1;0.9,1
+start = 0,40;26
+mask = 1
+
+[BG spike]
+type = normal
+spriteno = 0,1
+delta = 1,1;0.9,1
+start = 0,40;26
+trans = add
+
+[BG spike]
+type = normal
+spriteno = 0,2
+delta = 1,1;0.9,1
+start = 0,40;26
+trans = add
+
+[BG spike fire]
+type = anim
+actionno = 0
+start = 74,166
+delta = 1,1;0.9,1
+
+[BG spark f]
+type = normal
+spriteno = 3,1
+layerno = 1
+velocity = 1,-3
+sin.x = -120,700
+trans = addalpha
+alpha = 160,240
+;scalestart = 0.5,0.5
+tile = 1,1
+mask = 1
+
+[Begin Action 0]
+6,0, 0,0, 1, , A
+6,1, 0,0, 1, , A
+6,2, 0,0, 1, , A
+6,3, 0,0, 1, , A
+6,4, 0,0, 1, , A
+6,5, 0,0, 1, , A
+6,6, 0,0, 1, , A
+6,7, 0,0, 1, , A
+6,8, 0,0, 1, , A
+6,9, 0,0, 1, , A
+6,10, 0,0, 1, , A
+6,11, 0,0, 1, , A
+6,12, 0,0, 1, , A
+6,13, 0,0, 1, , A
+6,14, 0,0, 1, , A
+6,15, 0,0, 1, , A
+6,16, 0,0, 1, , A
+6,17, 0,0, 1, , A
+6,18, 0,0, 1, , A
+6,19, 0,0, 1, , A
+6,20, 0,0, 1, , A
+6,21, 0,0, 1, , A
+6,22, 0,0, 1, , A
+6,23, 0,0, 1, , A
+6,24, 0,0, 1, , A
+6,25, 0,0, 1, , A
+6,26, 0,0, 1, , A
+6,27, 0,0, 1, , A
+6,28, 0,0, 1, , A
+6,29, 0,0, 1, , A
+6,30, 0,0, 1, , A
+6,31, 0,0, 1, , A
+6,32, 0,0, 1, , A
+6,33, 0,0, 1, , A
+6,34, 0,0, 1, , A
+6,35, 0,0, 1, , A
+6,36, 0,0, 1, , A
+6,37, 0,0, 1, , A
+6,38, 0,0, 1, , A
+6,39, 0,0, 1, , A
+6,40, 0,0, 1, , A
+6,41, 0,0, 1, , A
+6,42, 0,0, 1, , A
+6,43, 0,0, 1, , A
+6,44, 0,0, 1, , A
+6,45, 0,0, 1, , A
+6,46, 0,0, 1, , A
+6,47, 0,0, 1, , A
+6,48, 0,0, 1, , A
+6,49, 0,0, 1, , A
+6,50, 0,0, 1, , A
+6,51, 0,0, 1, , A
+6,52, 0,0, 1, , A
+6,53, 0,0, 1, , A
+6,54, 0,0, 1, , A
+6,55, 0,0, 1, , A
+6,56, 0,0, 1, , A
+6,57, 0,0, 1, , A
+6,58, 0,0, 1, , A
+6,59, 0,0, 1, , A
+6,60, 0,0, 1, , A
+6,61, 0,0, 1, , A
+6,62, 0,0, 1, , A
+6,63, 0,0, 1, , A
+6,64, 0,0, 1, , A
+6,65, 0,0, 1, , A
+6,66, 0,0, 1, , A
+6,67, 0,0, 1, , A
+6,68, 0,0, 1, , A
+6,69, 0,0, 1, , A
+6,70, 0,0, 1, , A
+6,71, 0,0, 1, , A
+6,72, 0,0, 1, , A
+6,73, 0,0, 1, , A
+6,74, 0,0, 1, , A
+6,75, 0,0, 1, , A
+6,76, 0,0, 1, , A
+6,77, 0,0, 1, , A
+6,78, 0,0, 1, , A
+6,79, 0,0, 1, , A
+6,80, 0,0, 1, , A
+6,81, 0,0, 1, , A
+6,82, 0,0, 1, , A
+6,83, 0,0, 1, , A
+6,84, 0,0, 1, , A
+6,85, 0,0, 1, , A
+6,86, 0,0, 1, , A
+6,87, 0,0, 1, , A
+6,88, 0,0, 1, , A
+6,89, 0,0, 1, , A
+6,90, 0,0, 1, , A
+6,91, 0,0, 1, , A
+6,92, 0,0, 1, , A
+6,93, 0,0, 1, , A
+6,94, 0,0, 1, , A
+6,95, 0,0, 1, , A
+6,96, 0,0, 1, , A
+6,97, 0,0, 1, , A
+6,98, 0,0, 1, , A
+6,99, 0,0, 1, , A
+6,100, 0,0, 1, , A
+6,101, 0,0, 1, , A
+6,102, 0,0, 1, , A
+6,103, 0,0, 1, , A
+6,104, 0,0, 1, , A
+6,105, 0,0, 1, , A
+6,106, 0,0, 1, , A
+6,107, 0,0, 1, , A
+6,108, 0,0, 1, , A
+6,109, 0,0, 1, , A
+6,110, 0,0, 1, , A
+6,111, 0,0, 1, , A
+6,112, 0,0, 1, , A
+6,113, 0,0, 1, , A
+6,114, 0,0, 1, , A
+6,115, 0,0, 1, , A
+6,116, 0,0, 1, , A
+6,117, 0,0, 1, , A
+6,118, 0,0, 1, , A
+6,119, 0,0, 1, , A
+6,120, 0,0, 1, , A
+6,121, 0,0, 1, , A
+6,122, 0,0, 1, , A
+6,123, 0,0, 1, , A
+6,124, 0,0, 1, , A
+6,125, 0,0, 1, , A
+6,126, 0,0, 1, , A
+6,127, 0,0, 1, , A
+6,128, 0,0, 1, , A
+6,129, 0,0, 1, , A
+6,130, 0,0, 1, , A
+6,131, 0,0, 1, , A
+6,132, 0,0, 1, , A
+6,133, 0,0, 1, , A
+6,134, 0,0, 1, , A
+6,135, 0,0, 1, , A
+6,136, 0,0, 1, , A
+6,137, 0,0, 1, , A
+6,138, 0,0, 1, , A
+6,139, 0,0, 1, , A
+6,140, 0,0, 1, , A
+6,141, 0,0, 1, , A
+6,142, 0,0, 1, , A
+6,143, 0,0, 1, , A
+6,144, 0,0, 1, , A
+6,145, 0,0, 1, , A
+6,146, 0,0, 1, , A
+6,147, 0,0, 1, , A
+6,148, 0,0, 1, , A
+6,149, 0,0, 1, , A
+6,150, 0,0, 1, , A
+6,151, 0,0, 1, , A
+6,152, 0,0, 1, , A
+6,153, 0,0, 1, , A
+
+[Begin Action 1]
+5,0, 0,0, 1, , A
+5,1, 0,0, 1, , A
+5,2, 0,0, 1, , A
+5,3, 0,0, 1, , A
+5,4, 0,0, 1, , A
+5,5, 0,0, 1, , A
+5,6, 0,0, 1, , A
+5,7, 0,0, 1, , A
+5,8, 0,0, 1, , A
+5,9, 0,0, 1, , A
+5,10, 0,0, 1, , A
+5,11, 0,0, 1, , A
+5,12, 0,0, 1, , A
+5,13, 0,0, 1, , A
+5,14, 0,0, 1, , A
+5,15, 0,0, 1, , A
+5,16, 0,0, 1, , A
+5,17, 0,0, 1, , A
+5,18, 0,0, 1, , A
+5,19, 0,0, 1, , A
+5,20, 0,0, 1, , A
+5,21, 0,0, 1, , A
+5,22, 0,0, 1, , A
+
+[Begin Action 2]
+2,4, 0,0, -1, H
+
+[Begin Action 3]
+5,0, 0,0, 1, H, A
+5,1, 0,0, 1, H, A
+5,2, 0,0, 1, H, A
+5,3, 0,0, 1, H, A
+5,4, 0,0, 1, H, A
+5,5, 0,0, 1, H, A
+5,6, 0,0, 1, H, A
+5,7, 0,0, 1, H, A
+5,8, 0,0, 1, H, A
+5,9, 0,0, 1, H, A
+5,10, 0,0, 1, H, A
+5,11, 0,0, 1, H, A
+5,12, 0,0, 1, H, A
+5,13, 0,0, 1, H, A
+5,14, 0,0, 1, H, A
+5,15, 0,0, 1, H, A
+5,16, 0,0, 1, H, A
+5,17, 0,0, 1, H, A
+5,18, 0,0, 1, H, A
+5,19, 0,0, 1, H, A
+5,20, 0,0, 1, H, A
+5,21, 0,0, 1, H, A
+5,22, 0,0, 1, H, A

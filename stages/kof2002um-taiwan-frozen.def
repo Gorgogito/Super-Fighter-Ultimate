@@ -1,0 +1,291 @@
+;--------------------------------------------------------
+;       THE KING OF FIGHTERS 2002_UM
+;--------------------------------------------------------
+;         Sprites by Cosumo
+:           close source
+===================================================
+[Info]
+ ;Name of the stage.
+name = "KOF 2002UM - Taiwan - Frozen"
+
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -240
+boundright = 248
+boundhigh = 0
+boundlow = 0
+verticalfollow = .2
+floortension = 0
+tension = 60
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -70    
+p1starty = 0  
+p1startz = 0    
+p1facing = 1  
+
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0 
+botbound  =  0 
+
+;--------------------------------------------------------
+[Scaling]
+topz     = 0   
+botz     = 50 
+topscale = 1
+botscale = 1.2  
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 15  
+screenright = 15   
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 220
+autoturn = 1
+resetBG = 1
+hires = 0
+
+;--------------------------------------------------------
+[Shadow]
+intensity = 0
+color = 0,0,0
+yscale = .4
+fade.range = -400,-100
+
+;--------------------------------------------------------
+[Reflection]
+intensity = 256
+
+;--------------------------------------------------------
+[Music]
+bgmusic = stages/144.mp3
+bgvolume = 255
+
+;========================================================
+
+[BGdef]
+spr = stages/kof2002um-taiwan-frozen.sff
+debugbg = 0
+
+;--------------------------------------------------------
+[BG cielo]
+type = normal
+spriteno = 2,0
+start = 0,0
+delta = 0.9, 0.9
+mask = 1
+trans = none
+layerno = 0
+velocity = 0,0
+tile = 0,0
+;--------------------------------------------------------
+[BG piso1]
+type = normal
+spriteno = 0,0
+start = 0,0
+delta = 0.9, 0.9
+mask = 1
+trans = none
+layerno = 0
+velocity = 0,0
+tile = 0,0
+;--------------------------------------------------------
+[BG piso2]
+type = normal
+spriteno = 0,1
+start = 0,0
+delta = 0.9, 0.9
+mask = 1
+trans = none
+layerno = 0
+velocity = 0,0
+tile = 0,0
+;--------------------------------------------------------
+[BG piso3]
+type = normal
+spriteno = 0,2
+start = 0,0
+delta = 0.9, 0.9
+mask = 1
+trans = none
+layerno = 0
+velocity = 0,0
+tile = 0,0
+;--------------------------------------------------------
+[BG piso4]
+type = normal
+spriteno = 0,3
+start = 0,0
+delta = 0.9, 0.9
+mask = 1
+trans = none
+layerno = 0
+velocity = 0,0
+tile = 0,0
+;--------------------------------------------------------
+[BG dragon]
+type = normal
+spriteno = 1,0
+start = 0,0
+delta = 0.9, 0.9
+mask = 1
+trans = none
+layerno = 0
+velocity = 0,0
+tile = 0,0
+;--------------------------------------------------------
+[BG NEBLINA]
+type = anim
+spriteno = 3,0
+layerno = 1
+start = 0,0
+delta = 1,1
+mask = 1
+id = 18
+tile = 1,0
+tilespacing = 260,0
+velocity = -1, 0
+actionno = 3
+
+[Begin Action 3]
+3,1,0,0,10,,A
+;--------------------------------------------------------
+[BG intro]
+type = anim
+actionno= 4
+start = 0,0
+delta = 0.9, 0.9
+mask = 1
+trans = none
+layerno = 0
+velocity = 0,0
+tile = 0,0
+
+[Begin Action 4]
+4,0, 0,0, 200,
+4,1, 0,0, 3,
+4,2, 0,0, 3,
+4,3, 0,0, 3,
+4,4, 0,0, 3,
+4,5, 0,0, 3,
+4,6, 0,0, 3,
+4,7, 0,0, 3,
+4,8, 0,0, 3,
+4,9, 0,0, 3,
+4,10, 0,0, 3,
+4,11, 0,0, 3,
+4,12, 0,0, 3,
+4,13, 0,0, 3,
+4,14, 0,0, 3,
+4,15, 0,0, 3,
+4,16, 0,0, 3,
+4,17, 0,0, 3,
+4,18, 0,0, 3,
+4,19, 0,0, -1,
+4,20, 0,0, -1
+;--------------------------------------------------------
+[BG cortina]
+type = anim
+actionno= 27
+start = 60,20
+delta = 0.9, 0.9
+mask = 1
+trans = none
+layerno = 1
+velocity = 0,0
+tile = 0,0
+
+[Begin Action 27]
+27,0, 0,0, 15,
+27,1, 0,0, 9,
+27,2, 0,0, 9,
+27,3, 0,0, 9,
+27,4, 0,0, 9,
+27,5, 0,0, 9,
+27,6, 0,0, -1
+
+[BG cortina 2]
+type = anim
+actionno= 27
+start = -205,20
+delta = 0.9, 0.9
+mask = 1
+trans = none
+layerno = 1
+velocity = 0,0
+tile = 0,0
+
+;--------------------------------------------------------
+[BG parte arriba]
+type = anim
+actionno= 25
+start = 0,0
+delta = 0.9, 0.9
+mask = 1
+trans = none
+layerno = 1
+velocity = 0,0
+tile = 0,0
+
+[Begin Action 25]
+25,0, 0,-0, 15,
+25,0, 0,-3, 9,
+25,0, 0,-6, 9,
+25,0, 0,-9, 9,
+25,0, 0,-11, 9,
+25,0, 0,-14, 9,
+25,0, 0,-17, 9,
+25,0, 0,-20, 9,
+25,0, 0,-23, 9,
+25,0, 0,-26, 9,
+25,0, 0,-29, 9,
+25,0, 0,-31, 9,
+25,0, 0,-34, 9,
+25,0, 0,-37, 9,
+25,0, 0,-40, 9,
+25,0, 0,-43, -1
+
+
+;--------------------------------------------------------
+[BG parte abajo]
+type = anim
+actionno= 26
+start = 0,0
+delta = 0.9, 0.9
+mask = 1
+trans = none
+layerno = 1
+velocity = 0,0
+tile = 0,0
+
+[Begin Action 26]
+26,0, 0,0, 15,
+26,0, 0,3, 9,
+26,0, 0,6, 9,
+26,0, 0,9, 9,
+26,0, 0,11, 9,
+26,0, 0,14, 9,
+26,0, 0,17, 9,
+26,0, 0,20, 9,
+26,0, 0,23, 9,
+26,0, 0,26, 9,
+26,0, 0,29, 9,
+26,0, 0,31, 9,
+26,0, 0,34, 9,
+26,0, 0,37, 9,
+26,0, 0,40, 9,
+26,0, 0,43, -1

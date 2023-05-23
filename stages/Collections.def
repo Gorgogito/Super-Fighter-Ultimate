@@ -1,0 +1,342 @@
+[Info]
+name = 	"Collections"
+;author ="Blue-Insect"
+[Camera]
+startx = 0
+starty = 0
+boundleft = -283
+boundright = 287
+boundhigh = 0
+boundlow = 0
+verticalfollow = .2
+tension = 50
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 200
+autoturn = 1
+resetBG = 0
+
+;--------------------------------------------------------
+[Shadow]
+color = 128,128,128
+yscale = 0.05
+
+[Music]
+bgmusic = sound/bgm_maoudamashii_symphony06.mp3
+bgvolume = 250
+
+[BGdef]
+spr = Collections.sff
+
+[BG BG1]
+type = normal
+spriteno = 0,0
+start = -443,0
+delta = 1,1
+layerno = 0
+mask = 0
+
+[BG BG2]
+type = normal
+spriteno = 0,1
+start = -443,0
+delta = 1,1
+layerno = 0
+mask = 1
+
+[BG BG3]
+type = normal
+spriteno = 0,2
+start = -443,0
+delta = 1,1
+layerno = 0
+mask = 1
+
+[BG BG4]
+type = normal
+spriteno = 0,3
+start = -443,0
+delta = 1,1
+layerno = 0
+mask = 1
+
+[BG Cammy]
+type = normal
+spriteno = 1,0
+start = -443,0
+delta = 1,1
+layerno = 0
+mask = 1
+
+[BG Sakura]
+type  = anim
+actionno = 1
+layerno = 0                
+start = -443,0
+delta = 1,1
+mask  = 1
+
+[Begin Action 1]
+2,1, 0,0, 300
+2,2, 0,0, 5
+2,1, 0,0, 5
+2,2, 0,0, 5
+
+[BG Chun-Li]
+type = normal
+spriteno = 3,0
+start = -443,0
+delta = 1,1
+layerno = 0
+mask = 1
+
+[BG Mai]
+type  = anim
+actionno = 2
+layerno = 0                
+start = -443,0
+delta = 1,1
+mask  = 1
+
+[Begin Action 2]
+4,0, 0,0, 350
+4,1, 0,0, 5
+
+[BG Yuri]
+type  = anim
+actionno = 3
+layerno = 0                
+start = -443,0
+delta = 1,1
+mask  = 1
+
+[Begin Action 3]
+5,0, 0,0, 250
+5,1, 0,0, 5
+
+[BG Athena-Doll]
+type = normal
+spriteno = 6,0
+start = -443,0
+delta = 1,1
+layerno = 0
+mask = 1
+
+[BG Body-Guard]
+type = normal
+spriteno = 7,0
+start = -443,0
+delta = 1,1
+layerno = 0
+mask = 1
+
+[BG Keep-Out]
+type = normal
+spriteno = 8,0
+start = -443,0
+delta = 1,1
+layerno = 0
+mask = 1
+
+[BG Vanpuri]
+type  = anim
+actionno = 4
+layerno = 0                
+start = -443,0
+delta = 1,1
+mask  = 1
+
+[Begin Action 4]
+9,0, 0,0, 150
+9,1, 0,0, 10
+
+[BG Lamp1]
+type  = anim
+actionno = 5
+layerno = 0                
+start = -443,0
+delta = 1,1
+mask  = 1
+
+[Begin Action 5]
+11,0, 0,0, 5
+11,1, 0,0, 5
+11,2, 0,0, 5
+11,3, 0,0, 5
+11,4, 0,0, 5
+11,5, 0,0, 5
+11,6, 0,0, 5
+11,7, 0,0, 5
+11,8, 0,0, 5
+11,9, 0,0, 5
+11,10, 0,0, 5
+11,11, 0,0, 5
+11,12, 0,0, 5
+11,13, 0,0, 5
+11,14, 0,0, 5
+11,15, 0,0, 5
+
+[BG Lamp2]
+type  = anim
+actionno = 6
+layerno = 0                
+start = -443,0
+delta = 1,1
+mask  = 1
+
+[Begin Action 6]
+12,0, 0,0, 7
+12,1, 0,0, 7
+12,2, 0,0, 7
+12,3, 0,0, 7
+12,4, 0,0, 7
+12,5, 0,0, 7
+12,6, 0,0, 7
+12,7, 0,0, 7
+12,8, 0,0, 7
+12,9, 0,0, 7
+12,10, 0,0, 7
+12,11, 0,0, 7
+12,12, 0,0, 7
+12,13, 0,0, 7
+12,14, 0,0, 7
+12,15, 0,0, 7
+
+[BG Lamp3]
+type  = anim
+actionno = 7
+layerno = 0                
+start = -443,0
+delta = 1,1
+mask  = 1
+
+[Begin Action 7]
+13,0, 0,0, 6
+13,1, 0,0, 6
+13,2, 0,0, 6
+13,3, 0,0, 6
+13,4, 0,0, 6
+13,5, 0,0, 6
+13,6, 0,0, 6
+13,7, 0,0, 6
+13,8, 0,0, 6
+13,9, 0,0, 6
+13,10, 0,0, 6
+13,11, 0,0, 6
+13,12, 0,0, 6
+13,13, 0,0, 6
+13,14, 0,0, 6
+13,15, 0,0, 6
+
+[BG Lamp4]
+type  = anim
+actionno = 8
+layerno = 0                
+start = -443,0
+delta = 1,1
+mask  = 1
+
+[Begin Action 8]
+14,0, 0,0, 9
+14,1, 0,0, 9
+14,2, 0,0, 9
+14,3, 0,0, 9
+14,4, 0,0, 9
+14,5, 0,0, 9
+14,6, 0,0, 9
+14,7, 0,0, 9
+14,8, 0,0, 9
+14,9, 0,0, 9
+14,10, 0,0, 9
+14,11, 0,0, 9
+14,12, 0,0, 9
+14,13, 0,0, 9
+14,14, 0,0, 9
+14,15, 0,0, 9
+
+[BG Lamp5]
+type  = anim
+actionno = 9
+layerno = 0                
+start = -443,0
+delta = 1,1
+mask  = 1
+
+[Begin Action 9]
+15,0, 0,0, 8
+15,1, 0,0, 8
+15,2, 0,0, 8
+15,3, 0,0, 8
+15,4, 0,0, 8
+15,5, 0,0, 8
+15,6, 0,0, 8
+15,7, 0,0, 8
+15,8, 0,0, 8
+15,9, 0,0, 8
+15,10, 0,0, 8
+15,11, 0,0, 8
+15,12, 0,0, 8
+15,13, 0,0, 8
+15,14, 0,0, 8
+15,15, 0,0, 8
+
+[BG Lamp5]
+type  = anim
+actionno = 10
+layerno = 0                
+start = -443,0
+delta = 1,1
+mask  = 1
+
+[Begin Action 10]
+16,0, 0,0, 10
+16,1, 0,0, 10
+16,2, 0,0, 10
+16,3, 0,0, 10
+16,4, 0,0, 10
+16,5, 0,0, 10
+16,6, 0,0, 10
+16,7, 0,0, 10
+16,8, 0,0, 10
+16,9, 0,0, 10
+16,10, 0,0, 10
+16,11, 0,0, 10
+16,12, 0,0, 10
+16,13, 0,0, 10
+16,14, 0,0, 10
+16,15, 0,0, 10
+
+[BG Spectator]
+type = normal
+spriteno = 10,0
+start = -443,10
+delta = 1,1
+layerno = 1
+mask = 1
+trans = add1

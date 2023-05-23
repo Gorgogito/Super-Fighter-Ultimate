@@ -1,0 +1,206 @@
+﻿; Арена: Living Forest MK2
+; Автор: Emsi-D
+; Рип спрайтов: Fly
+
+[Info]
+Name = "l1v1ng_f0rest"
+Displayname = "Living Forest"
+Mugenversion = 1.1
+
+[Camera]
+boundleft = -510
+boundright = 510
+boundhigh = -12
+tension = 90
+floortension = 30
+verticalfollow = .2
+overdrawhigh = 20
+overdrawlow = 20
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1600
+rightbound = 1600
+
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+[StageInfo]
+zoffset = 236
+autoturn = 1
+resetbg = 1
+localcoord = 400,254
+
+[Shadow]
+intensity = 190
+yscale = -.1
+
+[Music]
+bgmusic = sound/MK2/mk2_living_forest.ogg
+bgmloopstart = 291573
+bgmloopend = -1
+
+[BGdef]
+spr = Living_Forest.sff
+bgclearcolor = 0,1,0
+
+
+[BG Переход между этажами]
+type = normal
+spriteno = 0,12
+delta = 1,1
+start = 0,247
+tile = 1,0
+
+[BG Деревья/Слой 6]
+type = normal
+spriteno = 0,10
+delta = .034,1
+start = -3,96
+mask = 1
+scalestart = .90,1
+
+[BG Деревья/Слой 5]
+type = normal
+spriteno = 0,9
+delta = .294,1
+start = 32,72
+mask = 1
+scalestart = .90,1
+
+[BG Трава/Слой 5]
+type = normal
+spriteno = 0,8
+delta = .294,1
+start = 0,161
+mask = 1
+
+[BG Деревья/Слой 4]
+type = normal
+spriteno = 0,7
+delta = .45,1
+start = -13,47
+mask = 1
+scalestart = .90,1
+
+[BG Трава/Слой 4]
+type = normal
+spriteno = 0,6
+delta = .45,1
+start = -16,167
+mask = 1
+
+[BG Трава и деревья/Слой 3]
+type = normal
+spriteno = 0,5
+delta = .555,1
+start = -108,34
+mask = 1
+scalestart = .90,1
+
+[BG Деревья/Слой 2]
+type = normal
+spriteno = 0,4
+delta = .658,1
+start = -31,-12
+mask = 1
+scalestart = .90,1
+
+[BG Трава/Слой 2]
+type = normal
+spriteno = 0,3
+delta = .658,1
+start = 0,142
+mask = 1
+scalestart = .90,1
+
+[ Джейд и Смоук]
+type = anim
+actionno = 0
+delta = .865,1
+start = -4,83
+
+[Begin Action 0]
+0,13, 40,0, 500
+0,13, 46,0, 3
+0,13, 50,0, 3
+0,13, 54,0, 3
+0,13, 58,0, 3
+0,13, 62,0, 3
+0,13, 65,0, 50
+0,13, 62,0, 3
+0,13, 58,0, 3
+0,13, 54,0, 3
+0,13, 50,0, 3
+0,13, 46,0, 3
+0,14, 0,0, 500
+0,14, -4,0, 3
+0,14, -8,0, 3
+0,14, -12,0, 3
+0,14, -16,0, 3
+0,14, -20,0, 3
+0,14, -24,0, 3
+0,14, -28,0, 3
+0,14, -31,0, 3
+0,14, -34,0, 50
+0,14, -31,0, 3
+0,14, -28,0, 3
+0,14, -24,0, 3
+0,14, -20,0, 3
+0,14, -16,0, 3
+0,14, -12,0, 3
+0,14, -8,0, 3
+
+[BG Деревья/Слой 1]
+type = normal
+spriteno = 0,2
+delta = .865,1
+start = -2.5,-41
+mask = 1
+scalestart = .90,1
+
+[BG Рожа на дереве слева]
+type = normal
+spriteno = 0,11
+delta = .865,1
+start = -308.5,86
+mask = 1
+scalestart = .90,1
+
+[BG Рожа на дереве в центре]
+type = normal
+spriteno = 0,11
+delta = .865,1
+start = -11.5,86
+mask = 1
+scalestart = .90,1
+
+[BG Рожа на дереве справа]
+type = normal
+spriteno = 0,11
+delta = .865,1
+start = 276.5,86
+mask = 1
+scalestart = .90,1
+
+[BG Пол]
+type = parallax
+spriteno = 0,0
+delta = .865,1
+start = 0,236
+width = 1450,1750
+
+[BG Трава/Слой 1]
+type = normal
+spriteno = 0,1
+delta = .865,1
+start = 8,183
+mask = 1
+scalestart = .90,1

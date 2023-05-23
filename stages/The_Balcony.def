@@ -1,0 +1,179 @@
+﻿; Арена: The Balcony MK3
+; Автор: Emsi-D
+; Рип спрайтов: Fly
+; Улучшения: Max Arturo (мерцание светильников)
+
+[Info]
+Name = "b4lc0ny"
+Displayname = "The Balcony"
+Mugenversion = 1.1
+
+[Camera]
+boundleft = -300
+boundright = 300
+boundhigh = -12
+tension = 100
+floortension = 30
+verticalfollow = .2
+overdrawhigh = 20
+overdrawlow = 20
+startzoom = 1
+zoomin = 1
+zoomout = 0.80
+
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1400
+rightbound = 1400
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+[StageInfo]
+zoffset = 229
+autoturn = 1
+resetbg = 1
+localcoord = 400,254
+
+[Shadow]
+intensity = 190
+yscale = .20
+
+[Music]
+bgmusic = sound/MK3/mk3_the_pit_3.ogg
+bgmloopstart = 1512440
+bgmloopend = -1
+
+[BGdef]
+spr = The_Balcony,Soul_Chamber_&_Noob's_Dorfen.sff
+bgclearcolor = 0,0,0
+
+
+[BG Светильники на бэкграунде]
+type = anim
+actionno = 1
+delta = .315,1
+start = 0,55
+scalestart = .90,1
+
+[Begin Action 1]
+1,17, 0,0, 3
+1,18, 0,0, 3
+1,19, 0,0, 3
+1,20, 0,0, 3
+1,21, 0,0, 3
+1,22, 0,0, 3
+1,21, 0,0, 3
+1,20, 0,0, 3
+1,19, 0,0, 3
+1,20, 0,0, 3
+1,21, 0,0, 3
+1,22, 0,0, 3
+1,21, 0,0, 3
+1,20, 0,0, 3
+1,19, 0,0, 3
+1,18, 0,0, 3
+
+[BG Колонны]
+type = normal
+spriteno = 1,11
+delta = .336,1
+start = 0,-51
+mask = 1
+scalestart = .90,1
+
+[BG Светильники между колоннами]
+type = anim
+actionno = 2
+delta = .336,1
+start = 0,-51
+scalestart = .90,1
+
+[Begin Action 2]
+1,12, 0,0, 3
+1,13, 0,0, 3
+1,14, 0,0, 3
+1,15, 0,0, 3
+1,16, 0,0, 3
+1,15, 0,0, 3
+1,14, 0,0, 3
+1,15, 0,0, 3
+1,16, 0,0, 3
+1,15, 0,0, 3
+1,14, 0,0, 3
+1,15, 0,0, 3
+1,16, 0,0, 3
+1,15, 0,0, 3
+1,14, 0,0, 3
+1,13, 0,0, 3
+1,12, 0,0, 3
+-1,0, 0,0, 3
+
+[BG Колодец]
+type = normal
+spriteno = 1,8
+delta = .364,1
+start = -2,123
+mask = 1
+scalestart = .90,1
+
+[BG Переход между этажами]
+type = normal
+spriteno = 0,18
+delta = 1,1
+start = 0,247
+tile = 1,0
+
+[BG Серые стенки в углах]
+type = normal
+spriteno = 1,10
+delta = .625,1
+start = -2,-22
+mask = 1
+scalestart = .90,1
+
+[BG Пол]
+type = parallax        
+spriteno = 1,0
+delta = .79,1
+start = 0,232
+width = 1120,1400
+scalestart = .90,1
+
+[BG Арки и статуи кентавров]
+type = normal
+spriteno = 1,1
+delta = .84,1
+start = 0,-20
+mask = 1
+scalestart = .90,1
+
+[BG Огонь/Левый угол арены]
+type = anim
+actionno = 6
+delta = .84,1
+start = -272,78.5
+scalestart = .90,1
+
+[BG Огонь/Правый угол арены]
+type = anim
+actionno = 6
+delta = .84,1
+start = 258,78.5
+scalestart = .90,1
+
+[Begin Action 6]
+1,2, 0,0, 5
+1,3, 0,0, 5
+1,4, 0,0, 5
+1,5, 0,0, 5
+1,6, 0,0, 5
+1,7, 0,0, 5
+

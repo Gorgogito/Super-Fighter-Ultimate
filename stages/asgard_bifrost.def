@@ -1,0 +1,930 @@
+[Info]
+name = " Asgard Bifrost"
+;=======================================================================
+;ASGARD BIFROST  -    ( Thor stage )          custom style MvsC stage
+;
+;Version 1.2 update ---- ( 05 january of 2014 ) // Original released ---- ( 20 december of 2005 )
+;=======================================================================
+;for additional info about the stage check the Readme file
+;
+;------- AUTHOR: 
+; Loganir ( loganir@gmail.com)     www.loganir.blogspot.com
+;
+; -------- SPECIAL THANKS AND CREDITS:
+; - StanLee & JackKirby for the  comic book conception of Asgard
+; -  Mugenesis MvsC3 team forum where this stage was born in 2005 
+; - Sprite rips from sheets or packs by: Xenozip & Blip, Grim, Cyrus_annihilator.
+; - Music:  by Hiroki Kikuta -    from Soukaigi OST.  ( Visit Angel's fear:  http://www.hirokikikuta.com ) 
+;
+;--------- DISCLAIMER:
+;* This stage is a fan work and can`t be used for any commercial or profit purposes!
+;* All material are copyright of their respective owners:
+; - Thor, Enchantress & Executioner  characters are property of Marvel Comics 
+; - Some graphics, sprites & effects are created/edited with material from Capcom, Wayforward, Sammy. 
+;
+;========================================================================
+author=  "Loganir"
+versiondate = 01,04,2014 
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -608
+boundright =  608
+boundhigh = -230
+boundlow = 0
+verticalfollow = 1
+tension = 50
+floortension =70
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound  = -1000
+rightbound = 1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 200
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+intensity = 0
+color =0,0,0
+yscale =1
+
+
+[Reflection] 
+intensity =110
+
+[Music]
+bgmusic = sound/Asgard_Bifrost.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/Asgard_Bifrost.sff
+debugbg = 0
+
+
+;-----------------------------------------------------------------------------------------------
+[BG Space]
+type = normal
+spriteno = 0, 0
+start = -150, -180
+delta = .30, .75
+mask = 0
+
+
+[BG stars1]
+type  = anim
+actionno= 1
+start = -150, -180
+delta =  .34, .85
+mask = 1
+[Begin Action 1]
+0,2,0,0,2,,A
+0,3,0,0,2,,A
+
+
+
+;--------------------------------------------------------------
+[BG cadente]
+type = normal
+spriteno = 3,0
+start = 0, 0 
+delta = .40, 1
+mask = 1
+trans = add1
+id=1
+
+[BGCtrlDef 1]
+looptime = 300 
+CtrlID = 1
+
+[BGCtrl 1.1]
+type = Enable
+time = 0
+value = 1
+
+
+
+[BGCtrl 1.3] 
+type = PosSet
+time = 0
+x = 0
+y = -300
+
+[BGCtrl 1.4] 
+type = VelSet
+time = 0
+x = -3
+y = 5
+
+[BG cadente2]
+type = normal
+spriteno = 3,0
+start = 0, 0 
+delta = .40, 1
+mask = 1
+trans = add1
+id=2
+
+[BGCtrlDef 2]
+looptime = 400 
+CtrlID = 2
+
+[BGCtrl 2.1]
+type = Enable
+time = 200
+value = 1
+
+
+
+[BGCtrl 2.3] 
+type = PosSet
+time = 0
+x = -90
+y = -300
+
+[BGCtrl 2.4] 
+type = VelSet
+time = 0
+x = -5
+y = 9
+;----------------------------------------------------------------
+
+[BG asgardgolden];back
+type = anim
+actionno = 5
+start = 0, -115
+delta = .96, .96
+mask  = 1
+[Begin Action 5] ;light1
+110, 0, 0, 0,8, ,AS226D256
+110, 0, 0, 0,8, ,AS236D256
+110, 0, 0, 0,8, ,AS246D256
+110, 0, 0, 0,8, ,A 
+110, 0, 0, 0,8, ,AS246D256
+110, 0, 0, 0,8, ,AS236D256
+110, 0, 0, 0,8, ,AS226D256
+
+
+
+
+
+[BG Asgard city]
+type = normal
+spriteno = 100, 1
+start = 0, -111
+delta = .96, .96
+mask = 1
+
+[BG Asgard tree]
+type = normal
+spriteno = 100,0
+start = 0, -110
+mask  = 1
+
+[BG asgardgolden];front
+type = anim;;
+actionno = 10
+start = 0, -110;
+mask  = 1
+delta = .96, .96
+[Begin Action 10] ;light3;
+0, 5, 0, 0,7, ,AS26D256
+0, 5, 0, 0,7, ,AS36D256
+0, 5, 0, 0,7, ,AS46D256
+0, 5, 0, 0,7, ,AS36D256
+
+
+
+[BG SHINY1] ;---------------------------------
+type = anim
+actionno = 3
+start = 0,-300
+mask = 0
+id=3
+delta = .96, .96
+[BGCtrlDef 3]
+looptime =100                                                                                                                                                                                                                                   ;350
+CtrlID = 3
+[BGCtrl 3.1]
+type = Enable
+time = 0
+value = 1
+[BGCtrl 3.1]
+type =Enable
+time = 90
+value = 0
+[BGCtrl 3.3] 
+type = PosSet
+time = 0
+x = -280
+y =260
+[BGCtrl 8.41] 
+type = VelSet
+time = 2
+Y = 0.1
+
+
+[BG SHINY2] ;---------------------------------
+type = anim
+actionno = 3
+start = 0,-300
+mask = 0
+id=4
+delta = .96, .96
+[BGCtrlDef 4]
+looptime =250                                                                                                                                                                                                                                   ;350
+CtrlID = 4
+[BGCtrl 3.1]
+type = Enable
+time = 200
+value = 1
+[BGCtrl 3.1]
+type =Enable
+time = 290
+value = 0
+[BGCtrl 3.3] 
+type = PosSet
+time = 200
+x = -330
+y =250
+[BGCtrl 8.41] 
+type = VelSet
+time = 202
+Y = 0.1
+
+[BG SHINY3] ;---------------------------------
+type = anim
+actionno = 3
+start = 0,-300
+mask = 0
+id=5
+delta = .96, .96
+[BGCtrlDef 5]
+looptime =200                                                                                                                                                                                                                                   ;350
+CtrlID = 5
+[BGCtrl 3.1]
+type = Enable
+time = 50
+value = 1
+[BGCtrl 3.1]
+type =Enable
+time =190
+value = 0
+[BGCtrl 3.3] 
+type = PosSet
+time =50
+x = -310
+y =290
+[BGCtrl 8.41] 
+type = VelSet
+time = 52
+Y = 0.2
+
+[BG SHINY4] ;---------------------------------
+type = anim
+actionno = 3
+start = 0,-300
+mask = 0
+id=6
+delta = .96, .96
+[BGCtrlDef 6]
+looptime =150                                                                                                                                                                                                                                   ;350
+CtrlID = 6
+[BGCtrl 3.1]
+type = Enable
+time = 100
+value = 1
+[BGCtrl 3.1]
+type =Enable
+time = 190
+value = 0
+[BGCtrl 3.3] 
+type = PosSet
+time = 100
+x = -250
+y =290
+[BGCtrl 8.41] 
+type = VelSet
+time =102
+Y = 0.1
+
+[BG SHINY5] ;---------------------------------
+type = anim
+actionno = 3
+start = 0,-300
+mask = 0
+id=7
+delta = .96, .96
+[BGCtrlDef 7]
+looptime =150                                                                                                                                                                                                                                  ;350
+CtrlID = 7
+[BGCtrl 3.1]
+type = Enable
+time = 0
+value = 1
+[BGCtrl 3.1]
+type =Enable
+time =120
+value = 0
+[BGCtrl 3.3] 
+type = PosSet
+time = 0
+x = -352
+y =215
+[BGCtrl 8.41] 
+type = VelSet
+time = 2
+Y = 0.2
+
+[BG SHINY6] ;---------------------------------
+type = anim
+actionno = 3
+start = 0,-300
+mask = 0
+id=8
+delta = .96, .96
+[BGCtrlDef 8]
+looptime =150                                                                                                                                                                                                                                  ;350
+CtrlID = 8
+[BGCtrl 3.1]
+type = Enable
+time = 0
+value = 1
+[BGCtrl 3.1]
+type =Enable
+time =120
+value = 0
+[BGCtrl 3.3] 
+type = PosSet
+time = 0
+x = -420
+y =235
+[BGCtrl 8.41] 
+type = VelSet
+time = 2
+Y = 0.6
+
+[BG SHINY7] ;---------------------------------
+type = anim
+actionno = 3
+start = 0,-300
+mask = 0
+id=9
+delta = .96, .96
+[BGCtrlDef 9]
+looptime =120                                                                                                                                                                                                                                  ;350
+CtrlID =9
+[BGCtrl 3.1]
+type = Enable
+time = 10
+value = 1
+[BGCtrl 3.1]
+type =Enable
+time =100
+value = 0
+[BGCtrl 3.3] 
+type = PosSet
+time = 10
+x = -378
+y =180
+[BGCtrl 8.41] 
+type = VelSet
+time = 12
+Y = 0.7
+
+[BG SHINY8] ;---------------------------------
+type = anim
+actionno = 3
+start = 0,-300
+mask = 0
+id=10
+delta = .96, .96
+[BGCtrlDef 10]
+looptime =150                                                                                                                                                                                                                                  ;350
+CtrlID = 10
+[BGCtrl 3.1]
+type = Enable
+time = 50
+value = 1
+[BGCtrl 3.1]
+type =Enable
+time =120
+value = 0
+[BGCtrl 3.3] 
+type = PosSet
+time = 50
+x = -520
+y =265
+[BGCtrl 8.41] 
+type = VelSet
+time = 52
+Y = 0.5
+
+
+
+
+
+
+
+;-----------------------------------------------------
+
+[BG SHINx0] ;---------------------------------
+type = anim
+actionno = 4
+start = 0,-300
+mask = 0
+id=11
+delta = .96, .96
+[BGCtrlDef 11]
+looptime =150                                                                                                                                                                                                                                  ;350
+CtrlID = 11
+[BGCtrl 3.1]
+type = Enable
+time = 0
+value = 1
+[BGCtrl 3.1]
+type =Enable
+time =120
+value = 0
+[BGCtrl 3.3] 
+type = PosSet
+time = 0
+x = -450
+y =245
+[BGCtrl 8.41] 
+type = VelSet
+time = 2
+x =  -0.3
+
+
+[BG SHINx1] ;---------------------------------
+type = anim
+actionno = 4
+start = 0,-300
+mask = 0
+id=12
+delta = .96, .96
+[BGCtrlDef 12]
+looptime =150                                                                                                                                                                                                                                  ;350
+CtrlID = 12
+[BGCtrl 3.1]
+type = Enable
+time = 0
+value = 1
+[BGCtrl 3.1]
+type =Enable
+time =120
+value = 0
+[BGCtrl 3.3] 
+type = PosSet
+time = 0
+x = -285
+y =315
+[BGCtrl 8.41] 
+type = VelSet
+time = 2
+x =  -0.1
+
+
+[BG SHINx3] ;---------------------------------
+type = anim
+actionno = 4
+start = 0,-300
+mask = 0
+id=13
+delta = .96, .96
+[BGCtrlDef 13]
+looptime =200                                                                                                                                                                                                                                  ;350
+CtrlID = 13
+[BGCtrl 3.1]
+type = Enable
+time = 0
+value = 1
+[BGCtrl 3.1]
+type =Enable
+time =120
+value = 0
+[BGCtrl 3.3] 
+type = PosSet
+time = 0
+x = -355
+y =260
+[BGCtrl 8.41] 
+type = VelSet
+time = 2
+x =  -0.1
+
+
+[BG SHINx4] ;---------------------------------
+type = anim
+actionno = 4
+start = 0,-300
+mask = 0
+id=14
+;delta = .96, .96
+[BGCtrlDef 14]
+looptime =200                                                                                                                                                                                                                                  ;350
+CtrlID = 14
+[BGCtrl 3.1]
+type = Enable
+time = 0
+value = 1
+[BGCtrl 3.1]
+type =Enable
+time =120
+value = 0
+[BGCtrl 3.3] 
+type = PosSet
+time = 0
+x = -370
+y = 325
+[BGCtrl 8.41] 
+type = VelSet
+time =22
+x =  -0.3
+
+[BG SHINx5] ;---------------------------------
+type = anim
+actionno = 4
+start = 0,-300
+mask = 0
+id=15
+;delta = .96, .96
+[BGCtrlDef 15]
+looptime =200                                                                                                                                                                                                                                  ;350
+CtrlID = 15
+[BGCtrl 3.1]
+type = Enable
+time = 0
+value = 1
+[BGCtrl 3.1]
+type =Enable
+time =120
+value = 0
+[BGCtrl 3.3] 
+type = PosSet
+time = 0
+x = -455
+y = 325
+[BGCtrl 8.41] 
+type = VelSet
+time = 22
+x = 0.3
+
+[BG SHINx0] ;---------------------------------
+type = anim
+actionno =3
+start = 0,-300
+mask = 0
+id=16
+delta = .96, .96
+[BGCtrlDef 16]
+looptime =150                                                                                                                                                                                                                                  ;350
+CtrlID = 16
+[BGCtrl 3.1]
+type = Enable
+time = 30
+value = 1
+[BGCtrl 3.1]
+type =Enable
+time =120
+value = 0
+[BGCtrl 3.3] 
+type = PosSet
+time = 30
+x = -450
+y =275
+[BGCtrl 8.41] 
+type = VelSet
+time =32
+y =  -0.3
+
+[BG SHINx5] ;---------------------------------
+type = anim
+actionno = 4
+start = 0,-300
+mask = 0
+id=17
+delta = .96, .96
+[BGCtrlDef 17]
+looptime =200                                                                                                                                                                                                                                  ;350
+CtrlID = 17
+[BGCtrl 3.1]
+type = Enable
+time = 0
+value = 1
+[BGCtrl 3.1]
+type =Enable
+time =120
+value = 0
+[BGCtrl 3.3] 
+type = PosSet
+time = 0
+x = -485
+y = 315
+[BGCtrl 8.41] 
+type = VelSet
+time = 0
+x = -0.2
+
+;=============================
+[BG dashes1]
+type = anim;
+actionno = 80
+start = -580, -110
+mask  = 1
+[BG dashes2]
+type = anim;
+actionno = 80
+start = 580, -110
+mask  = 1
+[BG dashes3]
+type = anim;
+actionno = 81
+start = -280, -110
+mask  = 1
+[BG dashes4]
+type = anim;
+actionno = 81
+start = 280, -110
+mask  = 1
+[BG dashes5]
+type = anim;
+actionno = 80
+start = 0, -110
+mask  = 1
+[Begin Action 80] 
+80, 0, 0, 0,6, ,A;S156D256
+80, 1, 0, 0,6, ,A;S156D256
+80, 2, 0, 0,6, ,A;S156D256
+80, 3, 0, 0,6, ,A;S156D256
+80, 4, 0, 0,6, ,A;S156D256
+80, 5, 0, 0,6, ,A;S156D256
+80, 6, 0, 0,6, ,A;S156D256
+80, 7, 0, 0,6, ,A;S156D256
+80, 8, 0, 0,6, ,A;S156D256
+80, 9, 0, 0,6, ,A;S156D256
+80, 10, 0, 0,6, ,A;S156D256
+80, 11, 0, 0,6, ,A;S156D256
+80, 12, 0, 0,6, ,A;S156D256
+80, 13, 0, 0,6, ,A;S156D256
+80, 14, 0, 0,6, ,A;S156D256
+80, 15, 0, 0,6, ,A;S156D256
+80, 16, 0, 0,6, ,A;S156D256
+80, 17, 0, 0,6, ,A;S156D256
+80, 18, 0, 0,6, ,A;S156D256
+80, 19, 0, 0,6, ,A;S156D256
+80, 20, 0, 0,6, ,A;S156D256
+80, 21, 0, 0,6, ,A;S156D256
+80, 22, 0, 0,6, ,A;S156D256
+[Begin Action 81] 
+80, 0, 0, 0,5, ,A;S156D256
+80, 1, 0, 0,5, ,A;S156D256
+80, 2, 0, 0,5, ,A;S156D256
+80, 3, 0, 0,5, ,A;S156D256
+80, 4, 0, 0,5, ,A;S156D256
+80, 5, 0, 0,5, ,A;S156D256
+80, 6, 0, 0,5, ,A;S156D256
+80, 7, 0, 0,5, ,A;S156D256
+80, 8, 0, 0,5, ,A;S156D256
+80, 9, 0, 0,5, ,A;S156D256
+80, 10, 0, 0,5, ,A;S156D256
+80, 11, 0, 0,5, ,A;S156D256
+80, 12, 0, 0,5, ,A;S156D256
+80, 13, 0, 0,5, ,A;S156D256
+80, 14, 0, 0,5, ,A;S156D256
+80, 15, 0, 0,5, ,A;S156D256
+80, 16, 0, 0,5, ,A;S156D256
+80, 17, 0, 0,5, ,A;S156D256
+80, 18, 0, 0,5, ,A;S156D256
+80, 19, 0, 0,5, ,A;S156D256
+80, 20, 0, 0,5, ,A;S156D256
+80, 21, 0, 0,5, ,A;S156D256
+80, 22, 0, 0,5, ,A;S156D256
+
+
+
+[BG rainbow]
+type  = anim
+actionno=70
+start = 0, -110
+mask = 1
+[Begin Action 70] ;light1
+1, 0, 0, 0, 14, ,AS226D256 
+1, 0, 0, 0, 14, ,AS236D256 
+1, 0, 0, 0, 14, ,AS246D256 
+1, 0, 0, 0, 14, ,AS236D256 
+1, 0, 0, 0, 14, ,AS226D256 
+
+
+
+
+
+[BG rainbowborde]
+type = normal
+spriteno = 1,2
+start = 0, -110
+mask  = 1
+
+
+[BG heimdall] ;movie version>to>comics version
+type = anim
+actionno = 90
+start = 0, -110
+mask  = 1
+[Begin Action 90] 
+90, 0, 0, 0,16, ,
+90, 1, 0, 0,16, ,
+90, 2, 0, 0,16, ,
+90, 3, 0, 0,16, ,
+
+;[BG heimdamora]; old
+;type = normal
+;spriteno = 9, 0
+;start = 0, -110;
+;mask  = 1
+
+[BG Enchantress]
+type  = anim
+actionno=110
+start = 0, -110
+mask = 1
+[Begin Action 110]
+10,0,0,0,63,,
+10,4,0,0,8,,
+10,5,0,0,64,,
+10,0,0,0,43,,
+10,4,0,0,8,,
+10,5,0,0,64,,
+10,0,0,0,83,,
+10,4,0,0,8,,
+10,5,0,0,44,,
+10,0,0,0,63,,
+10,4,0,0,8,,
+10,5,0,0,64,,
+10,0,0,0,8,,
+10,1,0,0,8,,
+10,2,0,0,8,,
+10,3,0,0,8,,
+10,4,0,0,8,,
+10,5,0,0,8,,
+10,0,0,0,33,,
+10,4,0,0,8,,
+10,5,0,0,44,,
+10,0,0,0,23,,
+10,4,0,0,8,,
+10,5,0,0,24,,
+10,0,0,0,33,,
+10,4,0,0,8,,
+10,5,0,0,44,,
+10,0,0,0,23,,
+10,4,0,0,8,,
+10,5,0,0,24,,
+10,0,0,0,8,,
+10,1,0,0,8,,
+10,2,0,0,8,,
+10,3,0,0,8,,
+10,4,0,0,8,,
+10,5,0,0,8,,
+10,0,0,0,8,,
+10,1,0,0,8,,
+10,2,0,0,8,,
+10,3,0,0,8,,
+10,4,0,0,8,,
+10,5,0,0,8,,
+
+
+
+[BG Executioner]
+type  = anim
+actionno=111
+start = 0, -110
+mask = 1
+[Begin Action 111]
+11,0,0,0,33,,
+11,1,0,0,22,,
+11,2,0,0,99,,
+11,3,0,0,22,,
+
+
+
+
+
+[BG Spacefatia]
+type = normal
+spriteno = 2, 0
+start = -150, -171
+delta = .30
+mask = 1
+layerno = 1
+trans = none
+
+[BG rainbowbordefatia]
+type = normal
+spriteno = 1,3
+start = 0, -112
+mask  = 1
+layerno = 1
+
+
+
+[BG flare]
+type = normal
+spriteno = 77, 1
+start = -120, -175
+delta = .30, .80
+mask  = 1
+trans = add
+layerno = 1
+
+[BG flare]
+type = normal
+spriteno = 77, 2
+start = -130, -175
+delta = .35, .81
+mask  = 1
+trans = add
+layerno = 1
+
+[BG flare]
+type = normal
+spriteno = 77, 3
+start = -140, -175
+delta = .40, .82
+mask  = 1
+trans = add
+layerno = 1
+
+[BG flare]
+type = normal
+spriteno = 77, 4
+start = -150, -175
+delta = .45, .83
+mask  = 1
+trans = add
+layerno = 1
+
+
+[BG rainbowbordecolum]
+type = normal
+spriteno = 1,4
+start = 0, -112
+mask  = 1
+layerno = 1
+
+;.....................................................................
+
+
+[Begin Action 3] ;light1
+5, 0, 0, 0,8, ,AS116D256 
+5, 1, 0, 0, 8, ,AS116D256  
+5, 2, 0, 0, 8, ,AS116D256  
+5, 3, 0, 0, 8, ,AS116D256  
+5, 4, 0, 0, 8, ,AS116D256  
+5, 5, 0, 0, 8, ,AS136D256 
+5, 6, 0, 0, 16, ,AS146D256  
+5, 5, 0, 0, 8, ,AS136D256  
+5, 4, 0, 0, 8, ,AS116D256 
+5, 3, 0, 0, 8, ,AS116D256  
+5, 2, 0, 0, 8, ,AS116D256 
+5, 1, 0, 0, 8, ,AS116D256 
+5, 0, 0, 0, 8, ,AS116D256 
+5, 0, 0, 0, 8, ,AS56D256 
+
+[Begin Action 4] ;light1
+6, 0, 0, 0,8, ,AS116D256  
+6, 1, 0, 0, 8, ,AS116D256  
+6, 2, 0, 0, 8, ,AS116D256  
+6, 3, 0, 0, 8, ,AS116D256  
+6, 4, 0, 0, 8, ,AS116D256 
+6, 5, 0, 0, 8, ,AS136D256 
+6, 6, 0, 0, 16, ,AS146D256 
+6, 5, 0, 0, 8, ,AS136D256 
+6, 4, 0, 0, 8, ,AS116D256  
+6, 3, 0, 0, 8, ,AS116D256  
+6, 2, 0, 0, 8, ,AS116D256 
+6, 1, 0, 0, 8, ,AS116D256  
+6, 0, 0, 0, 8, ,AS116D256  
+6, 0, 0, 0, 8, ,AS56D256 

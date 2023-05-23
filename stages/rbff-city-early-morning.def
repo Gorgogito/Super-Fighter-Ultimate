@@ -1,0 +1,298 @@
+;========================================================
+;
+; A city street in the early morning.
+;
+;
+; Blue Mary's stage from the game Real Bout Fatal Fury 2 by SNK-Playmore.
+;
+; M.U.G.E.N. adaptation by R.o.q.u.e.
+;
+; Special thanks to :
+;  - SNK-Playmore for the Real Bout series
+;  - ElSemi, for Nebula
+;  - Corel, for Paint Shop Pro
+;  - Sés, for M.C.M.
+;  - Christophe and Winane, for SFFExtract
+;  - Elecbyte, for Sprmaker
+;
+; For more M.U.G.E.N. material, visit the website : http://alice-games.org
+;
+;========================================================
+
+
+;--------------------------------------------------------
+[Info]
+name = "rbff - City - Early Morning"
+
+
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+
+boundleft = -160
+boundright = 160
+boundhigh = -80
+boundlow = 0
+
+verticalfollow = 0.2
+floortension = 0
+tension = 70
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -80          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+ ;Don't change these values.
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+
+;--------------------------------------------------------
+[Scaling]
+ ;No need to change these values
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1.2     ;Scale to use at bottom
+
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 28    ;Dist from left of screen that player can move to
+screenright = 28   ;Right edge
+
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 200
+autoturn = 1
+resetBG = 1
+
+
+;--------------------------------------------------------
+[Shadow]
+intensity = 0
+color = 36,42,40
+yscale = -0.25
+fade.range = -100,-20
+
+
+;--------------------------------------------------------
+[Reflection]
+intensity = 0
+
+
+;--------------------------------------------------------
+[Music]
+bgmusic = stages/196.mp3
+bgvolume = 255
+
+
+;--------------------------------------------------------
+[BGdef]
+spr = stages/rbff-city-early-morning.sff
+debugbg = 0
+
+[BG city]
+type  = normal
+spriteno = 0, 0
+layerno = 0                
+start = 0, 0
+delta = 1, 1
+trans = none
+mask  = 0
+window = 0,0, 319, 235
+
+[BG Neon sign]
+type = anim
+actionno = 1
+start = 0, 0
+delta = 1,1
+
+[BG Truck rear lights]
+type = anim
+actionno = 2
+start = 0, 0
+delta = 1,1
+
+[BG background traffic]
+type = anim
+actionno = 3
+start = 0, 0
+delta = 1,1
+
+
+;--------------------------------------------------------
+[BG Street]
+type  = normal
+spriteno = 10, 0
+layerno = 0                
+start = 0, 0
+delta = 1,1
+trans = none
+mask  = 1
+window = 0,0, 319, 239
+windowdelta = 0,0
+
+[BG Left small vapor fume]
+type = anim
+actionno = 14
+start = 0, 0
+delta = 1,1
+
+[BG Right small vapor fume]
+type = anim
+actionno = 15
+start = 0, 0
+delta = 1,1
+
+[BG Right big vapor fume]
+type = anim
+actionno = 16
+start = 0, 0
+delta = 1,1
+
+[BG Left brown cat]
+type = anim
+actionno = 11
+start = 0, 0
+delta = 1,1
+
+[BG Right black cat]
+type = anim
+actionno = 12
+start = 0, 0
+delta = 1,1
+
+[BG Right brown cat]
+type = anim
+actionno = 13
+start = 0, 0
+delta = 1,1
+
+[BG Pedestrian crossing sign]
+type = anim
+actionno = 17
+start = 0, 0
+delta = 1,1
+
+[BG Street]
+type  = normal
+spriteno = 18, 0
+layerno = 1                
+start = 0, 0
+delta = 1,1
+trans = none
+mask  = 1
+
+
+;--------------------------------------------------------
+[Begin action 1]
+1,1, 0,0, 7
+1,2, 0,0, 7
+
+[Begin action 2]
+2,1, 0,0, 14
+2,2, 0,0, 14
+
+[Begin action 3]
+3,1, 0,0, 7
+3,2, 0,0, 7
+3,3, 0,0, 7
+3,4, 0,0, 7
+3,5, 0,0, 7
+3,6, 0,0, 7
+3,7, 0,0, 7
+3,8, 0,0, 7
+
+[Begin action 11]
+11,0, 0,0, 27
+11,1, 0,0, 9
+11,2, 0,0, 11
+11,3, 0,0, 16
+11,4, 0,0, 15
+11,5, 0,0, 26
+11,6, 0,0, 241
+
+[Begin action 12]
+12,1, 0,0, 10
+12,2, 0,0, 10
+12,3, 0,0, 10
+12,4, 0,0, 10
+12,5, 0,0, 10
+12,6, 0,0, 10
+
+[Begin action 13]
+13,1, 0,0, 17
+13,2, 0,0, 8
+13,3, 0,0, 8
+13,4, 0,0, 10
+13,3, 0,0, 8
+13,2, 0,0, 8
+13,3, 0,0, 8
+13,4, 0,0, 10
+13,3, 0,0, 8
+13,2, 0,0, 8
+
+[Begin action 14]
+14,1, 0,0, 7
+14,2, 0,0, 7
+14,3, 0,0, 7
+14,4, 0,0, 7
+14,5, 0,0, 7
+14,6, 0,0, 7
+14,7, 0,0, 7
+14,8, 0,0, 7
+
+[Begin action 15]
+15,1, 0,0, 7
+15,2, 0,0, 7
+15,3, 0,0, 7
+15,4, 0,0, 7
+15,5, 0,0, 7
+15,6, 0,0, 7
+15,7, 0,0, 7
+15,8, 0,0, 7
+
+[Begin action 16]
+16,1, 0,0, 7
+16,2, 0,0, 7
+16,3, 0,0, 7
+16,4, 0,0, 7
+16,5, 0,0, 7
+16,6, 0,0, 7
+16,7, 0,0, 7
+16,8, 0,0, 7
+
+[Begin action 17]
+17,3, 0,0, 263
+17,2, 0,0, 246
+17,1, 0,0, 7
+17,2, 0,0, 7
+17,1, 0,0, 7
+17,2, 0,0, 7
+17,1, 0,0, 7
+17,2, 0,0, 7
+17,1, 0,0, 7
+17,2, 0,0, 7
+17,1, 0,0, 7
+17,2, 0,0, 7
+17,1, 0,0, 7
+17,2, 0,0, 7
+17,1, 0,0, 7
+

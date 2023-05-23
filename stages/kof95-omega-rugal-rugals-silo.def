@@ -1,0 +1,421 @@
+; Autor : Juan Carlos http://eternalmugen.cjb.net ; Dedicado a mi amigo Clarens
+[Info]
+name = "KOF 95 - omega rugal - rugals silo"
+
+[Camera]
+startx=0
+starty=0
+boundleft=-214
+boundright=214
+boundhigh=-10
+boundlow=0
+verticalfollow=.6
+floortension=0
+tension=60
+
+[PlayerInfo]
+p1startx=-80
+p1starty=0
+p1startz=0
+p1facing=1
+
+p2startx=80
+p2starty=0
+p2startz=0
+p2facing=-1
+
+leftbound=-1000
+rightbound=1000
+topbound=0
+botbound=0
+
+[Scaling]
+topz=0
+botz=50
+topscale=1
+botscale=1.4
+
+[Bound]
+screenleft=15
+screenright=15
+
+[StageInfo]
+zoffset=220
+autoturn=1
+resetBG=1
+
+[Shadow]
+color=255,0,0
+yscale=.1
+reflect=1
+
+[Music]
+bgmusic = stages/038.mp3
+bgvolume= 255
+
+[BGdef]
+spr=stages/kof95-omega-rugal-rugals-silo.sff
+debugbg = 1
+
+[BG 1]
+type= anim
+actionno = 3
+layerno=0
+start=0, 0
+delta=0.42, 1
+mask=0
+ID = 1
+
+
+
+[BG 1]
+type=normal
+spriteno = 1,0
+layerno=0
+start=0, 0
+delta=0.42, 1
+mask=1
+ID = 1
+
+
+
+[BG 1]
+type=anim
+actionno = 8
+layerno=0
+start=0, 0
+delta=0.42, 1
+mask=1
+ID = 1
+
+
+[BG luz,tres]
+type=anim
+actionno= 20
+layerno=0
+start=0, 0
+delta=0.42, 1
+mask=1
+ID = 1
+
+[BG luz,cuatro]
+type=anim
+actionno= 30
+layerno=0
+start=0, 0
+delta=0.42, 1
+mask=1
+ID = 1
+
+
+[BG luz,cinco]
+type=anim
+actionno= 60
+layerno=0
+start=0, 0
+delta=0.42, 1
+mask=1
+ID = 1
+
+[BG 1]
+type= anim
+actionno = 4
+layerno=0
+start=0, 0
+delta=0.42, 1
+mask=1
+ID = 1
+
+
+
+[BG 1]
+type= anim
+actionno = 3
+layerno=0
+start=0, 0
+delta=0.42, 1
+mask=1
+ID = 1
+
+[BG 1]
+type=ani
+actionno = 1
+layerno=0
+start=0,0
+delta=1, 1
+mask=1
+ID = 7
+
+[BG 1]
+type= normal
+spriteno = 9,0
+layerno=0
+start=0, 0
+delta=1, 1
+mask=1
+ID = 7
+
+[BG 1]
+type=ani
+actionno = 2
+layerno=0
+start=0, 10
+delta=1, 1
+mask=1
+
+[BG 15,pantera]
+type=ani
+actionno = 15
+layerno=0
+start=190, 200
+delta=1, 1
+mask=1
+ID = 15
+
+
+
+[Begin Action 1]
+0,0,0,0,10
+0,1,0,0,12
+0,2,0,0,14
+0,3,0,0,19
+0,2,0,0,13
+0,1,0,0,8
+0,0,0,0,6
+
+[Begin Action 2]
+3,0,0,0,3
+3,1,0,0,3
+3,2,0,0,3
+3,3,0,0,3
+3,4,0,0,3
+3,5,0,0,3
+3,6,0,0,3
+3,8,0,0,3
+3,9,0,0,3
+3,10,0,0,3
+3,11,0,0,3
+3,12,0,0,3
+3,13,0,0,3
+3,14,0,0,3
+3,15,0,0,3
+3,16,0,0,3
+3,17,0,0,3
+3,18,0,0,3
+3,19,0,0,3
+3,18,0,0,3
+3,20,0,0,3
+3,21,0,0,3
+3,22,0,0,3
+3,23,0,0,3
+3,24,0,0,3
+3,25,0,0,3
+3,26,0,0,3
+3,27,0,0,3
+3,28,0,0,3
+3,29,0,0,3
+3,30,0,0,3
+3,31,0,0,3
+3,32,0,0,3
+3,33,0,0,3
+3,34,0,0,3
+3,35,0,0,3
+
+[Begin Action 3]
+
+7,0,0,0,10
+7,1,0,0,10
+7,2,0,0,10
+7,3,0,0,10
+7,4,0,0,10
+7,5,0,0,10
+7,6,0,0,10
+
+
+[Begin Action 4]
+
+8,0,0,0,10
+8,1,0,0,10
+8,2,0,0,10
+8,3,0,0,10
+8,4,0,0,10
+8,5,0,0,10
+8,6,0,0,10
+8,7,0,0,10
+
+[Begin Action 8]
+14,0,0,0,9
+14,1,0,0,9
+14,2,0,0,9
+14,3,0,0,9
+14,4,0,0,9
+14,5,0,0,9
+14,6,0,0,9
+
+[Begin Action 15]
+15,0,0,0,8
+15,1,0,0,8
+15,2,0,0,8
+15,3,0,0,8
+15,4,0,0,8
+15,5,0,0,8
+15,6,0,0,8
+15,7,0,0,8
+15,8,0,0,8
+15,9,0,0,100
+15,0,0,0,8
+15,1,0,0,8
+15,2,0,0,8
+15,3,0,0,8
+15,4,0,0,8
+15,5,0,0,8
+15,6,0,0,8
+15,7,0,0,8
+15,8,0,0,8
+15,9,0,0,100
+15,0,0,0,8
+15,1,0,0,8
+15,2,0,0,8
+15,3,0,0,8
+15,4,0,0,8
+15,5,0,0,8
+15,6,0,0,8
+15,7,0,0,8
+15,8,0,0,8
+15,9,0,0,100
+15,0,0,0,8
+15,1,0,0,8
+15,2,0,0,8
+15,3,0,0,8
+15,4,0,0,8
+15,5,0,0,8
+15,6,0,0,8
+15,7,0,0,8
+15,8,0,0,8
+15,9,0,0,100
+15,0,0,0,8
+15,1,0,0,8
+15,2,0,0,8
+15,3,0,0,8
+15,4,0,0,8
+15,5,0,0,8
+15,6,0,0,8
+15,7,0,0,8
+15,8,0,0,8
+15,9,0,0,100
+15,0,0,0,8
+15,1,0,0,8
+15,2,0,0,8
+15,3,0,0,8
+15,4,0,0,8
+15,5,0,0,8
+15,6,0,0,8
+15,7,0,0,8
+15,8,0,0,8
+15,9,0,0,100
+15,10,0,0,10
+15,12,0,0,10
+15,14,0,0,10
+15,15,0,0,10
+15,16,0,0,10
+15,17,0,0,10
+15,18,0,0,75
+
+
+[Begin Action 20]
+20,0,0,0,7
+20,1,0,0,8
+20,2,0,0,15
+20,3,0,0,12
+20,4,0,0,10
+20,5,0,0,8
+
+
+[Begin Action 30]
+30,0,0,0,9
+30,1,0,0,9
+30,2,0,0,9
+30,3,0,0,9
+30,4,0,0,9
+30,5,0,0,8
+30,6,0,0,7
+
+[Begin Action 60]
+60,0,0,0,7
+60,1,0,0,10
+60,2,0,0,7
+60,3,0,0,7
+60,4,0,0,7
+60,5,0,0,7
+
+[BGCtrlDef 1]
+looptime = -1
+CtrlID = 1
+
+[BGCtrl 1.0]
+type = PosSet
+time = 0
+x = 0
+y = 0
+
+[BGCtrl 1.2]
+type = VelSet
+time = 320
+x = 0
+y = .3
+
+[BGCtrl 1.0]
+type = VelSet
+time = 1920
+x = 0
+y = 0
+
+[BG Dummy]
+type = dummy
+id = 7
+start = 0,-170
+positionlink = 1
+
+[BGCtrlDef 7-1]
+ctrlID = 7
+
+[BGCtrl 7-3]
+type = SinY
+time = 1920
+value = 5,8
+
+[BGCtrl 7-5]
+type = SinY
+time = 1927
+value = 4,8
+
+[BGCtrl 7-6]
+type = SinY
+time = 1934
+value = 3,8
+
+[BGCtrl 7-6]
+type = SinY
+time = 1941
+value = 2,8
+
+
+[BGCtrl 7-6]
+type = SinY
+time = 1948
+value = 1,8
+
+
+[BGCtrl 7-6]
+type = SinY
+time = 1955
+value = 0,8
+
+[BGCtrl 7-6]
+type = SinY
+time = 1962
+value = 0,0
+
+[BGCtrlDef 1]
+looptime = 100
+CtrlID = 15

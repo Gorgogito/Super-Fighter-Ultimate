@@ -1,0 +1,228 @@
+﻿; Арена: Valley of Death
+; Автор: Nintality
+
+[Info]
+Name = "Kr055r04d5"
+Displayname = "Valley of Death"
+Mugenversion = 1.1
+
+[Camera]
+boundleft = -377
+boundright = 380
+boundhigh = -12
+tension = 97
+floortension = 30
+verticalfollow = .2
+overdrawhigh = 20
+overdrawlow = 20
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1400
+rightbound = 1400
+
+[Bound]
+screenleft = 47
+screenright = 47
+
+[StageInfo]
+zoffset = 237
+autoturn = 1
+resetBG = 1
+localcoord = 400,254
+
+[Shadow]
+intensity = 207
+yscale = 0.65
+
+[Music]
+bgmusic = sound/scorpion.ogg
+bgmloopstart = 488210
+bgmloopend = -1
+
+[BGdef]
+spr = Scorpion's_Lair.sff
+bgclearcolor = 0,0,0
+
+
+[BG Небо #1]
+type = normal
+spriteno = 1,11
+delta = 0,1
+start = -200,-80
+scalestart = .93,1
+
+[BG Красные горы]
+type = normal
+spriteno = 1,10
+start = 40,68
+delta = .28,1
+mask = 1
+scalestart = .93,1
+
+[BG Коричневые горы]
+type = normal
+spriteno = 1,9
+start = 0,41
+delta = .38,1
+mask = 1
+scalestart = .93,1
+
+[BG Черепа]
+type = normal
+spriteno = 1,8
+start = 0,99
+delta = .68,1
+tile = 1,0
+mask = 1
+scalestart = .93,1
+
+[BG Колонна слева #1]
+type = anim
+actionno = 0
+delta = .76,1
+scalestart = .93,1
+
+[Begin Action 0]
+1,7, -195,-14, -1,H
+
+[BG Колонна слева #2]
+type = normal
+spriteno = 1,7
+delta = .76,1
+start = -175,-14
+mask = 1
+scalestart = .93,1
+
+[BG Колонна справа #1]
+type = anim
+actionno = 1
+delta = .76,1
+
+[Begin Action 1]
+1,7, 175,-14, -1,H
+
+[BG Колонна справа #2]
+type = normal
+spriteno = 1,7
+delta = .76,1
+start = 195,-14
+mask = 1
+scalestart = .93,1
+
+[BG Туман #1-1]
+type = normal
+spriteno = 1,16
+velocity = .2,0
+delta = .75,1
+start = 0,113
+trans = add
+tile = 1,0
+mask = 1
+scalestart = .93,1
+
+[BG Туман #1-2]
+type = normal
+spriteno = 1,17
+velocity = .3,0
+delta = .75,1
+start = 0,113
+trans = add
+tile = 1,0
+mask = 1
+
+[BG Переход между этажами]
+type = normal
+spriteno = 1,18
+delta = 1,1
+start = 0,247
+tile = 1,0
+
+[BG Пол без мерцания]
+type = parallax
+spriteno = 1,0
+delta = .84,1
+start = 1,227
+width = 1200,1480
+
+[BG Пол]
+type = parallax
+actionno = 2
+delta = .84,1
+start = 1,227
+width = 1200,1480
+scalestart = .93,1
+
+[Begin Action 2]
+1,0, 0,0, 7
+1,1, 0,0, 7
+1,2, 0,0, 7
+1,3, 0,0, 7
+1,4, 0,0, 7
+1,5, 0,0, 7
+1,4, 0,0, 7
+1,3, 0,0, 7
+1,2, 0,0, 7
+1,1, 0,0, 7
+
+[BG Зубья на заднем плане]
+type = normal
+scalestart = 0.6,0.7
+spriteno = 1,6
+delta = .83,1
+start = 0,113
+tile = 1,0
+mask = 1
+scalestart = .93,1
+
+[BG Череп-вход слева]
+type = normal
+scalestart = 0.75,0.75
+spriteno = 1,15
+delta = 1,1
+start = -578,209
+mask = 1
+
+[BG Череп-вход справа]
+type = normal
+scalestart = -0.75,0.75
+spriteno = 1,15
+delta = 1,1
+start = 580,209
+mask = 1
+
+[BG Туман #2-1]
+type = normal
+spriteno = 1,16
+velocity = -.6,0
+delta = 1.2,1
+start = 0,186
+trans = add
+tile = 1,0
+mask = 1
+scalestart = .93,1
+
+[BG Зубья на переднем плане]
+type = normal
+spriteno = 1,6
+layerno = 1
+delta = 1.05,1
+start = 0,169
+mask = 1
+
+[BG Туман #2-2]
+type = normal
+spriteno = 1,17
+layerno = 1
+velocity = -.7,0
+delta = 1.2,1
+start = 0,186
+trans = add
+tile = 1,0
+mask = 1
+scalestart = .93,1

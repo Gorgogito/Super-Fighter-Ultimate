@@ -1,0 +1,498 @@
+;========================================================
+;The Hope´s Gone By Crazy Logic
+;Gracias especiales:
+;A ssj4 pedro por darme el nombre para el release
+;A ti por descargar el mismo
+;Visita: mugengenerations.foroactivo.info
+;========================================================
+;--------------------------------------------------------
+[Info]
+name = "The Hope´s Gone HR"
+author= "Crazy_Logic"
+
+[Camera]
+startx = 0
+starty = 0
+
+boundleft  = -250
+boundright = 250
+boundhigh = -170
+boundlow  = 0
+verticalfollow = .9
+tension = 50
+;------------------------------------------------------------------
+[PlayerInfo]
+p1startx = -70
+p1starty = 0  
+p1startz = 0  
+p1facing = 1  
+;------------------------------------------------------------------
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+;------------------------------------------------------------------
+leftbound  = -1000 
+rightbound =  1000 
+topbound   =  0    
+botbound   =  0    
+;------------------------------------------------------------------
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1 
+botscale = 1.2
+;------------------------------------------------------------------
+[Bound]
+screenleft  = 15
+screenright = 15
+;------------------------------------------------------------------
+[StageInfo]
+zoffset   = 200
+autoturn  = 1 
+Hires = 1
+;------------------------------------------------------------------
+[Shadow]
+intensity = 20
+color  = 40,40,40
+yscale = .2
+;------------------------------------------------------------------
+[Reflection]
+intensity = 80
+;------------------------------------------------------------------
+[Music]
+bgmusic =sound/The Hope Gone.mp3
+bgvolume = 255
+resetbg =1
+;------------------------------------------------------------------
+[BGdef]
+spr = The_Hopes_Gone.sff
+
+[BG 0]
+type     = normal
+spriteno = 0, 3
+layerno  = 0
+start    = 500, -4
+delta    = 1.7, 1.8
+trans    = none
+mask     = 0
+tile     = 1, 0
+velocity = 0.1, 0
+
+[BG 1]
+type     = anim
+actionno = 9
+layerno  = 0
+start    =20,-10
+delta    = 1.7, 1.8
+mask     = 1
+sin.x = 3, 250
+
+[BG 2]
+type     = normal
+spriteno = 0, 3978
+layerno  = 0
+start    = 400, -45
+delta    = 1.8, 2
+trans    =add
+mask     = 0
+tile     = 1, 0
+velocity = 0.2, 0
+
+[BG 3]
+type     = normal
+spriteno = 0,5
+layerno  = 0
+start    = 0, 0
+delta    = 2, 2
+trans    = add
+sin.x    = 5, 200
+mask     = 1
+tile     = 1,0
+
+
+[BG 4]
+type     = anim
+actionno = 220
+start    =-400,-273
+delta    = 2, 2
+mask     = 1
+layerno = 1
+
+[BG 5]
+type     = anim
+actionno = 220
+start    =900,-173
+delta    = 2, 2
+mask     = 1
+layerno = 0
+
+
+[BG 6]
+type     = normal
+spriteno = 0, 4
+layerno  = 0
+start    = 500, -4
+delta    = 2.2, 1.9.1
+trans    = add
+mask     = 1
+tile     = 1, 0
+velocity = -.1, 0
+
+
+[BG 7]
+type     = normal
+spriteno = 0,81
+start    = 0, 0
+delta    = 1.7, 2
+mask     = 1
+tile     = 1,0
+
+[BG 8]
+type     = normal
+spriteno = 11,24
+layerno  = 0
+start    = 0, 0
+delta    = 1.8, 2
+trans    = add
+tile = 1
+mask     = 1
+
+[BG 9]
+type     = normal
+spriteno = 0,85
+start    = 0, 0
+delta    = 1.8, 2
+mask     = 1
+tile     = 1,0
+
+[BG 10]
+type     = anim
+actionno = 36
+layerno  = 0
+start    = 250, -30
+delta    = 2, 2
+mask     = 1
+
+[BG 11]
+type     = normal
+spriteno = 0, 598
+layerno  = 1
+start    = 300, -100
+delta    = 1.9, 2
+trans    =sub
+mask     = 1
+tile     = 1, 0
+velocity = 0.3, 0
+
+[BG 12]
+type     = anim
+actionno = 36
+layerno  = 0
+start    = -190, 10
+delta    = 2, 2
+mask     = 1
+
+[BG 13]
+type     = anim
+actionno = 36
+layerno  = 0
+start    = -250, 0
+delta    = 2, 2
+mask     = 1
+
+[BG 14]
+type     = anim
+actionno = 36
+layerno  = 0
+start    = -370, -10
+delta    = 2, 2
+mask     = 1
+
+
+[BG 15]
+type     = anim
+actionno = 36
+layerno  = 0
+start    = 450, 20
+delta    = 2, 2
+mask     = 1
+
+[BG 16]
+type     = normal
+spriteno = 0,14
+layerno  = 0                
+start    = 0, 0
+delta    = 2, 2
+trans    = none
+mask     = 1
+
+
+[BG 17]
+type     = normal
+spriteno = 22,14
+layerno  = 0
+start    = 0, 0
+delta    = 2.2, 2
+trans    = none
+mask     = 1
+
+[BG 19]
+type     = anim
+actionno = 92
+start    =10,-10
+delta    = 2, 2
+mask     = 1
+
+[BG 20]
+type     = anim
+actionno = 93
+start    =100,-20
+delta    = 2, 2
+mask     = 1
+
+[BG 21]
+type     = normal
+spriteno = 0, 1
+layerno  = 1
+start    = 500, -4
+delta    = 1.8, 1.9
+trans    = add
+mask     = 1
+velocity = 0,10
+tile     = 1, 1
+
+
+[BG 22]
+type     = normal
+spriteno = 0,2
+layerno  = 1
+start    = 500, -4
+delta    = 1.7, 1.9
+trans    = add
+mask     = 1
+tile = 1,1
+velocity = 0,20
+
+[BG 23]
+type     = normal
+spriteno = 0,17
+layerno  = 1
+start    = 0, 0
+delta    = 2, 2
+trans    = add
+mask     = 1
+
+[BG 24]
+type     = normal
+spriteno = 1,8
+layerno  = 1
+start    = 0, 0
+delta    = 2, 2
+velocity = .1
+trans    = add
+tile     = 1,0
+mask     = 1
+
+[BG 25]
+type     = anim
+actionno = 29
+layerno  = 1
+start    =0,0
+delta    = 0, 0
+mask     = 1
+
+[Begin Action 92]
+100,0, 0,0, 1, ,A
+100,1, 0,0, 1, ,A
+100,2, 0,0, 1, ,A
+100,3, 0,0, 1, ,A
+100,4, 0,0, 1, ,A
+100,5, 0,0, 1, ,A
+100,6, 0,0, 1, ,A
+100,7, 0,0, 1, ,A
+100,8, 0,0, 1, ,A
+100,9, 0,0, 1, ,A
+100,10, 0,0, 2, ,A
+100,11, 0,0, 2, ,A
+100,12, 0,0, 2, ,A
+100,13, 0,0, 2, ,A
+100,14, 0,0, 2, ,A
+100,15, 0,0, 2, ,A
+100,16, 0,0, 2, ,A
+100,17, 0,0, 2, ,A
+100,18, 0,0, 2, ,A
+100,19, 0,0, 2, ,A
+100,20, 0,0, 2, ,A
+100,21, 0,0, 2, ,A
+100,22, 0,0, 2, ,A
+100,23, 0,0, 2, ,A
+100,24, 0,0, 2, ,A
+100,25, 0,0, 1, ,A
+100,26, 0,0, 2, ,A
+100,27, 0,0, 2, ,A
+100,28, 0,0, 1, ,A
+100,29, 0,0, 2, ,A
+100,30, 0,0, 3, ,A
+
+[Begin Action 93]
+100,0, 0,0, 2, ,A
+100,1, 0,0, 2, ,A
+100,2, 0,0, 2, ,A
+100,3, 0,0, 2, ,A
+100,4, 0,0, 1, ,A
+100,5, 0,0, 1, ,A
+100,6, 0,0, 3, ,A
+100,7, 0,0, 1, ,A
+100,8, 0,0, 2, ,A
+100,9, 0,0, 1, ,A
+100,10, 0,0, 1, ,A
+100,11, 0,0, 1, ,A
+100,12, 0,0, 1, ,A
+100,13, 0,0, 1, ,A
+100,14, 0,0, 1, ,A
+100,15, 0,0, 1, ,A
+100,16, 0,0, 1, ,A
+100,17, 0,0, 1, ,A
+100,18, 0,0, 1, ,A
+100,19, 0,0, 2, ,A
+100,20, 0,0, 2, ,A
+100,21, 0,0, 2, ,A
+100,22, 0,0, 1, ,A
+100,23, 0,0, 1, ,A
+100,24, 0,0, 2, ,A
+100,25, 0,0, 1, ,A
+100,26, 0,0, 3, ,A
+100,27, 0,0, 2, ,A
+100,28, 0,0, 1, ,A
+100,29, 0,0, 2, ,A
+100,30, 0,0, 1, ,A
+
+
+[Begin action 36]
+10,1, 0,0, 5, , A
+10,2, 0,0, 5, , A
+10,3, 0,0, 5, , A
+10,4, 0,0, 5, , A
+10,5, 0,0, 5, , A
+10,6, 0,0, 5, , A
+10,7, 0,0, 5, , A
+10,8, 0,0, 5, , A
+10,9, 0,0, 5, , A
+10,10, 0,0, 5, , A
+10,11, 0,0, 5, , A
+10,12, 0,0, 5, , A
+10,13, 0,0, 5, , A
+10,14, 0,0, 5, , A
+10,15, 0,0, 5, , A
+10,16, 0,0, 5, , A
+10,17, 0,0, 5, , A
+10,18, 0,0, 5, , A
+10,19, 0,0, 5, , A
+10,20, 0,0, 5, , A
+10,21, 0,0, 5, , A
+10,22, 0,0, 5, , A
+10,23, 0,0, 5, , A
+10,24, 0,0, 5, , A
+10,25, 0,0, 5, , A
+10,26, 0,0, 5, , A
+10,27, 0,0, 5, , A
+10,28, 0,0, 5, , A
+10,29, 0,0, 5, , A
+
+[Begin action 39]
+11,1, 0,0, 5, , A
+11,2, 0,0, 5, , A
+11,3, 0,0, 5, , A
+11,4, 0,0, 5, , A
+11,5, 0,0, 5, , A
+11,6, 0,0, 5, , A
+11,7, 0,0, 5, , A
+11,8, 0,0, 5, , A
+11,9, 0,0, 5, , A
+11,10, 0,0, 5, , A
+11,11, 0,0, 5, , A
+11,12, 0,0, 5, , A
+11,13, 0,0, 5, , A
+11,14, 0,0, 5, , A
+11,15, 0,0, 5, , A
+11,16, 0,0, 5, , A
+11,17, 0,0, 5, , A
+11,18, 0,0, 5, , A
+11,19, 0,0, 5, , A
+11,20, 0,0, 5, , A
+11,21, 0,0, 5, , A
+
+[Begin action 37]
+1,8, 0,0, 5, , A
+1,9, 0,0, 5, , A
+1,10, 0,0, 5, , A
+
+[Begin action 38]
+-1,-1, 0,0, 20, , A
+0,145, 0,0, 7, , A
+0,144, 0,0, 2, , A
+0,146, 0,0, 7, , A
+0,145, 0,0, 7, , A
+-1,-1, 0,0, 150, , A
+0,145, 0,0, 6, , A
+0,146, 0,0, 6, , A
+0,145, 0,0, 6, , A
+0,146, 0,0, 6, , A
+0,144, 0,0, 7, , A
+
+[Begin Action 220]
+11,5, 0,0, 3, ,A
+11,6, 0,0, 3, ,A
+11,7, 0,0,3, ,A
+11,8, 0,0, 3, ,A
+11,9, 0,0, 3, ,A
+11,10, 0,0, 3, ,A
+11,11, 0,0, 3, ,A
+11,12, 0,0, 2, ,A
+11,13, 0,0, 3, ,A
+11,14, 0,0, 4, ,A
+-1,-1, 0,0, 150, ,A
+
+[Begin Action 29]
+-1,-1, 0,0, 20, , A
+29,2, 0,0, 7, , A
+29,0, 0,0, 2, , A
+21,1, 0,0, 7, , A
+29,2, 0,0, 7, , A
+-1,-1, 0,0, 150, , A
+29,1, 0,0, 6, , A
+29,2, 0,0, 6, , A
+29,1, 0,0, 6, , A
+29,2, 0,0, 6, , A
+29,1, 0,0, 6, , A
+29,2, 0,0, 3, , A
+0,146, 0,0, 2, , A
+
+[Begin Action 37]
+-1,-1, 0,0, 20, , A
+0,17, 0,0, 7, , A
+-1,-1, 0,0, 2, , A
+0,17, 0,0, 7, , A
+0,16, 0,0, 7, , A
+-1,-1, 0,0, 150, , A
+0,17, 0,0, 6, , A
+0,17, 0,0, 6, , A
+0,17, 0,0, 6, , A
+-1,-1, 0,0, 6, , A
+0,16, 0,0, 6, , A
+-1,-1, 0,0, 3, , A
+0,16, 0,0, 2, , A
+
+[Begin Action 9]
+-1,-1 , 0,0, 900
+666,401, 0,0, 15, ,A
+-1,-1 , 0,0, 2
+666,401, 0,0, 15, ,A
+-1,-1 , 0,0, 2
+666,400, 0,0, 45, ,A
+666,399, 0,0, 50, ,A
+666,398, 0,0, -1, ,A
+
+
+

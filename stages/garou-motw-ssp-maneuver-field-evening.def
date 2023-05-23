@@ -1,0 +1,103 @@
+;==============================
+;	GAROU OMEGA STAGE
+;==============================
+;Author:	Claudio Toxi
+;Create Date:	2004.11.07
+
+;--------------------------------------------------------
+[Info]
+name = "Garou MOTW - SSP MANEUVER FIELD - EVENING"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -140
+boundright = 140
+boundhigh = -140
+boundlow = 0
+verticalfollow = .3
+floortension = 0
+tension = 50
+
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound = -1000
+rightbound = 1000
+topbound = 0
+botbound = 0
+
+;--------------------------------------------------------
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 15
+screenright = 15
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 210
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+[Shadow]
+intensity = 96
+color = 0,0,0
+yscale = .3
+fade.range = 0,0
+
+;--------------------------------------------------------
+[Reflection]
+intensity = 0
+
+;--------------------------------------------------------
+[Music]
+bgmusic = stages/018.mp3
+bgvolume = 255
+
+;--------------------------------------------------------
+[BGdef]
+spr = garou-motw-ssp-maneuver-field-evening.sff
+debugbg = 0
+
+[BG Mountain]
+type = normal
+spriteno = 0,0
+layerno = 0
+start = 0,0
+delta = 1,1
+trans = none
+mask = 0
+tilespacing = 0,0
+
+[BG Helicopter]
+type = anim
+actionno = 1
+layerno = 0
+start = 0,0
+delta = 1,1
+trans = none
+mask = 0
+tilespacing = 0,0
+[Begin action 1]
+1,0,0,0,7
+1,1,0,0,7
+1,2,0,0,7
+1,3,0,0,7

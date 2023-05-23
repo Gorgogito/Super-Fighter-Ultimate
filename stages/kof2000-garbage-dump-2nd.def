@@ -1,0 +1,114 @@
+[Info]
+name = "KOF 2000 - Garbage Dump - 2nd"
+;create by KSzsk
+;Mugen China 
+;http://kyoung.yeah.net
+
+[Camera]
+startx = 0            
+starty = 0       
+boundleft = -216    
+boundright = 216     
+boundhigh = -6     
+boundlow = 0        
+verticalfollow = .2  
+tension = 60         
+
+[PlayerInfo]
+p1startx = -70    
+p1starty = 0      
+p1startz = 0      
+p1facing = 1      
+p2startx = 70   
+p2starty = 0       
+p2startz = 0      
+p2facing = -1    
+
+leftbound = -1000   
+rightbound = 1000    
+topbound = 0         
+botbound = 0         
+
+[Scaling]
+topz = 0           
+botz = 50            
+topscale = 1        
+botscale = 1.2    
+
+[Bound]
+screenleft = 15    
+screenright = 15     
+
+[StageInfo]
+zoffset = 220      
+autoturn = 1     
+resetBG = 0         
+
+[Shadow]
+color = 92,92,92     
+yscale = .5        
+reflect = 0         
+
+[Music]
+bgmusic = stages/094.mp3
+bgvolume = 255          
+
+[BGdef]
+spr = stages/kof2000-garbage-dump-2nd.sff 
+debugbg = 0          
+
+[BG 1]
+type = normal
+spriteno = 0,1
+mask = 1
+start = 0, 0
+delta = .8,.8
+
+[BG 0 ]            
+type = normal         
+spriteno = 0, 0       
+mask = 1            
+start = 0,0         
+delta = 1,1     
+trans = none      
+layerno = 0        
+velocity = 0,0     
+tile = 0,0         
+tilespacing = 0,0    
+window = 0,0, 753, 247 
+windowdelta = 0,0    
+
+[BG 1]
+type  = anim      
+layerno = 0
+actionno = 3        
+start = -174, 15    
+;delta = 0,0
+
+[BG 2]
+type  = anim      
+layerno = 1
+actionno = 1        
+start = -20, 165    
+;delta = 0,0           
+
+[BG 2]
+type  = anim      
+layerno = 1
+actionno = 2        
+start = 226, 179    
+;delta = 0,0           
+
+[Begin action 1]       
+0,2,0,0,-1             
+
+[Begin action 2]       
+0,3,0,0,-1        
+
+[Begin action 3]       
+2,0,0,0,2
+2,1,0,0,2
+2,2,0,0,2
+2,3,0,0,2
+2,4,0,0,2
+2,5,0,0,2        

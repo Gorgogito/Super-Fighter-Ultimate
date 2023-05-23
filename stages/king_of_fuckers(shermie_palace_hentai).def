@@ -1,0 +1,158 @@
+[Info]
+name = "king of fuckers(shermie palace hentai)"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -120
+boundright = 180
+boundhigh = -40
+boundlow = 0
+verticalfollow = .4
+tension = 50
+
+[PlayerInfo]
+p1startx = -56
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset   = 215
+autoturn  = 1
+
+[Shadow]
+color = 192,192,192
+yscale = .3
+
+[Music]
+bgmusic = 
+volume = 255
+
+[BGdef]
+spr = stages/king_of_fuckers(shermie_palace_hentai).sff
+
+[BG fundo3]
+type  = normal
+start = -282,-250
+delta = 1, 1
+mask = 1
+spriteno = 0,0
+
+[BG palace0]
+type  = normal
+start = -282,-250
+delta = 1, 1
+mask = 1
+spriteno = 1,0
+
+[BG sofa-central]
+type  = normal
+start = -282,-250
+delta = 1, 1
+mask = 1
+spriteno = 2,0
+
+[BG sex-queen-shermie]
+type = anim 
+actionno = 3
+start = -282,-250
+layerno = 0 
+mask = 0
+
+[BG lighting]
+type = anim 
+actionno = 4
+start = -282,-250
+layerno = 0 
+mask = 0
+
+[BG amarradas1]
+type  = normal
+start = -282,-250
+delta = 1, 1
+mask = 1
+spriteno = 5,0
+
+[BG amarradas]
+type = anim 
+actionno = 6
+start = -282,-250
+layerno = 0 
+mask = 0
+
+[BG amarrada]
+type = anim 
+actionno = 7
+start = -282,-250
+layerno = 0 
+mask = 0
+
+[BG amarrada1]
+type = anim 
+actionno = 8
+start = -282,-250
+layerno = 0 
+mask = 0
+
+;-------------------
+;sex-queen-shermie
+[Begin Action 3] 
+3,0,0,0,64
+3,1,0,0,16
+3,0,0,0,16
+3,1,0,0,16
+3,0,0,0,16
+3,1,0,0,16
+3,0,0,0,16
+3,1,0,0,16
+3,0,0,0,16
+3,1,0,0,16
+
+;lighting
+[Begin Action 4] 
+4,0,0,0,64
+4,1,0,0,16
+4,2,0,0,16
+4,3,0,0,16
+4,4,0,0,16
+4,5,0,0,16
+4,6,0,0,16
+4,7,0,0,16
+4,8,0,0,16
+4,9,0,0,16
+
+;amarradas
+[Begin Action 6] 
+6,0,0,0,24
+6,1,0,0,24
+
+;amarrada
+[Begin Action 7] 
+7,0,0,0,64
+7,1,0,0,24
+
+;amarrada1
+[Begin Action 8] 
+8,0,0,0,64
+8,1,0,0,24

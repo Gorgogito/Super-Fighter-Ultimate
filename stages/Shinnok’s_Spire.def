@@ -1,0 +1,390 @@
+; Двухэтажная арена: Shinnok's Spire
+; Автор: Hanzo_Hasashi (первый этаж, на основе 3D-рипа/арта deexie), stopmotiontoys (второй этаж)
+; Улучшения: borg117 (редактирование слоёв, фильтр, эффект света), Marlin Studios (огненные эффекты)
+
+[Info]
+Name = "sh1nn0k_sp1r3"
+Displayname = "Shinnok's Spire MK7"
+Mugenversion = 1.1
+
+[Camera]
+boundleft = -281
+boundright = 283
+boundhigh = -530
+tension = 100
+verticalfollow = .1
+overdrawhigh = 20
+overdrawlow = 20
+startzoom = 1
+zoomin = 1
+zoomout = 0.75
+
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1400
+rightbound = 1400
+
+[Bound]
+screenleft = 47
+screenright = 47
+
+[StageInfo]
+zoffset = 229
+autoturn = 1
+resetBG = 1
+localcoord = 400,254
+
+[Shadow]
+intensity = 190
+yscale = .17
+
+[Music]
+bgmusic = sound/MK7/mk7_shinnok_spire.ogg
+bgmloopstart = 488915
+bgmloopend = -1
+;bgvolume = 80
+
+[BGdef]
+spr = Shinnok’s_Spire.sff
+bgclearcolor = 0,0,0
+
+
+[BG Фон МК4]
+type = normal
+spriteno = 1,1
+delta = 0,0
+start = 0,50
+scalestart = 1.10,1
+
+[BG Пламя #1]
+type = anim
+actionno = 0
+delta = 0.1,0.1
+start = -60,230
+tile = 1
+tilespacing = 240,0
+
+[BG Пламя #2]
+type = anim
+actionno = 0
+delta = 0.1,0.1
+start = 150,230
+tile = 1
+tilespacing = 220,0
+
+[BG Пол]
+type = parallax
+scalestart = 1,0.8
+spriteno = 1,0
+delta = 0.7,1
+start = 0,50
+width = 600,1200
+tile = 1,0
+
+[BG Стена]
+type = normal
+spriteno = 2,0
+delta = 0.5,1
+start = 0,20
+mask = 1
+scalestart = -1,1.08
+
+[BG Витражи]
+type = normal
+spriteno = 2,1
+trans = addalpha
+alpha = 160,120;256
+delta = 0.5,1
+start = 0,20
+mask = 1
+scalestart = -1,1.08
+
+[BG Фильтр]
+type = normal
+spriteno = 2,4
+trans = sub
+layerno = 1
+delta = 0.5,1
+start = 0,20
+mask = 1
+scalestart = -1,1.08
+
+[BG Свет]
+type = normal
+spriteno = 2,3
+trans = addalpha
+alpha = 90,256
+layerno = 0
+delta = 0.51,1
+start = 0,20
+mask = 1
+scalestart = -1,1.08
+
+[BG Колонны]
+type = normal
+spriteno = 2,2
+delta = 0.7,1
+start = 0,10
+tile = 1,0
+mask = 1
+scalestart = -1,1.10
+
+;==============================
+; Shinnok's Spire/Второй этаж
+;==============================
+
+[BG Пол]
+type = parallax
+scalestart = 1,0.8
+spriteno = 1,0
+delta = 0.7,1
+start = 0,-300
+width = 600,1200
+tile = 1,0
+
+[BG Переход между этажами]
+type = normal
+spriteno = 1,2
+delta = 2,1
+start = 0,-15
+tile = 1,0
+scalestart = 1,.45
+
+[BG Стёкла]
+type = normal
+spriteno = 4,1
+trans = addalpha
+alpha = 160,110
+delta = 0.8,1
+start = 0,-330
+
+[BG Стена]
+type = normal
+spriteno = 4,0
+delta = 0.8,1
+start = 0,-330
+mask = 1
+
+[BG Фильтр]
+type = normal
+spriteno = 4,3
+trans = sub
+layerno = 1
+delta = 0.8,1
+start = 0,-330
+
+[BG Свет]
+type = normal
+spriteno = 4,2
+trans = addalpha
+alpha = 120,256
+layerno = 1
+delta = 0.81,1
+start = 0,-330
+
+[BG Огонь слева]
+type = anim
+actionno = 3
+delta = 0.8,1
+start = 0,-330
+
+[BG Огонь справа]
+type = anim
+actionno = 4
+start = 0,-330
+delta = 0.8,1
+
+[BG Энергия]
+type = anim
+actionno = 1
+delta = 0.81,1
+start = 0,-330
+
+[BG Энергия]
+type = normal
+spriteno = 5,90
+delta = 0.81,1
+start = 0,-330
+trans = addalpha
+alpha = 20,256
+
+[Begin Action 0]
+3,0, 0,0, 4,, A
+3,1, 0,0, 4,, A
+3,2, 0,0, 4,, A
+3,3, 0,0, 4,, A
+3,4, 0,0, 4,, A
+3,5, 0,0, 4,, A
+3,6, 0,0, 4,, A
+3,7, 0,0, 4,, A
+3,8, 0,0, 4,, A
+3,9, 0,0, 4,, A
+3,10, 0,0, 4,, A
+3,11, 0,0, 4,, A
+3,12, 0,0, 4,, A
+3,13, 0,0, 4,, A
+3,14, 0,0, 4,, A
+3,15, 0,0, 4,, A
+3,16, 0,0, 4,, A
+3,17, 0,0, 4,, A
+3,18, 0,0, 4,, A
+3,19, 0,0, 4,, A
+3,20, 0,0, 4,, A
+3,21, 0,0, 4,, A
+3,22, 0,0, 4,, A
+3,23, 0,0, 4,, A
+3,24, 0,0, 4,, A
+3,25, 0,0, 4,, A
+3,26, 0,0, 4,, A
+3,27, 0,0, 4,, A
+3,28, 0,0, 4,, A
+3,29, 0,0, 4,, A
+3,30, 0,0, 4,, A
+3,31, 0,0, 4,, A
+3,32, 0,0, 4,, A
+3,33, 0,0, 4,, A
+3,34, 0,0, 4,, A
+3,35, 0,0, 4,, A
+3,36, 0,0, 4,, A
+3,37, 0,0, 4,, A
+3,38, 0,0, 4,, A
+3,39, 0,0, 4,, A
+3,40, 0,0, 4,, A
+3,41, 0,0, 4,, A
+3,42, 0,0, 4,, A
+3,43, 0,0, 4,, A
+3,44, 0,0, 4,, A
+
+[Begin Action 1]
+5,0, 0,0, 2
+5,1, 0,0, 2
+5,2, 0,0, 2
+5,3, 0,0, 2
+5,4, 0,0, 2
+5,5, 0,0, 2
+5,6, 0,0, 2
+5,7, 0,0, 2
+5,8, 0,0, 2
+5,9, 0,0, 2
+5,10, 0,0, 2
+5,11, 0,0, 2
+5,12, 0,0, 2
+5,13, 0,0, 2
+5,14, 0,0, 2
+5,15, 0,0, 2
+5,16, 0,0, 2
+5,17, 0,0, 2
+5,18, 0,0, 2
+5,19, 0,0, 2
+5,20, 0,0, 2
+5,21, 0,0, 2
+5,22, 0,0, 2
+5,23, 0,0, 2
+5,24, 0,0, 2
+5,25, 0,0, 2
+5,26, 0,0, 2
+5,27, 0,0, 2
+5,28, 0,0, 2
+5,29, 0,0, 2
+5,30, 0,0, 2
+5,31, 0,0, 2
+5,32, 0,0, 2
+5,33, 0,0, 2
+5,34, 0,0, 2
+5,35, 0,0, 2
+5,36, 0,0, 2
+5,37, 0,0, 2
+5,38, 0,0, 2
+5,39, 0,0, 2
+5,40, 0,0, 2
+5,41, 0,0, 2
+5,42, 0,0, 2
+5,43, 0,0, 2
+5,44, 0,0, 2
+5,45, 0,0, 2
+5,46, 0,0, 2
+5,47, 0,0, 2
+5,48, 0,0, 2
+5,49, 0,0, 2
+5,50, 0,0, 2
+5,51, 0,0, 2
+5,52, 0,0, 2
+5,53, 0,0, 2
+5,54, 0,0, 2
+5,55, 0,0, 2
+5,56, 0,0, 2
+5,57, 0,0, 2
+5,58, 0,0, 2
+5,59, 0,0, 2
+5,60, 0,0, 2
+5,61, 0,0, 2
+5,62, 0,0, 2
+5,63, 0,0, 2
+5,64, 0,0, 2
+5,65, 0,0, 2
+5,66, 0,0, 2
+5,67, 0,0, 2
+5,68, 0,0, 2
+5,69, 0,0, 2
+5,70, 0,0, 2
+5,71, 0,0, 2
+5,72, 0,0, 2
+5,73, 0,0, 2
+5,74, 0,0, 2
+5,75, 0,0, 2
+5,76, 0,0, 2
+5,77, 0,0, 2
+5,78, 0,0, 2
+5,79, 0,0, 2
+5,80, 0,0, 2
+5,81, 0,0, 2
+5,82, 0,0, 2
+5,83, 0,0, 2
+5,84, 0,0, 2
+5,85, 0,0, 2
+5,86, 0,0, 2
+5,87, 0,0, 2
+5,88, 0,0, 2
+5,89, 0,0, 2
+
+[Begin Action 3]
+6,0, 0,0, 2,, A
+;6,1, 0,0, 2,, A
+6,2, 0,0, 2,, A
+6,3, 0,0, 2,, A
+6,4, 0,0, 2,, A
+6,5, 0,0, 2,, A
+6,6, 0,0, 2,, A
+6,7, 0,0, 2,, A
+6,8, 0,0, 2,, A
+6,9, 0,0, 2,, A
+6,10, 0,0, 2,, A
+6,11, 0,0, 2,, A
+6,12, 0,0, 2,, A
+6,13, 0,0, 2,, A
+6,14, 0,0, 2,, A
+6,15, 0,0, 2,, A
+
+[Begin Action 4]
+6,8, 0,0, 2,H, A
+6,9, 0,0, 2,H, A
+6,10, 0,0, 2,H, A
+6,11, 0,0, 2,H, A
+6,12, 0,0, 2,H, A
+6,13, 0,0, 2,H, A
+6,14, 0,0, 2,H, A
+6,15, 0,0, 2,H, A
+6,0, 0,0, 2,H, A
+;6,1, 0,0, 2,H, A
+6,2, 0,0, 2,H, A
+6,3, 0,0, 2,H, A
+6,4, 0,0, 2,H, A
+6,5, 0,0, 2,H, A
+6,6, 0,0, 2,H, A
+6,7, 0,0, 2,H, A

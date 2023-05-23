@@ -1,0 +1,405 @@
+
+[Info]
+name = "Hellmk2011"
+displayname = "Hell MK 2011"
+versiondate = 08,11,2016
+mugenversion = 1.1
+author = "Adriano GT"
+;concept & props/sprites by "BlackSaibot"
+;http://blacksaibot.deviantart.com/art/Scorpion-s-Lair-MK9-626152774
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -380
+boundright = 380
+boundhigh = -9
+boundlow = 0
+floortension = 30
+verticalfollow = .2
+tension = 100
+startzoom = 1
+zoomin = 1
+zoomout = 0.80
+
+
+[PlayerInfo]
+p1startx = -98
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 96
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound = -1000
+rightbound = 1000
+topbound = 0
+botbound = 0
+
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+[StageInfo]
+zoffset = 236
+autoturn = 1
+resetBG = 0
+localcoord = 400,254
+
+[Shadow]
+intensity = 190
+color = 228,228,228
+yscale = -.12
+
+[Music]
+bgmusic = sound/other/hellmk9.ogg
+;bgvolume = 100
+bgmloopstart = 637680
+bgmloopend = -1
+
+[BGdef]
+spr = hell mk9.sff
+bgclearcolor = 38,20,7
+
+[bg background]
+type = normal
+spriteno = 1,4
+delta = .52,.85
+mask = 0
+scalestart = 1.20,1
+
+[bg lightrays]
+type = anim
+actionno = 0
+delta = .55,.75
+tile = 1
+tilespacing = 400
+scalestart = .93,1
+
+[begin action 0]
+1,6,0,0,6,, AS125D250
+1,6,0,0,7,, AS150D250
+1,6,0,0,6,, AS175D250
+1,6,0,0,6,, AS200D250
+1,6,0,0,6,, AS225D250
+1,6,0,0,75,, AS250D250
+1,6,0,0,9,, AS225D250
+1,6,0,0,8,, AS200D250
+1,6,0,0,7,, AS225D250
+1,6,0,0,55,, AS250D250
+1,6,0,0,3,, AS225D250
+1,6,0,0,3,, AS200D250
+1,6,0,0,3,, AS225D250
+1,6,0,0,105,, AS250D250
+1,6,0,0,7,, AS225D250
+1,6,0,0,8,, AS250D250
+1,6,0,0,7,, AS225D250
+1,6,0,0,6,, AS200D250
+1,6,0,0,5,, AS175D250
+1,6,0,0,5,, AS150D250
+1,6,0,0,6,, AS125D250
+
+[bg bodies]
+type = normal
+spriteno = 1,5
+delta = .58,.88
+mask = 1
+tile = 1
+tilespacing = 100
+scalestart = .90,1
+
+[bg rocks wall]
+type = normal
+spriteno = 1,2
+delta = .60,1
+mask = 1
+scalestart = .90,1
+
+[bg floor]
+type = parallax
+spriteno = 1,0
+delta = .67,1
+xscale = 32,51.5
+tile = 1
+scalestart = .90,1
+
+[bg corpse in fire]
+type = normal
+spriteno = 1,7
+delta = .79,1
+mask = 1
+scalestart = .90,1
+
+[bg fire in corpse]
+type = anim
+actionno = 4
+delta = .79,1
+mask = 1
+start = -195,120
+scalestart = .90,1
+
+[begin action 4]
+3,0,0,0,2,, AS200D250
+3,1,0,0,2,, AS200D250
+3,2,0,0,2,, AS200D250
+3,3,0,0,2,, AS200D250
+3,4,0,0,2,, AS200D250
+3,5,0,0,2,, AS200D250
+3,6,0,0,2,, AS200D250
+3,7,0,0,2,, AS200D250
+3,8,0,0,2,, AS200D250
+3,9,0,0,2,, AS200D250
+3,10,0,0,2,, AS200D250
+3,11,0,0,2,, AS200D250
+
+[bg corpses in spikes]
+type = normal
+spriteno = 1,3
+delta = .76,1
+mask = 1
+scalestart = .93,1
+
+[bg embers 0]
+type = anim
+actionno = 5
+sin.x = 4,40
+delta = .79,1
+mask = 1
+
+[begin action 5]
+-1,-1,0,0,57
+loopstart
+1,14,0,0,3,,as250d0
+1,14,0,-2,3,,as250d0
+1,14,0,-4,3,,as250d0
+1,14,0,-6,3,,as250d0
+1,14,0,-8,3,,as250d0
+1,14,0,-10,3,,as250d0
+1,14,0,-12,3,,as250d0
+1,14,0,-14,3,,as250d0
+1,14,0,-16,3,,as250d0
+1,14,0,-18,3,,as250d0
+1,14,0,-20,3,,as250d0
+1,14,0,-22,3,,as250d0
+1,14,0,-24,3,,as250d0
+1,14,0,-26,3,,as250d0
+1,14,0,-28,3,,as250d0
+1,14,0,-30,3,,as250d0
+1,14,0,-32,3,,as250d0
+1,14,0,-34,3,,as250d0
+1,14,0,-36,3,,as250d0
+1,14,0,-38,3,,as250d0
+1,14,0,-40,3,,as250d0
+1,14,0,-42,3,,as250d0
+1,14,0,-44,3,,as240d10
+1,14,0,-46,3,,as230d20
+1,14,0,-48,3,,as220d30
+1,14,0,-50,3,,as210d40
+1,14,0,-52,3,,as200d50
+1,14,0,-54,3,,as190d60
+1,14,0,-56,3,,as180d70
+1,14,0,-58,3,,as170d80
+1,14,0,-60,3,,as160d90
+1,14,0,-62,3,,as150d100
+1,14,0,-64,3,,as140d110
+1,14,0,-66,3,,as130d120
+1,14,0,-68,3,,as120d130
+1,14,0,-70,3,,as110d140
+1,14,0,-72,3,,as100d150
+1,14,0,-74,3,,as90d160
+
+[bg embers 1]
+type = anim
+actionno = 6
+sin.x = 6,50
+delta = .79,1
+mask = 1
+start = 10,10
+
+[begin action 6]
+1,14,0,0,3,,as250d0
+1,14,0,-2,3,,as250d0
+1,14,0,-4,3,,as250d0
+1,14,0,-6,3,,as250d0
+1,14,0,-8,3,,as250d0
+1,14,0,-10,3,,as250d0
+1,14,0,-12,3,,as250d0
+1,14,0,-14,3,,as250d0
+1,14,0,-16,3,,as250d0
+1,14,0,-18,3,,as250d0
+1,14,0,-20,3,,as250d0
+1,14,0,-22,3,,as250d0
+1,14,0,-24,3,,as250d0
+1,14,0,-26,3,,as250d0
+1,14,0,-28,3,,as250d0
+1,14,0,-30,3,,as250d0
+1,14,0,-32,3,,as250d0
+1,14,0,-34,3,,as250d0
+1,14,0,-36,3,,as250d0
+1,14,0,-38,3,,as250d0
+1,14,0,-40,3,,as250d0
+1,14,0,-42,3,,as250d0
+1,14,0,-44,3,,as240d10
+1,14,0,-46,3,,as230d20
+1,14,0,-48,3,,as220d30
+1,14,0,-50,3,,as210d40
+1,14,0,-52,3,,as200d50
+1,14,0,-54,3,,as190d60
+1,14,0,-56,3,,as180d70
+1,14,0,-58,3,,as170d80
+1,14,0,-60,3,,as160d90
+1,14,0,-62,3,,as150d100
+1,14,0,-64,3,,as140d110
+1,14,0,-66,3,,as130d120
+1,14,0,-68,3,,as120d130
+1,14,0,-70,3,,as110d140
+1,14,0,-72,3,,as100d150
+1,14,0,-74,3,,as90d160
+
+[bg left fire]
+type = anim
+actionno = 2
+delta = .76,1
+mask = 1
+start = -57,130
+scalestart = .43,.5
+
+[begin action 2]
+2,14,0,0,3,,AS250D250
+2,15,0,0,3,,AS250D250
+2,16,0,0,3,,AS250D250
+2,17,0,0,3,,AS250D250
+2,18,0,0,3,,AS250D250
+2,19,0,0,3,,AS250D250
+2,0,0,0,3,,AS250D250
+2,1,0,0,3,,AS250D250
+2,2,0,0,3,,AS250D250
+2,3,0,0,3,,AS250D250
+2,4,0,0,3,,AS250D250
+2,5,0,0,3,,AS250D250
+2,6,0,0,3,,AS250D250
+2,7,0,0,3,,AS250D250
+2,8,0,0,3,,AS250D250
+2,9,0,0,3,,AS250D250
+2,10,0,0,3,,AS250D250
+2,11,0,0,3,,AS250D250
+2,12,0,0,3,,AS250D250
+2,13,0,0,3,,AS250D250
+
+[bg middle fire]
+type = anim
+actionno = 1
+delta = .76,1
+mask = 1
+start = 0,110
+scalestart = .63,.7
+
+[begin action 1]
+2,0,0,0,3,,AS250D250
+2,1,0,0,3,,AS250D250
+2,2,0,0,3,,AS250D250
+2,3,0,0,3,,AS250D250
+2,4,0,0,3,,AS250D250
+2,5,0,0,3,,AS250D250
+2,6,0,0,3,,AS250D250
+2,7,0,0,3,,AS250D250
+2,8,0,0,3,,AS250D250
+2,9,0,0,3,,AS250D250
+2,10,0,0,3,,AS250D250
+2,11,0,0,3,,AS250D250
+2,12,0,0,3,,AS250D250
+2,13,0,0,3,,AS250D250
+2,14,0,0,3,,AS250D250
+2,15,0,0,3,,AS250D250
+2,16,0,0,3,,AS250D250
+2,17,0,0,3,,AS250D250
+2,18,0,0,3,,AS250D250
+2,19,0,0,3,,AS250D250
+
+[bg right fire]
+type = anim
+actionno = 3
+delta = .76,1
+mask = 1
+start = 58,135
+scalestart = .43,.5
+
+[begin action 3]
+2,5,0,0,3,,AS250D250
+2,6,0,0,3,,AS250D250
+2,7,0,0,3,,AS250D250
+2,8,0,0,3,,AS250D250
+2,9,0,0,3,,AS250D250
+2,10,0,0,3,,AS250D250
+2,11,0,0,3,,AS250D250
+2,12,0,0,3,,AS250D250
+2,13,0,0,3,,AS250D250
+2,14,0,0,3,,AS250D250
+2,15,0,0,3,,AS250D250
+2,16,0,0,3,,AS250D250
+2,17,0,0,3,,AS250D250
+2,18,0,0,3,,AS250D250
+2,19,0,0,3,,AS250D250
+2,0,0,0,3,,AS250D250
+2,1,0,0,3,,AS250D250
+2,2,0,0,3,,AS250D250
+2,3,0,0,3,,AS250D250
+2,4,0,0,3,,AS250D250
+
+[bg crater]
+type = normal
+spriteno = 1,1
+delta = .76,1
+mask = 1
+scalestart = .90,1
+
+[bg skulls hand]
+type = normal
+spriteno = 1,9
+delta = .94,1
+mask = 1
+scalestart = .90,1
+
+[bg hand]
+type = normal
+spriteno = 1,10
+delta = .95,1
+mask = 1
+scalestart = .90,1
+
+[bg skull hand]
+type = normal
+spriteno = 1,11
+delta = .93,1
+mask = 1
+scalestart = .90,1
+
+[bg skull]
+type = normal
+spriteno = 1,12
+delta = .86,1
+mask = 1
+scalestart = .90,1
+
+[bg bone]
+type = normal
+spriteno = 1,13
+delta = .92,1
+mask = 1
+scalestart = .90,1
+
+[bg skeleton]
+type = normal
+spriteno = 1,8
+delta = 1.1,1
+mask = 1
+layerno = 1
+scalestart = .90,1

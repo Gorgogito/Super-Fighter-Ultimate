@@ -1,0 +1,160 @@
+﻿; Арена: Sunset
+; Автор: LeandroTM
+; Рип спрайтов: Fly & Shukketsu
+
+[Info]
+Name = "w4stel4nd"
+Displayname = "Sunset"
+Mugenversion = 1.1
+
+[Camera]
+boundleft = -395
+boundright = 395
+boundhigh = -20
+tension = 100
+boundlow = 0
+floortension = 30
+verticalfollow = .2
+overdrawhigh = 20
+overdrawlow = 20
+startzoom = 1
+zoomin = 1
+zoomout = 0.72
+
+
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1400
+rightbound = 1400
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+[StageInfo]
+zoffset = 235
+autoturn = 1
+resetBg = 1
+localcoord = 400,254
+
+[Shadow]
+intensity = 175
+yscale = .16
+
+[Music]
+bgmusic = sound/MK2/mk2_wasteland.ogg
+bgmloopstart = 752942
+bgmloopend = -1
+
+[BGdef]
+spr = Sunset.sff
+bgclearcolor = 31,9,0
+
+[BG Sky]
+type = normal
+spriteno = 0,300
+delta = 0,.80
+start = 0,-39
+mask = 1
+scalestart = 1,1.10 
+scalestart = .90,1
+
+[BG Sun]
+type = normal
+spriteno = 0,8
+delta = 0,.80
+start = 0,-39
+mask = 1
+trans = add
+scalestart = 1,1.10 
+
+[BG Nubes Raras]
+type = normal
+spriteno = 0,10
+delta = 0,.80
+start = 0,-25
+mask = 1
+trans = add
+alpha = 60,256
+velocity = 0.4,0
+tile = 1,0
+scalestart = .90,1
+
+[BG Pilares]
+type = normal
+spriteno = 0,102
+delta = 0.3,.80
+start = 0,-30
+mask = 1
+scalestart = .90,1
+
+[BG Smoke 1]
+type = normal
+spriteno = 0,6
+trans = add
+velocity = .380,0
+delta = .7,1
+start = 0,-30
+tile = 1,0
+mask = 1
+scalestart = .90,1
+
+[BG Esqueletos]
+type = normal
+spriteno = 0,4
+delta = 0.8,1
+start = 0,5
+mask = 1
+tile = 1,0
+scalestart = .90,1
+
+[BG Ruina Abandonada]
+type = normal
+spriteno = 0,9
+delta = 0.8,1
+start = 0,0
+mask = 1
+scalestart = .90,1
+
+[BG Musgo]
+type = normal
+spriteno = 0,101
+delta = 1,1
+start = 0,-32
+mask = 1
+tile = 1,0
+scalestart = .90,1
+
+[BG Suelo]
+type = normal
+spriteno = 0,100
+delta = 1,1
+start = 0,-20
+mask = 1
+scalestart = .90,1
+
+[BG Bajo Suelo]
+type = normal
+spriteno = 0,5
+delta = 1,1
+start = 0,276
+tile = 1,0
+mask = 1
+
+[BG Efecto Sunset]
+type = normal
+spriteno = 0,7
+delta = 0,0
+start = 0,0
+tile = 1,1
+mask = 1
+layerno = 1
+trans = sub
+
+

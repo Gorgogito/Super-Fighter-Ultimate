@@ -1,0 +1,589 @@
+;==============================
+;	GAROU OMEGA STAGE
+;==============================
+;Author:	Claudio Toxi
+;Create Date:	2004.11.02
+
+;--------------------------------------------------------
+[Info]
+name = "Garou MOTW - DARK PALACE BASEMENT"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -150
+boundright = 150
+boundhigh = -150
+boundlow = 0
+verticalfollow = .3
+floortension = 0
+tension = 50
+
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound = -1000
+rightbound = 1000
+topbound = 0
+botbound = 0
+
+;--------------------------------------------------------
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 5
+screenright = 5
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 210
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+[Shadow]
+intensity = 96
+color = 0,0,0
+yscale = .3
+fade.range = 0,0
+
+;--------------------------------------------------------
+[Reflection]
+intensity = 0
+
+;--------------------------------------------------------
+[Music]
+bgmusic = stages/007.mp3
+bgvolume = 255
+
+;--------------------------------------------------------
+[BGdef]
+spr = garou-motw-dark-palace-basement.sff
+debugbg = 0
+
+[BG Building]
+type = anim
+actionno = 0
+layerno = 0
+start = 0,0
+delta = 1,1
+trans = none
+mask = 0
+tilespacing = 0,0
+[Begin action 0]
+0,2,0,0,5
+0,3,0,0,5
+0,0,0,0,5
+0,1,0,0,5
+
+[BG Basement]
+type = anim
+actionno = 10
+layerno = 0
+start = 0,0
+delta = 1,1
+mask = 1
+velocity = 0,0
+tilespacing = 0,0
+[Begin action 10]
+10,0,0,0,5
+10,1,0,0,5
+10,2,0,0,5
+10,3,0,0,5
+
+[BG Rock]
+type = anim
+actionno = 11
+layerno = 0
+start = -32,50
+delta = 1,1
+mask = 1
+velocity = 0,0
+tilespacing = 0,0
+[Begin action 11]
+-1,-1,0,0,100
+11,0,0,0,2
+11,1,0,0,2
+11,2,0,0,2
+11,3,0,0,2
+11,4,0,0,2
+11,5,0,0,2
+11,6,0,0,2
+11,7,0,0,2
+11,8,0,0,2
+11,9,0,0,2
+11,10,0,0,2
+11,11,0,0,2
+11,12,0,0,2
+11,13,0,0,2
+11,14,0,0,2
+11,15,0,0,2
+11,16,0,0,2
+11,17,0,0,2
+11,18,0,0,2
+11,19,0,0,2
+11,20,0,0,2
+11,21,0,0,2
+11,22,0,0,2
+11,23,0,0,2
+11,24,0,0,2
+11,25,0,0,2
+11,26,0,0,2
+11,27,0,0,2
+11,28,0,0,2
+11,29,0,0,2
+11,30,0,0,2
+11,31,0,0,2
+11,32,0,0,2
+11,33,0,0,2
+11,34,0,0,2
+11,35,0,0,2
+11,36,0,0,2
+11,37,0,0,2
+11,38,0,0,2
+11,39,0,0,2
+11,40,0,0,2
+11,41,0,0,2
+11,42,0,0,2
+11,43,0,0,2
+11,44,0,0,2
+11,45,0,0,2
+11,46,0,0,2
+11,47,0,0,2
+-1,-1,0,0,100
+
+[BG Gravel 1]
+type = anim
+actionno = 21
+layerno = 1
+start = 100,240
+delta = 1,1
+mask = 1
+velocity = 0,0
+tilespacing = 0,0
+ID = 1
+[Begin action 21]
+21,0,0,0,2
+21,1,0,0,2
+21,2,0,0,2
+21,3,0,0,2
+
+[BGctrldef 1]
+CtrlID = 1
+looptime = 400
+
+[BGctrl 1]
+type = Velset
+time = 0
+y = -1.5
+
+[BGctrl 1]
+type = Sinx
+time = 0
+value = 20,24,10
+
+[BGctrl 1]
+type = Velset
+time = 390
+x = 0
+y = 0
+
+[BGctrl 1]
+type = Posset
+time = 390
+x = 0
+y = 0
+
+[BG Gravel 2]
+type = anim
+actionno = 22
+layerno = 1
+start = 50,240
+delta = 1,1
+mask = 1
+velocity = 0,0
+tilespacing = 0,0
+ID = 2
+[Begin action 22]
+22,0,0,0,2
+22,1,0,0,2
+22,2,0,0,2
+22,3,0,0,2
+
+[BGctrldef 2]
+CtrlID = 2
+looptime = 400
+
+[BGctrl 2]
+type = Velset
+time = 0
+y = -1
+
+[BGctrl 2]
+type = Sinx
+time = 0
+value = 10,32,10
+
+[BGctrl 2]
+type = Velset
+time = 390
+x = 0
+y = 0
+
+[BGctrl 2]
+type = Posset
+time = 390
+x = 0
+y = 0
+
+[BG Gravel 3]
+type = anim
+actionno = 23
+layerno = 1
+start = -20,240
+delta = 1,1
+mask = 1
+velocity = 0,0
+tilespacing = 0,0
+ID = 3
+[Begin action 23]
+23,0,0,0,2
+23,1,0,0,2
+23,2,0,0,2
+23,3,0,0,2
+
+[BGctrldef 3]
+CtrlID = 3
+looptime = 400
+
+[BGctrl 3]
+type = Velset
+time = 0
+y = -1
+
+[BGctrl 3]
+type = Sinx
+time = 0
+value = 10,40,10
+
+[BGctrl 3]
+type = Velset
+time = 390
+x = 0
+y = 0
+
+[BGctrl 3]
+type = Posset
+time = 390
+x = 0
+y = 0
+
+[BG Gravel 4]
+type = anim
+actionno = 24
+layerno = 1
+start = 0,240
+delta = 1,1
+mask = 1
+velocity = 0,0
+tilespacing = 0,0
+ID = 4
+[Begin action 24]
+24,0,0,0,2
+24,1,0,0,2
+24,2,0,0,2
+24,3,0,0,2
+
+[BGctrldef 4]
+CtrlID = 4
+looptime = 400
+
+[BGctrl 4]
+type = Velset
+time = 0
+y = -2
+
+[BGctrl 4]
+type = Sinx
+time = 0
+value = 10,40,10
+
+[BGctrl 4]
+type = Velset
+time = 390
+x = 0
+y = 0
+
+[BGctrl 4]
+type = Posset
+time = 390
+x = 0
+y = 0
+
+[BG Gravel 5]
+type = anim
+actionno = 25
+layerno = 1
+start = -30,240
+delta = 1,1
+mask = 1
+velocity = 0,0
+tilespacing = 0,0
+ID = 5
+[Begin action 25]
+21,0,0,0,2
+21,1,0,0,2
+21,2,0,0,2
+21,3,0,0,2
+
+[BGctrldef 5]
+CtrlID = 5
+looptime = 480
+
+[BGctrl 5]
+type = Velset
+time = 80
+y = -1
+
+[BGctrl 5]
+type = Sinx
+time = 80
+value = 10,24,0
+
+[BGctrl 5]
+type = Velset
+time = 470
+x = 0
+y = 0
+
+[BGctrl 5]
+type = Posset
+time = 470
+x = 0
+y = 0
+
+[BG Gravel 6]
+type = anim
+actionno = 26
+layerno = 1
+start = 70,240
+delta = 1,1
+mask = 1
+velocity = 0,0
+tilespacing = 0,0
+ID = 6
+[Begin action 26]
+22,0,0,0,2
+22,1,0,0,2
+22,2,0,0,2
+22,3,0,0,2
+
+[BGctrldef 6]
+CtrlID = 6
+looptime = 496
+
+[BGctrl 6]
+type = Velset
+time = 96
+y = -1
+
+[BGctrl 6]
+type = Sinx
+time = 96
+value = 10,24,0
+
+[BGctrl 6]
+type = Velset
+time = 460
+x = 0
+y = 0
+
+[BGctrl 6]
+type = Posset
+time = 460
+x = 0
+y = 0
+
+[BG Gravel 7]
+type = anim
+actionno = 27
+layerno = 1
+start = 90,240
+delta = 1,1
+mask = 1
+velocity = 0,0
+tilespacing = 0,0
+ID = 7
+[Begin action 27]
+23,0,0,0,2
+23,1,0,0,2
+23,2,0,0,2
+23,3,0,0,2
+
+[BGctrldef 7]
+CtrlID = 7
+looptime = 496
+
+[BGctrl 7]
+type = Velset
+time = 96
+y = -1
+
+[BGctrl 7]
+type = Sinx
+time = 96
+value = 20,24,0
+
+[BGctrl 7]
+type = Velset
+time = 450
+x = 0
+y = 0
+
+[BGctrl 7]
+type = Posset
+time = 450
+x = 0
+y = 0
+
+[BG Gravel 8]
+type = anim
+actionno = 28
+layerno = 1
+start = -100,240
+delta = 1,1
+mask = 1
+velocity = 0,0
+tilespacing = 0,0
+ID = 8
+[Begin action 28]
+24,0,0,0,2
+24,1,0,0,2
+24,2,0,0,2
+24,3,0,0,2
+
+[BGctrldef 8]
+CtrlID = 8
+looptime = 416
+
+[BGctrl 8]
+type = Velset
+time = 16
+y = -2
+
+[BGctrl 8]
+type = Sinx
+time = 16
+value = 20,16,0
+
+[BGctrl 8]
+type = Velset
+time = 400
+x = 0
+y = 0
+
+[BGctrl 8]
+type = Posset
+time = 400
+x = 0
+y = 0
+
+[BG Gravel 9]
+type = anim
+actionno = 29
+layerno = 1
+start = 110,240
+delta = 1,1
+mask = 1
+velocity = 0,0
+tilespacing = 0,0
+ID = 9
+[Begin action 29]
+22,0,0,0,2
+22,1,0,0,2
+22,2,0,0,2
+22,3,0,0,2
+
+[BGctrldef 9]
+CtrlID = 9
+looptime = 656
+
+[BGctrl 9]
+type = Velset
+time = 256
+y = -1
+
+[BGctrl 9]
+type = Sinx
+time = 256
+value = 20,32,0
+
+[BGctrl 9]
+type = Velset
+time = 600
+x = 0
+y = 0
+
+[BGctrl 9]
+type = Posset
+time = 600
+x = 0
+y = 0
+
+[BG Gravel 10]
+type = anim
+actionno = 30
+layerno = 1
+start = -80,240
+delta = 1,1
+mask = 1
+velocity = 0,0
+tilespacing = 0,0
+ID = 10
+[Begin action 30]
+24,0,0,0,2
+24,1,0,0,2
+24,2,0,0,2
+24,3,0,0,2
+
+[BGctrldef 10]
+CtrlID = 10
+looptime = 584
+
+[BGctrl 10]
+type = Velset
+time = 184
+y = -1
+
+[BGctrl 10]
+type = Sinx
+time = 184
+value = 30,32,0
+
+[BGctrl 10]
+type = Velset
+time = 550
+x = 0
+y = 0
+
+[BGctrl 10]
+type = Posset
+time = 550
+x = 0
+y = 0

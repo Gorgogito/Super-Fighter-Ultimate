@@ -1,0 +1,177 @@
+;=======================================
+[Info]
+Name = "Waterfall"
+Autor = "MSE Team"
+Web = "http://dbzgt.scruffydragon.com/"
+;=======================================
+[Camera]
+
+startx = 1800
+starty = 0
+
+boundleft = -140
+boundright = 900
+
+boundhigh = -190
+boundlow = 0
+
+verticalfollow = 1
+floortension = 0
+tension = 50
+
+;=======================================
+[PlayerInfo]
+
+p1startx = 820
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 970
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1200
+topbound  =  0
+botbound  =  0
+
+;=======================================
+[Scaling]
+
+topz     = 0
+botz     = 0
+topscale = 1
+botscale = 1.2
+
+;=======================================
+[Bound]
+
+screenleft = 15
+screenright = 15
+
+;=======================================
+[StageInfo]
+
+zoffset = 215
+
+autoturn = 1
+
+resetBG = 1
+
+;=======================================
+[Shadow]
+
+intensity = 100
+
+color = 0,0,0
+
+yscale = .2
+
+fade.range = -400,-100
+
+;=======================================
+[Reflection]
+
+intensity = 0
+
+;=======================================
+[Music]
+
+bgmusic = sound/Chibi Gohan.mp3
+bgmloop = 1
+bgvolume = 255
+
+;=======================================
+[BGdef]
+
+spr = Piccolo's Waterfall.sff
+debugbg = 1
+
+;=======================================
+
+;[BG Green BG]
+;type  = normal
+;spriteno = 0
+;layerno = 0                
+;start = 0,61
+;delta = 1,1
+
+[BG Tree Branch Left]
+type  = normal
+spriteno = 3,0
+layerno = 1                
+start = -330,-50
+delta = 1,1
+mask = 1
+
+[BG Tree Branch right]
+type  = normal
+spriteno = 4,0
+layerno = 1                
+start = 977,-50
+delta = 1,1
+mask = 1
+
+;[BG Cliff Wall]
+;type  = anim
+;actionno = 1
+;layerno = 0                
+;start = 0,61
+;delta = 1,1
+;mask  = 0
+
+[BG Sky]
+type  = normal
+spriteno = 11,0
+layerno = 0                
+start = 0,-30
+delta = .6,.6
+mask  = 0
+
+;[BG Tree Tops]
+;type  = normal
+;spriteno = 2,0
+;layerno = 0                
+;start = 0,-30
+;delta = 1,1
+;mask  = 1
+
+[BG waterfall]
+type  = normal
+spriteno = 5, 0
+tile = 1, 1
+velocity = 0, 4
+id = 13
+layerno = 0
+
+[BG Icarus]
+type  = anim
+actionno = 2
+layerno = 0
+start = 940,100
+delta = 1,1
+mask = 1
+
+[BG Ground]
+type  = normal
+spriteno = 1,0
+start = 0,96
+delta = 1,1
+mask = 1
+tile = 1, 0
+
+;=======================================
+[Begin Action 1]
+0,0,0,0,3
+10,0,0,0,3
+10,1,0,0,3
+10,2,0,0,3
+
+[Begin Action 2]
+Loopstart
+13,0,0,-1,6
+13,1,0,-2,6
+13,2,0,-1,6
+13,3,0,0,6

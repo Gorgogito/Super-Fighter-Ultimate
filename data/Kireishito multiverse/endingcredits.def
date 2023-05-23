@@ -1,0 +1,24 @@
+[SceneDef]
+spr = endingcredits.sff
+;------------------------------------
+startscene = 0
+
+[Scene 0]
+clearcolor = 0,0,0
+fadein.time = 50
+fadeout.time = 50
+bgm = ending.mp3
+bgm.loop = 1
+bg.name = Scene0bg
+end.time = 4800
+
+[Scene0bgDef]
+
+[Scene0bg ending]
+type = normal
+spriteno = 0,0
+start = -160,0
+tile  = 0,0
+velocity = 0,-0.5
+
+

@@ -1,0 +1,205 @@
+[Info]
+name ="Namek HR"
+Author = Miguel
+;web : www.miguel-mugen.es.tl
+
+
+[Camera]
+startx =0
+starty =0
+
+boundleft  = -500 
+boundright = 500
+boundhigh  = 0
+boundlow   = 0
+verticalfollow = .1
+tension =50
+
+
+;----------
+
+[PlayerInfo]
+p1startx =-70
+p1starty =0
+p1startz =0
+p1facing =1
+
+p2startx =70
+p2starty =0
+p2startz =0
+p2facing =-1
+
+leftbound =-1000
+rightbound =1000
+topbound =0
+botbound =18
+
+
+[Scaling]
+topz =10
+botz =200
+topscale =1
+botscale =1
+
+
+[Bound]
+screenleft  =30
+screenright =30
+
+
+[StageInfo]
+zoffset  = 200
+autoturn = 1
+resetBG  = 1
+hires = 1 
+
+[Shadow]
+intensity = 95
+color = 0,0,0
+yscale =.5
+fade.range = 0,0
+
+
+[Reflection]
+intensity = 0
+
+
+[Music]
+bgmusic  = Sound/Namek.ogg
+bgvolume = 255
+
+;----------------------------------------------------------------------
+[BGdef]
+spr =Nameku.sff
+debugbg = 0
+
+[BG 0]
+type =normal
+spriteno =0,0
+layerno = 0 
+start = 0,0
+delta = 1,1 
+trans = add
+mask =0
+tile = 1,0
+tilespacing = 0,0
+
+[BG 1]
+type =normal
+spriteno =0,1
+layerno = 0 
+start = 0,0
+delta = 1,1 
+trans = none
+mask =0
+tile = 1,0
+tilespacing = 0,0
+
+[BG 2]
+type =normal
+spriteno =0,2
+layerno = 0 
+start = 0,0
+delta = 1,1 
+trans = add 
+mask =0
+tile = 1,0
+tilespacing = 0,0
+
+[BG 7]
+type =normal
+spriteno =0,6
+layerno = 1 
+start = 0,0
+delta = 1,1 
+trans = add
+mask =0
+tile = 1,0
+velocity = 1 
+tilespacing = 0,0
+
+[BG 8]
+type =normal
+spriteno =0,7
+layerno = 1
+scale = .3
+start = 0,0
+delta = 1,1 
+trans = add
+mask =0
+tile = 1,0
+velocity = .5 
+tilespacing = 0,0
+
+
+
+
+
+
+
+
+[BG 3]
+type = anim 
+actionNo =0,3
+layerno = 0 
+start = 0,0
+delta = 1,1
+scale = 1.2
+trans = none 
+mask =0
+tilespacing = 0,0
+
+
+[BG 5]
+type = anim 
+actionNo =0,4
+layerno = 0 
+start = 0,0
+delta = 1,1
+scale = 1.2
+trans = none 
+mask =0
+tilespacing = 0,0
+
+
+[BG 6]
+type = anim 
+actionNo =0,5
+layerno = 0 
+start = 0,0
+delta = 1,1 
+scale = 1.2
+trans = none 
+mask =0
+tilespacing = 0,0
+
+
+[Begin action 0 ]
+
+0,3, 0,0,20
+0,4, 0,0,20
+0,5, 0,0,20
+
+
+[BG 9]
+type = anim 
+actionNo =1
+layerno = 0 
+start = 0,0
+delta = 1,1
+trans = add
+mask =1
+tilespacing = 0,0
+
+[Begin Action 1]
+1,0, 0,0, 5,, A
+1,1, 0,0, 5,, A
+1,2, 0,0, 5,, A
+
+
+
+
+
+
+
+

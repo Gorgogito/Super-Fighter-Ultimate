@@ -1,0 +1,96 @@
+[Info]
+name = "KOF 99 - Underground Sewer Lift"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -216
+boundright = 216
+boundhigh = 0
+boundlow = 0
+verticalfollow = 0
+tension = 50
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 220
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+color = 128,128,128
+yscale = .3
+
+[Music]
+bgmusic = stages/085.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/kof99-underground-sewer-lift.sff
+
+[BG wall]
+type = normal
+id = 1
+spriteno = 0,0
+start = 0,240
+tile = 1,0
+delta = .4,.2
+
+[BG floor]
+type = Normal
+id = 2
+spriteno = 1,0
+start = 0,240
+delta = 1,1
+mask = 1
+
+[BG light]
+type = Anim
+Actionno = 1
+spriteno = 2,0
+start = 215,240
+mask = 1
+
+[BGCtrldef 1]
+CtrlID = 1
+
+[BGctrl 1.1]
+type = VelAdd
+Time = 0,150
+x = .05
+
+[Begin action 1]
+
+2,0, 0,0, 3
+2,1, 0,0, 3
+2,2, 0,0, 3
+2,3, 0,0, 3
+2,4, 0,0, 3
+2,5, 0,0, 3
+2,6, 0,0, 3
+2,7, 0,0, 3

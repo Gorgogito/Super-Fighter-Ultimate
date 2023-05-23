@@ -1,0 +1,459 @@
+﻿; Арена: The Subway MK3
+; Автор: Emsi-D
+; Рип спрайтов: Fly
+
+[Info]
+Name = "5ubw4y"
+Displayname = "The Subway"
+Mugenversion = 1.1
+
+[Camera]
+boundleft = -302
+boundright = 302
+boundhigh = -496
+tension = 100
+verticalfollow = .1
+overdrawhigh = 20
+overdrawlow = 20
+startzoom = 1
+zoomin = 1
+zoomout = 0.85
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1400
+rightbound = 1400
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+[StageInfo]
+zoffset = 235
+autoturn = 1
+resetbg = 1
+localcoord = 400,254
+
+[Shadow]
+intensity = 180
+yscale = -.19
+
+[Music]
+bgmusic = sound/MK3/mk3_the_subway.ogg
+bgmloopstart = 167875
+bgmloopend = -1
+
+[BGdef]
+spr = The_Subway_&_The_Street.sff
+bgclearcolor = 0,0,0
+
+[BG Бэкграунд]
+type = normal
+spriteno = 0,5
+delta = .36,1
+start = 1,40
+scalestart = .90,1
+
+[BG Переход между этажами/Внизу экрана]
+type = normal
+spriteno = 0,4
+delta = 1,1
+start = 0,247
+tile = 1,0
+
+[BG Пол]
+type = parallax
+spriteno = 0,0
+delta = .84,1
+start = 0,233
+width = 1120,1370
+scalestart = .90,1
+
+[BG Рельсы]
+type = normal
+spriteno = 0,1
+delta = 0,1
+start = 0,172
+mask = 1
+scalestart = .90,1
+
+[BG Станция/Слой 1]
+type = normal
+spriteno = 0,3
+delta = .83,1
+start = -1,-40
+mask = 1
+scalestart = .90,1
+
+[BG Станция/Слой 2]
+type = normal
+spriteno = 0,2
+delta = .83,1
+start = -1,34
+mask = 1
+scalestart = .90,1
+
+[BG Мигающий свет/Центр арены]
+type = anim
+actionno = 0
+delta = .83,1
+start = -1,29
+scalestart = .90,1
+
+[Begin Action 0]
+0,6, 0,0, 52
+-1,0, 0,0, 5
+0,6, 0,0, 5
+-1,0, 0,0, 5
+0,6, 0,0, 5
+-1,0, 0,0, 5
+0,6, 0,0, 5
+-1,0, 0,0, 5
+0,6, 0,0, 5
+-1,0, 0,0, 5
+0,6, 0,0, 64
+-1,0, 0,0, 5
+0,6, 0,0, 5
+-1,0, 0,0, 5
+0,6, 0,0, 5
+-1,0, 0,0, 5
+0,6, 0,0, 5
+-1,0, 0,0, 5
+0,6, 0,0, 5
+-1,0, 0,0, 5
+
+[BG Мигающий свет/Левый угол арены]
+type = anim
+actionno = 1
+delta = .83,1
+start = -406.90,29
+scalestart = .90,1
+
+[Begin Action 1]
+0,7, 0,0, 5
+-1,0, 0,0, 5
+0,7, 0,0, 5
+-1,0, 0,0, 5
+0,7, 0,0, 5
+-1,0, 0,0, 5
+0,7, 0,0, 5
+-1,0, 0,0, 5
+0,7, 0,0, 52
+-1,0, 0,0, 5
+0,7, 0,0, 5
+-1,0, 0,0, 180
+
+[BG Мигающий свет/Правый угол арены]
+type = anim
+actionno = 2
+delta = .83,1
+start = 271.70,29
+scalestart = .90,1
+
+[Begin Action 2]
+-1,0, 0,0, 4
+0,8, 0,0, 4
+
+[BG Статичный отсвет на рельсах/Левый угол арены]
+type = normal
+spriteno = 0,9
+delta = .83,1
+start = -304,172
+mask = 1
+scalestart = .90,1
+
+[BG Статичный отсвет на рельсах/Правый угол арены]
+type = normal
+spriteno = 0,9
+delta = .83,1
+start = 144,172
+mask = 1
+scalestart = .90,1
+
+[BG Переход между этажами]
+type = normal
+spriteno = 0,4
+delta = 1,1
+start = 0,-103
+tile = 1,0
+mask = 1
+
+[BG Бочка слева]
+type = normal
+spriteno = 0,10
+delta = .83,1
+start = -286,112
+mask = 1
+scalestart = .90,1
+
+[BG Бочка справа]
+type = normal
+spriteno = 0,10
+delta = .83,1
+start = 121,113
+mask = 1
+scalestart = .90,1
+
+;====================
+; Улица/Второй этаж
+;====================
+
+[BG Пол]
+type = parallax
+spriteno = 1,0
+delta = .87,1
+start = 0,-117
+width = 1120,1370
+
+[BG Портал в небе]
+type = anim
+actionno = 3
+delta = 0,1
+scalestart = .90,1
+
+[Begin Action 3]
+1,5, -89,-362.5, 6
+1,6, -78,-367.5, 6
+1,7, -89,-368.5, 6
+1,8, -85,-363.5, 6
+1,9, -97,-362.5, 6
+1,10, -109,-365.5, 6
+1,11, -100,-363.5, 6
+1,12, -98,-374.5, 6
+1,13, -83,-374.5, 6
+1,14, -79,-365.5, 6
+1,15, -90,-367.5, 6
+1,16, -97,-359.5, 6
+
+[BG Башня Шао Кана]
+type = normal
+spriteno = 1,4
+delta = 0,1
+start = 0,-330.5
+mask = 1
+
+[BG Здания и вход в метро]
+type = normal
+spriteno = 1,3
+delta = .554,1
+start = 0,-497
+mask = 1
+scalestart = .90,1
+
+[BG Дорога/Заплатка]
+type = normal
+spriteno = 1,2
+delta = .68,1
+start = 0,-184.5
+
+[BG Дорога]
+type = normal
+spriteno = 1,2
+delta = .68,1
+start = 0,-185
+
+[BG Бордюр]
+type = normal
+spriteno = 1,1
+delta = .87,1
+start = -1,-367
+mask = 1
+
+[BG Газета, развеваемая ветром 1/Центр арены]
+type = anim
+actionno = 4
+delta = .87,1
+start = -155,-174
+
+[BG Газета, развеваемая ветром 1/Правый угол арены]
+type = anim
+actionno = 4
+delta = .87,1
+start = 229,-176
+
+[Begin Action 4]
+1,17, 0,0, 4
+1,18, 0,0, 4
+1,19, 0,0, 4
+1,20, 0,0, 4
+1,21, 0,0, 4
+1,22, 0,0, 4
+1,23, 0,0, 4
+1,24, 0,0, 4
+
+[BG Газета, развеваемая ветром/Левый угол арены]
+type = anim
+actionno = 5
+delta = .87,1
+start = -315,-155
+
+[BG Газета, развеваемая ветром 2/Центр арены]
+type = anim
+actionno = 5
+delta = .87,1
+start = 21,-170
+
+[BG Газета, развеваемая ветром 2/Правый угол арены]
+type = anim
+actionno = 5
+delta = .87,1
+start = 437,-174
+
+[Begin Action 5]
+1,17, 0,0, 3
+1,18, 0,0, 4
+1,19, 0,0, 3
+1,20, 0,0, 3
+1,21, 0,0, 3
+1,22, 0,0, 4
+1,23, 0,0, 4
+1,24, 0,0, 4
+
+[BG Листья, разносимые ветром #1]
+type = anim
+actionno = 6
+layerno = 1
+velocity = 6
+delta = .6,.8
+start = 0,-221
+tile = 1
+tilespacing = 300
+sin.x = -70,850
+sin.y = -20,500
+
+[BG Листья, разносимые ветром #2]
+type = anim
+actionno = 6
+velocity = 6
+delta = .6,.8
+start = 0,-271
+tile = 1
+tilespacing = 200
+sin.x = 10,500
+sin.y = -100,852
+
+[BG Листья, разносимые ветром #3]
+type = anim
+actionno = 6
+velocity = 6
+delta = .6,.8
+start = 0,-171
+tile = 1
+tilespacing = 350
+sin.x = -20,500
+sin.y = -50,952
+
+[Begin Action 6]
+1,25, 0,0, 15
+1,26, 0,0, 15
+1,27, 0,0, 15
+1,28, 0,0, 15
+1,29, 0,0, 15
+1,30, 0,0, 15
+1,31, 0,0, 15
+
+[BG Большие бумажки, разносимые ветром #1]
+type = anim
+actionno = 7
+layerno = 1
+velocity = 5.1
+delta = .6,.8
+start = 0,-179
+tile = 1
+tilespacing = 300
+sin.x = -20,570
+sin.y = -50,212
+
+[BG Большие бумажки, разносимые ветром #2]
+type = anim
+actionno = 7
+velocity = 5
+delta = .6,.8
+start = 0,-319
+tile = 1
+tilespacing = 320
+sin.x = -50,340
+sin.y = 30,212
+
+[BG Большие бумажки, разносимые ветром #3]
+type = anim
+actionno = 7
+velocity = 5
+delta = .6,.8
+start = 0,-209
+tile = 1
+tilespacing = 230
+sin.x = 100,530
+sin.y = -50,200
+
+[Begin Action 7]
+1,32, 0,0, 6
+1,33, 0,0, 6
+1,34, 0,0, 6
+1,35, 0,0, 6
+1,36, 0,0, 6
+1,37, 0,0, 6
+1,38, 0,0, 6
+1,39, 0,0, 6
+1,33, 0,0, 6
+
+[BG Маленькие бумажки, разносимые ветром #1]
+type = anim
+actionno = 8
+velocity = 5
+delta = .6,.8
+start = 0,-249
+tile = 1
+tilespacing = 350
+sin.x = 50,125
+sin.y = -100,125
+
+[BG Маленькие бумажки, разносимые ветром #2]
+type = anim
+actionno = 8
+velocity = 5
+delta = .6,.8
+start = 0,-169
+tile = 1
+tilespacing = 450
+sin.x = -70,280
+sin.y = -50,500
+
+[BG Маленькие бумажки, разносимые ветром #3]
+type = anim
+actionno = 8
+velocity = 5
+delta = .6,.8
+start = 0,-179
+tile = 1
+tilespacing = 350
+sin.x = 20,570
+sin.y = -50,212
+
+[BG Маленькие бумажки, разносимые ветром #4]
+type = anim
+actionno = 8
+layerno = 1
+velocity = 5
+delta = .6,.8
+start = 0,-189
+tile = 1
+tilespacing = 450
+sin.x = -50,355
+sin.y = 100,125
+
+[Begin Action 8]
+1,40, 0,0, 6
+1,41, 0,0, 6
+1,42, 0,0, 6
+1,43, 0,0, 6
+1,44, 0,0, 6
+1,45, 0,0, 6
+1,46, 0,0, 6
+1,47, 0,0, 6
+1,41, 0,0, 6

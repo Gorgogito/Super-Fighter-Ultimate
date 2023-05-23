@@ -1,0 +1,129 @@
+[Info]
+name="Earth Rocks HR"
+
+[Camera]
+startx=0
+starty=0
+boundleft=-138
+boundright=138
+boundhigh=-105
+boundlow=0
+verticalfollow= 1
+floortension=60
+tension=40
+
+[PlayerInfo]
+p1startx=-70
+p1starty=0
+p1startz=0
+p1facing=1
+p2startx=70
+p2starty=0
+p2startz=0
+p2facing=-1
+
+leftbound=-1000
+rightbound=1000
+topbound=0
+botbound=0
+
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 35
+screenright = 35
+
+[StageInfo]
+zoffset = 205
+autoturn = 1
+resetBG = 0
+HIres = 1
+
+[Shadow]
+color = 38,38,38
+yscale = .1
+
+[Music]
+bgmusic = sound/MajinVegeta_theme_Ampli250.ogg
+bgvolume = 255
+
+[BGdef]
+spr = Earth_Rocks.sff
+debugbg = 1
+
+[BG 0]
+type = normal
+spriteno = 0,0
+start = -600,-120
+delta = 2,2
+mask = 1
+tile = 1,0
+trans = none
+
+[BG 0]
+type = normal
+spriteno = 0,6
+start = -600,-220
+delta = 2,2
+velocity = 0.7,0
+mask = 1
+tile = 1,0
+trans = add
+
+[BG 0]
+type = normal
+spriteno = 0,8
+start = -600,-160
+delta = 2,2
+velocity = 0.32,0
+mask = 1
+tile = 1,0
+trans = add
+
+[BG 0]
+type = normal
+spriteno = 0,10
+start = -600,-140
+delta = 2,2
+velocity = 0.15,0
+mask = 1
+tile = 1,0
+trans = add
+
+[BG 0]
+type = normal
+spriteno = 0,4
+start = -600,-120
+delta = 2.5,2
+mask = 1
+tile = 1,0
+trans = none
+
+[BG 0]
+type = normal
+spriteno = 0,1
+start = -600,-120
+delta = 2,2
+mask = 1
+trans = none
+
+[BG 0]
+type = normal
+spriteno = 0,2
+start = -600,-120
+delta = 2,2
+mask = 1
+trans = none
+
+[BG 0]
+type = normal
+spriteno = 0,3
+start = -600,-120
+delta = 2,2
+mask = 1
+trans = none
+

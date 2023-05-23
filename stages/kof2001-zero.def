@@ -1,0 +1,259 @@
+;--------------------------------------------------------
+;ZERO KOF2001 STAGE BY CIRIO
+;--------------------------------------------------------
+
+[Info]
+name = "KOF 2001 - Zero"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -216
+boundright = 215
+boundhigh = -8
+boundlow = 0
+verticalfollow = .1
+floortension = 0
+tension = 60
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -70          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+;--------------------------------------------------------
+[Scaling]
+topz     = 0       
+botz     = 50      
+topscale = 1       
+botscale = 1.2     
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 15    ;Dist from left of screen that player can move to
+screenright = 15   ;Right edge
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 215
+autoturn = 1
+resetBG = 0
+
+;--------------------------------------------------------
+[Shadow]
+color = 255,255,255
+yscale = 0
+reflect = 1
+
+[Reflection]
+intensity = 128
+
+;--------------------------------------------------------
+[Music]
+bgmusic = stages/109.mp3
+bgvolume = 255
+
+
+[BGdef]
+spr = stages/kof2001-zero.sff
+
+
+debugbg = 0
+
+;----------
+
+[BG 1]
+type  = normal
+spriteno = 0,1
+start = -376, -8
+xscale = 1, 1.75
+yscalestart = 100
+yscaledelta = 1.2
+velocity = -0.25, 0
+tile = 1, 0
+
+[BG 2]
+type  = anim
+actionno = 5
+start = -207, 92
+xscale = 1, 1.75
+yscalestart = 100
+yscaledelta = 1.2
+velocity = -0.25, 0
+tile = 1, 0
+tilespacing = 656, 0
+
+[BG 3]
+type  = anim
+actionno = 6
+start = -250, 48
+xscale = 1, 1.75
+yscalestart = 100
+yscaledelta = 1.2
+velocity = -0.25, 0
+tile = 1, 0
+tilespacing = 656, 0
+
+[BG 4]
+type  = normal
+spriteno = 1,1
+start = -376, -8
+xscale = 1, 1.75
+yscalestart = 100
+yscaledelta = 1.2
+mask = 1
+
+[BG 5]
+type  = normal
+spriteno = 1,2
+start = -1, -8
+xscale = 1, 1.75
+yscalestart = 100
+yscaledelta = 1.2
+mask = 1
+
+[BG 6]
+type  = anim
+actionno = 3
+start = -222, 16
+xscale = 1, 1.75
+yscalestart = 100
+yscaledelta = 1.2
+mask = 1
+
+[BG 7]
+type  = anim
+actionno = 13
+start = 220, 16
+xscale = 1, 1.75
+yscalestart = 100
+yscaledelta = 1.2
+mask = 1
+
+
+[BG 8]
+type  = anim
+actionno = 2
+start = -376, 153
+xscale = 1, 1.75
+yscalestart = 100
+yscaledelta = 1.2
+mask = 1
+
+[BG 9]
+type  = anim
+actionno = 12
+start = 374, 153
+xscale = 1, 1.75
+yscalestart = 100
+yscaledelta = 1.2
+mask = 1
+
+
+[BG 10]
+type  = anim
+actionno = 4
+start = -46, 189
+xscale = 1, 1.75
+yscalestart = 100
+yscaledelta = 1.2
+mask = 1
+
+[BG 11]
+type  = anim
+actionno = 14
+start = 45, 189
+xscale = 1, 1.75
+yscalestart = 100
+yscaledelta = 1.2
+mask = 1
+
+[Begin action 2]
+2,1, 0,0, 8
+2,2, 0,0, 8
+2,3, 0,0, 8
+2,4, 0,0, 8
+2,5, 0,0, 8
+2,6, 0,0, 8
+2,7, 0,0, 8
+2,8, 0,0, 8
+
+[Begin action 12]
+2,1, 0,0, 8,H
+2,2, 0,0, 8,H
+2,3, 0,0, 8,H
+2,4, 0,0, 8,H
+2,5, 0,0, 8,H
+2,6, 0,0, 8,H
+2,7, 0,0, 8,H
+2,8, 0,0, 8,H
+
+[Begin action 3]
+3,1, 0,0, 8
+3,2, 0,0, 8
+3,3, 0,0, 8
+3,4, 0,0, 8
+3,5, 0,0, 8
+3,6, 0,0, 8
+3,7, 0,0, 8
+3,8, 0,0, 8
+
+[Begin action 13]
+3,1, 0,0, 8,H
+3,2, 0,0, 8,H
+3,3, 0,0, 8,H
+3,4, 0,0, 8,H
+3,5, 0,0, 8,H
+3,6, 0,0, 8,H
+3,7, 0,0, 8,H
+3,8, 0,0, 8,H
+
+[Begin action 4]
+4,1, 0,0, 8
+4,2, 0,0, 8
+4,3, 0,0, 8
+4,4, 0,0, 8
+4,5, 0,0, 8
+4,6, 0,0, 8
+4,7, 0,0, 8
+4,8, 0,0, 8
+
+[Begin action 14]
+4,1, 0,0, 8,H
+4,2, 0,0, 8,H
+4,3, 0,0, 8,H
+4,4, 0,0, 8,H
+4,5, 0,0, 8,H
+4,6, 0,0, 8,H
+4,7, 0,0, 8,H
+4,8, 0,0, 8,H
+
+
+[Begin action 5]
+5,1, 0,0, 9
+5,2, 0,0, 9
+5,3, 0,0, 9
+1000,1, 0,0, 45
+
+[Begin action 6]
+1000,1, 0,0, 28
+Loopstart
+6,1, 0,0, 9
+6,2, 0,0, 9
+6,3, 0,0, 9
+1000,1, 0,0, 45

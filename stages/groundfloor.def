@@ -1,0 +1,392 @@
+[Info]
+
+Name = "thepit3bottom"
+displayname = "The Pit III Bottom"
+Mugenversion = 1.1
+Edited by Solano
+Pit 3 stage fatal by Chadwick1504
+;--------------------------------------------------------
+[Camera]
+boundleft	= -305
+boundright = 305
+boundhigh	= -35;-15
+;boundlow	= -24
+tension = 90
+floortension = 40
+verticalfollow = .3
+overdrawhigh = 20
+overdrawlow = 20
+startzoom = 0.88
+zoomin = 1
+zoomout = 0.77
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -98          
+p1starty = 0         
+p1startz = 0            
+p1facing = 1           
+
+p2startx = 96
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+leftbound	= -1000		;Left bound (x-movement)
+rightbound = 1000		;Right bound
+topbound	= 0		;Top bound (z-movement)
+botbound	= 0		;Bottom bound
+
+;--------------------------------------------------------
+[Scaling]
+topz		= 0		;Top z-coordinate for scaling
+botz		= 50		;Bottom z-coordinate for scaling
+topscale	= 1		;Scale to use at top
+botscale	= 1.2		;Scale to use at bottom
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 40
+screenright = 40
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset		= 242
+autoturn	= 1
+resetBG		= 0
+localcoord	= 400,254
+
+;--------------------------------------------------------
+[Shadow]
+intensity	= 250
+color		= 0,0,0
+yscale		= -.10
+;fade.range	= -400,-100
+
+;--------------------------------------------------------
+[Reflection]
+intensity	= 0
+
+;--------------------------------------------------------
+[Music]
+BgMusic = sound/Other/Mortal Kombat Trilogy OST - The Pit III.ogg
+bgmloopstart = 1646380
+bgmloopend = -1
+bgmvolume = 120
+
+;========================================================
+;--------------------------------------------------------
+; Main background definition
+[BGdef]
+spr		= groundfloor.sff
+debugbg		=0
+
+;--------------------------------------------------------
+[BG Background]
+type 		= normal
+spriteno	= 0,0
+layerno		= 0
+start		= -160,0
+delta		= 0,0
+mask		= 0
+
+[BG Stone Statues]
+type 		= normal
+spriteno	= 0,1
+layerno		= 0
+start		= -390,-325
+delta		= 0.5,0.5
+mask		= 0
+scalestart = .90,1
+tile = 1,0
+
+[BG Floor]
+type 		= normal
+spriteno	= 2,0
+layerno		= 0
+start		= -591,126
+delta		= 1,1
+mask		= 1
+
+[BG Chains]
+type 		= normal
+spriteno	= 1,0
+layerno		= 0
+start		= -429,-426
+delta		= 1,1
+mask		= 1
+scalestart = .90,1
+
+[BG Chains]
+type 		= normal
+spriteno	= 1,1
+layerno		= 0
+start		= -429,-426
+delta		= 1,1
+mask		= 1
+scalestart = .90,1
+
+[BG Chains]
+type 		= normal
+spriteno	= 1,2
+layerno		= 0
+start		= -429,-426
+delta		= 1,1
+mask		= 1
+scalestart = .90,1
+
+[BG Chains]
+type 		= normal
+spriteno	= 1,3
+layerno		= 0
+start		= -429,-426
+delta		= 1,1
+mask		= 1
+scalestart = .90,1
+
+[BG Chains]
+type 		= normal
+spriteno	= 1,4
+layerno		= 1
+start		= -594,-120
+delta		= 1.50,1
+mask		= 1
+scalestart = .53,.63
+
+[BG Chains]
+type 		= normal
+spriteno	= 1,5
+layerno		= 1
+start		= -544,-250
+delta		= 1.50,1
+mask		= 1
+scalestart = .73,.83
+
+[BG Chains]
+type 		= normal
+spriteno	= 1,6
+layerno		= 1
+start		= -544,-250
+delta		= 1.50,1
+mask		= 1
+scalestart = .73,.83
+
+[BG Chains]
+type 		= normal
+spriteno	= 1,7
+layerno		= 1
+start		= -544,-250
+delta		= 1.50,1
+mask		= 1
+scalestart = .73,.83
+
+[BG Chains]
+type 		= normal
+spriteno	= 1,8
+layerno		= 1
+start		= -544,-250
+delta		= 1.50,1
+mask		= 1
+scalestart = .73,.83
+
+[BG Walls]
+type 		= normal
+spriteno	= 2,1
+layerno		= 0
+start		= -595,-206
+delta		= 1,1
+mask		= 1
+
+[BG Walls]
+type 		= normal
+spriteno	= 2,2
+layerno		= 0
+start		= -595,-206
+delta		= 1,1
+mask		= 1
+
+[BG Spinner Hole #1]
+type 		= normal
+spriteno	= 3,0
+layerno		= 
+start		= -478,198
+delta		= 1,1
+mask		= 1
+
+[BG Spinner Hole #2]
+type 		= normal
+spriteno	= 3,0
+layerno		= 
+start		= -298,198
+delta		= 1,1
+mask		= 1
+
+[BG Spinner Hole #3]
+type 		= normal
+spriteno	= 3,0
+layerno		= 
+start		= -118,198
+delta		= 1,1
+mask		= 1
+
+[BG Spinner Hole #4]
+type 		= normal
+spriteno	= 3,0
+layerno		= 
+start		= 62,198
+delta		= 1,1
+mask		= 1
+
+[BG Spinner Hole #5]
+type 		= normal
+spriteno	= 3,0
+layerno		= 
+start		= 242,198
+delta		= 1,1
+mask		= 1
+
+[BG Spinner #0]
+type		= anim
+layerno		= 
+actionno	= 1
+start		= -588,100
+delta		= 1,1
+mask		= 1
+scalestart = .80,.90
+
+[BG Spinner #1]
+type		= anim
+layerno		= 
+actionno	= 1
+start		= -434,100
+delta		= 1,1
+mask		= 1
+scalestart = .80,.90
+
+[BG Spinner #2]
+type		= anim
+layerno		= 
+actionno	= 1
+start		= -280,100
+delta		= 1,1
+mask		= 1
+scalestart = .80,.90
+
+[BG Spinner #3]
+type		= anim
+layerno		= 
+actionno	= 1
+start		= -127,100
+delta		= 1,1
+mask		= 1
+scalestart = .80,.90
+
+[BG Spinner #4]
+type		= anim
+layerno		= 
+actionno	= 1
+start		= 26,100
+delta		= 1,1
+mask		= 1
+scalestart = .80,.90
+
+[BG Spinner #5]
+type		= anim
+layerno		= 
+actionno	= 1
+start		= 180,100
+delta		= 1,1
+mask		= 1
+scalestart = .80,.90
+
+[BG Spinner #6]
+type		= anim
+layerno		= 
+actionno	= 1
+start		= 335,100
+delta		= 1,1
+mask		= 1
+scalestart = .80,.90
+
+;[BG Spinner #7]
+type		= anim
+layerno		= 1
+actionno	= 1,1
+start		= -640,147
+delta		= 1
+mask		= 1
+scalestart = .90,1
+
+[BG Spinner #8]
+type		= anim
+layerno		= 1
+actionno	= 1,1
+start		= -500,147
+delta		= 1
+mask		= 1
+scalestart = .90,1
+
+;[BG Spinner #9]
+type		= anim
+layerno		= 1
+actionno	= 1,1
+start		= -361,147
+delta		= 1,1
+mask		= 1
+scalestart = .90,1
+
+[BG Spinner #10]
+type		= anim
+layerno		= 1
+actionno	= 1,1
+start		= -223,147
+delta		= 1
+mask		= 1
+scalestart = .90,1
+
+;[BG Spinner #11]
+type		= anim
+layerno		= 1
+actionno	= 1,1
+start		= -82,147
+delta		= 1
+mask		= 1
+scalestart = .90,1
+
+[BG Spinner #12]
+type		= anim
+layerno		= 1
+actionno	= 1,1
+start		= 58,147
+delta		= 1
+mask		= 1
+scalestart = .90,1
+
+;[BG Spinner #13]
+type		= anim
+layerno		= 1
+actionno	= 1,1
+start		= 200,147
+delta		= 1
+mask		= 1
+scalestart = .90,1
+
+[BG Spinner #14]
+type		= anim
+layerno		= 1
+actionno	= 1,1
+start		= 345,147
+delta		= 1
+mask		= 1
+scalestart = .90,1
+
+
+[Begin Action 1]
+3,1, 0,0, 2
+3,2, 0,0, 2
+3,3, 0,0, 2
+3,4, 0,0, 2
+3,5, 0,0, 2
+3,6, 0,0, 2

@@ -1,0 +1,354 @@
+; Арена: The Bank MK3
+; Автор: Emsi-D
+; Рип спрайтов: Fly
+; Улучшения: borg117 (анимация мерцания), Markos (ковёр из МКТ, вертолёт, разрушенная стена)
+
+[Info]
+Name = "b4nk"
+Displayname = "The Bank"
+Mugenversion = 1.1
+
+[Camera]
+boundleft = -373
+boundright = 370
+boundhigh = -990
+tension = 90
+verticalfollow = .1
+overdrawhigh = 20
+overdrawlow = 20
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1400
+rightbound = 1400
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+[StageInfo]
+zoffset = 234
+autoturn = 1
+resetbg = 1
+localcoord = 400,254
+
+[Shadow]
+intensity = 190
+yscale = -.135
+
+[Music]
+bgmusic = sound/MK3/mk3_the_bank.ogg
+;bgmloopstart = 264000
+;bgmloopend = -1
+
+[BGdef]
+spr = The_Bank_&_The_Rooftop.sff
+bgclearcolor = 0,0,0
+
+
+[BG Переход между этажами/Внизу экрана]
+type = normal
+spriteno = 0,2
+delta = 1,1
+start = 0,247
+tile = 1,0
+
+;[BG Статичный портал/Оригинал МК3]
+;type = normal
+;spriteno = 0,3
+;delta = 0,1
+;start = -5,21.5
+;mask = 1
+;scalestart = .90,1
+
+[BG Портал в небе]
+type = anim
+actionno = 0
+delta = 0,1
+start = -11,38
+scalestart = .86,1
+
+[Begin Action 0]
+1,14, -89,-23.5, 6
+1,15, -78,-28.5, 6
+1,16, -89,-29.5, 6
+1,17, -85,-24.5, 6
+1,18, -97,-23.5, 6
+1,19, -109,-26.5, 6
+1,20, -100,-24.5, 6
+1,21, -98,-35.5, 6
+1,22, -83,-35.5, 6
+1,23, -79,-26.5, 6
+1,24, -90,-28.5, 6
+1,25, -97,-20.5, 6
+
+[BG Город и башня Шао Кана]
+type = normal
+spriteno = 0,8
+delta = 0,1
+start = 2,50.5
+mask = 1
+scalestart = .86,1
+
+[BG Мерцание]
+type = anim
+actionno = 1
+delta = .91,1
+start = -9,62
+scalestart = .90,1
+
+[Begin Action 1]
+0,6, 0,0, 7,,AS74D200
+0,6, 0,0, 7,,AS80D210
+0,6, 0,0, 22,,AS90D220
+0,6, 0,0, 7,,AS80D210
+0,6, 0,0, 12,,AS74D200
+0,6, 0,0, 7,,AS70D190
+0,6, 0,0, 7,,AS60D180
+0,6, 0,0, 7,,AS70D190
+0,6, 0,0, 60,,AS74D200
+0,6, 0,0, 7,,AS70D190
+0,6, 0,0, 30,,AS60D180
+0,6, 0,0, 7,,AS70D190
+0,6, 0,0, 7,,AS74D200
+0,6, 0,0, 7,,AS80D210
+0,6, 0,0, 7,,AS90D220
+0,6, 0,0, 7,,AS80D210
+0,6, 0,0, 90,,AS74D200
+
+[BG Пол]
+type = parallax
+spriteno = 1,0
+delta = .91,1
+start = 0,229
+width = 1200,1260
+scalestart = .90,1
+
+[BG Стена с колоннами]
+type = normal
+spriteno = 0,1
+delta = .91,1
+start = 0,-16
+mask = 1
+scalestart = .90,1
+
+[BG Переход между этажами]
+type = normal
+spriteno = 0,2
+delta = 1,1
+start = 0,-79
+tile = 1,0
+mask = 1
+
+;===================
+; Банк/Второй этаж
+;===================
+
+[BG Портал в небе]
+type = anim
+actionno = 0
+delta = 0,1
+start = -15,-288
+
+[BG Город и башня Шао Кана]
+type = normal
+spriteno = 0,8
+delta = 0,1
+start = 2,-275.5
+mask = 1
+scalestart = .86,1
+
+[BG Мерцание]
+type = anim
+actionno = 1
+delta = .91,1
+start = -9,-264
+scalestart = .90,1
+
+[BG Ковёр из прототипа]
+type = parallax
+spriteno = 0,9
+delta = .91,1
+start = 0,-97
+width = 1200,1260
+scalestart = .90,1
+
+[BG Стена с колоннами]
+type = normal
+spriteno = 0,1
+delta = .91,1
+start = 0,-342
+mask = 1
+scalestart = .90,1
+
+[BG Переход между этажами]
+type = normal
+spriteno = 0,2
+delta = 1,1
+start = 0,-405
+tile = 1,0
+mask = 1
+
+;===================
+; Банк/Третий этаж
+;===================
+
+[BG Портал в небе]
+type = anim
+actionno = 0
+delta = 0,1
+start = -15,-614
+
+[BG Город и башня Шао Кана]
+type = normal
+spriteno = 0,8
+delta = 0,1
+start = 0,-601.5
+mask = 1
+scalestart = .86,1
+
+[BG Мерцание]
+type = anim
+actionno = 2
+delta = .91,1
+start = -9,-565
+scalestart = .90,1
+
+[Begin Action 2]
+0,10, 0,0, 7,,AS74D200
+0,10, 0,0, 7,,AS80D210
+0,10, 0,0, 22,,AS90D220
+0,10, 0,0, 7,,AS80D210
+0,10, 0,0, 12,,AS74D200
+0,10, 0,0, 7,,AS70D190
+0,10, 0,0, 7,,AS60D180
+0,10, 0,0, 7,,AS70D190
+0,10, 0,0, 60,,AS74D200
+0,10, 0,0, 7,,AS70D190
+0,10, 0,0, 30,,AS60D180
+0,10, 0,0, 7,,AS70D190
+0,10, 0,0, 7,,AS74D200
+0,10, 0,0, 7,,AS80D210
+0,10, 0,0, 7,,AS90D220
+0,10, 0,0, 7,,AS80D210
+0,10, 0,0, 90,,AS74D200
+
+[BG Ковёр из МКТ]
+type = parallax
+spriteno = 0,0
+delta = .91,1
+start = 0,-423
+width = 1200,1260
+scalestart = .90,1
+
+[BG Стена с колоннами]
+type = normal
+spriteno = 0,3
+delta = .91,1
+start = 0,-668
+mask = 1
+scalestart = .90,1
+
+[BG Разбившийся вертолёт]
+type = normal
+spriteno = 0,4
+delta = .91,1
+start = 139,-640
+mask = 1
+
+[BG Переход между этажами]
+type = normal
+spriteno = 0,2
+delta = 1,1
+start = 0,-731
+tile = 1,0
+mask = 1
+
+;=======================
+; Крыша/Четвёртый этаж
+;=======================
+
+[BG Пол]
+type = parallax
+spriteno = 1,0
+delta = .85,1
+start = 0,-749
+width = 1120,1400
+
+[BG Город]
+type = normal
+spriteno = 1,13
+delta = .0,1
+start = 0,-932.5
+scalestart = 1.01,1
+tile = 1,0
+mask = 1
+
+[BG Портал в небе]
+type = anim
+actionno = 0
+delta = .302,1
+start = 17,-969
+
+[BG Горящее здание]
+type = anim
+actionno = 3
+delta = .302,1
+start = -178,-891.5
+scalestart = .86,1
+
+[Begin Action 3]
+1,5, 0,0, 6
+1,6, 0,0, 6
+1,7, 0,0, 6
+1,8, 0,0, 6
+1,9, 0,0, 6
+1,10, 0,0, 6
+1,11, 0,0, 6
+1,12, 0,0, 6
+
+[BG Башня Шао Кана и здания по бокам]
+type = normal
+spriteno = 1,4
+delta = .302,1
+start = 0,-972.5
+mask = 1
+scalestart = .86,1
+
+[BG Здания на переднем плане]
+type = normal
+spriteno = 1,3
+delta = .572,1
+start = -116,-885.5
+mask = 1
+scalestart = .86,1
+
+[BG Ограждение]
+type = normal
+spriteno = 1,2
+delta = .84,1
+start = 0,-848
+mask = 1
+scalestart = .86,1
+
+[BG Статуя/Правый угол арены]
+type = anim
+actionno = 4
+delta = 1.009,1
+scalestart = .86,1
+
+[BG Статуя/Левый угол арены]
+type = normal
+spriteno = 1,1
+delta = 1.009,1
+start = -535,-982
+mask = 1
+scalestart = .86,1
+
+[Begin Action 4]
+1,1, 620,-983, -1, H

@@ -1,0 +1,588 @@
+;STAGE BY TAHATTUS
+
+[info]
+name = "Battle with Buu"
+
+; CAMERA!!!
+[camera]
+startx = 0
+starty = 0
+boundleft = -700
+boundright = 700
+boundhigh = -400
+boundlow = 0
+verticalfollow = 1
+floortension = 100
+tension = 50
+
+[playerinfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound  = -1000
+rightbound =  1000
+topbound  = 0
+botbound  = 0
+
+[scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[bound]
+screenleft = 30
+screenright = 30
+
+[stageinfo]
+zoffset   = 210
+autoturn  = 1
+resetbg  = 1
+
+[shadow]
+color = 34,57,10
+yscale = .2
+reflect = 0
+
+[Music]
+bgmusic = sound\Super Buu.mp3
+bgvolume = 255
+
+[StageInfo]
+zoffset = 0
+zoffsetlink = 1
+autoturn = 1
+resetBG = 0
+
+[shadow]
+color = 2,2,2
+yscale = .1
+reflect = 0
+
+;---------------------
+
+; GRÁFICOS
+
+[bgdef]
+spr = stages/KAIOH.sff
+debugbg = 0
+
+;========================================
+;O céu
+;========================================
+
+[bg espaço sideral]
+type  = normal
+spriteno = 1,1
+start = 0,100
+delta = 0.5,1
+mask = 1
+trans = none
+layerno = 0
+tile = 1, 1
+
+[bg estrelas 1]
+type  = normal
+spriteno = 7,1
+start = 200,0
+delta = 0.5,1
+mask = 1
+trans = add
+layerno = 0
+
+[bg estrelas 2]
+type  = normal
+spriteno = 7,2
+start = -300,-200
+delta = 0.5,1
+mask = 1
+trans = add
+layerno = 0
+
+[bg estrelas 2]
+type  = normal
+spriteno = 7,4
+start = -350,-20
+delta = 0.5,1
+mask = 1
+trans = add
+layerno = 0
+
+[bg estrelas 2]
+type  = normal
+spriteno = 7,0
+start = 350,-30
+delta = 0.5,1
+mask = 1
+trans = add
+layerno = 0
+
+[bg estrelas 2]
+type  = normal
+spriteno = 7,3
+start = 100,-200
+delta = 0.5,1
+mask = 1
+trans = add
+layerno = 0
+
+[bg estrelas 2]
+type  = normal
+spriteno = 7,0
+start = 435,-300
+delta = 0.5,1
+mask = 1
+trans = add
+layerno = 0
+;========================================
+;As Luas
+;========================================
+
+
+
+[bg moon 1]
+type  = normal
+spriteno = 2,1
+start = 0,170
+delta = 0.5,1
+mask = 1
+id = 2
+[bgctrldef 2]
+ctrlid = 2
+[bgctrl 2.1]
+type = sinx
+time = 0
+value = 400, 1600, 180
+[bgctrl 2.1]
+type = siny
+time = 0
+value = 200, 1600
+
+[bg moon 1.2]
+type  = normal
+spriteno = 2,1
+start = 0,170
+delta = 0.5,1
+mask = 1
+id = 6
+[bgctrldef 6]
+ctrlid = 6
+[bgctrl 6.1]
+type = sinx
+time = 100
+value = 400, 2400, 180
+[bgctrl 6.1]
+type = siny
+time = 100
+value = 200, 2400, 0
+
+
+[bg moon 2]
+type  = normal
+spriteno = 2,2
+start = 0,170
+delta = 0.5,1
+mask = 1
+id = 3
+[bgctrldef 3]
+ctrlid = 2
+[bgctrl 3.1]
+type = sinx
+time = 300
+value = 600, 2000, 180
+[bgctrl 3.1]
+type = siny
+time = 300
+value = 300, 2000
+
+[bg moon 3]
+type  = normal
+spriteno = 2,3
+start = 0,170
+delta = 0.5,1
+mask = 1
+id = 4
+[bgctrldef 4]
+ctrlid = 4
+[bgctrl 4.1]
+type = sinx
+time = 500
+value = 900, 1800, 180
+[bgctrl 4.1]
+type = siny
+time = 500
+value = 450, 1800
+
+[bg moon 4]
+type  = normal
+spriteno = 2,4
+start = 0,170
+delta = 0.5,1
+mask = 1
+id = 5
+[bgctrldef 5]
+ctrlid = 5
+[bgctrl 5.1]
+type = sinx
+time = 1000
+value = 1000, 2600, 180
+[bgctrl 5.1]
+type = siny
+time = 1000
+value = 500, 2600
+
+[bg Big moon]
+type  = normal
+spriteno = 2,0
+start = -200,130
+delta = 0.5,1
+mask = 1
+id = 1
+[bgctrldef 1]
+ctrlid = 1
+[bgctrl 1.1]
+type = sinx
+time = 0
+value = 200, 20000, 180
+[bgctrl 1.1]
+type = siny
+time = 0
+value = -200, 20000
+
+;========================================
+;Os Horizontes
+;========================================
+
+[bg horizon purple]
+type  = normal
+spriteno = 1,0
+start = 0, 120
+delta = 1,1
+mask = 1
+trans = add
+layerno = 0
+tile = 1, 0
+
+;========================================
+;As nuvens
+;========================================
+
+[bg nuvem pqn 1]
+type=normal
+spriteno = 5,1
+start = 200, -200
+delta = 1, 1
+scale = .8,.8
+velocity = -0.7
+mask = 1
+layerno = 0
+tilespacing = 160
+tile = 1, 0
+trans = add
+
+[bg nuvem pqn 2]
+type=normal
+spriteno = 5,2
+start = 180, -160
+delta = .7, 1
+scale = .8,.8
+velocity = -0.3
+mask = 1
+layerno = 0
+tilespacing = 180
+tile = 1, 0
+trans = add
+
+[bg nuvem pqn 2]
+type=normal
+spriteno = 5,2
+start = -260, -180
+delta = 0.5, 1
+scale = .8,.8
+velocity = -0.4
+mask = 1
+layerno = 0
+tilespacing = 80
+tile = 1, 0
+trans = add
+
+[bg nuvem grande 1]
+type=normal
+spriteno = 5,0
+start = 500, -110
+delta = 0.6, 1
+velocity = -0.25
+mask = 1
+layerno = 0
+tilespacing = 160
+tile = 1, 0
+trans = add
+
+
+
+;========================================
+;As montanhas
+;========================================
+
+
+
+
+
+[bg montanhas rosas no horizonte]
+type  = normal
+spriteno = 3,0
+start = 0, 140
+delta = 0.35,1
+mask = 1
+tile = 1, 0
+
+[bg pico]
+type  = normal
+spriteno = 3,1
+start = -100, 170
+delta = 0.42,1.05
+mask = 1
+
+[bg montanhas rosas no horizonte]
+type  = normal
+spriteno = 3,2
+start = 0, 150
+delta = 0.47,1.1
+mask = 1
+tile = 1, 0
+
+[bg montanhas rosas no horizonte]
+type  = normal
+spriteno = 3,3
+start = 0, 230
+delta = 0.52,1.15
+mask = 1
+tile = 1, 0
+
+[bg trees]
+type  = normal
+spriteno = 6,0
+start = 0, 230
+delta = 0.52,1.15
+mask = 1
+tile = 1, 0
+
+;========================================
+;As árvores
+;========================================
+
+;========================================
+;O chão
+;========================================
+
+
+[bg nevoa 1]
+type=normal
+spriteno = 10,0
+start = 0, 213
+delta = .66,1
+mask = 1
+trans = add
+velocity = 0.3,0
+layerno = 0
+tile = 1, 0
+
+
+[bg tree]
+spriteno = 8,0
+type = normal
+start = 435, 210
+delta = .66,1
+mask = 1
+
+;-----------------------------------
+[bg 03,happa]
+type 	= anim
+layerno 	= 0
+start = 435, 0
+mask 	= 1
+actionno	= 4
+id 	= 40
+tilespacing = 500
+tile = 1, 0
+velocity = -0.85
+
+[bgctrldef 4]
+ctrlid 	= 40
+
+[bgctrldef 4]
+ctrlid 	= 50
+
+
+[bgctrl 11.1]
+type = siny
+time = 0
+value = 50, 500, 0
+
+[bg 04,happa]
+type 	= anim
+layerno 	= 1
+start = 335, 40
+mask 	= 1
+actionno	= 5
+id 	= 50
+tilespacing = 500
+tile = 1, 0
+velocity = -0.7
+
+[bg 04,happa]
+type 	= anim
+layerno 	= 0
+start = 235, 80
+mask 	= 1
+actionno	= 5
+id 	= 50
+tilespacing = 600
+tile = 1, 0
+velocity = -0.6
+
+[bg 04,happa]
+type 	= anim
+layerno 	= 0
+start = 135, -30
+mask 	= 1
+actionno	= 5
+id 	= 50
+tilespacing = 700
+tile = 1, 0
+velocity = -0.8
+
+[bg 04,happa]
+type 	= anim
+layerno 	= 1
+start = 335, 100
+mask 	= 1
+actionno	= 4
+id 	= 50
+tilespacing = 500
+tile = 1, 0
+velocity = -1
+
+[bg 04,happa]
+type 	= anim
+layerno 	= 1
+start = 335, 120
+mask 	= 1
+actionno	= 4
+id 	= 50
+tilespacing = 560
+tile = 1, 0
+velocity = -1
+
+
+[bgctrldef 5]
+ctrlid 	= 5
+
+
+[bgctrl 11.1]
+type = siny
+time = 0
+value = 50, 500, 0
+
+
+[begin action 4]
+9,0,0,0, 9
+9,1,0,0, 9
+9,2,0,0, 9
+9,3,0,0, 9
+9,4,0,0, 9
+9,5,0,0, 9
+9,6,0,0, 9
+9,7,0,0, 9
+
+[begin action 5]
+9,0,0,0, 9,h
+9,1,0,0, 9,h
+9,2,0,0, 9,h
+9,3,0,0, 9,h
+9,4,0,0, 9,h
+9,5,0,0, 9,h
+9,6,0,0, 9,h
+9,7,0,0, 9,h
+
+
+[bg chao]
+spriteno = 0,0
+type = parallax
+start = 0, 170
+delta = .66,1
+mask = 1
+xscale = .1,.1759
+
+;========================================
+;O brilho
+
+;Formula of X: -0.0096x + 0.00849
+;Formula of Y: -0.0075y + 1.85
+;========================================
+
+[bg brilho principal]
+type  = normal
+spriteno = 4,0
+start = -40, 100
+delta = 0.47,1.1
+mask = 1
+trans = add
+
+[bg reflexo amarelo vazado]
+type  = normal
+spriteno = 4,4
+start = -63, 60
+delta = 0.6898,1.4
+layerno = 1
+mask = 1
+trans = add
+
+[bg reflexo amarelo solido]
+type  = normal
+spriteno = 4,5
+start = 40, 240
+delta = -0.3,0.05
+mask = 1
+layerno = 1
+trans = add
+
+[bg reflexo azul gde]
+type  = normal
+spriteno = 4,1
+start = -3, 164
+delta = 0.1138,0.62
+layerno = 1
+mask = 1
+trans = add
+
+[bg reflexo azul mdo]
+type  = normal
+spriteno = 4,2
+start = -20, 136
+delta = 0.277,0.83
+layerno = 1
+mask = 1
+trans = add
+
+[bg reflexo azul pqo]
+type  = normal
+spriteno = 4,3
+start = 20, 203
+delta = -0.107,0.3275
+layerno = 1
+mask = 1
+trans = add
+
+
+
+;========================================
+;névoa
+;========================================
+
+

@@ -1,0 +1,216 @@
+;========================================================
+;
+; Volcanic fumes.
+;
+; Stage from the game Samurai Shodown V Special by SNK-Playmore.
+;
+; M.U.G.E.N. adaptation by R.o.q.u.e.
+;
+; Special thanks to :
+;  - SNK-Playmore for the Samurai Shodown series
+;  - Mr K, for WinKawaks
+;  - Corel, for Paint Shop Pro
+;  - Sés, for M.C.M.
+;  - Christophe and Winane, for SFFExtract
+;  - Elecbyte, for Sprmaker
+;
+; For more M.U.G.E.N. material, visit the website : http://alice-games.org
+;
+;========================================================
+
+
+;--------------------------------------------------------
+[Info]
+name = "ss - Volcanic Ground"
+
+
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+
+boundleft = -152
+boundright = 152
+boundhigh = -204
+boundlow = 0
+
+verticalfollow = 1
+floortension = 120
+tension = 60
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -80          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+ ;Don't change these values.
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+
+;--------------------------------------------------------
+[Scaling]
+ ;No need to change these values
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1.2     ;Scale to use at bottom
+
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 15    ;Dist from left of screen that player can move to
+screenright = 15   ;Right edge
+
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 226
+autoturn = 1
+resetBG = 1
+
+
+;--------------------------------------------------------
+[Shadow]
+intensity = 0
+color = 40,40,24
+yscale = 0.4
+fade.range = -400,-100
+
+
+;--------------------------------------------------------
+[Reflection]
+intensity = 0
+
+
+;--------------------------------------------------------
+[Music]
+bgmusic = stages/243.mp3
+bgvolume = 255
+
+
+;--------------------------------------------------------
+[BGdef]
+spr = stages/ss-volcanic-ground.sff
+debugbg = 0
+
+[BG Background]
+type  = normal
+spriteno = 1, 0
+layerno = 0
+start = 0, 0
+delta = 0.47,0.73
+trans = none
+mask  = 0
+tile  = 0, 0
+tilespacing = 0,0
+window = 0,0, 319, 239
+windowdelta = 0,0
+
+[BG Floor]
+type  = anim
+actionno = 0
+layerno = 0                
+start = 0, 0
+delta = 1,1
+trans = none
+mask  = 1
+window = 0,0, 319, 239
+windowdelta = 0,0
+
+[BG smoke 1.1]
+type  = anim
+actionno = 10
+layerno = 0                
+start = 0, 0
+delta = 1,1
+trans = none
+mask  = 1
+
+[BG smoke 1.2]
+type  = anim
+actionno = 10
+layerno = 0                
+start = 320, 0
+delta = 1,1
+trans = none
+mask  = 1
+
+[BG smoke 2.1]
+type  = anim
+actionno = 11
+layerno = 0                
+start = 0, 0
+delta = 1,1
+trans = none
+mask  = 1
+
+[BG smoke 2.2]
+type  = anim
+actionno = 11
+layerno = 0                
+start = 320, 0
+delta = 1,1
+trans = none
+mask  = 1
+
+[BG smoke 3.1]
+type  = anim
+actionno = 12
+layerno = 0                
+start = 0, 0
+delta = 1,1
+trans = none
+mask  = 1
+
+[BG smoke 3.2]
+type  = anim
+actionno = 12
+layerno = 0                
+start = 320, 0
+delta = 1,1
+trans = none
+mask  = 1
+
+
+;--------------------------------------------------------
+[Begin action 0]
+0,1, 0,0, 2
+0,2, 0,0, 2
+0,3, 0,0, 2
+0,4, 0,0, 2
+0,5, 0,0, 2
+0,6, 0,0, 2
+0,7, 0,0, 2
+0,8, 0,0, 2
+
+[Begin action 10]
+10,1, 0,0, 4
+10,2, 0,0, 4
+10,3, 0,0, 4
+10,4, 0,0, 4
+
+[Begin action 11]
+11,1, 0,0, 4
+11,2, 0,0, 4
+11,3, 0,0, 4
+11,4, 0,0, 4
+
+[Begin action 12]
+12,1, 0,0, 4
+12,2, 0,0, 4
+12,3, 0,0, 4
+12,4, 0,0, 4

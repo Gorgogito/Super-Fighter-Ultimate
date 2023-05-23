@@ -1,0 +1,175 @@
+; Stage by Bathory
+; Optimization by borissuworov
+
+[Info]
+name = "Los1Tomb"
+displayname = "Lost Tomb"
+mugenversion = 1.1
+
+[Camera]
+boundleft = -600
+boundright = 600
+boundhigh = -70
+tension = 150
+verticalfollow = .2
+floortension = 30
+overdrawhigh = 20
+overdrawlow = 20
+
+
+[PlayerInfo]
+p1startx = -183 
+p1starty = 0
+p1facing = 1            
+
+p2startx = 183
+p2starty = 0
+p2facing = -1
+
+leftbound  = -4000
+rightbound =  4000
+
+[Bound]
+screenleft = 67
+screenright = 67
+
+[StageInfo]
+zoffset = 453
+autoturn = 1
+localcoord = 800, 500
+xscale = .7
+yscale = .7
+
+[Scaling]
+topz     	= 0
+botz     	= 50
+topscale 	= 1
+botscale 	= 1.2
+
+[Shadow]
+intensity = 177
+yscale = -.1
+xshear = 1
+HiRes = 1
+
+[Music]
+bgmusic = sound\SuworovStagepack\losttomb.ogg
+bgmloopstart = 377985
+bgmloopend = -1
+;bgvolume 	= 255
+
+
+
+[BGdef]
+spr 	= losttomb.sff
+debugbg 	= 0
+
+[BG Acid]
+type  	= normal
+spriteno 	= 0, 7
+delta 	= 1,1
+tile = 0,1
+mask	=0
+velocity = 0,.2
+
+[BG Floor]
+type  	= normal
+spriteno 	= 0, 1
+start 	= 0,402 ; 202
+delta 	= 1,1
+mask	=1
+
+[BG Walls 1]
+type  	= normal
+spriteno 	= 0, 0
+start 	= 0,402
+delta 	= 1,1
+mask	=1
+
+[BG Walls 2]
+type = anim
+actionno = 1
+start 	= -28,402
+delta = 1,1
+mask = 1
+
+[BG Roof]
+type  	= normal
+spriteno 	= 0, 6
+start 	= 0,402
+delta 	= 1,1
+mask	=1
+
+[BG Amulet]
+type  	= normal
+spriteno 	= 0, 2
+start 	= 0,402
+delta 	= 1,1
+mask	=1
+
+[BG Ladder]
+type  	= normal
+spriteno 	= 0, 5
+start 	= 0,402
+delta 	= 1,1
+mask	=1
+
+[BG Lights]
+type  	= normal
+spriteno 	= 0, 3
+start 	= 0,402
+delta 	= 1,1
+mask	=1
+trans = add
+
+
+[BG Statue]
+type  	= normal
+spriteno 	= 0, 4
+start 	= 0,402
+delta 	= 1,1
+tile = 1,0
+tilespacing = 1080,0
+mask	=1
+
+[BG flame 1]
+type  = anim
+actionno = 2
+delta = 1,1
+start = 273,437
+mask = 1
+
+[BG flame 2]
+type  = anim
+actionno = 2
+delta = 1,1
+start = -298,437
+mask = 1
+
+[BG flame 3]
+type  = anim
+actionno = 2
+delta = 1,1
+start = -1189,440
+mask = 1
+
+
+[BG flame 4]
+type  = anim
+actionno = 2
+delta = 1,1
+start = 1164,440
+mask = 1
+
+[Begin Action 1]
+0,0,0,0,-1,H
+
+[Begin Action 2]
+1,0, 0,0, 5, , A
+1,1, 0,0, 5, , A
+1,2, 0,0, 5, , A
+1,3, 0,0, 5, , A
+1,4, 0,0, 5, , A
+1,5, 0,0, 5, , A
+1,6, 0,0, 5, , A
+1,7, 0,0, 5, , A

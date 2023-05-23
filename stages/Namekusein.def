@@ -1,0 +1,877 @@
+
+[Info]
+name ="Namekusein"
+displayname="Namekusein HR"
+versiondate= 24/09/2010
+mugenversion=04,14,2001
+author="Tapion-Team os"
+
+;=======================================
+;            Especial´s thanks
+;=======================================
+;-A los creadores de los fx de neblina.
+;-Alien: por el rip del background de SSW2.
+;-A atheis por el fx de olas de mar.
+;- ShinRyoga, por el Magma.             (efecto utilizado como mar).
+;- TonyADV, por el FX de Niebla roja.   (efecto utilizado como marea en el mar).
+;-A todos mis compañeros del Team Dbz OS por su apoyo y ayuda en cada proyecto.
+;-A todas aquellas personas que lanzan sus trabajo abiertamente sin restricciones para que todos
+;puedan utilizarlos sin ningun tipo de problema.
+;- Y A ti por descargar esta Stage.
+;Salu2 y espero que disfrutes la stage.
+;=======================================
+
+;----------------------------------------------------------------------------------------
+
+[Camera]
+startx =80
+starty =0
+boundleft  = -200
+boundright = 281
+boundhigh  = -100
+boundlow   = 0
+verticalfollow = 0.8
+floortension = 0
+tension = 60
+
+
+[PlayerInfo]
+p1startx =0
+p1starty =0
+p1startz =0
+p1facing =1
+
+p2startx =140
+p2starty =0
+p2startz =0
+p2facing =-1
+
+leftbound =-1070
+rightbound =1070
+topbound =0
+botbound =0
+
+
+[Scaling]
+topz =0
+botz =50
+topscale =1
+botscale =1.2
+
+
+[Bound]
+screenleft  = 15
+screenright = 15
+
+
+[StageInfo]
+zoffset  = 215
+autoturn = 1
+resetBG  = 0
+hires = 1
+
+
+[Shadow]
+intensity = 95
+yscale = 1
+fade.range = -300,-50
+
+
+
+[Music]
+bgmusic  = sound/GinyuForceSUPER.mp3
+bgvolume = 255
+;----------------------------------------------------------------------
+[BGdef]
+spr = Namekusein.sff
+debugbg = 0
+
+[BG cielo]
+type =normal
+spriteno =0,0
+start = 220,115
+delta = 1,1.9
+mask =1
+tile = 1,0
+tilespacing = -12
+
+[BG Nunes]
+type  = normal
+spriteno = 8, 3
+start = 0,-140
+delta = 1.2,1.9
+mask = 1
+trans = add
+velocity = 0.050, 0
+tile = 1,0
+
+[BG Neblina]
+type  = normal
+spriteno = 8, 0
+start = 500,365
+delta = 1.2,1.9
+mask = 1
+trans = add
+velocity = 0.080, 0
+tile = 1,0
+tilespacing = 1
+
+
+
+
+
+[BG  colinas]
+type =normal
+spriteno = 6,0
+start = -400,430
+delta = 1.8,1.9
+mask =1
+tile = 1, 0
+
+[BG Mar]
+type        = normal
+spriteno    = 7,0
+start       = -100,355
+delta       = 1.8, 1.9
+mask        = 0
+tile        = 1,0
+
+
+
+
+[BG Marea]
+type        = normal
+spriteno    = 7,1
+layerno     = 0
+start       = -100,355
+trans       = add
+mask        = 0
+delta       = 1.8, 1.9
+tile        = 1,0
+tilespacing= 0
+sin.x= -2,100
+
+[BG Isla 1]
+type        = normal
+spriteno    = 6,1
+delta       = 1.8, 1.9
+start       = 200,280
+mask        = 1
+
+[BG Isla 3]
+type        = normal
+spriteno    = 6,1
+delta       = 1.8, 1.9
+start       = -260,280
+mask        = 1
+
+[BG Isla 2]
+type        = normal
+spriteno    = 6,2
+delta       = 1.8, 1.9
+start       = -200,277
+mask        = 1
+
+
+
+[BG Isla 4]
+type        = normal
+spriteno    = 6,1
+delta       = 1.8, 1.9
+start       = -600,280
+mask        = 1
+
+[BG Isla 2]
+type        = normal
+spriteno    = 6,2
+delta       = 1.8, 1.9
+start       = 400,277
+mask        = 1
+
+
+[BG Isla 4]
+type        = normal
+spriteno    = 6,1
+delta       = 1.8, 1.9
+start       = 690,280
+mask        = 1
+
+
+[BG Isla 2]
+type        = normal
+spriteno    = 6,2
+delta       = 1.8, 1.9
+start       = 720,277
+mask        = 1
+
+[BG Neblina]
+type  = normal
+spriteno = 8, 1
+start = 0,250
+delta = 1.8, 1.9
+mask = 1
+trans = add
+velocity = 1, 0
+tile = 1,0
+
+
+[BG splash2]
+type        = anim
+actionno=  18
+delta       = 1.8, 1.9
+start       = -600,300
+mask        = 1
+
+[BG splash]
+type        = anim
+actionno=  17
+delta       = 1.8, 1.9
+start       = -410,350
+mask        = 1
+
+
+
+[BG splash2]
+type        = anim
+actionno=  18
+delta       = 1.8, 1.9
+start       = -100,325
+mask        = 1
+
+[BG splash]
+type        = anim
+actionno=  17
+delta       = 1.8, 1.9
+start       = 300,370
+mask        = 1
+
+[BG splash]
+type        = anim
+actionno=  17
+delta       = 1.8, 1.9
+start       = 580,392
+mask        = 1
+
+[BG splash]
+type        = anim
+actionno=  18
+delta       = 1.8, 1.9
+start       = 600,320
+mask        = 1
+
+[BG piso]
+type  = normal
+start = -200,500
+layerno = 0
+spriteno = 4,0
+delta = 2, 2
+velocity = 0, 0
+mask  = 1
+tile = 1, 0
+id= 1
+
+[BG Arbol3]
+type        = anim
+actionno= 4
+delta       = 2, 2
+start       = -730,385
+mask        = 1
+id= 1
+
+[BG Arbol]
+type        = normal
+spriteno    = 4,2
+delta       = 2, 2
+start       = -625,403
+mask        = 1
+id= 1
+
+[BG Arbol3]
+type        = anim
+actionno= 4
+delta       = 2, 2
+start       = -700,425
+mask        = 1
+id= 1
+
+
+[BG Arbol3]
+type        = anim
+actionno= 4
+delta       = 2, 2
+start       = 259,399
+mask        = 1
+id= 1
+
+[BG Arbol3]
+type        = anim
+actionno= 4
+delta       = 2, 2
+start       = 800,520
+mask        = 1
+Layerno     = 1
+id= 1
+
+[BG Roca]
+type        = anim
+actionno= 5
+delta       = 2, 2
+start       = -675,503
+mask        = 1
+Layerno     = 1
+id= 1
+
+[BG Polvo]
+type=anim
+actionno= 9
+delta=2,2
+start = 600,390
+tile = 0, 0
+id= 1
+
+
+[BG Nave]
+type  = normal
+start = 882,77
+layerno = 0
+spriteno = 4,1
+delta = 2, 2
+velocity = 0, 0
+mask  = 1
+tile = 0, 0
+id= 4
+
+[BG Polvo]
+type=anim
+actionno= 9
+delta=2,2
+start = 722,440
+tile = 0, 0
+id= 1
+
+[BG Polvo]
+type=anim
+actionno= 9
+delta=2,2
+start = 880,440
+tile = 0, 0
+id= 1
+
+
+[BG Sombras]
+type=anim
+actionno= 14
+delta=2,2
+start       = 530,300
+tile = 0, 0
+id= 5
+
+[BG Sombras]
+type=anim
+actionno= 15
+delta=2,2
+start       = 530,300
+tile = 0, 0
+id= 6
+
+[BG Sombras]
+type=anim
+actionno= 16
+delta=2,2
+start       = 530,300
+tile = 0, 0
+id= 7
+
+
+
+
+[BG Soldado 1]
+type=anim
+actionno= 10
+delta=2,2
+start       = 200,230
+sin.y=-8,100
+id= 2
+
+
+
+[BG Soldado 2]
+type=anim
+actionno= 11
+delta=2,2
+start = 300,395
+id= 2
+
+[BG Soldado 3]
+type=anim
+actionno= 12
+delta=2,2
+start = 420,390
+id= 2
+
+[BG Neblina]
+type  = normal
+spriteno = 8, 2
+layerno = 1
+start = 0,380
+delta = 2, 2
+mask = 1
+trans = add
+velocity = 1.3, 0
+tile = 1,0
+
+
+;--------------------------------------------------------;
+;                     Animaciones                        ;
+;--------------------------------------------------------;
+
+[Begin Action 4]
+4,2, 0,0, -1,H,
+
+[Begin Action 5]
+4,3, 0,0, -1,H,
+
+[Begin Action 10]
+1,-1, 0,0, 2050,,
+10,0, 0,0, 2,,AS25D256
+10,0, 0,0, 2,,AS50D256
+10,0, 0,0, 2,,AS75D256
+10,0, 0,0, 2,,AS100D256
+10,0, 0,0, 2,,AS125D256
+10,0, 0,0, 2,,AS150D256
+10,0, 0,0, 2,,AS175D256
+10,0, 0,0, 2,,AS200D256
+10,0, 0,0, 2,,AS225D256
+10,0, 0,0, 2,,AS250D256
+Loopstart
+10,0, 0,0, 200,,
+
+
+[Begin Action 11]
+1,-1, 0,0, 2020,,
+10,1, 0,0, 2,,AS25D256
+10,1, 0,0, 2,,AS50D256
+10,1, 0,0, 2,,AS75D256
+10,1, 0,0, 2,,AS100D256
+10,1, 0,0, 2,,AS125D256
+10,1, 0,0, 2,,AS150D256
+10,1, 0,0, 2,,AS175D256
+10,1, 0,0, 2,,AS200D256
+10,1, 0,0, 2,,AS225D256
+10,1, 0,0, 2,,AS250D256
+Loopstart
+10,1, 0,0, 200,,
+10,2, 0,0, 50,,
+
+[Begin Action 12]
+1,-1, 0,0, 1990,,
+10,4, 0,0, 2,,AS25D256
+10,4, 0,0, 2,,AS50D256
+10,4, 0,0, 2,,AS75D256
+10,4, 0,0, 2,,AS100D256
+10,4, 0,0, 2,,AS125D256
+10,4, 0,0, 2,,AS150D256
+10,4, 0,0, 2,,AS175D256
+10,4, 0,0, 2,,AS200D256
+10,4, 0,0, 2,,AS225D256
+10,4, 0,0, 2,,AS250D256
+Loopstart
+10,4, 0,0, 300,,
+10,3, 0,0, 70,,
+
+[Begin Action 14]
+1,-1, 0,0, 1920,,
+10,6, 0,0, 1,,AS250D256
+10,6, 0,0, 1,,AS225D256
+10,6, 0,0, 1,,AS200D256
+10,6, 0,0, 1,,AS175D256
+10,6, 0,0, 1,,AS150D256
+10,5, 0,0, 1,,AS125D256
+10,5, 0,0, 1,,AS100D256
+10,5, 0,0, 1,,AS75D256
+10,5, 0,0, 1,,AS50D256
+10,5, 0,0, 1,,AS25D256
+10,5, 0,0, 5,,
+1,-1, 0,0, -1,,
+
+[Begin Action 15]
+1,-1, 0,0, 1950,,
+10,6, 0,0, 1,,AS250D256
+10,6, 0,0, 1,,AS225D256
+10,6, 0,0, 1,,AS200D256
+10,6, 0,0, 1,,AS175D256
+10,6, 0,0, 1,,AS150D256
+10,5, 0,0, 1,,AS125D256
+10,5, 0,0, 1,,AS100D256
+10,5, 0,0, 1,,AS75D256
+10,5, 0,0, 1,,AS50D256
+10,5, 0,0, 1,,AS25D256
+10,5, 0,0, 5,,
+1,-1, 0,0, -1,,
+
+[Begin Action 16]
+1,-1, 0,0, 1980,,
+10,6, 0,0, 1,,AS250D256
+10,6, 0,0, 1,,AS225D256
+10,6, 0,0, 1,,AS200D256
+10,6, 0,0, 1,,AS175D256
+10,6, 0,0, 1,,AS150D256
+10,5, 0,0, 1,,AS125D256
+10,5, 0,0, 1,,AS100D256
+10,5, 0,0, 1,,AS75D256
+10,5, 0,0, 1,,AS50D256
+10,5, 0,0, 1,,AS25D256
+10,5, 0,0, 5,,
+1,-1, 0,0, -1,,
+
+[Begin Action 9]
+1,-1, 0,0, 1580,,
+9,0, 0,0, 8,,
+9,1, 0,0, 8,,
+9,2, 0,0, 8,,
+9,3, 0,0, 8,,
+9,4, 0,0, 8,,
+9,5, 0,0, 8,,
+9,6, 0,0, 8,,
+9,7, 0,0, 8,,
+9,8, 0,0, 8,,
+9,9, 0,0, 8,,
+9,10, 0,0, 8,,
+9,11, 0,0, 8,,
+1,-1, 0,0, -1,,
+
+
+[Begin Action 17]
+
+11, 0, 0, 0, 2, , a
+11, 0, 0, 0, 2, , a
+11, 1, 0, 0, 2, , a
+11, 2, 0, 0, 2, , a
+11, 3, 0, 0, 2, , a
+11, 4, 0, 0, 2, , a
+11, 5, 0, 0, 2, , a
+11, 6, 0, 0, 2, , a
+11, 7, 0, 0, 2, , a
+11, 8, 0, 0, 2, , a
+11, 9, 0, 0, 2, , a
+11, 10, 0, 0, 2, , a
+11, 11, 0, 0, 2, , a
+11, 12, 0, 0, 2, , a
+11, 13, 0, 0, 2, , a
+11, 14, 0, 0, 2, , a
+11, 15, 0, 0, 2, , a
+11, 16, 0, 0, 2, , a
+11, 17, 0, 0, 2, , a
+11, 18, 0, 0, 2, , a
+11, 19, 0, 0, 2, , a
+11, 20, 0, 0, 2, , a
+11, 21, 0, 0, 2, , a
+11, 22, 0, 0, 2, , a
+11, 23, 0, 0, 2, , a
+11, 24, 0, 0, 2, , a
+11, 25, 0, 0, 2, , a
+11, 26, 0, 0, 2, , a
+11, 27, 0, 0, 2, , a
+11, 28, 0, 0, 2, , a
+11, 29, 0, 0, 2, , a
+11, 30, 0, 0, 2, , a
+11, 31, 0, 0, 2, , a
+11, 32, 0, 0, 2, , a
+11, 33, 0, 0, 2, , a
+11, 34, 0, 0, 2, , a
+11, 35, 0, 0, 2, , a
+11, 36, 0, 0, 2, , a
+11, 37, 0, 0, 2, , a
+11, 38, 0, 0, 2, , a
+11, 39, 0, 0, 2, , a
+11, 40, 0, 0, 2, , a
+11, 41, 0, 0, 2, , a
+11, 42, 0, 0, 2, , a
+11, 43, 0, 0, 2, , a
+11, 44, 0, 0, 2, , a
+11, 45, 0, 0, 2, , a
+11, 46, 0, 0, 2, , a
+11, 47, 0, 0, 2, , a
+11, 48, 0, 0, 2, , a
+11, 49, 0, 0, 2, , a
+11, 50, 0, 0, 2, , a
+11, 51, 0, 0, 2, , a
+11, 52, 0, 0, 2, , a
+11, 53, 0, 0, 2, , a
+11, 54, 0, 0, 2, , a
+11, 55, 0, 0, 2, , a
+11, 56, 0, 0, 2, , a
+11, 57, 0, 0, 2, , a
+11, 58, 0, 0, 2, , a
+11, 59, 0, 0, 2, , a
+11, 60, 0, 0, 2, , a
+11, 61, 0, 0, 2, , a
+11, 62, 0, 0, 2, , a
+11, 63, 0, 0, 2, , a
+11, 64, 0, 0, 2, , a
+11, 65, 0, 0, 2, , a
+11, 66, 0, 0, 2, , a
+11, 67, 0, 0, 2, , a
+11, 68, 0, 0, 2, , a
+11, 69, 0, 0, 2, , a
+11, 70, 0, 0, 2, , a
+11, 71, 0, 0, 2, , a
+11, 72, 0, 0, 2, , a
+11, 73, 0, 0, 2, , a
+11, 74, 0, 0, 2, , a
+11, 75, 0, 0, 2, , a
+11, 76, 0, 0, 2, , a
+11, 77, 0, 0, 2, , a
+11, 78, 0, 0, 2, , a
+11, 79, 0, 0, 2, , a
+11, 80, 0, 0, 2, , a
+11, 81, 0, 0, 2, , a
+11, 82, 0, 0, 2, , a
+11, 83, 0, 0, 2, , a
+11, 84, 0, 0, 2, , a
+11, 85, 0, 0, 2, , a
+11, 86, 0, 0, 2, , a
+11, 87, 0, 0, 2, , a
+11, 88, 0, 0, 2, , a
+11, 89, 0, 0, 2, , a
+11, 90, 0, 0, 2, , a
+11, 91, 0, 0, 2, , a
+11, 92, 0, 0, 2, , a
+11, 93, 0, 0, 2, , a
+
+
+[Begin Action 18]
+
+
+1,-1, 0,0, 100,,
+11, 0, 0, 0, 2, H, a
+11, 0, 0, 0, 2, H, a
+11, 1, 0, 0, 2, H, a
+11, 2, 0, 0, 2, H, a
+11, 3, 0, 0, 2, H, a
+11, 4, 0, 0, 2, H, a
+11, 5, 0, 0, 2, H, a
+11, 6, 0, 0, 2, H, a
+11, 7, 0, 0, 2, H, a
+11, 8, 0, 0, 2, H, a
+11, 9, 0, 0, 2, H, a
+11, 10, 0, 0, 2, H, a
+11, 11, 0, 0, 2, H, a
+11, 12, 0, 0, 2, H, a
+11, 13, 0, 0, 2, H, a
+11, 14, 0, 0, 2, H, a
+11, 15, 0, 0, 2, H, a
+11, 16, 0, 0, 2, H, a
+11, 17, 0, 0, 2, H, a
+11, 18, 0, 0, 2, H, a
+11, 19, 0, 0, 2, H, a
+11, 20, 0, 0, 2, H, a
+11, 21, 0, 0, 2, H, a
+11, 22, 0, 0, 2, H, a
+11, 23, 0, 0, 2, H, a
+11, 24, 0, 0, 2, H, a
+11, 25, 0, 0, 2, H, a
+11, 26, 0, 0, 2, H, a
+11, 27, 0, 0, 2, H, a
+11, 28, 0, 0, 2, H, a
+11, 29, 0, 0, 2, H, a
+11, 30, 0, 0, 2, H, a
+11, 31, 0, 0, 2, H, a
+11, 32, 0, 0, 2, H, a
+11, 33, 0, 0, 2, H, a
+11, 34, 0, 0, 2, H, a
+11, 35, 0, 0, 2, H, a
+11, 36, 0, 0, 2, H, a
+11, 37, 0, 0, 2, H, a
+11, 38, 0, 0, 2, H, a
+11, 39, 0, 0, 2, H, a
+11, 40, 0, 0, 2, H, a
+11, 41, 0, 0, 2, H, a
+11, 42, 0, 0, 2, H, a
+11, 43, 0, 0, 2, H, a
+11, 44, 0, 0, 2, H, a
+11, 45, 0, 0, 2, H, a
+11, 46, 0, 0, 2, H, a
+11, 47, 0, 0, 2, H, a
+11, 48, 0, 0, 2, H, a
+11, 49, 0, 0, 2, H, a
+11, 50, 0, 0, 2, H, a
+11, 51, 0, 0, 2, H, a
+11, 52, 0, 0, 2, H, a
+11, 53, 0, 0, 2, H, a
+11, 54, 0, 0, 2, H, a
+11, 55, 0, 0, 2, H, a
+11, 56, 0, 0, 2, H, a
+11, 57, 0, 0, 2, H, a
+11, 58, 0, 0, 2, H, a
+11, 59, 0, 0, 2, H, a
+11, 60, 0, 0, 2, H, a
+11, 61, 0, 0, 2, H, a
+11, 62, 0, 0, 2, H, a
+11, 63, 0, 0, 2, H, a
+11, 64, 0, 0, 2, H, a
+11, 65, 0, 0, 2, H, a
+11, 66, 0, 0, 2, H, a
+11, 67, 0, 0, 2, H, a
+11, 68, 0, 0, 2, H, a
+11, 69, 0, 0, 2, H, a
+11, 70, 0, 0, 2, H, a
+11, 71, 0, 0, 2, H, a
+11, 72, 0, 0, 2, H, a
+11, 73, 0, 0, 2, H, a
+11, 74, 0, 0, 2, H, a
+11, 75, 0, 0, 2, H, a
+11, 76, 0, 0, 2, H, a
+11, 77, 0, 0, 2, H, a
+11, 78, 0, 0, 2, H, a
+11, 79, 0, 0, 2, H, a
+11, 80, 0, 0, 2, H, a
+11, 81, 0, 0, 2, H, a
+11, 82, 0, 0, 2, H, a
+11, 83, 0, 0, 2, H, a
+11, 84, 0, 0, 2, H, a
+11, 85, 0, 0, 2, H, a
+11, 86, 0, 0, 2, H, a
+11, 87, 0, 0, 2, H, a
+11, 88, 0, 0, 2, H, a
+11, 89, 0, 0, 2, H, a
+11, 90, 0, 0, 2, H, a
+11, 91, 0, 0, 2, H, a
+11, 92, 0, 0, 2, H, a
+11, 93, 0, 0, 2, H, a
+
+;--------------------------------------------------------;
+;                       SuperControls                    ;
+;--------------------------------------------------------;
+
+;Velocidad
+
+[BGctrldef 1]
+ctrlID=4
+
+[BGctrl 2,vel]
+type=velset
+time= 100
+x= 0.00
+Y= 0.4
+
+[BGctrl 2,vel]
+type=velset
+time= 800
+x= 0.00
+Y= 0.3
+
+[BGctrl 2,vel]
+type=velset
+time= 1000
+x= 0.00
+Y= 0.2
+
+[BGctrl 2,vel]
+type=velset
+time= 1200
+x= 0.00
+Y= 0.1
+
+[BGctrl 2,vel]
+type=velset
+time= 1500
+x= 0.00
+Y= 0.08
+
+
+[BGctrl 2,vel]
+type=velset
+time= 1600
+x = 0
+Y= 0
+
+;Temblor de la Nave
+
+[BgCtrlDef 1]
+looptime    = -1
+CtrlId      = 1
+
+[BgCtrl 1.0]
+type        = sinY
+time        = 1600
+value       = 1,4
+[BgCtrl 1.0]
+type        = sinY
+time        = 1620
+value       = 1,3
+
+[BgCtrl 1.0]
+type        = sinY
+time        = 1630
+value       = 1,2
+
+[BgCtrl 1.0]
+type        = sinY
+time        = 1640
+value       = 1,1
+
+[BgCtrl 1.0]
+type        = sinY
+time        = 1670
+value       = 0,0
+
+
+[BgCtrlDef 2]
+looptime    = -1
+CtrlId      = 4
+
+[BgCtrl 1.0]
+type        = sinY
+time        = 1600
+value       = 1,4
+[BgCtrl 1.0]
+type        = sinY
+time        = 1620
+value       = 1,3
+
+[BgCtrl 1.0]
+type        = sinY
+time        = 1630
+value       = 1,2
+
+[BgCtrl 1.0]
+type        = sinY
+time        = 1640
+value       = 1,1
+
+[BgCtrl 1.0]
+type        = sinY
+time        = 1670
+value       = 0,0
+;------------------------------------------------------------------
+; Velocidad de las sombras
+
+[BGctrldef 1]
+ctrlID=5
+
+[BGctrl 2,vel]
+type=velset
+time= 1920
+x= -7
+Y= -7
+
+[BGctrldef 1]
+ctrlID=6
+
+[BGctrl 2,vel]
+type=velset
+time= 1950
+x= -7
+Y= -7
+
+[BGctrldef 1]
+ctrlID=7
+
+[BGctrl 2,vel]
+type=velset
+time= 1980
+x= -7
+Y= -7
+
+

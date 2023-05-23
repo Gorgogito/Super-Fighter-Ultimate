@@ -1,0 +1,83 @@
+[Info]
+name ="Baba Arena"
+
+
+[Camera]
+startx =0
+starty =0
+boundleft  = -128 ;Å¶
+boundright = 128 ;Å¶
+boundhigh  = -192 ;Å¶
+boundlow   = 0
+verticalfollow =.3
+tension =50
+
+
+[PlayerInfo]
+p1startx =-80
+p1starty =0
+p1startz =0
+p1facing =1
+
+p2startx =80
+p2starty =0
+p2startz =0
+p2facing =-1
+
+leftbound =-1000
+rightbound =1000
+topbound =0
+botbound =0
+
+
+[Scaling]
+topz =0
+botz =50
+topscale =1
+botscale =1.2
+
+
+[Bound]
+screenleft  =15
+screenright =15
+
+
+[StageInfo]
+zoffset  = 220
+autoturn = 1
+resetBG  = 1
+hires = 1
+
+[Shadow]
+intensity = 20
+yscale =-0.1
+fade.range = -400,-1
+
+
+[Music]
+bgmusic  = sound/Trunks and Goten Spar.mp3
+bgvolume = 130
+bgm.loop = 1
+
+;-----------------------------------------------------------------
+[BGdef]
+spr =Baba_Arena.sff
+debugbg = 0
+
+
+[BG Sky]
+type =normal
+spriteno =0,0
+start = 0,0
+delta =1.5,1.5 
+window = 0,0, 639,479
+
+[BG 0]
+type  = normal
+spriteno = 2,0
+layerno = 1
+start = 0,-170
+tile  = 1,0
+velocity = 0.50,0
+mask = 1
+

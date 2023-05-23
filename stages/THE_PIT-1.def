@@ -1,0 +1,186 @@
+;BY DISSIDIA
+;UPDATES AND IMPROVEMENTS BY HANZO HASASHI
+;ORIGINAL BY NoZ
+;=========================================
+[Info]
+name = "p1t-1hd"
+displayname = "The Pit HD"
+author = "NoZ"
+mugenversion = 1.0
+[BGdef]
+spr = THE_PIT.sff
+debugbg = 0  
+[Music]
+bgmusic = sound/Genesis Music/mk 2 genesis end.ogg
+bgmloopstart =
+bgmloopend = -1
+bgmvolume = 110
+     
+[Camera]
+startx = 0            
+starty = 0            
+boundleft = -265
+boundright = 500
+boundhigh = 0
+boundlow = 1300          
+verticalfollow = 1
+overdrawhigh = 0
+overdrawlow = 9999
+floortension =    
+tension = 160
+startzoom = 1
+zoomin = 1
+zoomout = 0.72
+
+
+[PlayerInfo]
+p1startx = -203         
+p1starty = 0          
+p1startz = 0          
+p1facing = 1          
+p2startx = 203         
+p2starty = 0          
+p2startz = 0          
+p2facing = -1  
+p3startx = -200         
+p3starty = 0          
+p3startz = 0          
+p3facing = 1          
+p4startx = 200         
+p4starty = 0          
+p4startz = 0          
+p4facing = -1          
+leftbound = -2000      
+rightbound = 2000     
+topbound = 0  
+botbound = 0          
+[Scaling]
+topz = 0               
+botz = 50             
+topscale = 1
+botscale = 1.2        
+[Bound]
+screenleft = 70       
+screenright = 70    
+[StageInfo]
+zoffset = 416
+autoturn = 1         
+resetBG = 0     
+localcoord = 800,508
+xscale = 1.13637
+yscale = 1.13637      
+
+[Shadow]
+intensity = 250
+color = 0,0,0
+yscale = .06
+fade.range = -80,-20
+
+[Reflection]
+intensity = 0
+[BG SKY]
+type  = normal
+spriteno = 0,1
+delta = 0,0
+zoomdelta = 0
+[BG CLOUDS 1]
+start = 0,-280
+type = normal
+spriteno = 1,0
+delta = 1,0.95
+trans = addalpha
+alpha = 256,256
+velocity = 1.5,0
+tile = 1,0
+tilespacing = 10,0
+zoomdelta = 0.2
+scalestart = .90,1
+[BG MOON GLOW]
+start = 0,30
+type = anim
+actionno = 0
+delta = 0.8,1;0.9
+zoomdelta = 0.7
+scalestart = .95,1
+[Begin Action 0]
+1,3,0,0,2,,AS200D256
+1,3,0,0,2,,AS195D256
+[BG MOON]
+start = 0,30
+type = normal
+spriteno = 1,4
+delta = 0.8,1;0.9
+mask = 1
+trans = addalpha
+alpha = 150,150
+zoomdelta = 0.7
+scalestart = .95,1
+[BG CLOUDS 2]
+start = 0,-30
+type = normal
+spriteno = 1,1
+delta = 1,0.8
+trans = addalpha
+alpha = 256,256
+velocity = 1.3,0
+tile = 1,0
+tilespacing = 5,0
+zoomdelta = 0.7
+scalestart = .90,1
+[BG CLOUDS 3]
+start = 0,120
+type = normal
+spriteno = 1,2
+delta = 1,0.5
+trans = addalpha
+alpha = 256,256
+velocity = 1,0
+tile = 1,0
+tilespacing = 0,0
+scalestart = .90,1
+[BG CLOUDS 3 OVERLAY]
+start = 320,280
+type = normal
+spriteno = 1,1
+delta = 1,1
+trans = addalpha
+alpha = 256,256
+velocity = 1.9,0
+tile = 1,0
+tilespacing = 1,0
+scalestart = .90,1
+layerno = 1
+[BG PIT FAKE ANTI-ALIAS]
+type = normal
+spriteno = 2,0
+delta = 1,1
+mask = 1
+trans = addalpha
+alpha = 160,128
+[BG PIT]
+type = normal
+spriteno = 2,1
+delta = 1,1
+mask = 1
+[BG PIT]
+type = normal
+spriteno = 2,3
+delta = 1,1
+mask = 1
+layerno = 1
+[ PIT OVERLAY]
+type = normal
+spriteno = 2,2
+start = 0,-15
+delta = 1,1
+mask = 1
+;trans = add1
+layerno = 1
+[ OVERLAY]
+type  = normal
+spriteno = 0,1
+delta = 0,0
+trans = addalpha
+alpha = 180,250
+layerno = 1
+zoomdelta = 0

@@ -1,0 +1,203 @@
+
+
+[Info]
+name = "Circus Amusement Park"
+;GAME = Capcom World 2 - CPS1
+;Author = capcomnator 2018
+;Stage converted to Mugen 1.0 by kater15
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -250
+boundright = 250
+boundhigh = -320
+boundlow = 0
+verticalfollow = 1
+floortension = 75
+tension = 60 
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 25
+screenright = 25
+
+[Shadow]
+intensity = 100;96
+color = 0,0,0
+yscale = .3
+fade.range = 0,0  
+
+[StageInfo]
+zoffset = 215
+autoturn = 1
+localcoord = 320,240
+resetBG = 1
+
+[Music]
+bgmusic = sound/Pure&Fur.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/Pure&Fur_1.0.sff
+debugbg = 1
+
+[BG SKY]
+type            = normal
+spriteno        = 0, 0
+layerno         = 0
+delta = .78,1
+start           = 0,0
+trans           = None
+mask            = 0
+
+[BG stars]
+type  = normal
+spriteno = 0,6
+layerno = 0
+start = 0,0
+delta = .78,1
+mask  = 1
+
+[BG moon]
+type            = normal
+spriteno        = 0,2
+layerno         = 0
+delta = 1,1
+start           = 0,0
+trans           = None
+mask            = 1
+
+[BG clouds]
+type  = normal
+spriteno = 0,5
+layerno = 0
+start = -100,0
+delta = 1,1
+mask  = 1
+velocity = 0.3,0
+tile  = 1, 0
+tilespacing = 1000,0
+
+
+[BG Circus 1]
+type            = normal
+spriteno        = 50, 0
+layerno         = 0
+delta = 1,1
+start           = 0,0
+trans           = None
+mask            = 1
+
+[BG Circus 1]
+type            = normal
+spriteno        = 50, 1
+layerno         = 0
+delta = 1,1
+start           = 0,0
+trans           = add
+mask            = 1
+
+[BG Circus 1]
+type            = normal
+spriteno        = 50, 2
+layerno         = 0
+delta = 1,1
+start           = 0,0
+trans           = add
+mask            = 1
+
+[BG grid]
+type            = normal
+spriteno        = 0,3
+layerno         = 1
+delta = 1,1
+start           = 0,0
+trans           = None
+mask            = 1
+
+[BG grid 2]
+type            = normal
+spriteno        = 0,4
+layerno         = 1
+delta = 1,1
+start           = 0,0
+trans           = None
+mask            = 1
+
+
+[BG dinosaur]
+type            = anim
+actionno        = 10
+layerno         = 0
+delta = 1,1
+start           = 0,0
+trans           = None
+mask            = 1
+
+[begin action 10]
+10,0,0,0,25
+10,1,0,0,30
+
+[BG Balloon Rabbit]
+type            = anim
+actionno        = 20
+layerno         = 0
+delta = 1,1
+start           = 0,0
+trans           = None
+mask            = 1
+
+[begin action 20]
+20,0,0,0,12
+20,1,0,0,12
+20,2,0,0,12
+20,3,0,0,12
+20,4,0,0,12
+20,5,0,0,12
+20,6,0,0,12
+
+[BG Megaman doll]
+type            = anim
+actionno        = 30
+layerno         = 0
+delta = 1,1
+start           = 0,0
+trans           = None
+mask            = 1
+
+[begin action 30]
+30,0,0,0,12
+30,1,0,0,12
+30,2,0,0,12
+30,3,0,0,12
+30,4,0,0,12
+
+
+
+
+
+
+
+

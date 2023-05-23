@@ -1,0 +1,631 @@
+
+[Info]
+name ="RagingSnow"
+displayname="Raging Snow HR"
+Autor = "=Tapion=MIDNight Fighters="
+versiondate=08/08/2011
+mugenversion=04,14,2001
+
+;=======================================
+
+;=======================================
+
+;----------------------------------------------------------------------------------------
+
+[Camera]
+startx =0
+starty =0
+boundleft  = -180
+boundright = 122
+boundhigh  = -180
+boundlow   = 0
+verticalfollow = .75
+floortension = 90
+tension = 50
+
+
+[PlayerInfo]
+p1startx =-70
+p1starty =0
+p1startz =0
+p1facing =1
+
+p2startx =70
+p2starty =0
+p2startz =0
+p2facing =-1
+
+leftbound =-600
+rightbound =600
+topbound =0
+botbound =0
+
+
+[Scaling]
+topz =0
+botz =50
+topscale =1
+botscale =1.2
+
+
+[Bound]
+screenleft  = 20
+screenright = 20
+
+
+[StageInfo]
+zoffset  = 200
+autoturn = 1
+resetBG  = 0
+hires = 1
+
+
+[Shadow]
+intensity = 95
+yscale =.2
+
+[Reflection]
+intensity = 150
+
+
+[Music]
+bgmusic  =   sound/20_flight_in_the_dark_side.ogg
+bgvolume = 255
+;----------------------------------------------------------------------
+[BGdef]
+spr = RagingSnow.sff
+
+debugbg = 0
+
+[BG 0]
+type = normal
+spriteno =0,0
+start = 0,-100
+delta = 0.1,1.5 ;Å¶
+mask =0
+tile = 1,0
+velocity = 0.1,0
+
+[BG snow7]
+type = normal
+spriteno = 3,7
+start = 0, 17
+delta = .2, 0
+tile = 1,1
+sin.x = 5,310
+velocity = 0,.3
+mask = 1
+trans = add
+
+[BG snow7]
+type = normal
+spriteno = 3,7
+start = 40, 17
+delta = .1, 0
+tile = 1,1
+sin.x = 5,305
+velocity = 0,.295
+mask = 1
+trans = add
+
+[BG snow7]
+type = normal
+spriteno = 3,7
+start = 20, 17
+delta = .2, 0
+tile = 1,1
+sin.x = 5,300
+velocity = 0,.3
+mask = 1
+trans = add
+
+
+[BG 0]
+type =normal
+spriteno =0,6
+start = 0,0
+delta = 1.8,1.6 ;Å¶
+mask =1
+tile = 1,0
+trans = add
+velocity = 0.078,0
+
+
+[BG 0]
+type =normal
+spriteno =0,3
+start = 100,185
+delta = 1.7,1.5 ;Å¶
+mask =1
+tile = 1,0
+
+[BG 0]
+type =normal
+spriteno =0,5
+start = 0,200
+delta = 1.8,1.6 ;Å¶
+mask =1
+tile = 1,0
+trans = add
+velocity = 0.090,0
+
+
+
+[BG 0]
+type =normal
+spriteno =0,4
+start = 0,200
+delta = 1.8,1.6 ;Å¶
+mask =1
+tile = 1,0
+trans = add
+velocity = 0.090,0
+
+[BG 0]
+type =normal
+spriteno =0,2
+start = 270,340
+delta = 1.5,1.6;Å¶
+mask =1
+tile = 1,0
+
+
+
+
+[BG arbol final derecho]
+type =normal
+spriteno =2,2
+start = 765,150
+delta = 1.9,1.7;Å¶
+mask =1
+
+
+
+[BG arbol final derecho]
+type =normal
+spriteno =2,2
+start = 490,290
+delta = 1.9,1.7;Å¶
+mask =1
+
+[BG arbol final derecho]
+type =normal
+spriteno =2,2
+start = 400,250
+delta = 1.9,1.7;Å¶
+mask =1
+
+
+
+
+[BG arbol final izquierdo]
+type =normal
+spriteno =2,2
+start = -510,320
+delta = 1.9,1.7;Å¶
+mask =1
+
+
+[BG arbol final izquierdo]
+type =normal
+spriteno =2,2
+start = -450,290
+delta = 1.9,1.7;Å¶
+mask =1
+
+
+[BG arbol final izquierdo]
+type =normal
+spriteno =2,2
+start = -320,310
+delta = 1.9,1.7;Å¶
+mask =1
+
+
+[BG arbol final izquierdo]
+type =normal
+spriteno =2,2
+start = -400,270
+delta = 1.9,1.7;Å¶
+mask =1
+
+
+
+
+
+[BG snow3]
+type = normal
+spriteno = 3,3
+start = 0, 0
+delta = 1, 0
+tile = 1,1
+sin.x = 15,305
+velocity = 0,1.6
+mask = 1
+trans = add
+
+[BG snow3]
+type = normal
+spriteno = 3,3
+start = -20, 20
+delta = 1, 0
+tile = 1,1
+sin.x = 15,310
+velocity = 0,1.5
+mask = 1
+trans = add
+
+[BG snow3]
+type = normal
+spriteno = 3,3
+start = 30, -30
+delta = 1, 0
+tile = 1,1
+sin.x = 15,300
+velocity = 0,1.4
+mask = 1
+trans = add
+
+[BG snow3]
+type = normal
+spriteno = 3,3
+start = -50, 50
+delta = 1, 0
+tile = 1,1
+sin.x = 15,290
+velocity = 0,1.3
+mask = 1
+trans = add
+
+[BG snow4]
+type = normal
+spriteno = 3,4
+start = 0, 0
+delta = .8, 0
+tile = 1,1
+sin.x = 10,295
+velocity = 0,1.5
+mask = 1
+trans = add
+
+[BG snow4]
+type = normal
+spriteno = 3,4
+start = 20, -20
+delta = .8, 0
+tile = 1,1
+sin.x = 10,310
+velocity = 0,1.4
+mask = 1
+trans = add
+
+[BG snow4]
+type = normal
+spriteno = 3,4
+start = -40, 40
+delta = .8, 0
+tile = 1,1
+sin.x = 10,305
+velocity = 0,1.3
+mask = 1
+trans = add
+
+[BG snow4]
+type = normal
+spriteno = 3,4
+start = -50, 50
+delta = .8, 0
+tile = 1,1
+sin.x = 10,300
+velocity = 0,1.2
+mask = 1
+trans = add
+
+[BG snow5]
+type = normal
+spriteno = 3,5
+start = 0, 0
+delta = .6, 0
+tile = 1,1
+sin.x = 10,310
+velocity = 0,.9
+mask = 1
+trans = add
+
+[BG snow5]
+type = normal
+spriteno = 3,5
+start = 20, -20
+delta = .6, 0
+tile = 1,1
+sin.x = 10,300
+velocity = 0,.8
+mask = 1
+trans = add
+
+[BG snow5]
+type = normal
+spriteno = 3,5
+start = -40, 40
+delta = .5, 0
+tile = 1,1
+sin.x = 10,305
+velocity = 0,.6
+mask = 1
+trans = add
+
+[BG snow5]
+type = normal
+spriteno = 3,5
+start = 50, -50
+delta = .4, 0
+tile = 1,1
+sin.x = 10,300
+velocity = 0,.5
+mask = 1
+trans = add
+
+[BG snow5]
+type = normal
+spriteno = 3,5
+start = 80, -80
+delta = .6, 0
+tile = 1,1
+sin.x = 10,290
+velocity = 0,.6
+mask = 1
+trans = add
+
+
+
+
+
+
+[BG 0]
+type =normal
+spriteno =2,3
+start = -750,280
+delta = 1.9,1.7;Å¶
+mask =1
+
+
+[BG 0]
+type =normal
+spriteno =2,3
+start = -90,350
+delta = 1.9,1.7;Å¶
+mask =1
+
+[BG 0]
+type =normal
+spriteno =0,4
+start = 0,280
+delta = 1.8,1.6 ;Å¶
+mask =1
+tile = 1,0
+trans = add
+velocity = 0.099,0
+tilespacing = 0
+
+
+
+[BG 0]
+type =normal
+spriteno =0,1
+start = 0,480
+delta = 2,2
+mask =1
+tile = 1,0
+tilespacing = -2
+
+
+
+
+[BG snow5]
+type = normal
+spriteno = 3,5
+start = -60, 60
+delta = .5, 0
+tile = 1,1
+sin.x = 10,310
+velocity = 0,.5
+mask = 1
+trans = add
+
+[BG snow5]
+type = normal
+spriteno = 3,5
+start = -140, -70
+delta = .4, 0
+tile = 1,1
+sin.x = 10,305
+velocity = 0,.4
+mask = 1
+trans = add
+
+[BG snow5]
+type = normal
+spriteno = 3,5
+start = -125, -50
+delta = .4, 0
+tile = 1,1
+sin.x = 10,290
+velocity = 0,.4
+mask = 1
+trans = add
+
+[BG snow5]
+type = normal
+spriteno = 3,5
+start = -112, -80
+delta = .6, 0
+tile = 1,1
+sin.x = 10,295
+velocity = 0,.4
+mask = 1
+trans = add
+
+[BG snow5]
+type = normal
+spriteno = 3,5
+start = 115, 60
+delta = .5, 0
+tile = 1,1
+sin.x = 10,305
+velocity = 0,.4
+mask = 1
+trans = add
+
+[BG snow5]
+type = normal
+spriteno = 3,5
+start = 250, -70
+delta = .4, 0
+sin.x = 12,310
+tile = 1,1
+velocity = 0,.4
+mask = 1
+trans = add
+
+
+[BG 0]
+type =normal
+spriteno =0,7
+start = 0,450
+delta = 2,2
+mask =1
+Trans= add
+tile = 1,0
+tilespacing = -2
+
+
+
+[BG 0]
+type =normal
+spriteno =1,0
+start = 0,650
+delta = 2,2;Å¶
+mask =1
+tile = 1,0
+trans = add
+velocity = 1.5,0
+tilespacing = 0
+layerno= 1
+
+[BG snow0]
+type = normal
+spriteno = 3,0
+start = 0, 0
+delta = 2, 0
+layerno = 1
+tile = 1,1
+velocity = 0,2.9
+sin.x = 50,290
+mask = 1
+trans = add
+
+[BG snow1]
+type = normal
+spriteno = 3,1
+start = -50, -20
+delta = 2, 0
+layerno = 1
+tile = 1,1
+sin.x = 50,300
+velocity = 0,2.7
+mask = 1
+trans = add
+
+
+
+[BG snow1]
+type = normal
+spriteno = 3,1
+start = 0, 0
+delta = 2, 0
+layerno = 1
+tile = 1,1
+sin.x = 50,300
+velocity = 0,2.6
+mask = 1
+trans = add
+
+[BG snow6]
+type = normal
+spriteno = 3,6
+start = 0, 0
+delta = 2, 0
+layerno = 1
+sin.x = 50,310
+tile = 1,1
+velocity = 0,4.5
+mask = 1
+trans = add
+
+[BG 0]
+type =normal
+spriteno =0,5
+start = 0,550
+delta = 2,2 ;Å¶
+mask =1
+tile = 1,0
+trans = add
+velocity = 1,0
+layerno= 1
+
+[BG snow5]
+type = normal
+spriteno = 3,5
+start = -170, 40
+delta = .5, 0
+tile = 1,1
+sin.x = 10,300
+velocity = 0,.6
+mask = 1
+trans = add
+
+[BG snow5]
+type = normal
+spriteno = 3,5
+start = 200, -50
+delta = .4, 0
+sin.x = 10,390
+tile = 1,1
+velocity = 0,.5
+mask = 1
+trans = add
+
+[BG snow5]
+type = normal
+spriteno = 3,5
+start = -210, -80
+delta = .6, 0
+tile = 1,1
+sin.x = 10,295
+velocity = 0,.6
+mask = 1
+trans = add
+
+[Begin action 5]
+
+Loopstart
+5,59, 0,0, 20,V, A
+5,60, 0,0, 20,V, A
+
+
+
+[Begin Action 1]
+-1,-1, 0,0, 500,,
+1,0, 0,0, 1,,AS250D256
+1,0, 0,0, 1,,AS225D256
+1,0, 0,0, 1,,AS200D256
+1,0, 0,0, 1,,AS175D256
+1,0, 0,0, 1,,AS150D256
+1,0, 0,0, 1,,AS125D256
+1,0, 0,0, 1,,AS100D256
+1,0, 0,0, 1,,AS75D256
+1,0, 0,0, 1,,AS50D256
+1,0, 0,0, 1,,AS25D256
+1,0, 0,0, 1,,
+1,-1, 0,0, 500,,
+

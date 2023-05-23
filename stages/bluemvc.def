@@ -1,0 +1,123 @@
+;Blue Area of the Moon, ripado por DonRamon  
+;do jogo Marvel vs Capcom
+;Utilizando o emulador WinKawaks 1.42
+;cenário com visão aérea no super jump
+
+[Info]
+name = "Blue Area of the Moon"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -224
+boundright = 224
+boundhigh = -240
+boundlow = 0
+verticalfollow = .5
+tension = 50
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 218
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+color = 167,145,85
+yscale =.2
+reflect = 0
+
+[Music]
+bgmusic = sound/bluemvc.mp3
+bgvolume = 0
+
+[BGdef]
+spr = stages/bluemvc.sff
+debugbg = 1
+
+[BG fundo3]
+type = normal
+spriteno = 0,1
+start = -312,-144
+delta = .68,.6
+
+[BG fundo2]
+type = normal
+spriteno = 0,2
+delta = .785,.865
+start = -336, -208
+mask = 1
+
+[BG fundo]
+type = normal
+spriteno = 0,0
+delta = 1,1
+start = -384,-240
+mask = 1
+
+[BG bandeira3]
+type = normal
+spriteno = 4,0
+start = 129,-66
+mask = 1
+
+[BG detrito]
+type = normal
+spriteno = 1,0
+delta = 1,1
+start = -190,162
+mask = 1
+
+[BG bandeira]
+type = anim
+actionno = 2
+delta = 1,1
+start = 261,176
+layerno = 1
+
+[BG bandeira2]
+type = anim
+actionno = 3
+delta = 1,1
+start = 157,-240
+
+[Begin Action 2]
+2,0, 0,0, 9
+2,1, 0,0, 9
+2,2, 0,0, 8
+2,3, 0,0, 9
+2,4, 0,0, 8
+2,5, 0,0, 9
+
+[Begin Action 3]
+3,0, 0,0, 9
+3,1, 0,0, 9
+3,2, 0,0, 9
+3,3, 0,0, 9
+3,4, 0,0, 10
+3,5, 0,0, 9

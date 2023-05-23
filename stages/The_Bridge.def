@@ -1,0 +1,309 @@
+﻿; Арена: The Bridge MK3
+; Автор: Emsi-D
+; Рип спрайтов: Fly
+; Улучшения: Max Arturo (двухслойный бэкграунд, эффект ветра), BlackJack (мигающий свет)
+
+[Info]
+Name = "br1dge"
+Displayname = "The Bridge"
+Mugenversion = 1.1
+
+[Camera]
+boundleft = -367
+boundright = 365
+boundhigh = -12
+tension = 100
+floortension = 30
+verticalfollow = .2
+overdrawhigh = 20
+overdrawlow = 20
+startzoom = 1
+zoomin = 1
+zoomout = 0.74
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1400
+rightbound = 1400
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+[StageInfo]
+zoffset = 231
+autoturn = 1
+resetbg = 1
+localcoord = 400,254
+
+[Shadow]
+intensity = 190
+yscale = .17
+
+[Music]
+bgmusic = sound/MK3/mk3_the_bridge.ogg
+
+[BGdef]
+spr = The_Bridge.sff
+bgclearcolor = 33,16,0
+
+
+[BG Небо]
+type = normal
+spriteno = 0,4
+delta = 0,1
+start = 9,18.5
+mask = 1
+scalestart = .90,1
+
+[BG Город на бэкграунде]
+type = normal
+spriteno = 0,38
+delta = .1,1
+start = 34,80.5
+mask = 1
+scalestart = .90,1
+
+[BG Переход между этажами]
+type = normal
+spriteno = 0,5
+delta = 1,1
+start = 0,247
+tile = 1,0
+
+[BG Пол]
+type = parallax
+spriteno = 0,0
+delta = .86,1
+start = 0,234
+width = 1400,1500
+scalestart = .90,1
+
+[BG Здания]
+type = normal
+spriteno = 0,3
+delta = .29,1
+start = -312,-23
+mask = 1
+scalestart = .90,1
+
+[BG Столбы и ограждения 1]
+type = normal
+spriteno = 0,2
+delta = .86,1
+start = 0,-27
+mask = 1
+scalestart = .90,1
+
+[BG Столбы и ограждения 2]
+type = normal
+spriteno = 0,1
+delta = .86,1
+start = 0,-43
+mask = 1
+scalestart = .90,1
+
+[BG Газета, развеваемая ветром/Левый угол арены]
+type = anim
+actionno = 0
+delta = .85,1
+start = -195,176
+
+[BG Газета, развеваемая ветром 1/Правый угол арены]
+type = anim
+actionno = 0
+delta = .85,1
+start = 141,180
+
+[Begin Action 0]
+0,6, 0,0, 3
+0,7, 0,0, 4
+0,8, 0,0, 3
+0,9, 0,0, 3
+0,10, 0,0, 3
+0,11, 0,0, 4
+0,12, 0,0, 4
+0,13, 0,0, 4
+
+[BG Газета, развеваемая ветром/Центр арены]
+type = anim
+actionno = 1
+delta = .85,1
+start = -35,176
+
+[BG Газета, развеваемая ветром 2/Правый угол арены]
+type = anim
+actionno = 1
+delta = .85,1
+start = 349,173
+
+[Begin Action 1]
+0,6, 0,0, 4
+0,7, 0,0, 4
+0,8, 0,0, 4
+0,9, 0,0, 4
+0,10, 0,0, 4
+0,11, 0,0, 4
+0,12, 0,0, 4
+0,13, 0,0, 4
+
+[BG Мигающие фонари]
+type = anim
+actionno = 2
+delta = .85,1
+start = -4,-27
+scalestart = .90,1
+
+[Begin action 2]
+-1,0, 0,0, 1
+0,14, 0,0, 1,,A1
+
+[BG Листья, разносимые ветром #1]
+type = anim
+actionno = 3
+layerno = 1
+velocity = 6
+delta = .6,.8
+start = 0,129
+tile = 1
+tilespacing = 300
+sin.x = -70,850
+sin.y = -20,500
+
+[BG Листья, разносимые ветром #2]
+type = anim
+actionno = 3
+velocity = 6
+delta = .6,.8
+start = 0,79
+tile = 1
+tilespacing = 200
+sin.x = 10,500
+sin.y = -100,852
+
+[BG Листья, разносимые ветром #3]
+type = anim
+actionno = 3
+velocity = 6
+delta = .6,.8
+start = 0,179
+tile = 1
+tilespacing = 350
+sin.x = -20,500
+sin.y = -50,952
+scalestart = .90,1
+
+[Begin Action 3]
+0,15, 0,0, 15
+0,16, 0,0, 15
+0,17, 0,0, 15
+0,18, 0,0, 15
+0,19, 0,0, 15
+0,20, 0,0, 15
+0,21, 0,0, 15
+
+[BG Большие бумажки, разносимые ветром #1]
+type = anim
+actionno = 4
+layerno = 1
+velocity = 5.1
+delta = .6,.8
+start = 0,171
+tile = 1
+tilespacing = 300
+sin.x = -20,570
+sin.y = -50,212
+
+[BG Большие бумажки, разносимые ветром #2]
+type = anim
+actionno = 4
+velocity = 5
+delta = .6,.8
+start = 0,31
+tile = 1
+tilespacing = 320
+sin.x = -50,340
+sin.y = 30,212
+
+[BG Большие бумажки, разносимые ветром #3]
+type = anim
+actionno = 4
+velocity = 5
+delta = .6,.8
+start = 0,141
+tile = 1
+tilespacing = 230
+sin.x = 100,530
+sin.y = -50,200
+
+[Begin Action 4]
+0,22, 0,0, 6
+0,23, 0,0, 6
+0,24, 0,0, 6
+0,25, 0,0, 6
+0,26, 0,0, 6
+0,27, 0,0, 6
+0,28, 0,0, 6
+0,29, 0,0, 6
+0,23, 0,0, 6
+
+[BG Маленькие бумажки, разносимые ветром #1]
+type = anim
+actionno = 5
+velocity = 5
+delta = .6,.8
+start = 0,101
+tile = 1
+tilespacing = 350
+sin.x = 50,125
+sin.y = -100,125
+
+[BG Маленькие бумажки, разносимые ветром #2]
+type = anim
+actionno = 5
+velocity = 5
+delta = .6,.8
+start = 0,181
+tile = 1
+tilespacing = 450
+sin.x = -70,280
+sin.y = -50,500
+
+[BG Маленькие бумажки, разносимые ветром #3]
+type = anim
+actionno = 5
+velocity = 5
+delta = .6,.8
+start = 0,171
+tile = 1
+tilespacing = 350
+sin.x = 20,570
+sin.y = -50,212
+
+[BG Маленькие бумажки, разносимые ветром #4]
+type = anim
+actionno = 5
+layerno = 1
+velocity = 5
+delta = .6,.8
+start = 0,161
+tile = 1
+tilespacing = 450
+sin.x = -50,355
+sin.y = 100,125
+
+[Begin Action 5]
+0,30, 0,0, 6
+0,31, 0,0, 6
+0,32, 0,0, 6
+0,33, 0,0, 6
+0,34, 0,0, 6
+0,35, 0,0, 6
+0,36, 0,0, 6
+0,37, 0,0, 6
+0,31, 0,0, 6

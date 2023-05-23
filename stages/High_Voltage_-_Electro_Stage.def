@@ -1,0 +1,2356 @@
+[Info]
+name="High Voltage"
+;=======================================================================
+;HIGH VOLTAGE   ( Electro Stage)   //   custom style MvsC stage
+;
+; Version 1.0 ---- ( 04 january 2014 )
+; Update 1.1 ---- (29 december 2014) --- Electro Recharged released
+;=======================================================================
+;
+;for additional info about the stage check the Readme file
+;
+;------- AUTHORS & CONTACT INFO: 
+;"Verz36 (sprite edits & concept )  +  Loganir ( code, sprite edits, fx & concept )"
+; Loganir@gmail.com    Verz36@yahoo.com            www.loganir.blogspot.com
+;
+; -------- SPECIAL THANKS AND CREDITS:
+; - Sprite rips & fx resources by: Random TBush - Kong - Dazz  
+; - Cybaster for feedback about soldiers speed and JJJ cigar.
+; - Music:  by  Pertubator - from Hotline Miami ost ( visit http://perturbator.bandcamp.com)
+;-  Music: New CPS2 style to choose by WizzyWhipitWonderful - ( visit http://www.youtube.com/user/WizzyWhipitWonderful )
+;
+;
+;--------- DISCLAIMER:
+;* This stage is a fan work and can`t be used for any commercial or profit purposes!
+;* All material are copyright of their respective owners:
+; - Electro, Zzzax, Boomerang, Jameson and Tarantula are property of Marvel Comics. 
+; - Some graphics, sprites & effects are created/edited with material from Capcom, SNK, Type-Moon. 
+;
+;========================================================================
+
+versiondate = 01,04,2014 
+author= Loganir & Verz36 
+
+[Music]
+bgmusic=sound/High_Voltage_-_Electro_Stage.mp3
+bgvolume=255
+
+[Camera]
+startx=0
+starty=0
+boundleft=-370
+boundright=370
+boundhigh=-190
+boundlow=0
+verticalfollow=1
+floortension=80
+tension=60
+
+[PlayerInfo]
+p1startx=-70
+p1starty=0
+p1startz=0
+p1facing=1
+p2startx=70
+p2starty=0
+p2startz=0
+p2facing=-1
+
+leftbound=-1000
+rightbound=1000
+topbound=0
+botbound=0
+
+[Scaling]
+topz=0
+botz=50
+topscale=1
+botscale=1.2
+
+[Bound]
+screenleft=15
+screenright=15
+
+[StageInfo]
+zoffset=208
+autoturn=1
+resetBG=0
+
+[Shadow]
+intensity=0
+color=50,50,50
+yscale=.37
+fade.range=0,0
+
+
+;=====<MAIN BG DEFINITION>=====
+[BGdef]
+spr=stages/High_Voltage_-_Electro_Stage.sff
+debugbg=0
+
+
+
+
+[BG Sky cloud new]
+type = normal
+spriteno = 0,2
+start = -300, 100;120
+delta = .3, .62
+velocity = 0.10
+tile = 1, 0
+mask = 0
+layerno=0
+ID=1
+
+;------XTRA NEW ------------------------------------------------------
+[BG copter]
+type = anim
+actionno = 170
+start = -30,230
+delta=.35,.64
+mask = 1
+id=170
+
+[BGCtrlDef 170]
+looptime =2600
+CtrlID = 170
+
+[BGCtrl 170.1]
+type = Enable
+time = 0
+value = 1
+[BGCtrl 170.2]
+type = Enable
+time = 2600
+value = 0
+[BGCtrl 170.42] 
+type = Anim
+time = 0
+value = 170
+[BGCtrl 170.41] 
+type = VelSet
+time = 0
+x = 0.65
+
+[BGCtrl 170.42] 
+type = Anim
+time = 1000
+value = 171
+[BGCtrl 170.42] 
+type = VelSet
+time = 1000
+x =  -1;0.65
+
+[Begin Action 170]
+170, 0, 0, 0, 3, ,
+170, 1, 0, 0, 3, ,
+170, 2, 0, 0, 3, ,
+[Begin Action 171]
+170, 0, 0, 0, 3, H,
+170, 1, 0, 0, 3, H,
+170, 2, 0, 0, 3, H,
+
+
+;-----------------------------------------
+[BG muro]
+type=normal
+spriteno=0,1
+layerno=0
+start=-30,210
+delta=.4,.65
+mask=1
+ID=1
+
+[BG int0]
+type=normal
+spriteno=0,7
+layerno=0
+start=0,180
+delta=.45,.70
+mask=1
+ID=1
+
+[BG int0fx1] 
+type = anim
+actionno = 7
+start =-28,80
+delta= .45,.70
+mask = 1
+id = 1
+[BG int0fx1.2] 
+type = anim
+actionno = 8
+start =-47,91
+delta= .45,.70
+mask = 1
+id = 1
+[BG int0fx1.3] 
+type = anim
+actionno = 8
+start =15,95
+delta= .45,.70
+mask = 1
+id = 1
+
+
+[Begin Action 7]; 
+95, 12, 0, 0, 4, H,AS66D256
+95, 0, 0, 0, 4, ,AS66D256
+95, 12, 0, 0, 4, , AS66D256
+95, 0, 0, 0, 4, H,AS66D256
+-1, -1, 0, 0, 74, ,
+[Begin Action 8]; 
+95, 12, 0, 0, 3, H,AS56D256
+95, 0, 0, 0, 3, ,AS56D256
+95, 12, 0, 0, 3, , AS56D256
+95, 0, 0, 0, 3, H,AS56D256
+-1, -1, 0, 0, 44, ,
+95, 12, 0, 0, 3, H,AS56D256
+95, 0, 0, 0, 3, ,AS56D256
+95, 12, 0, 0, 3, , AS56D256
+95, 0, 0, 0, 3, H,AS56D256
+95, 12, 0, 0, 3, H,AS56D256
+95, 0, 0, 0, 3, ,AS56D256
+95, 12, 0, 0, 3, , AS56D256
+95, 0, 0, 0, 3, H,AS56D256
+-1, -1, 0, 0, 94, ,
+
+
+[BG int1]
+type=normal
+spriteno=0,6
+layerno=0
+start=0,180
+delta=.5,.75
+mask=1
+ID=1
+
+[BG int0fx1.11] 
+type = anim
+actionno = 9
+start =-31,111
+delta= .5,.75
+mask = 1
+id = 1
+
+[Begin Action 9]; 
+95, 12, 0, 0, 2, H,AS146D256
+95, 0, 0, 0, 2, ,AS146D256
+95, 12, 0, 0, 2, , AS146D256
+95, 0, 0, 0, 2, H,AS146D256
+95, 12, 0, 0, 2, H,AS146D256
+95, 0, 0, 0, 2, ,AS146D256
+95, 12, 0, 0, 2, , AS146D256
+95, 0, 0, 0, 2, H,AS146D256
+-1, -1, 0, 0, 124, ,
+
+
+
+
+[BG int2]
+type=normal
+spriteno=0,5
+layerno=0
+start=0,180
+delta=.6,.80
+mask=1
+ID=1
+
+[BG int3]
+type=normal
+spriteno=0,4
+layerno=0
+start=0,180
+delta=.7,.85
+mask=1
+ID=1
+
+;---------------------------------------
+[BG intXTRA]
+type=normal
+spriteno=100,0
+layerno=0
+start=0,237
+delta=.7,.85
+mask=1
+ID=1
+
+
+[BG intXTRAY] 
+type = anim
+actionno = 105
+start =0,237
+delta= .7,.85
+mask = 1
+id = 1
+
+[Begin Action 105]
+105, 0, 0, 0, 4, ,AS156D256
+105, 1, 0, 0, 4, ,AS156D256
+105, 2, 0, 0, 4, , AS156D256
+105, 3, 0, 0, 4, , AS156D256
+105, 4, 0, 0, 4, , AS156D256
+105, 2, 0, 0, 4, , AS76D256
+105, 0, 0, 0, 4, ,AS156D256
+105, 1, 0, 0, 4, ,AS156D256
+105, 2, 0, 0, 4, , AS76D256
+105, 0, 0, 0, 4, ,AS156D256
+105, 1, 0, 0, 4, ,AS156D256
+105, 2, 0, 0, 4, , AS156D256
+105, 3, 0, 0, 4, , AS156D256
+105, 4, 0, 0, 4, , AS156D256
+105, 2, 0, 0, 4, , AS76D256
+-1, -1, 0, 0,204, ,
+105, 0, 0, 0, 4, ,AS156D256
+105, 1, 0, 0, 4, ,AS156D256
+105, 2, 0, 0, 4, , AS156D256
+105, 3, 0, 0, 4, , AS156D256
+105, 4, 0, 0, 4, , AS156D256
+105, 2, 0, 0, 4, , AS76D256
+-1, -1, 0, 0,24, ,
+105, 0, 0, 0, 4, ,AS156D256
+105, 1, 0, 0, 4, ,AS156D256
+105, 2, 0, 0, 4, , AS156D256
+105, 3, 0, 0, 4, , AS156D256
+105, 4, 0, 0, 4, , AS156D256
+105, 2, 0, 0, 4, , AS76D256
+105, 0, 0, 0, 4, ,AS156D256
+105, 1, 0, 0, 4, ,AS156D256
+105, 2, 0, 0, 4, , AS156D256
+105, 3, 0, 0, 4, , AS156D256
+105, 4, 0, 0, 4, , AS156D256
+105, 2, 0, 0, 4, , AS76D256
+-1, -1, 0, 0,64, ,
+
+
+
+
+[BG intXAMBI] 
+type = anim
+actionno = 110
+start =0,437
+delta= .4,.85
+mask = 1
+id = 1
+layerno=1
+
+[Begin Action 110]
+110, 0, 0, 0, 4, ,AS96D256
+110, 0, 0, 0, 4, , AS56D256
+110, 0, 0, 0, 4, , AS26D256
+
+
+;------------------------------------------------------
+
+[BG int3fx1] 
+type = anim
+actionno = 4
+start =-136,-923
+delta= .7,.85
+mask = 1
+id = 1
+
+[BG int3fx1] 
+type = anim
+actionno = 5
+start =-226,-923
+delta= .7,.85
+mask = 1
+id = 1
+
+[Begin Action 4];  3in1up
+50, 0, 0, 0, 4, ,AS76D256
+50, 1, 0, 0, 4, ,AS76D256
+50, 2, 0, 0, 4, , AS76D256
+50, 3, 0, 0, 4, , AS76D256
+50, 4, 0, 0, 4, , AS76D256
+50, 5, 0, 0, 4, , AS76D256
+-1, -1, 0, 0, 120, , 
+50, 0, 0, 0, 4, ,AS76D256
+50, 1, 0, 0, 4, ,AS76D256
+50, 2, 0, 0, 4, , AS76D256
+50, 3, 0, 0, 4, , AS76D256
+50, 4, 0, 0, 4, , A;S106D256
+50, 5, 0, 0, 4, , AS106D256
+-1, -1, 0, 0, 120, , 
+50, 0, 0, 0, 4, ,AS76D256
+50, 1, 0, 0, 4, ,AS76D256
+50, 2, 0, 0, 4, , A;S76D256
+50, 3, 0, 0, 4, , AS76D256
+50, 4, 0, 0, 4, , AS76D256
+50, 5, 0, 0, 4, , AS76D256
+
+[Begin Action 5];  3in1up
+50, 0, 0, 0, 3, ,AS76D256
+50, 1, 0, 0, 3, ,AS76D256
+50, 2, 0, 0, 3, , AS76D256
+50, 3, 0, 0, 3, , AS76D256
+50, 4, 0, 0, 3, , AS76D256
+50, 5, 0, 0, 3, , AS76D256
+-1, -1, 0, 0, 80, , 
+50, 0, 0, 0, 3, ,AS76D256
+50, 1, 0, 0, 4, ,AS76D256
+50, 2, 0, 0, 4, , AS76D256
+50, 3, 0, 0, 4, , AS76D256
+50, 4, 0, 0, 4, , AS106D256
+50, 5, 0, 0, 4, , AS106D256
+-1, -1, 0, 0, 110, , 
+50, 0, 0, 0, 2, ,AS76D256
+50, 1, 0, 0, 2, ,AS76D256
+50, 2, 0, 0, 2, , AS76D256
+50, 3, 0, 0, 2, , AS76D256
+50, 4, 0, 0, 2, , AS76D256
+50, 5, 0, 0, 2, , AS76D256
+
+
+
+[BG extreme f]
+type=normal
+spriteno=0,3
+layerno=0
+start=0,180
+delta=.77,.90
+mask=1
+ID=1
+[BG extreme f2]
+type=normal
+spriteno=1,4
+layerno=0
+start=0,180
+delta=.77,.90
+mask=1
+ID=1
+
+
+
+
+[BG tarantulabandana]
+type = anim
+actionno = 85
+start=0,180
+delta=.77,.90
+mask=1
+id=1
+
+[Begin Action 85]
+85, 4, -4, 0, 6, ,
+85, 3, -4, 0, 6, ,
+85, 2, -4, 0, 6, ,
+85, 1, -4, 0, 6, ,
+85, 3, -4, 0, 6, 
+
+
+[BG tarantula]
+type=normal
+spriteno=85,0
+layerno=0
+start=0,180
+delta=.77,.90
+mask=1
+ID=1
+
+
+
+
+;------- JJ & ROBBIE - No nicolas but caged :P
+
+[BG JJ cage]
+type=normal
+spriteno=80,0
+layerno=0
+start=0,195
+delta=.77,.90
+mask=1
+ID=80
+
+[BG JJ-Robbie]
+type = anim
+actionno = 80
+start=0,195
+delta=.77,.90
+mask=1
+id=80
+
+[Begin Action 80]
+81, 0, 0, 0, 10, ,
+81, 1, 0, 0, 10, ,
+81, 2, 0, 0, 10, ,
+81, 3, 0, 0, 10, ,
+81, 4, 0, 0, 10, ,
+81, 5, 0, 0, 10, ,
+81, 6, 0, 0, 10, ,
+81, 7, 0, 0, 10, ,
+81, 8, 0, 0, 10, ,
+81, 9, 0, 0, 10, ,
+81, 10, 0, 0, 10, ,
+81, 11, 0, 0, 10, ,
+81, 12, 0, 0, 10, ,
+81, 13, 0, 0, 10, ,
+81, 14, 0, 0, 10, ,
+81, 15, 0, 0, 10, ,
+81, 16, 0, 0, 10, ,
+81, 17, 0, 0, 10, ,
+81, 18, 0, 0, 10, ,
+81, 19, 0, 0, 10, ,
+81, 20, 0, 0, 10, ,
+81, 21, 0, 0, 10, ,
+81, 22, 0, 0, 10, ,
+81, 23, 0, 0, 10, ,
+81, 24, 0, 0, 10, ,
+81, 25, 0, 0, 10, ,
+81, 26, 0, 0, 10, ,
+81, 27, 0, 0, 10, ,
+81, 28, 0, 0, 10, ,
+81, 29, 0, 0, 10, ,
+81, 30, 0, 0, 10, ,
+81, 31, 0, 0, 10, ,
+81, 32, 0, 0, 10, ,
+81, 33, 0, 0, 10, ,
+81, 34, 0, 0, 10, ,
+81, 35, 0, 0, 10, ,
+81, 36, 0, 0, 10, ,
+81, 37, 0, 0, 10, ,
+81, 38, 0, 0, 10, ,
+81, 39, 0, 0, 10, ,
+81, 40, 0, 0, 10, ,
+81, 41, 0, 0, 10, ,
+81, 42, 0, 0, 10, ,
+81, 43, 0, 0, 10, ,
+81, 44, 0, 0, 10, ,
+
+[BG JJ closed]
+type=normal
+spriteno=80,1
+layerno=0
+start=0,195
+delta=.77,.90
+mask=1
+ID=80
+
+[BGCtrlDef 80]
+CtrlID = 80
+
+[BGCtrl 80.1]
+type = Enable
+time = 0
+value = 1
+
+
+[BGCtrl 80.11]
+type = SinX
+time = 0
+value = 1,20
+
+[BGCtrl 80.01] 
+type = Velset
+time = 0
+y = 1
+
+[BGCtrl 80.02] 
+type = Velset
+time = 400
+y= -1
+
+[BGCtrl 80.011] 
+type = Velset
+time = 800
+y = 1
+
+
+
+[BGCtrl 80.11]
+type = SinY
+time = 900
+value = 1,20
+
+[BGCtrl 80.012] 
+type = Velset
+time = 1200
+y = -1
+
+[BGCtrl 80.013] 
+type = Velset
+time = 1600
+y =1
+
+[BGCtrl 80.014] 
+type = Velset
+time = 2000
+y = -1
+
+[BGCtrl 80.015] 
+type = Velset
+time = 2400
+y = 1
+
+[BGCtrl 80.2]
+type = Enable
+time = 2500
+value = 0
+
+
+
+
+
+
+;-------------------------------------------------
+[BG floor collumfix]
+type=normal
+spriteno=2,1
+layerno=0
+start=0,150
+delta=.81,1
+mask=1
+ID=1
+[BG floor collum]
+type=normal
+spriteno=2,1
+layerno=0
+start=0,237
+delta=.81,1
+mask=1
+ID=1
+
+
+;================== grid ray0
+
+[BG GRIDS 1] 
+type = anim
+actionno = 37
+start = 0,247
+delta= .81,1 
+mask = 1
+id = 1
+[BG GRIDs 2] 
+type = anim
+actionno = 35
+start = 134,247
+delta= .81,1 
+mask = 1
+id = 1
+[BG GRIDS 3] 
+type = anim
+actionno = 37
+start = 267,247
+delta= .81,1 
+mask = 1
+id = 1
+
+
+[BG GRIDS 5] 
+type = anim
+actionno = 38
+start = -135,247
+delta= .81,1 
+mask = 1
+id = 1
+[BG GRIDs 6] 
+type = anim
+actionno = 36
+start = -5,247
+delta= .81,1 
+mask = 1
+id = 1
+
+[Begin Action 35]; GRID A
+35, 0, 0, 0, 3, ,AS106D256 
+35, 1, 0, 0, 3, , AS106D256
+35, 2, 0, 0, 3, , A
+35, 3, 0, 0, 3, , AS106D256
+35, 4, 0, 0, 3, , AS106D256
+35, 5, 0, 0, 3, , AS106D256
+35, 6, 0, 0, 3, ,AS106D256
+35, 7, 0, 0, 3, , AS106D256
+
+
+[Begin Action 36];  GRID B
+35, 0, 0, 0, 3, H,AS106D256
+35, 1, 0, 0, 3, H,AS106D256
+35, 2, 0, 0, 3, H, AS106D256
+35, 3, 0, 0, 3, H, AS106D256
+35, 4, 0, 0, 3, H, AS106D256
+35, 5, 0, 0, 3, H, AS106D256
+35, 6, 0, 0, 3, H, AS106D256
+35, 7, 0, 0, 3, H, AS106D256
+
+[Begin Action 37]; GRID A
+35, 0, 0, 0, 3, ,AS106D256
+35, 1, 0, 0, 3, , AS106D256
+35, 2, 0, 0, 3, , AS106D256
+35, 3, 0, 0, 3, , AS106D256
+35, 4, 0, 0, 3, , AS106D256
+35, 5, 0, 0, 3, , AS106D256
+35, 6, 0, 0, 3, , AS106D256
+35, 7, 0, 0, 3, , AS106D256
+
+[Begin Action 38];  GRID B
+35, 0, 0, 0, 3, H,AS106D256
+35, 1, 0, 0, 3, H,AS106D256
+35, 2, 0, 0, 3, H, AS106D256
+35, 3, 0, 0, 3, H, AS106D256
+35, 4, 0, 0, 3, H, A
+35, 5, 0, 0, 3, H, AS106D256
+35, 6, 0, 0, 3, H, AS106D256
+35, 7, 0, 0, 3, H, AS106D256
+;-----------------------------------------------------
+
+[BG floor-grid]
+type=normal
+spriteno=0,0
+layerno=0
+start=0,237
+delta=.81,1
+mask=1
+ID=1
+
+[BG GRIDs 4] 
+type = anim
+actionno = 36
+start = -268,247
+delta= .81,1 
+mask = 1
+id = 1
+
+
+
+;---------------- small sparks
+[BG smalls1] 
+type = anim
+actionno = 95
+start = 140,94
+delta= .81,1 
+mask = 1
+id = 95
+
+[BG smalls2] 
+type = anim
+actionno = 96
+start = 280,94
+delta= .81,1 
+mask = 1
+id = 96
+
+[BG smalls3] 
+type = anim
+actionno = 95
+start = 420,94
+delta= .81,1 
+mask = 1
+id = 95
+
+[BG smalls1L] 
+type = anim
+actionno = 95
+start = -140,94
+delta= .81,1 
+mask = 1
+id = 95
+
+[BG smalls2L] 
+type = anim
+actionno = 96
+start = -280,94
+delta= .81,1 
+mask = 1
+id = 96
+
+[BG smalls3L] 
+type = anim
+actionno = 95
+start = -420,94
+delta= .81,1 
+mask = 1
+id = 95
+
+[Begin Action 95]; 
+95, 0, 0, 0, 2, ,AS156D256
+95, 1, 0, 0, 2, , AS156D256
+95, 2, 0, 0, 2, , AS156D256
+95, 3, 0, 0, 2, , AS156D256
+95, 4, 0, 0, 2, , A;S156D256
+95, 5, 0, 0, 2, , AS156D256
+95, 6, 0, 0, 2, ,AS156D256
+95, 7, 0, 0, 2, , AS156D256
+95, 8, 0, 0, 2, , AS156D256
+95, 9, 0, 0, 2, , A;S156D256
+95, 10, 0, 0,2, , AS156D256
+95, 11, 0, 0, 2, , AS156D256
+95, 12, 0, 0, 2, , AS156D256
+[Begin Action 96]; 
+95, 5, 0, 0, 3, ,AS146D256
+95, 6, 0, 0, 3, H, AS146D256
+95, 7, 0, 0, 3, , AS146D256
+95, 5, 0, 0, 3, , AS146D256
+95, 6, 0, 0, 3, , A;S146D256
+95, 7, 0, 0, 3, H, AS146D256
+95, 5, 0, 0, 3, H,AS146D256
+95, 6, 0, 0, 3, , AS146D256
+95, 7, 0, 0, 3, H, AS146D256
+95, 5, 0, 0, 3, , A;S146D256
+95, 6, 0, 0,3, H, AS146D256
+95, 7, 0, 0, 3, , AS146D256
+95, 12, 0, 0, 3, , AS146D256
+
+
+[BGCtrlDef 95]                                                                                                                                                                           
+looptime =160
+CtrlID = 95
+[BGCtrl 95.0]
+type = Enable
+time = 0
+value = 1
+[BGCtrl 95.1]
+type = Enable
+time = 60
+value = 0
+[BGCtrl 95.2]
+type = Sinx
+time = 0
+value = 70,90,-30
+[BGCtrl 95.3]
+type = Siny
+time = 0
+value = 12,120
+
+;----------------------------------
+[BGCtrlDef 96]                                                                                                                                                                           
+looptime =70
+CtrlID = 96
+[BGCtrl 95.0]
+type = Enable
+time = 0
+value = 1
+[BGCtrl 95.1]
+type = Enable
+time = 60
+value = 0
+[BGCtrl 95.2]
+type = Sinx
+time = 0
+value = 70,90,-30
+[BGCtrl 95.3]
+type = Siny
+time = 0
+value = 12,120
+
+
+;Bottom
+;============================================
+
+
+[BG sign bg:P] 
+type=normal
+spriteno=11,0
+layerno=0
+start=0,237
+delta=.45,.80
+mask=1
+ID=1
+
+[BG runner1] ;---------------------------------
+type = anim
+actionno = 70
+start = 0,237
+delta=.45,.80
+mask = 1
+id=8
+
+[BG runner2]
+type = anim
+actionno = 70
+start = 77,238
+delta=.45,.80
+mask = 1
+id=8
+
+[BG runner3]
+type = anim
+actionno = 71
+start = -157,239
+delta=.45,.80
+mask = 1
+id=9
+
+[BG runner4]
+type = anim
+actionno = 71
+start = -257,240
+delta=.45,.80
+mask = 1
+id=9
+
+
+[BGCtrlDef 8]
+looptime =1000
+CtrlID = 8
+[BGCtrl 8.1]
+type = Enable
+time = 0
+value = 1
+[BGCtrl 8.2]
+type = Enable
+time = 1000
+value = 0
+[BGCtrl 8.42] 
+type = Anim
+time = 0
+value = 70
+[BGCtrl 8.41] 
+type = VelSet
+time = 0
+x = -0.45
+[BGCtrl 8.42] 
+type = Anim
+time = 500
+value = 71
+[BGCtrl 8.42] 
+type = VelSet
+time = 500
+x =  0.45
+
+[BGCtrlDef 9]
+looptime =1200
+CtrlID = 9
+[BGCtrl 9.1]
+type = Enable
+time = 0
+value = 1
+[BGCtrl 9.2]
+type = Enable
+time = 1200
+value = 0
+[BGCtrl 9.42] 
+type = Anim
+time = 0
+value = 71
+[BGCtrl 9.41] 
+type = VelSet
+time = 0
+x = 0.45
+[BGCtrl 9.42] 
+type = Anim
+time = 600
+value = 70
+[BGCtrl 9.42] 
+type = VelSet
+time = 600
+x =  -0.45
+
+
+[Begin Action 70]
+70, 0, 0, 0, 10, ,
+70, 1, 0, 0, 10, ,
+70, 2, 0, 0, 10, ,
+70, 3, 0, 0, 10, , 
+70, 4, 0, 0, 10, ,
+70, 5, 0, 0, 10, ,
+70, 6, 0, 0, 10, ,
+[Begin Action 71]
+70, 0, 180, 0, 9, H,
+70, 1, 180, 0, 9, H,
+70, 2, 180, 0, 9, H,
+70, 3, 180, 0, 9, H, 
+70, 4, 180, 0, 9, H,
+70, 5, 180, 0, 9, H,
+70, 6, 180, 0, 9, H,
+;------------------------------------------
+
+
+[BG backblue]
+type=normal
+spriteno=11,1
+layerno=0
+start=0,237
+delta=.62,.83
+mask=1
+ID=1
+
+
+[BG shooting1]
+type = anim
+actionno = 75
+start=0,237
+delta=.62,.83
+mask=1
+ID=1
+[BG shooting2]
+type = anim
+actionno = 76
+start=40,257
+delta=.62,.83
+mask=1
+ID=1
+[BG shooting3]
+type = anim
+actionno = 77
+start=-10,267
+delta=.66,.83
+mask=1
+ID=1
+[Begin Action 75]
+71, 2, 0, 0, 3, ,
+71, 1, 0, 0, 3, ,
+71, 0, 0, 0, 3, ,
+71, 2, 0, 0, 3, ,
+71, 1, 0, 0, 3, ,
+71, 0, 0, 0, 3, ,
+71, 2, 0, 0, 3, ,
+71, 1, 0, 0, 3, ,
+71, 0, 0, 0, 3, ,
+71, 2, 0, 0, 3, ,
+71, 1, 0, 0, 3, ,
+71, 0, 0, 0, 42, ,
+71, 5, 0, 0, 3, ,
+71, 4, 0, 0, 3, ,
+71, 3, 0, 0, 3, ,
+71, 5, 0, 0, 3, ,
+71, 4, 0, 0, 3, ,
+71, 3, 0, 0, 3, ,
+71, 5, 0, 0, 3, ,
+71, 4, 0, 0, 3, ,
+71, 3, 0, 0, 3, ,
+71, 5, 0, 0, 3, ,
+71, 4, 0, 0, 3, ,
+71, 3, 0, 0, 3, ,
+71, 5, 0, 0, 3, ,
+71, 4, 0, 0, 3, ,
+71, 3, 0, 0, 3, ,
+71, 5, 0, 0, 33, ,
+
+[Begin Action 76]
+71, 2, 0, 0, 2, ,
+71, 1, 0, 0, 2, ,
+71, 0, 0, 0, 2, ,
+71, 2, 0, 0, 2, ,
+71, 1, 0, 0, 2, ,
+71, 0, 0, 0, 2, ,
+71, 2, 0, 0, 2, ,
+71, 1, 0, 0, 2, ,
+71, 0, 0, 0, 2, ,
+71, 2, 0, 0, 2, ,
+71, 1, 0, 0, 2, ,
+71, 0, 0, 0, 22, ,
+71, 5, 0, 0, 2, ,
+71, 4, 0, 0, 2, ,
+71, 3, 0, 0, 2, ,
+71, 5, 0, 0, 2, ,
+71, 4, 0, 0, 2, ,
+71, 3, 0, 0, 2, ,
+71, 5, 0, 0, 2, ,
+71, 4, 0, 0, 2, ,
+71, 3, 0, 0, 2, ,
+71, 5, 0, 0, 2, ,
+71, 4, 0, 0, 2, ,
+71, 3, 0, 0, 2, ,
+71, 5, 0, 0, 2, ,
+71, 4, 0, 0, 2, ,
+71, 3, 0, 0, 2, ,
+71, 5, 0, 0, 63, ,
+
+[Begin Action 77]
+71, 2, 0, 0, 2, ,
+71, 1, 0, 0, 2, ,
+71, 0, 0, 0, 2, ,
+71, 2, 0, 0, 3, ,
+71, 1, 0, 0, 3, ,
+71, 0, 0, 0, 3, ,
+71, 2, 0, 0, 2, ,
+71, 1, 0, 0, 2, ,
+71, 0, 0, 0, 2, ,
+71, 2, 0, 0, 3, ,
+71, 1, 0, 0, 3, ,
+71, 0, 0, 0, 12, ,
+71, 5, 0, 0, 2, ,
+71, 4, 0, 0, 2, ,
+71, 3, 0, 0, 2, ,
+71, 5, 0, 0, 3, ,
+71, 4, 0, 0, 3, ,
+71, 3, 0, 0, 3, ,
+71, 5, 0, 0, 2, ,
+71, 4, 0, 0, 2, ,
+71, 3, 0, 0, 2, ,
+71, 5, 0, 0, 2, ,
+71, 4, 0, 0, 3, ,
+71, 3, 0, 0, 3, ,
+71, 5, 0, 0, 3, ,
+71, 4, 0, 0, 2, ,
+71, 3, 0, 0, 2, ,
+71, 5, 0, 0, 23, ,
+
+
+
+
+[BG backcoiso]
+type = anim
+actionno = 10
+start = 0,237
+delta=.67,.86
+mask = 1
+id=1
+[Begin Action 10]
+11, 2, 0, 0, 8, , 
+11, 2, 0, 0, 8, ,
+11, 2, 0, 0, 8, ,
+11, 2, -6, 0, 4, ,
+11, 2, 6, 0, 4, ,
+11, 2, -4, 0, 4, ,
+11, 2, 4, 0, 4, ,
+11, 2, -2, 0, 4, ,
+11, 2, 2, 0, 4, ,
+11, 2, 0, 0, 196, ,
+;244
+
+
+
+[BG backcoisoglow]
+type = anim
+actionno = 11
+start = 0,237
+delta=.67,.86
+mask = 1
+id=1
+[Begin Action 11]	
+11, 3, 0, 0, 8, ,A 
+11, 3, 0, 0, 8, ,AS156D256 
+11, 3, 0, 0, 8, ,A 
+11, 3, 0, 0, 8, ,AS96D256 
+
+
+
+
+;------------------------ ZZZAX
+
+
+[BG Zzzfx]
+type = anim
+actionno = 90
+start = -30,237
+delta=.67,.86
+mask = 1
+id=1
+[Begin Action 90]
+90, 0, 0, 0, 8, ,A;S156D256  
+90, 1, 0, 0, 8, ,A;S156D256  
+90, 2, 0, 0, 8, ,A;S156D256 
+90, 3, 0, 0, 4, ,A;S156D256 
+90, 4, 0, 0, 4, ,A;S156D256  
+90, 5, 0, 0, 4, ,A;S156D256  
+90, 6, 0, 0, 4, ,A;S156D256 
+90, 7, 0, 0, 8, ,A;S156D256 
+90, 8, 0, 0, 8, ,A;S156D256 
+90, 9, 0, 0, 8, ,A;S156D256  
+90, 10, 0, 0, 6, ,A;S156D256 
+90, 11, 0, 0, 6, ,A;S156D256 
+90, 12, 0, 0, 6, ,A;S156D256 
+90, 10, 0, 0, 6, ,A;S156D256 
+90, 11, 0, 0, 6, ,A;S156D256 
+90, 12, 0, 0, 6, ,A;S156D256 
+90, 11, 0, 0, 6, ,A;S156D256 
+90, 10, 0, 0, 6, ,A;S156D256 
+90, 11, 0, 0, 6, ,A;S156D256 
+90, 12, 0, 0, 6, ,A;S156D256 
+;----60
+90, 10, 0, 0, 6, ,A;S156D256 
+90, 11, 0, 0, 6, ,A;S156D256 
+90, 12, 0, 0, 6, ,A;S156D256 
+90, 10, 0, 0, 6, ,A;S156D256 
+90, 11, 0, 0, 6, ,A;S156D256 
+90, 12, 0, 0, 6, ,A;S156D256 
+90, 10, 0, 0, 6, ,A;S156D256 
+90, 11, 0, 0, 6, ,A;S156D256 
+90, 12, 0, 0, 6, ,A;S156D256 
+90, 10, 0, 0, 6, ,A;S156D256 
+;--- 120
+90, 11, 0, 0, 6, ,A;S156D256 
+90, 12, 0, 0, 6, ,A;S156D256 
+90, 10, 0, 0, 6, ,A;S156D256 
+90, 11, 0, 0, 6, ,A;S156D256 
+90, 12, 0, 0, 6, ,A;S156D256 
+90, 10, 0, 0, 6, ,A;S156D256 
+90, 11, 0, 0, 6, ,A;S156D256 
+90, 12, 0, 0, 6, ,A;S156D256 
+90, 10, 0, 0, 6, ,A;S156D256 
+90, 11, 0, 0, 6, ,A;S156D256 
+;--- 180-- 204
+
+[BG Zzzax]
+type = anim;;
+actionno = 91
+start = -30,237;
+delta=.67,.86
+mask = 1
+id=1
+[Begin Action 91];
+91, 0, 0, 0, 8, , 
+91, 1, 0, 0, 8, ,  
+91, 2, 0, 0, 8, ,
+91, 3, 0, 0, 4, ,
+91, 4, 0, 0, 4, , 
+91, 5, 0, 0, 4, ,
+91, 6, 0, 0, 4, , 
+91, 5, 0, 0, 8, ,
+91, 7, 0, 0, 8, , 
+91, 8, 0, 0, 8, , 
+91, 9, 0, 0, 180, , 
+
+
+[BG Zzzhit]
+type = anim
+actionno = 92
+start = 0,237
+delta=.67,.86
+mask = 1
+id=1
+[Begin Action 92]
+-1, -1, 0, 0, 24, ,
+92, 0, 0, 0, 4, ,A;S156D256  
+92, 1, 0, 0, 4, ,A;S156D256  
+92, 2, 0, 0, 4, ,A;S156D256 
+92, 3, 0, 0, 4, ,AS156D256 
+92, 3, 0, 0, 2, ,AS126D256  
+92, 3, 0, 0, 2, ,AS106D256  
+92, 3, 0, 0, 2, ,AS86D256 
+-1,-1,0,0,198,,
+
+
+
+
+
+[BG backsmoke]
+type = anim
+actionno = 61
+start = 0,247
+delta=.67,.86
+mask = 1
+id=1
+layerno=0
+
+
+[Begin Action 61]; smokehit
+-1, -1, 0, 0, 24, , 
+61, 0, 0, 0, 2, , AS176D256
+61, 1, 0, 0, 2, , AS176D256
+61, 2, 0, 0, 2, ,AS176D256
+61, 3, 0, 0, 2, , AS176D256
+61, 4, 0, 0, 2, , AS176D256
+61, 5, 0, 0, 2, , AS176D256
+61, 6, 0, 0, 2, ,AS176D256
+61, 7, 0, 0, 2, , AS176D256
+61, 8, 0, 0, 2, , AS176D256
+61, 9, 0, 0, 2, , AS176D256
+61, 10, 0, 0,2, , AS176D256
+61, 11, 0, 0, 2, , AS176D256
+61, 12, 0, 0, 2, ,AS176D256
+61, 13, 0, 0, 2, , AS176D256
+61, 14, 0, 0, 2, , AS176D256
+61, 15, 0, 0, 2, , AS176D256
+61, 16, 0, 0, 2, ,AS176D256
+61, 17, 0, 0, 2, , AS176D256
+61, 18, 0, 0, 2, , AS176D256
+61, 19, 0, 0, 2, , AS176D256
+61, 20, 0, 0, 2, , AS176D256
+61, 21, 0, 0, 2, , AS176D256
+61, 22, 0, 0, 2, ,AS176D256
+61, 23, 0, 0, 2, , AS176D256
+61, 24, 0, 0, 2, , AS176D256
+61, 25, 0, 0, 2, , AS176D256
+61, 26, 0, 0, 2, ,AS176D256
+61, 27, 0, 0, 2, , AS176D256
+61, 28, 0, 0, 2, , AS176D256
+61, 29, 0, 0, 2, , AS176D256
+61, 30, 0, 0, 2, , AS176D256
+61, 31, 0, 0, 2, , AS176D256
+-1, -1,0,0,156,,
+
+
+
+;------------------------------------------------------------------
+
+[BG 3in1middle]
+type=normal
+spriteno=12,4
+layerno=0
+start=0,240
+delta=.72,.92
+mask=1
+ID=1
+
+[BG 3in1fx] 
+type = anim
+actionno = 50
+start =0,250
+delta= .72,.92
+mask = 1
+id = 1
+
+[Begin Action 50];  3in1
+50, 0, 0, 0, 4, ,AS106D256
+50, 1, 0, 0, 4, ,A;S106D256
+50, 2, 0, 0, 4, , AS106D256
+50, 3, 0, 0, 4, , A;S106D256
+50, 4, 0, 0, 4, , AS106D256
+50, 5, 0, 0, 4, , A;S106D256
+-1, -1, 0, 0, 120, , 
+50, 0, 0, 0, 4, ,A;S106D256
+50, 1, 0, 0, 4, ,A;S106D256
+50, 2, 0, 0, 4, , A;S106D256
+50, 3, 0, 0, 4, , A;S106D256
+50, 4, 0, 0, 4, , A;S106D256
+50, 5, 0, 0, 4, , A;S106D256
+-1, -1, 0, 0, 120, , 
+50, 0, 0, 0, 4, ,AS106D256
+50, 1, 0, 0, 4, ,AS106D256
+50, 2, 0, 0, 4, , AS106D256
+50, 3, 0, 0, 4, , AS106D256
+50, 4, 0, 0, 4, , AS106D256
+50, 5, 0, 0, 4, , AS106D256
+
+
+
+
+[BG backladder]
+type=normal
+spriteno=11,4
+layerno=0
+start=0,237
+delta=.74,.90
+mask=1
+ID=1
+
+
+[BG back ambilight]
+type = anim
+actionno = 60
+start = 0,237
+delta=.62,.83
+mask = 1
+id=1
+[Begin Action 60]
+60, 0, 0, 0, 4, ,AS16D256 
+60, 0, 0, 0, 4, ,AS26D256 
+60, 0, 0, 0, 4, ,AS36D256 
+60, 0, 0, 0, 4, ,AS46D256 
+60, 0, 0, 0, 4, ,AS56D256 
+60, 0, 0, 0, 4, ,AS66D256 
+60, 0, 0, 0, 4, ,AS56D256 
+60, 0, 0, 0, 4, ,AS46D256 
+60, 0, 0, 0, 4, ,AS44D256 
+60, 0, 0, 0, 4, ,AS42D256 
+60, 0, 0, 0, 4, ,AS40D256 
+60, 0, 0, 0, 4, ,AS38D256 
+60, 0, 0, 0, 4, ,AS36D256 
+60, 0, 0, 0, 4, ,AS34D256 
+60, 0, 0, 0, 4, ,AS32D256 
+60, 0, 0, 0, 4, ,AS30D256 
+60, 0, 0, 0, 4, ,AS28D256 
+60, 0, 0, 0, 4, ,AS26D256 
+60, 0, 0, 0, 4, ,AS24D256 
+60, 0, 0, 0, 4, ,AS22D256 
+60, 0, 0, 0, 4, ,AS20D256 
+
+
+
+[BG russian:P]
+type=normal
+spriteno=12,3
+layerno=0
+start=0,237
+delta=.76,.97
+mask=1
+ID=1
+
+
+[BG russianfx] 
+type = anim
+actionno = 106
+start =190,1346
+delta= .76,.97
+mask = 1
+ID = 1
+[Begin Action 106]
+105, 0, 0, 0, 4, H,AS156D256
+105, 1, 0, 0, 4, H,AS156D256
+105, 2, 0, 0, 4, H, AS156D256
+105, 3, 0, 0, 4, H, AS156D256
+105, 4, 0, 0, 4, H, AS156D256
+105, 2, 0, 0, 4, H, A;S76D256
+105, 0, 0, 0, 4, H,AS156D256
+105, 1, 0, 0, 4, H,AS156D256
+105, 2, 0, 0, 4, H, AS76D256
+105, 0, 0, 0, 4, H,AS156D256
+105, 1, 0, 0, 4, H,A;S156D256
+105, 2, 0, 0, 4, H, AS156D256
+105, 3, 0, 0, 4, H, AS156D256
+105, 4, 0, 0, 4, H, AS156D256
+105, 2, 0, 0, 4, H, AS76D256
+-1, -1, 0, 0,220, ,
+105, 0, 20, 0, 3, H,AS156D256
+105, 1, 20, 0, 3, H,AS156D256
+105, 2, 20, 0, 3, H, AS156D256
+105, 3, 20, 0, 3, H, AS156D256
+105, 4, 20, 0, 3, H, AS156D256
+105, 2, 20, 0, 3, H, A;S76D256
+105, 0, 20, 0, 3, H,AS156D256
+105, 1, 20, 0, 3, H,AS156D256
+105, 2, 20, 0, 3, H, AS76D256
+105, 0, 20, 0, 3, H,AS156D256
+105, 1, 20, 0, 3, H,A;S156D256
+105, 2, 20, 0, 3, H, AS156D256
+105, 3, 20, 0, 3, H, AS156D256
+105, 4, 20, 0, 3, H, AS156D256
+105, 2, 20, 0, 3, H, AS76D256
+-1, -1, 0, 0,120, ,
+105, 0, -50, 0, 3, ,AS156D256
+105, 1, -50, 0, 3, ,AS156D256
+105, 2, -50, 0, 3, , AS156D256
+105, 3, -50, 0, 3, , AS156D256
+105, 4, -50, 0, 3, , AS156D256
+105, 2, -50, 0, 3, , A;S76D256
+105, 0, -50, 0, 3, ,AS156D256
+105, 1, -50, 0, 3, ,AS156D256
+105, 2, -50, 0, 3, , AS76D256
+105, 0, -50, 0, 3, ,AS156D256
+105, 1, -50, 0, 3, ,A;S156D256
+105, 2, -50, 0, 3, , AS156D256
+105, 3, -50, 0, 3, , AS156D256
+105, 4, -50, 0, 3, , AS156D256
+105, 2, -50, 0, 3, , AS76D256
+-1, -1, 0, 0,170, ,
+105, 0, 0, 0, 2, H,AS156D256
+105, 1, 0, 0, 2, H,AS156D256
+105, 2, 0, 0, 2, H, AS156D256
+105, 3, 0, 0, 2, H, AS156D256
+105, 4, 0, 0, 2, H, AS156D256
+105, 2, 0, 0, 2, H, A;S76D256
+105, 0, 0, 0, 2, H,AS156D256
+105, 1, 0, 0, 2, H,AS156D256
+105, 2, 0, 0, 2, H, AS76D256
+105, 0, 0, 0, 2, H,AS156D256
+105, 1, 0, 0, 2, H,A;S156D256
+105, 2, 0, 0, 2, H, AS156D256
+105, 3, 0, 0, 2, H, AS156D256
+105, 4, 0, 0, 2, H, AS156D256
+105, 2, 0, 0, 2, H, AS76D256
+-1, -1, 0, 0,220, ,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[BG yellowhatever]
+type=normal
+spriteno=12,1
+layerno=0
+start=0,237
+delta=.79,.98
+mask=1
+ID=1
+
+
+
+[BG Boomerang]
+type = anim
+actionno = 79
+start=0,237
+delta=.80,.99
+mask=1
+id=1
+[Begin Action 79]
+75, 0, 0, 0, 8, ,
+75, 1, 0, 0, 8, ,
+75, 0, 0, 0, 8, ,
+75, 1, 0, 0, 8, ,
+75, 0, 0, 0, 8, ,
+75, 1, 0, 0, 8, ,
+75, 0, 0, 0, 8, ,
+75, 1, 0, 0, 8, ,
+75, 2, 0, 0, 10, ,
+75, 3, 0, 0, 10, ,
+75, 4, 0, 0, 10, ,
+75, 5, 0, 0, 66, ,
+75, 4, 0, 0, 12, ,
+75, 5, 0, 0, 12, ,
+75, 4, 0, 0, 22, ,
+75, 5, 0, 0, 12, ,
+75, 4, 0, 0, 12, ,
+75, 5, 0, 0, 12, ,
+75, 4, 0, 0, 112, ,
+75, 5, 0, 0, 12, ,
+75, 4, 0, 0, 8, ,
+75, 5, 0, 0, 8, ,
+75, 4, 0, 0, 12, ,
+75, 5, 0, 0, 12, ,
+75, 5, 0, 0, 66, ,
+75, 4, 0, 0, 10, ,
+75, 3, 0, 0, 10, ,
+75, 2, 0, 0, 10, ,
+
+
+[BG newallleft]
+type=normal
+spriteno=13,4
+layerno=0
+start=0,237
+delta=.81,1
+mask=1
+ID=1
+
+
+
+
+[BG going down];-----------frontal
+type=normal
+spriteno=10,0
+layerno=0
+start=0,237
+delta=.81,1
+mask=1
+ID=1
+
+
+
+
+[BG Bottonfloor]
+type=normal
+spriteno=10,1
+layerno=0
+start=0,237
+delta=.81,1
+mask=1
+ID=1
+
+[BG floorp]
+type  = parallax
+spriteno = 2,0
+start = 0, 237
+delta = .81, 1
+xscale = 1, 1.495    ;1, 1.542
+ID = 98
+[BGCtrlDef 98]                                                                                                                                                                                               
+CtrlID = 98
+[BGCtrl 98.1]
+type = Enable
+time = 0
+value = 1
+[BGCtrl 98.1]
+type = Enable
+time = 2075
+value = 0
+
+
+[BG Boxr]
+type=normal
+spriteno=12,2
+layerno=0
+start=0,237
+delta=.81,1
+mask=1
+ID=1
+
+[BG bottonFloord]
+type  = parallax
+spriteno = 12,0
+start = 0, 237
+delta = 0.81,1         
+xscale = 1, 1.495    
+ID = 1
+
+
+
+
+
+---------------------------------------black trick disabled
+;[BG flefta]
+;type = normal
+;spriteno = 13, 1
+;start =260,237
+;mask  = 1
+;layerno =0 
+;delta=1.5,1    
+;trans = none;sub
+;ID=1
+[BG fleftb]
+type = normal
+spriteno = 13, 1
+start =260,237
+mask  = 1
+layerno =1
+delta=1.5,1     
+;trans = add1
+ID=1
+
+;[BG frighta]
+;type = normal
+;spriteno = 13, 2
+;start =-260,247
+;mask  = 1
+;layerno =0 
+;delta=1.5,1    
+;trans = none
+;ID=1
+[BG frightb]
+type = normal
+spriteno = 13, 2
+start =-260,247
+mask  = 1
+layerno =1
+delta=1.5,1     
+;trans = add1
+ID=1
+;-------------------------------black trick disabled 
+
+[BG cabo]
+type = normal
+spriteno = 13, 0
+start =80,237
+mask  = 1
+layerno =0
+delta=.81,1     
+ID=1
+
+
+
+[BG cabofx] 
+type = anim
+actionno = 40
+start =80,237
+delta= .81,1 
+mask = 1
+id = 1
+
+[Begin Action 40];  faisca
+40, 0, 0, 0, 2, ,AS106D256
+40, 1, 0, 0, 2, ,A;S106D256
+40, 2, 0, 0, 2, , AS106D256
+40, 3, 0, 0, 2, , A;S106D256
+40, 4, 0, 0, 2, , AS106D256
+40, 5, 0, 0, 2, , A;S106D256
+40, 6, 0, 0, 2, , AS106D256
+40, 7, 0, 0, 2, , A;S106D256
+40, 8, 0, 0, 2, ,AS106D256
+40, 9, 0, 0, 2, ,A;S106D256
+40, 10, 0, 0, 2, , AS106D256
+40, 11, 0, 0, 2, , A;S106D256
+40, 12, 0, 0, 2, , AS106D256
+40, 13, 0, 0, 2, , A;S106D256
+
+
+
+
+;==================GROUND FX
+
+[BG SHATTER GROUND1] 
+type = anim
+actionno = 21
+start = -150,217
+delta= .81,1 
+mask = 1
+id = 2
+layerno =1
+tile  = 8,0
+tilespacing = 90,0
+
+
+[BG SHATTER GROUND2] 
+type = anim
+actionno = 22
+start = -300,197
+delta= .81,1 
+mask = 1
+id = 2
+layerno =1
+tile  = 4,0
+tilespacing = 170,0
+
+
+[BGCtrlDef 2]                                                                                                                                                                                               
+CtrlID = 2
+
+[BGCtrl 2.1]
+type = Enable
+time = 0
+value = 0
+[BGCtrl 2.1]
+type = Enable
+time = 2070
+value = 1
+[BGCtrl 2.2]
+type = Enable
+time = 2290
+value = 0
+
+
+[Begin Action 21]; SHATTERING A
+21, 0, 0, 0, 1, , 
+21, 1, 0, 0, 1, , 
+21, 2, 0, 0, 1, , 
+21, 3, 0, 0, 1, , 
+21, 4, 0, 0, 1, , 
+21, 5, 0, 0, 1, , 
+21, 6, 0, 0, 1, , 
+21, 7, 0, 0, 1, , 
+21, 8, 0, 0, 1, , 
+21, 9, 0, 0, 1, , 
+21, 10, 0, 0, 1, , 
+21, 11, 0, 0, 1, , 
+21, 12, 0, 0, 1, , 
+21, 13, 0, 0, 1, , 
+21, 14, 0, 0, 1, , 
+21, 15, 0, 0, 1, , 
+21, 16, 0, 0, 1, , 
+21, 17, 0, 0, 1, , 
+21, 18, 0, 0, 1, , 
+21, 19, 0, 0, 1, , 
+21, 20, 0, 0, 1, , 
+21, 21, 0, 0, 1, ,
+21, 22, 0, 0, 1, ,
+21, 23, 0, 0, 1, , 
+21, 24, 0, 0, 1, , 
+21, 25, 0, 0, 1, ,
+21, 26, 0, 0, 2, , A1
+21, 0, 0, 0, 1, H, 
+21, 1, 0, 0, 1, H, 
+21, 2, 0, 0, 1, H, 
+21, 3, 0, 0, 1, H, 
+21, 4, 0, 0, 1, H, 
+21, 5, 0, 0, 1, H, 
+21, 6, 0, 0, 1, H, 
+21, 7, 0, 0, 1, H, 
+21, 8, 0, 0, 1, H, 
+21, 9, 0, 0, 1, H, 
+21, 10, 0, 0,1, H, 
+21, 11, 0, 0, 1, H, 
+21, 12, 0, 0, 1, H, 
+21, 13, 0, 0, 1, H, 
+21, 14, 0, 0, 1, H, 
+21, 15, 0, 0, 1, H, 
+21, 16, 0, 0, 1, H, 
+21, 17, 0, 0, 1, H, 
+21, 18, 0, 0, 1, H, 
+21, 19, 0, 0, 1, H, 
+21, 20, 0, 0, 1, H, 
+21, 21, 0, 0, 1, H, 
+21, 22, 0, 0, 1, H, 
+21, 23, 0, 0, 1, H, 
+21, 24, 0, 0, 1, H, 
+21, 25, 0, 0, 1, H, 
+21, 26, 0, 0, 2, H, A1
+
+
+
+
+[Begin Action 22]; SHATTERING B
+21, 0, 0, 0, 2, H, 
+21, 1, 0, 0, 2, H, 
+21, 2, 0, 0, 2, H, 
+21, 3, 0, 0, 2, H, 
+21, 4, 0, 0, 2, H, 
+21, 5, 0, 0, 2, H, 
+21, 6, 0, 0, 2, H, 
+21, 7, 0, 0, 2, H, 
+21, 8, 0, 0, 2, H, 
+21, 9, 0, 0, 2, H, 
+21, 10, 0, 0,2, H, 
+21, 11, 0, 0, 2, H, 
+21, 12, 0, 0, 2, H, 
+21, 13, 0, 0, 2, H, 
+21, 14, 0, 0, 2, H, 
+21, 15, 0, 0, 2, H, 
+21, 16, 0, 0, 2, H, 
+21, 17, 0, 0, 2, H, 
+21, 18, 0, 0, 2, H, 
+21, 19, 0, 0, 2, H, 
+21, 20, 0, 0, 2, H, 
+21, 21, 0, 0, 2, H, 
+21, 22, 0, 0, 2, H, 
+21, 23, 0, 0, 2, H, 
+21, 24, 0, 0, 2, H,A1 
+21, 25, 0, 0, 2, H, A1
+21, 26, 0, 0, 2, H, A1
+21, 0, 0, 0, 2, , 
+21, 1, 0, 0, 2, , 
+21, 2, 0, 0, 2, , 
+21, 3, 0, 0, 2, , 
+21, 4, 0, 0, 2, , 
+21, 5, 0, 0, 2, , 
+21, 6, 0, 0, 2, , 
+21, 7, 0, 0, 2, , 
+21, 8, 0, 0, 2, , 
+21, 9, 0, 0, 2, , 
+21, 10, 0, 0, 2, , 
+21, 11, 0, 0, 2, , 
+21, 12, 0, 0, 2, , 
+21, 13, 0, 0, 2, , 
+21, 14, 0, 0, 2, , 
+21, 15, 0, 0, 2, , 
+21, 16, 0, 0, 2, , 
+21, 17, 0, 0, 2, , 
+21, 18, 0, 0, 2, , 
+21, 19, 0, 0, 2, , 
+21, 20, 0, 0, 2, , 
+21, 21, 0, 0, 2, ,
+21, 22, 0, 0, 2, ,
+21, 23, 0, 0, 2, , 
+21, 24, 0, 0, 2, , A1
+21, 25, 0, 0, 2, ,A1
+21, 26, 0, 0, 2, , A1
+
+;=============================== windb
+[BG windy back]
+type = anim
+actionno = 3100
+start = 50,230
+delta= .1,1 ; weird solution :P
+mask = 1
+layerno=0
+id=33
+;tile  = 4,0
+;tilespacing = 54,0
+
+[BGCtrlDef 33]                                                                                                                                                                           
+CtrlID = 33
+[BGCtrl 33.0]
+type = Enable
+time = 0
+value = 0
+[BGCtrl 33.1]
+type = Enable
+time = 2230
+value = 1
+[BGCtrl 33.2]
+type = Enable
+time = 2377
+value = 0
+
+
+[BGCtrl 33.41] 
+type = VelSet
+time = 2230
+y = -9
+
+[BGCtrl 33.5] 
+type = PosSet
+time = 2245
+x =  50
+y =100
+[BGCtrl 33.6] 
+type = PosSet
+time = 2250
+x =  0
+y =130
+[BGCtrl 33.7] 
+type = PosSet
+time = 2275
+x =  -20
+y =200
+[BGCtrl 33.8] 
+type = PosSet
+time = 2300
+x = -70
+y =130
+
+[BGCtrl 33.9] 
+type = PosSet
+time = 2325
+x =  20
+y =130
+[BGCtrl 33.91] 
+type = PosSet
+time = 2350
+x =  50
+y =170
+[BGCtrl 33.92] 
+type = PosSet
+time = 2365
+x =  -100
+y =200
+
+
+
+[Begin Action 3100]; windy
+23, 1, 0, 0, 1, ,A
+
+
+;================================ floor down
+[BG floor down]
+type = anim
+actionno = 23
+start = 0,237
+delta= .81,1 
+mask = 1
+id = 3
+layerno =0
+
+
+[BGCtrlDef 3]                                                                                                                                                                                               
+CtrlID = 3
+
+[BGCtrl 3.0]
+type = Enable
+time = 0
+value = 0
+[BGCtrl 3.1]
+type = Enable
+time = 2070
+value = 1
+[BGCtrl 3.2]
+type = Enable
+time = 2410;374
+value = 0
+
+[Begin Action 23]; floor A
+20, 0, 0, 0, 3, , AS126D126
+20, 0, -4, 0, 3, , AS146D126
+20, 0, 4, 0, 3, , AS166D126
+20, 0, -4, 0, 3, , AS186D126
+20, 0, 4, 0, 3, , AS106D126
+20, 0, -4, 0, 3, , AS126D126
+20, 0, 4, 0, 3, , AS156D156
+20, 0, -3, 0, 3, , AS196D196
+20, 0, 3, 0, 3, , AS226D226
+20, 0, -3, 0, 3, , AS256D256
+20, 0, 3, 0, 3, ,
+;---------120 ticks
+20, 0, -3, 0, 3, ,
+20, 0, 3, 0, 3, ,
+20, 0, -3, 0, 3, ,
+20, 0, -3, 0, 3, ,
+20, 0, 3, 0, 3, ,
+20, 0, -3, 0, 3, ,
+20, 0, -3, 0, 3, ,
+20, 0, 3, 0, 3, ,
+20, 0, -3, 0, 3, ,
+20, 0, 3, 0, 3, ,
+20, 0, -3, 0, 3, ,
+20, 0, 3, 0, 3, ,
+20, 0, -3, 0, 3, ,
+20, 0, -3, 0, 3, ,
+20, 0, 3, 0, 3, ,
+20, 0, -3, 0, 3, ,
+20, 0, -3, 0, 3, ,
+20, 0, 3, 0, 3, ,
+20, 0, -3, 0, 3, ,
+20, 0, 3, 0, 3, ,
+20, 0, -3, 0, 3, ,
+20, 0, 3, 0, 3, ,
+20, 0, -3, 0, 3, ,
+20, 0, -3, 0, 3, ,
+20, 0, 3, 0, 3, ,
+20, 0, -3, 0, 3, ,
+20, 0, -3, 0, 3, ,
+20, 0, 3, 0, 3, ,
+20, 0, -3, 0, 3, ,
+20, 0, 3, 0, 3, ,
+20, 0, -3, 0, 3, ,
+20, 0, 3, 0, 3, ,
+20, 0, -3, 0, 3, ,
+20, 0, -3, 0, 3, ,
+20, 0, 3, 0, 3, ,
+20, 0, -3, 0, 3, ,
+20, 0, -3, 0, 3, ,
+20, 0, 3, 0, 3, ,
+20, 0, -3, 0, 3, ,
+20, 0, 3, 0, 3, ,
+;-----------------
+20, 0, 0, 0, 160, , ;280
+20, 0, -2, 0, 3, , AS196D126
+20, 0, 2, 0, 3, , AS156D126
+20, 0, -2, 0, 3, , AS126D126
+
+
+
+
+;================== grid ray1
+
+[BG GRID 1] 
+type = anim
+actionno = 30
+start = 0,237
+delta= .81,1 
+mask = 1
+id = 15
+[BG GRID 2] 
+type = anim
+actionno = 30
+start = 134,237
+delta= .81,1 
+mask = 1
+id = 15
+[BG GRID 3] 
+type = anim
+actionno = 30
+start = 267,237
+delta= .81,1 
+mask = 1
+id = 15
+
+[BG GRID 4] 
+type = anim
+actionno = 31
+start = -277,237
+delta= .81,1 
+mask = 1
+id = 15
+[BG GRID 5] 
+type = anim
+actionno = 31
+start = -140,237
+delta= .81,1 
+mask = 1
+id = 15
+[BG GRID 6] 
+type = anim
+actionno = 31
+start = -10,237
+delta= .81,1 
+mask = 1
+id = 15
+
+[BGCtrlDef 15]                                                                                                                                                                                               
+CtrlID = 15
+
+[BGCtrl 15.1]
+type = Enable
+time = 0
+value = 0
+[BGCtrl 15.1]
+type = Enable
+time = 2070
+value = 1
+[BGCtrl 15.2]
+type = Enable
+time = 2390
+value = 0
+
+
+[Begin Action 30]; LIGHTNING GRID A
+30, 0, 0, 0, 3, ,A 
+30, 1, 0, 0, 3, , A
+30, 2, 0, 0, 3, , A
+30, 3, 0, 0, 3, , A
+30, 4, 0, 0, 3, , A
+30, 5, 0, 0, 3, , A
+30, 6, 0, 0, 3, , A
+30, 7, 0, 0, 3, , A
+30, 8, 0, 0, 3, , A
+30, 9, 0, 0, 3, , A
+30, 10, 0, 0, 3, , A
+30, 11, 0, 0, 3, , A
+30, 12, 0, 0, 3, , A
+
+
+
+[Begin Action 31]; LIGHTNING GRID B
+30, 0, 0, 0, 3, H,A 
+30, 1, 0, 0, 3, H,A
+30, 2, 0, 0, 3, H, A
+30, 3, 0, 0, 3, H, A
+30, 4, 0, 0, 3, H, A
+30, 5, 0, 0, 3, H, A
+30, 6, 0, 0, 3, H, A
+30, 7, 0, 0, 3, H, A
+30, 8, 0, 0, 3, H, A
+30, 9, 0, 0, 3, H, A
+30, 10, 0, 0, 3, H, A
+30, 11, 0, 0, 3, H, A
+30, 12, 0, 0, 3, H, A
+
+;=======================================
+[BG Vanish Ground down] 
+type = anim
+actionno = 24
+start = -200,185
+delta= .81,1 
+mask = 1
+id = 4
+layerno =1
+tile  = 6,0
+tilespacing = 250,0
+
+[BG SHATTER GROUND1] 
+type = anim
+actionno = 21
+start = -150,217
+delta= .81,1 
+mask = 1
+id = 4
+layerno =0
+tile  = 8,0
+tilespacing = 90,0
+
+
+[BGCtrlDef 4]                                                                                                                                                                                               
+CtrlID = 4
+
+[BGCtrl 4.1]
+type = Enable
+time = 0
+value = 0
+[BGCtrl 4.1]
+type = Enable
+time = 2384
+value = 1
+[BGCtrl 4.2]
+type = Enable
+time = 2420
+value = 0
+
+[Begin Action 24]; vanish
+22, 0, 0, 0, 6, , 
+22, 0, 0, -10, 6, H, 
+22, 0, 0, -20, 6, , 
+22, 0, 0, -30, 6, H, AS206D206
+22, 0, 0, -40, 6, , AS186D186
+22, 0, 0, -50, 6, H, AS166D166
+22, 0, 0, -60, 6, H, AS156D156
+
+
+
+[BG smoke1] 
+type = anim
+actionno = 65
+start = 0,-885;237
+delta= 1,1 
+mask = 1
+id = 65
+layerno = 1
+
+
+[BGCtrlDef 65]                                                                                                                                                                                               
+CtrlID = 65
+[BGCtrl 65.1]
+type = Enable
+time = 0
+value = 0
+[BGCtrl 65.1]
+type = Enable
+time = 2382
+value = 1
+[BGCtrl 65.2]
+type = Enable
+time = 2528
+value = 0
+
+[Begin Action 65]; smoke
+65, 0, 0, 0, 3, , AS106D256
+65, 1, 0, 0, 3, , AS106D256
+65, 2, 0, 0, 3, ,AS106D256
+65, 3, 0, 0, 3, , AS106D256
+65, 4, 0, 0, 3, , AS106D256
+65, 5, 0, 0, 3, , AS106D256
+65, 6, 0, 0, 3, ,AS106D256
+65, 7, 0, 0, 3, , AS106D256
+65, 8, 0, 0, 3, , AS106D256
+65, 9, 0, 0, 3, , AS106D256
+65, 10, 0, 0, 3, , AS106D256
+65, 11, 0, 0, 3, , AS106D256
+65, 12, 0, 0, 3, ,AS106D256
+65, 13, 0, 0, 3, , AS106D256
+65, 14, 0, 0, 3, , AS106D256
+65, 15, 0, 0, 3, , AS106D256
+65, 16, 0, 0, 3, ,AS106D256
+65, 17, 0, 0, 3, , AS106D256
+65, 18, 0, 0, 3, , AS106D256
+65, 19, 0, 0, 3, , AS106D256
+65, 20, 0, 0, 3, , AS106D256
+65, 21, 0, 0, 3, , AS106D256
+65, 22, 0, 0, 3, ,AS106D256
+65, 23, 0, 0, 3, , AS106D256
+65, 24, 0, 0, 3, , AS106D256
+65, 25, 0, 0, 3, , AS106D256
+65, 26, 0, 0, 3, ,AS106D256
+65, 27, 0, 0, 3, , AS106D256
+65, 28, 0, 0, 3, , AS106D256
+65, 29, 0, 0, 3, , AS106D256
+65, 30, 0, 0, 3, , AS106D256
+65, 31, 0, 0, 3, , AS106D256
+65, 32, 0, 0, 3,,AS106D256
+65, 33, 0, 0, 3, , AS106D256
+65, 34, 0, 0, 3, , AS106D256
+65, 35, 0, 0, 3, , AS106D256
+65, 36, 0, 0, 3, ,AS106D256
+65, 37, 0, 0, 3, , AS106D256
+65, 38, 0, 0, 3, , AS106D256
+65, 39, 0, 0, 3, , AS106D256
+65, 40, 0, 0, 3, , AS106D256
+65, 41, 0, 0, 3, , AS106D256
+65, 42, 0, 0, 3, ,AS106D256
+65, 43, 0, 0, 3, , AS106D256
+65, 44, 0, 0, 3, , AS106D256
+65, 45, 0, 0, 3, , AS106D256
+65, 46, 0, 0, 3, ,AS106D256
+-1,-1,0,0,100,,
+
+
+;=============================== wind
+[BG windy front]
+type = anim
+actionno = 3101
+start = 0,237
+delta= .12,1 ; weird solution :P
+mask = 1
+layerno=1
+id=55
+;tile  = 4,0
+;tilespacing = 54,0
+
+[BGCtrlDef 55]                                                                                                                                                                           
+CtrlID = 55
+[BGCtrl 55.0]
+type = Enable
+time = 0
+value = 0
+[BGCtrl 55.1]
+type = Enable
+time = 2230
+value = 1
+[BGCtrl 55.2]
+type = Enable
+time = 2377
+value = 0
+
+
+[BGCtrl 55.41] 
+type = VelSet
+time = 2230
+y = -9
+
+[BGCtrl 55.5] 
+type = PosSet
+time = 2245
+x =  50
+y =100
+[BGCtrl 55.6] 
+type = PosSet
+time = 2250
+x =  0
+y =130
+[BGCtrl 55.7] 
+type = PosSet
+time = 2275
+x =  -20
+y =200
+[BGCtrl 55.8] 
+type = PosSet
+time = 2300
+x = -70
+y =130
+
+[BGCtrl 55.9] 
+type = PosSet
+time = 2325
+x =  20
+y =130
+[BGCtrl 55.91] 
+type = PosSet
+time = 2350
+x =  50
+y =170
+[BGCtrl 55.92] 
+type = PosSet
+time = 2365
+x =  -100
+y =200
+
+[Begin Action 3101]; windy
+23, 0, 0, 0, 1, ,A
+
+;------------------------------------------------------------
+
+
+
+
+
+
+;-=================================
+[BGCtrlDef 1]
+CtrlID = 1,8,9,15,80,95,96,97,98
+
+[BGCtrl 1]
+type = VelSet
+time = 0
+y = 0
+
+;-----------------------------SHAKE
+
+[BGCtrl 1.1]
+type = SinY
+time = 2070
+value = 4,8
+
+[BGCtrl 1.2]
+type = SinY
+time = 2224
+value = 8,8
+
+[BGCtrl 1.2]
+type = SinY
+time = 2230
+value = 0,0
+
+[BGCtrl 1]
+type = VelSet
+time = 2230
+y = -3
+
+[BGCtrl 1]
+type = VelSet
+time =2245   
+y = -5
+
+[BGCtrl 1]
+type = VelSet
+time = 2260   
+y = -7
+
+[BGCtrl 1]
+type = VelSet
+time = 2275   
+y = -9
+
+[BGCtrl 1]
+type = VelSet
+time = 2374
+y = 0
+
+[BGCtrl 1.8];------land
+type = Sinx
+time = 2375
+value = 8,12
+
+[BGCtrl 1.9]
+type = Sinx
+time =2470
+value = 0,0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,490 @@
+
+[Info]
+name = "f1regodpit"
+displayname = "Fire God Pit MKM"
+versiondate = 07,09,2018
+mugenversion = 1.1
+author = "LeoCobainJr"
+sprites by = "Feliks"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -310
+boundright = 320
+boundhigh = -160
+boundlow = 0
+verticalfollow = .5
+floortension = 30
+overdrawhigh = 20
+overdrawlow = 20
+tension = 100
+startzoom = 1
+zoomin = 1
+zoomout = 0.70
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+
+leftbound = -1400
+rightbound = 1400
+
+
+[Scaling]
+topz = 0      
+botz = 50    
+topscale = 1      
+botscale = 1.2    
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+[StageInfo]
+zoffset = 202
+autoturn = 1  
+resetBG = 1      
+localcoord = 400,254
+
+[Shadow]
+intensity = 200
+yscale = -.13
+fade.range = -80,-20
+ 
+[reflection]
+intensity = 0
+
+[Music]
+bgmusic = sound/Other/Fire God.ogg
+bgmvolume = 100
+bgmloopstart = 1770920
+bgmloopend = -1
+
+
+[BGdef]
+spr = FIRE GOD PIT.sff
+debugbg = 0   
+
+[BG rocas de fuego]
+type = anim
+actionno = 0      
+start = 0,250
+delta =.32,.8
+mask = 0
+scalestart = .8,.9
+
+
+;FIRE
+[Begin Action 0]
+0,0,0,0,0
+77,2,0,0,4, ,as256d256
+77,3,0,0,4, ,as256d256
+77,4,0,0,4, ,as256d256
+77,5,0,0,4, ,as256d256
+77,6,0,0,4, ,as256d256
+77,7,0,0,4, ,as256d256
+77,8,0,0,4, ,as256d256
+77,9,0,0,4, ,as256d256
+77,10,0,0,4, ,as256d256
+77,11,0,0,4, ,as256d256
+77,12,0,0,4, ,as256d256
+77,13,0,0,4, ,as256d256
+77,14,0,0,4, ,as256d256
+77,15,0,0,4, ,as256d256
+77,16,0,0,4, ,as256d256
+77,17,0,0,4, ,as256d256
+77,18,0,0,4, ,as256d256
+77,19,0,0,4, ,as256d256
+77,20,0,0,4, ,as256d256
+77,21,0,0,4, ,as256d256
+77,22,0,0,4, ,as256d256
+77,23,0,0,4, ,as256d256
+77,24,0,0,4, ,as256d256
+
+[BG fundo]
+type = normal
+spriteno = 1,10      
+start = 0,10
+delta = .49,.95
+mask = 1
+scalestart = .5,.55
+
+[bg amuleto]
+type = anim
+actionno = 90
+sin.y = 4,150
+delta = .6,1
+start = 64,74
+mask = 1
+scalestart = .90,1
+
+[begin action 90]
+4,0,0,0,1
+4,1,0,0,1
+4,2,0,0,1
+4,3,0,0,1
+4,4,0,0,1
+4,5,0,0,1
+4,6,0,0,1
+4,7,0,0,1
+4,8,0,0,1
+4,9,0,0,1
+4,10,0,0,1
+4,11,0,0,1
+4,12,0,0,1
+4,13,0,0,1
+4,14,0,0,1
+4,15,0,0,1
+4,16,0,0,1
+4,17,0,0,1
+4,18,0,0,1
+4,19,0,0,1
+4,20,0,0,1
+4,21,0,0,1
+4,22,0,0,1
+4,23,0,0,1
+4,24,0,0,1
+4,25,0,0,1
+4,26,0,0,1
+4,27,0,0,1
+4,28,0,0,1
+4,29,0,0,1
+4,30,0,0,1
+4,31,0,0,1
+4,32,0,0,1
+4,33,0,0,1
+4,34,0,0,1
+4,35,0,0,1
+4,36,0,0,1
+
+[bg estacas2]
+type = normal
+spriteno = 1,3    
+start = -20,20
+delta = .8,1
+mask = 1
+scalestart = .9,.9
+
+[bg estacas1]
+type = normal
+spriteno = 1,4     
+start = 0,20
+delta = .75,1
+mask = 1
+scalestart = .9,.9
+
+[bg pontasfundod]
+type = normal
+spriteno = 6,0    
+start = -822,6.2
+delta = 1,1
+mask = 1
+scalestart = .8,.8
+
+[bg pontasfundoe]
+type = normal
+spriteno = 6,0    
+start = 822,6.2
+delta = 1,1
+mask = 1
+scalestart = .8,.8
+
+[bg fogo]
+type = anim
+actionno = 14
+delta = 1,1
+start = -490,146
+mask = 1
+tile = 1,0
+scalestart = .8,.8
+tilespacing = 1220,0
+
+[begin action 14]
+2,4,0,0,4,,as200d256
+2,5,0,0,4,,as200d256
+2,6,0,0,4,,as200d256
+2,7,0,0,4,,as200d256
+2,8,0,0,4,,as200d256
+2,9,0,0,4,,as200d256
+2,0,0,0,4,,as200d256
+2,1,0,0,4,,as200d256
+2,2,0,0,4,,as200d256
+2,3,0,0,4,,as200d256
+
+[bg base]
+type = norm
+spriteno = 3,0
+delta = .6,1
+start = 0,97
+scalestart = .8,1
+mask = 1
+
+[bg escada]
+type = parallax
+spriteno = 3,1
+start = 0,96
+mask = 1
+delta = .59,1
+xscale = .23,.37
+yscalestart = 100
+
+[bg degrau 1]
+type = norm
+spriteno = 3,2
+start = 0,101
+mask = 1
+delta = .6,1
+
+[bg degrau 2]
+type = norm
+spriteno = 3,3
+start = 0,101
+mask = 1
+delta = .612,1
+
+[bg degrau 3]
+type = norm
+spriteno = 3,4
+start = 0,101
+mask = 1
+delta = .625,1
+
+[bg degrau 4]
+type = norm
+spriteno = 3,5
+start = 0,101
+mask = 1
+delta = .637,1
+
+[bg degrau 5]
+type = norm
+spriteno = 3,6
+start = 0,101
+mask = 1
+delta = .651,1
+
+[bg degrau 6]
+type = norm
+spriteno = 3,7
+start = 0,101
+mask = 1
+delta = .666,1
+
+[bg degrau 7]
+type = norm
+spriteno = 3,8
+start = 0,101
+mask = 1
+delta = .686,1
+
+[bg degrau 8]
+type = norm
+spriteno = 3,9
+start = 0,101
+mask = 1
+delta = .702,1
+
+[bg degrau 9]
+type = norm
+spriteno = 3,10
+start = 0,101
+mask = 1
+delta = .721,1
+
+[bg degrau 10]
+type = norm
+spriteno = 3,11
+start = 0,101
+mask = 1
+delta = .74,1
+
+[bg degrau 11]
+type = norm
+spriteno = 3,12
+start = 0,101
+mask = 1
+delta = .76,1
+
+[bg degrau 12]
+type = norm
+spriteno = 3,13
+start = 0,101
+mask = 1
+delta = .78,1
+
+[bg degrau 13]
+type = norm
+spriteno = 3,14
+start = 0,101
+mask = 1
+delta = .8,1
+
+[bg degrau 14]
+type = norm
+spriteno = 3,15
+start = 0,101
+mask = 1
+delta = .82,1
+
+[bg degrau 15]
+type = norm
+spriteno = 3,16
+start = 0,101
+mask = 1
+delta = .845,1
+
+[bg degrau 16]
+type = norm
+spriteno = 3,17
+start = 0,101
+mask = 1
+delta = .87,1
+
+[bg degrau 17]
+type = norm
+spriteno = 3,18
+start = 0,101
+mask = 1
+delta = .89,1
+
+[bg degrau 18]
+type = norm
+spriteno = 3,19
+start = 0,101
+mask = 1
+delta = .91,1
+
+[bg degrau 19]
+type = norm
+spriteno = 3,20
+start = 0,101
+mask = 1
+delta = .93,1
+
+[bg ponte]
+type = normal
+spriteno = 1,11     
+start = 0,20
+delta = 1,1
+mask = 1
+scalestart = .7,.9
+
+[bg ponte1]
+type = normal
+spriteno = 1,2     
+start = 0,20
+delta = 1,1
+mask = 1
+scalestart = .7,.9
+
+[bg porta]
+type = normal
+spriteno = 5,1     
+start = -505,107
+delta = 1,1
+mask = 1
+layerno = 1
+scalestart = .9,1.5
+
+[bg porta1]
+type = normal
+spriteno = 5,0    
+start = -505,108
+delta = 1,1
+mask = 1
+layerno = 1
+scalestart = .9,1.5
+
+[bg fogo1]
+type = anim
+actionno = 14
+delta = 1,1
+start = -13,174
+mask = 1
+layerno = 1
+tile = 1,0
+;tilespacing = 555,0
+
+[bg fogo2]
+type = anim
+actionno = 14
+delta = 1,1
+start = -550,174
+mask = 1
+layerno = 1
+tile = 1,0
+
+[bg fogo3]
+type = anim
+actionno = 14
+delta = 1,1
+start = 545,174
+mask = 1
+layerno = 1
+tile = 1,0
+
+
+[begin action 14]
+2,4,0,0,4,,as200d256
+2,5,0,0,4,,as200d256
+2,6,0,0,4,,as200d256
+2,7,0,0,4,,as200d256
+2,8,0,0,4,,as200d256
+2,9,0,0,4,,as200d256
+2,0,0,0,4,,as200d256
+2,1,0,0,4,,as200d256
+2,2,0,0,4,,as200d256
+2,3,0,0,4,,as200d256
+
+[bg ponte3]
+type = normal
+spriteno = 1,12     
+start = 0,20
+delta = 1,1
+mask = 1
+scalestart = .9,.9
+layerno = 1
+
+[bg ponte]
+type = normal
+spriteno = 1,1     
+start = 0,0
+delta = 1,1
+mask = 1
+layerno = 1
+scalestart = 1,.85
+
+[bg pontas]
+type = normal
+spriteno = 6,0    
+start = 0,0
+delta = 1,1
+mask = 1
+layerno = 1
+
+[bg estaca2]
+type = normal
+spriteno = 1,5     
+start = 50,40
+delta = 1.2,1
+mask = 1
+layerno = 1
+scalestart = .9,.9
+
+[bg estaca3]
+type = anim
+actionno = 20
+delta = 1.2,1
+start = -400,-70
+layerno = 1
+scalestart = .9,.9
+
+[begin action 20]
+1,5,0,0,-1,h
+
+

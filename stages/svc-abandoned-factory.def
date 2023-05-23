@@ -1,0 +1,119 @@
+;--------------------------------------------------------
+;FACTORY ABANDONED STAGE BY CIRIO
+;--------------------------------------------------------
+;e-mail:  cirio@rome.com
+;website: cirio.cjb.net
+;--------------------------------------------------------
+[Info]
+name = "SVC - Factory Abandoned"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -216
+boundright = 216
+boundhigh = -96
+boundlow = 0
+verticalfollow = .13
+floortension = 0
+tension = 60
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -70          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+;--------------------------------------------------------
+[Scaling]
+topz     = 0       
+botz     = 50      
+topscale = 1       
+botscale = 1.2     
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 15    ;Dist from left of screen that player can move to
+screenright = 15   ;Right edge
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 215
+autoturn = 1
+resetBG = 0
+
+;--------------------------------------------------------
+[Shadow]
+color = 50,50,50
+yscale = -0.12
+reflect = 0
+
+;--------------------------------------------------------
+[Music]
+bgmusic = stages/244.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/svc-abandoned-factory.sff
+debugbg = 0
+
+;----------
+[BG 1]
+type  = normal
+spriteno = 0,0
+start = -348, -96
+mask = 0
+delta = 0.87,1
+
+[BG 2]
+type  = normal
+spriteno = 0,1
+start = -376, -9
+mask = 1
+
+[BG 3]
+type  = anim
+actionno = 1
+start = -376, 138
+mask = 0
+
+[BG 4]
+type  = anim
+actionno = 2
+start = 74, 135
+mask = 0
+
+
+[Begin action 1]
+1,1, 0,0, 4
+1,2, 0,0, 4
+1,3, 0,0, 4
+1,4, 0,0, 4
+1,5, 0,0, 4
+1,6, 0,0, 4
+1,7, 0,0, 4
+1,8, 0,0, 4
+
+[Begin action 2]
+2,1, 0,0, 4
+2,2, 0,0, 4
+2,3, 0,0, 4
+2,4, 0,0, 4
+2,5, 0,0, 4
+2,6, 0,0, 4
+2,7, 0,0, 4
+2,8, 0,0, 4

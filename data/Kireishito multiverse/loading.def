@@ -1,0 +1,35 @@
+[Info]
+mugenversion = 1.0
+localcoord = 1280,720
+
+
+[SceneDef]
+spr = loading.sff
+;------------------------------------
+[Scene 0]
+; Fade
+fadein.time = 50
+fadeout.time =
+; Screen color
+clearcolor = 0,0,0
+; Overlay Anims (from 0 to 9)
+layerall.pos = 0,0 ;Default position for all layers
+layer0.anim =  0       ;Anim action number
+; Total time
+end.time = 100
+bgm =
+
+;------------------------------------
+;Animation for logo
+[Begin Action 0]
+
+
+
+
+0,0, 0,0, 100
+
+
+
+
+
+

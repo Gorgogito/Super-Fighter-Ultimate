@@ -1,0 +1,197 @@
+﻿; Арена: The Pit MK1
+; Автор: Emsi-D 
+; Рип спрайтов: Fly
+; Улучшения: Markos (новые горы)
+; Edited by LeandroTM
+
+[Info]
+Name = "P1t-1sunest"
+Displayname = "The Pit at Dusk"
+Mugenversion = 1.1
+
+[Camera]
+boundleft = -245
+boundright = 460
+boundhigh = 0
+boundlow = 699
+tension = 100
+floortension = 0
+verticalfollow = 1
+overdrawhigh = 20
+overdrawlow = 9999
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1400 
+rightbound = 1400
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+[StageInfo]
+zoffset = 202
+autoturn = 1
+resetBG = 1
+localcoord = 400,254
+
+[Shadow]
+intensity = 180
+yscale = -.06
+fade.range = -80,-20
+
+[Music]
+bgmusic = sound/Genesis Music/goros lair genesis mk1.ogg
+;bgmloopstart = 517327
+bgmvolume = 90
+bgmloopend = -1
+
+
+[BGdef]
+spr = The_Pit_Sunest.sff
+bgclearcolor = 0,0,0;49,0,0;0,0,49
+
+[BG Небо]
+type = normal
+spriteno = 0,16
+delta = 0,1
+start = -200,49
+mask = 1
+
+;[BG Луна]
+;type = normal
+;spriteno = 0,1
+;delta = 0,0
+;start = -110,9
+;mask = 1
+
+[BG Облака/Слой 1]
+type = normal
+spriteno = 0,2
+velocity = .47,0
+delta = 0,0
+start = -461,6
+tile = 1,0
+mask = 1
+trans = addalpha
+alpha = 180,80
+scalestart = .90,1
+
+[BG Облака/Слой 2]
+type = normal
+spriteno = 0,3
+velocity = .37,0
+delta = 0,0
+start = -299,65
+tile = 1,0
+mask = 1
+trans = addalpha
+alpha = 180,80
+scalestart = .90,1
+
+[BG Облака/Слой 3]
+type = normal
+spriteno = 0,4
+velocity = .25,0
+delta = 0,0
+start = -353,121
+tile = 1,0
+mask = 1
+trans = addalpha
+alpha = 180,80
+scalestart = .90,1
+
+[BG Горы]
+type = normal
+spriteno = 0,5
+scalestart = 0.5,0.5
+delta = 0,0
+start = -200,180
+mask = 1
+
+[BG Мост и стена в яме]
+type = normal
+spriteno = 0,0
+delta = 1,1
+start = 107,56
+mask = 1
+
+[BG Переход между этажами]
+type = normal
+spriteno = 0,11
+delta = 1,1
+start = 0,945
+tile = 1,0
+
+[BG Пол]
+type = normal
+spriteno = 0,6
+delta = 1,1
+start = 106,859
+mask = 1
+
+[BG Fog Front Small]
+type = normal
+spriteno = 0,15
+start = 0,859
+delta = 1,1
+mask = 1
+velocity = 1,0
+tile = 1, 0
+trans = add
+layerno = 1
+
+[BG Окровавленный кол с башкой]
+type = normal
+spriteno = 0,7
+delta = 1,1
+start = 16,862
+mask = 1
+
+[BG Волосатая башка на колу]
+type = normal
+spriteno = 0,8
+delta = 1,1
+start = 49,845
+mask = 1
+
+;[BG Колонны с трупами/Оригинал МК1]
+;type = normal
+;spriteno = 0,12
+;delta = 1,1
+;start = -220,226
+;mask = 1
+
+[BG Колонны]
+type = normal
+spriteno = 0,13
+delta = 1,1
+start = -220,226
+mask = 1
+
+[BG Шип]
+type = normal
+spriteno = 0,14
+delta = 1,1
+start = 389,863
+mask = 1
+
+[BG Труп на полу]
+type = normal
+spriteno = 0,9
+delta = 1,1
+start = 118,861
+mask = 1
+
+[BG Лезвия на переднем плане]
+type = normal
+spriteno = 0,10
+layerno = 1
+delta = 1,1
+start = 106,865
+mask = 1

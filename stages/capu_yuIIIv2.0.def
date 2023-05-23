@@ -1,0 +1,114 @@
+;\_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/\_/
+;Authors;"Taimanin Suzuki,Yohana,Shadaloo Mugen & mugenarchive.com"
+;\_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/\_/
+
+
+[Info]
+
+name = "Capu_yuIIIv2.0"
+
+[Camera]
+
+startx = 0
+starty = 0
+
+boundleft = -200
+boundright = 138
+
+boundhigh = -216
+boundlow = 0
+
+verticalfollow =0.8
+
+tension = 50
+
+
+[PlayerInfo]
+
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+; Player 2
+
+p2startx = 70;125
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+; Common
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+
+[Bound]
+
+screenleft = 30
+screenright = 30
+
+
+[StageInfo]
+zoffset   = 235
+autoturn  = 1
+resetBG = 0
+
+
+
+[Shadow]
+
+color = 80,75,80  ;128,128,128
+yscale = 0.3
+reflect = 1
+
+
+[Music]
+bgmusic = sound/CVB-_Sinking_Old_Sanctuary.mp3
+bgvolume = 255
+
+
+
+[BGdef]
+spr = stages/CapuyuIIIv2.0.sff
+
+
+; base
+[BG 1]
+type      =  normal
+spriteno  =  0, 0
+start     =  -370,-228
+delta     =  1, 1
+mask      =  0
+
+; Girls
+[BG 1]
+type      =  normal
+spriteno  =  0, 1
+start     =  -370,-228
+delta     =  1, 1
+mask      =  1
+
+;lolis 
+[BG 1]
+type      =  normal
+spriteno  =  6969,12
+start     =  -370,-228
+delta     =  1, 1
+mask      =  1
+
+
+
+
+
+

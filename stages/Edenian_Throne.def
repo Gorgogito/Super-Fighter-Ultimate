@@ -1,0 +1,246 @@
+; Арена: Edenian Throne MKG
+; Авторы: Eternal, Bathory
+
+[Info]
+Name = "eden1an_thr0ne"
+Displayname = "Edenian Throne MK4"
+Mugenversion = 1.1
+
+[Camera]
+boundleft = -524
+boundright = 524
+boundhigh = -12
+tension = 100
+floortension = 30
+verticalfollow = .2
+overdrawhigh = 20
+overdrawlow = 20
+startzoom = 1
+zoomin = 1
+zoomout = 0.83
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1400
+rightbound = 1400
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+[StageInfo]
+zoffset = 237
+autoturn = 1
+resetBG = 0
+localcoord = 400,254
+
+[Shadow]
+intensity = 187
+yscale = .2
+xshear = -1
+
+[Music]
+bgmusic = sound/MK4/mk4_the_tomb.ogg
+bgmloopstart = 942985
+bgmloopend = -1
+
+[BGdef]
+spr = Edenian_Throne.sff
+bgclearcolor = 0,0,0
+
+
+[BG Небо]
+type = normal
+spriteno = 0,3
+delta = 0,.40
+
+[BG Свет солнца]
+type = normal
+spriteno = 0,4
+delta = .02,.30
+trans = add
+
+[BG Солнечное затмение]
+type = normal
+spriteno = 0,5
+delta = .02,.30
+mask = 1
+
+[BG Горы]
+type = normal
+spriteno = 0,6
+delta = .425,.70
+mask = 1
+
+[BG Туман]
+type = normal
+spriteno = 0,7
+delta = .425,.70
+trans = add
+velocity = .2,0
+tile = 1,0
+
+[BG Туман]
+type = normal
+spriteno = 0,7
+delta = .425,.70
+start = 333,0
+trans = add
+velocity = -.2,0
+tile = 1,0
+
+[BG Стена]
+type = normal
+spriteno = 0,2
+delta = .785,1
+mask = 1
+
+[BG Переход между этажами]
+type = normal
+spriteno = 0,12
+delta = 1,1
+start = 0,247
+tile = 1,0
+
+[BG Пол]
+type = parallax
+spriteno = 0,0
+delta = .82,1
+start = 0,243
+width = 1650,2050
+
+[BG Ступени в центре]
+type = normal
+spriteno = 0,1
+delta = .85,1
+mask = 1
+
+[BG Ограждение слева/Заплатка]
+type = normal
+spriteno = 0,1
+delta = .85,1
+start = -1306,0
+mask = 1
+
+[BG Свечи]
+type = normal
+spriteno = 0,8
+delta = .85,1
+mask = 1
+
+[BG Трон]
+type = normal
+spriteno = 0,9
+delta = .84,1
+mask = 1
+
+[BG Огонь]
+type = anim
+actionno = 0
+delta = .88,1
+scalestart = .65,1
+start = 130,64
+
+[BG Огонь]
+type = anim
+actionno = 0
+delta = .88,1
+scalestart = .65,1
+start = 391,64
+
+[BG Огонь]
+type = anim
+actionno = 0
+delta = .88,1
+scalestart = .65,1
+start = -391,64
+
+[BG Огонь]
+type = anim
+actionno = 0
+delta = .88,1
+scalestart = .65,1
+start = -130,64
+
+[BG Факельницы]
+type = normal
+spriteno = 0,10
+delta = .88,1
+mask = 1
+
+[BG Свет пламени]
+type = normal
+spriteno = 0,11
+delta = .88,1
+trans = add
+
+[Begin Action 0]
+1,0, 0,0, 1, , A
+1,1, 0,0, 1, , A
+1,2, 0,0, 1, , A
+1,3, 0,0, 1, , A
+1,4, 0,0, 1, , A
+1,5, 0,0, 1, , A
+1,6, 0,0, 1, , A
+1,7, 0,0, 1, , A
+1,8, 0,0, 1, , A
+1,9, 0,0, 1, , A
+1,10, 0,0, 1, , A
+1,11, 0,0, 1, , A
+1,12, 0,0, 1, , A
+1,13, 0,0, 1, , A
+1,14, 0,0, 1, , A
+1,15, 0,0, 1, , A
+1,16, 0,0, 1, , A
+1,17, 0,0, 1, , A
+1,18, 0,0, 1, , A
+1,19, 0,0, 1, , A
+1,20, 0,0, 1, , A
+1,21, 0,0, 1, , A
+1,22, 0,0, 1, , A
+1,23, 0,0, 1, , A
+1,24, 0,0, 1, , A
+1,25, 0,0, 1, , A
+1,26, 0,0, 1, , A
+1,27, 0,0, 1, , A
+1,28, 0,0, 1, , A
+1,29, 0,0, 1, , A
+1,30, 0,0, 1, , A
+1,31, 0,0, 1, , A
+1,32, 0,0, 1, , A
+1,33, 0,0, 1, , A
+1,34, 0,0, 1, , A
+1,35, 0,0, 1, , A
+1,36, 0,0, 1, , A
+1,37, 0,0, 1, , A
+1,38, 0,0, 1, , A
+1,39, 0,0, 1, , A
+1,40, 0,0, 1, , A
+1,41, 0,0, 1, , A
+1,42, 0,0, 1, , A
+1,43, 0,0, 1, , A
+1,44, 0,0, 1, , A
+1,45, 0,0, 1, , A
+1,46, 0,0, 1, , A
+1,47, 0,0, 1, , A
+1,48, 0,0, 1, , A
+1,49, 0,0, 1, , A
+1,50, 0,0, 1, , A
+1,51, 0,0, 1, , A
+1,52, 0,0, 1, , A
+1,53, 0,0, 1, , A
+1,54, 0,0, 1, , A
+1,55, 0,0, 1, , A
+1,56, 0,0, 1, , A
+1,57, 0,0, 1, , A
+1,58, 0,0, 1, , A
+1,59, 0,0, 1, , A
+1,60, 0,0, 1, , A
+1,61, 0,0, 1, , A
+1,62, 0,0, 1, , A
+1,63, 0,0, 1, , A

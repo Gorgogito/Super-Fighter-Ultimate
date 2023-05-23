@@ -1,0 +1,1312 @@
+;--------------------------------------------------------
+;ATHENA'S HOLY WORLD STAGE BY CIRIO
+;--------------------------------------------------------
+;e-mail:  cirio@rome.com
+;website: cirio.cjb.net
+;--------------------------------------------------------
+[Info]
+name = "svc - athenas holy world"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -216
+boundright = 216
+boundhigh = -96
+boundlow = 0
+verticalfollow = .13
+floortension = 0
+tension = 60
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -70          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+;--------------------------------------------------------
+[Scaling]
+topz     = 0       
+botz     = 50      
+topscale = 1       
+botscale = 1.2     
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 15    ;Dist from left of screen that player can move to
+screenright = 15   ;Right edge
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 215
+autoturn = 1
+resetBG = 0
+
+;--------------------------------------------------------
+[Shadow]
+color = 0,0,0
+yscale = 0
+reflect = 0
+
+;--------------------------------------------------------
+[Music]
+bgmusic = stages/245.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/svc-athenas-holy-world.sff
+debugbg = 0
+
+;----------
+[BG 1]
+type  = normal
+spriteno = 0,0
+start = -232, -16
+mask = 0
+delta = .8,.8
+
+[BG 3]
+type  = anim
+actionno = 1
+start = -88, 22
+mask = 0
+delta = .8,.8
+
+[BG 4]
+type  = anim
+actionno = 2
+start = -360, -73
+mask = 1
+delta = .92,.74
+
+[BG 4]
+type  = anim
+actionno = 3
+start = -376, 144
+mask = 1
+
+;Doll 2
+[BG 6]
+type  = anim
+actionno = 200
+start = -280, 130
+mask = 1
+id = 6
+
+[BGCtrlDef 6]
+CtrlID = 6
+looptime = 2044
+
+[BGCtrl 6]
+type = Anim
+time = 0
+value = 200
+
+[BGCtrl 6]
+type = Anim
+time = 224
+value = 270
+
+[BGCtrl 6]
+type = Anim
+time = 252
+value = 210
+
+[BGCtrl 6]
+type = VelSet
+time = 252
+x = -0.5
+y = 0
+
+[BGCtrl 6]
+type = Anim
+time = 364
+value = 280
+
+[BGCtrl 6]
+type = VelSet
+time = 364
+x = 0
+y = 0
+
+[BGCtrl 6]
+type = Anim
+time = 392
+value = 240
+
+[BGCtrl 6]
+type = Anim
+time = 483
+value = 200
+
+[BGCtrl 6]
+type = Anim
+time = 595
+value = 230
+
+[BGCtrl 6]
+type = Anim
+time = 707
+value = 200
+
+[BGCtrl 6]
+type = Anim
+time = 875
+value = 230
+
+[BGCtrl 6]
+type = Anim
+time = 987
+value = 200
+
+[BGCtrl 6]
+type = Anim
+time = 1043
+value = 25
+
+[BGCtrl 6]
+type = Anim
+time = 1050
+value = 20
+
+[BGCtrl 6]
+type = Anim
+time = 1162
+value = 22
+
+[BGCtrl 6]
+type = Anim
+time = 1274
+value = 20
+
+[BGCtrl 6]
+type = Anim
+time = 1330
+value = 27
+
+[BGCtrl 6]
+type = Anim
+time = 1358
+value = 21
+
+[BGCtrl 6]
+type = VelSet
+time = 1358
+x = 0.5
+y = 0.2
+
+[BGCtrl 6]
+type = Anim
+time = 1414
+value = 28
+
+[BGCtrl 6]
+type = VelSet
+time = 1414
+x = 0
+y = 0
+
+[BGCtrl 6]
+type = Anim
+time = 1442
+value = 24
+
+[BGCtrl 6]
+type = Anim
+time = 1533
+value = 27
+
+[BGCtrl 6]
+type = Anim
+time = 1561
+value = 21
+
+[BGCtrl 6]
+type = VelSet
+time = 1561
+x = 0.5
+y = -0.2
+
+[BGCtrl 6]
+type = Anim
+time = 1617
+value = 28
+
+[BGCtrl 6]
+type = VelSet
+time = 1617
+x = 0
+y = 0
+
+[BGCtrl 6]
+type = Anim
+time = 1645
+value = 20
+
+[BGCtrl 6]
+type = Anim
+time = 1757
+value = 23
+
+[BGCtrl 6]
+type = Anim
+time = 1869
+value = 20
+
+[BGCtrl 6]
+type = Anim
+time = 2037
+value = 25
+
+;Doll 1
+[BG 5]
+type  = anim
+actionno = 5
+start = -320, 150
+mask = 1
+id = 5
+
+
+[BGCtrlDef 5]
+CtrlID = 5
+looptime = 1701
+
+[BGCtrl 5]
+type = Anim
+time = 0
+value = 5
+
+[BGCtrl 5]
+type = Anim
+time = 168
+value = 8
+
+[BGCtrl 5]
+type = Anim
+time = 280
+value = 5
+
+[BGCtrl 5]
+type = Anim
+time = 504
+value = 12
+
+[BGCtrl 5]
+type = Anim
+time = 532
+value = 6
+
+[BGCtrl 5]
+type = VelSet
+time = 532
+x = 0.5
+y = -0.5
+
+[BGCtrl 5]
+type = Anim
+time = 644
+value = 13
+
+[BGCtrl 5]
+type = VelSet
+time = 644
+x = 0
+y = 0
+
+[BGCtrl 5]
+type = Anim
+time = 672
+value = 5
+
+[BGCtrl 5]
+type = Anim
+time = 784
+value = 7
+
+[BGCtrl 5]
+type = Anim
+time = 896
+value = 5
+
+[BGCtrl 5]
+type = Anim
+time = 952
+value = 10
+
+[BGCtrl 5]
+type = Anim
+time = 959
+value = 50
+
+[BGCtrl 5]
+type = Anim
+time = 1071
+value = 120
+
+[BGCtrl 5]
+type = Anim
+time = 1099
+value = 60
+
+[BGCtrl 5]
+type = VelSet
+time = 1099
+x = -0.5
+y = 0.5
+
+[BGCtrl 5]
+type = Anim
+time = 1211
+value = 130
+
+[BGCtrl 5]
+type = VelSet
+time = 1211
+x = 0
+y = 0
+
+[BGCtrl 5]
+type = Anim
+time = 1239
+value = 90
+
+[BGCtrl 5]
+type = Anim
+time = 1330
+value = 50
+
+[BGCtrl 5]
+type = Anim
+time = 1386
+value = 120
+
+[BGCtrl 5]
+type = Anim
+time = 1414
+value = 60
+
+[BGCtrl 5]
+type = VelSet
+time = 1414
+x = -0.5
+y = -0.3
+
+[BGCtrl 5]
+type = Anim
+time = 1470
+value = 110
+
+[BGCtrl 5]
+type = VelSet
+time = 1470
+x = 0
+y = 0
+
+[BGCtrl 5]
+type = Anim
+time = 1526
+value = 6
+
+[BGCtrl 5]
+type = VelSet
+time = 1526
+x = 0.5
+y = 0.3
+
+[BGCtrl 5]
+type = Anim
+time = 1582
+value = 13
+
+[BGCtrl 5]
+type = VelSet
+time = 1582
+x = 0
+y = 0
+
+[BGCtrl 5]
+type = Anim
+time = 1610
+value = 9
+
+;Doll 4
+[BG 8]
+type  = anim
+actionno = 20
+start = 280, 130
+mask = 1
+id = 8
+
+
+[BGCtrlDef 8]
+CtrlID = 8
+looptime = 1995
+
+[BGCtrl 8]
+type = Anim
+time = 0
+value = 20
+
+[BGCtrl 8]
+type = Anim
+time = 168
+value = 27
+
+[BGCtrl 8]
+type = Anim
+time = 196
+value = 21
+
+[BGCtrl 8]
+type = VelSet
+time = 196
+x = 0.5
+y = -0.2
+
+[BGCtrl 8]
+type = Anim
+time = 308
+value = 26
+
+[BGCtrl 8]
+type = VelSet
+time = 308
+x = 0
+y = 0
+
+[BGCtrl 8]
+type = Anim
+time = 356
+value = 210
+
+[BGCtrl 8]
+type = VelSet
+time = 356
+x = -0.5
+y = 0.2
+
+[BGCtrl 8]
+type = Anim
+time = 524
+value = 260
+
+[BGCtrl 8]
+type = VelSet
+time = 524
+x = 0
+y = 0
+
+[BGCtrl 8]
+type = Anim
+time = 580
+value = 21
+
+[BGCtrl 8]
+type = VelSet
+time = 580
+x = 0
+y = -0.2
+
+[BGCtrl 8]
+type = Anim
+time = 636
+value = 28
+
+[BGCtrl 8]
+type = VelSet
+time = 636
+x = 0
+y = 0
+
+[BGCtrl 8]
+type = Anim
+time = 664
+value = 20
+
+[BGCtrl 8]
+type = Anim
+time = 840
+value = 22
+
+[BGCtrl 8]
+type = Anim
+time = 952
+value = 20
+
+[BGCtrl 8]
+type = Anim
+time = 1120
+value = 23
+
+[BGCtrl 8]
+type = Anim
+time = 1232
+value = 20
+
+[BGCtrl 8]
+type = Anim
+time = 1344
+value = 27
+
+[BGCtrl 8]
+type = Anim
+time = 1372
+value = 21
+
+[BGCtrl 8]
+type = VelSet
+time = 1372
+x = 0.5
+y = 0
+
+[BGCtrl 8]
+type = Anim
+time = 1428
+value = 28
+
+[BGCtrl 8]
+type = VelSet
+time = 1428
+x = 0
+y = 0
+
+[BGCtrl 8]
+type = Anim
+time = 1456
+value = 24
+
+[BGCtrl 8]
+type = Anim
+time = 1547
+value = 20
+
+[BGCtrl 8]
+type = Anim
+time = 1715
+value = 23
+
+[BGCtrl 8]
+type = Anim
+time = 1827
+value = 20
+
+[BGCtrl 8]
+type = Anim
+time = 1883
+value = 22
+
+;Doll 3
+[BG 7]
+type  = anim
+actionno = 50
+start = 320, 150
+mask = 1
+id = 7
+
+
+[BGCtrlDef 7]
+CtrlID = 7
+looptime = 2282
+
+[BGCtrl 7]
+type = Anim
+time = 0
+value = 50
+
+[BGCtrl 7]
+type = Anim
+time = 224
+value = 120
+
+[BGCtrl 7]
+type = Anim
+time = 252
+value = 60
+
+[BGCtrl 7]
+type = VelSet
+time = 252
+x = -0.5
+y = -0.2
+
+
+[BGCtrl 7]
+type = Anim
+time = 420
+value = 110
+
+[BGCtrl 7]
+type = VelSet
+time = 420
+x = 0
+y = 0
+
+[BGCtrl 7]
+type = Anim
+time = 476
+value = 6
+
+[BGCtrl 7]
+type = VelSet
+time = 476
+x = 0.5
+y = 0.2
+
+
+[BGCtrl 7]
+type = Anim
+time = 588
+value = 13
+
+[BGCtrl 7]
+type = VelSet
+time = 588
+x = 0
+y = 0
+
+[BGCtrl 7]
+type = Anim
+time = 616
+value = 5
+
+[BGCtrl 7]
+type = Anim
+time = 728
+value = 8
+
+[BGCtrl 7]
+type = Anim
+time = 840
+value = 5
+
+[BGCtrl 7]
+type = Anim
+time = 952
+value = 7
+
+[BGCtrl 7]
+type = Anim
+time = 1064
+value = 5
+
+[BGCtrl 7]
+type = Anim
+time = 1176
+value = 12
+
+[BGCtrl 7]
+type = Anim
+time = 1204
+value = 6
+
+[BGCtrl 7]
+type = VelSet
+time = 1204
+x = 0.5
+y = 0.2
+
+[BGCtrl 7]
+type = Anim
+time = 1260
+value = 13
+
+
+[BGCtrl 7]
+type = VelSet
+time = 1260
+x = 0
+y = 0
+
+[BGCtrl 7]
+type = Anim
+time = 1288
+value = 9
+
+[BGCtrl 7]
+type = Anim
+time = 1379
+value = 5
+
+[BGCtrl 7]
+type = Anim
+time = 1491
+value = 7
+
+[BGCtrl 7]
+type = Anim
+time = 1603
+value = 5
+
+[BGCtrl 7]
+type = Anim
+time = 1659
+value = 10
+
+[BGCtrl 7]
+type = Anim
+time = 1666
+value = 50
+
+[BGCtrl 7]
+type = Anim
+time = 1778
+value = 70
+
+[BGCtrl 7]
+type = Anim
+time = 1890
+value = 50
+
+[BGCtrl 7]
+type = Anim
+time = 2002
+value = 80
+
+[BGCtrl 7]
+type = Anim
+time = 2114
+value = 50
+
+[BGCtrl 7]
+type = Anim
+time = 2170
+value = 80
+
+[BG 9]
+type  = anim
+actionno = 0
+start = -160, 0
+mask = 0
+delta = 0,0
+
+[BG 4]
+type  = anim
+actionno = 4
+start = -376, 208
+mask = 1
+layerno = 1
+
+[BG 4]
+type  = anim
+actionno = 4
+start = -312, 208
+mask = 1
+layerno = 1
+
+[BG 4]
+type  = anim
+actionno = 4
+start = -248, 208
+mask = 1
+layerno = 1
+
+[BG 4]
+type  = anim
+actionno = 4
+start = -184, 208
+mask = 1
+layerno = 1
+
+[BG 4]
+type  = anim
+actionno = 4
+start = -120, 208
+mask = 1
+layerno = 1
+
+[BG 4]
+type  = anim
+actionno = 4
+start = -56, 208
+mask = 1
+layerno = 1
+
+[BG 4]
+type  = anim
+actionno = 4
+start = 8, 208
+mask = 1
+layerno = 1
+
+[BG 4]
+type  = anim
+actionno = 4
+start = 72, 208
+mask = 1
+layerno = 1
+
+[BG 4]
+type  = anim
+actionno = 4
+start = 136, 208
+mask = 1
+layerno = 1
+
+[BG 4]
+type  = anim
+actionno = 4
+start = 200, 208
+mask = 1
+layerno = 1
+
+[BG 4]
+type  = anim
+actionno = 4
+start = 264, 208
+mask = 1
+layerno = 1
+
+[BG 4]
+type  = anim
+actionno = 4
+start = 328, 208
+mask = 1
+layerno = 1
+
+[Begin action 0]
+10000,0,0,0,103
+Loopstart
+0,1, 0,0, 9,,A2
+0,2, 0,0, 9,,A2
+0,3, 0,0, 9,,A2
+0,4, 0,0, 9,,A2
+0,5, 0,0, 9,,A2
+0,6, 0,0, 9,,A2
+0,5, 0,0, 9,,A2
+0,4, 0,0, 9,,A2
+0,3, 0,0, 9,,A2
+0,2, 0,0, 9,,A2
+0,1, 0,0, 9,,A2
+10000,0,0,0,197
+
+[Begin action 1]
+1,1, 0,0, 7
+1,2, 0,0, 7
+1,3, 0,0, 7
+1,4, 0,0, 7
+1,5, 0,0, 7
+1,6, 0,0, 7
+1,7, 0,0, 7
+1,8, 0,0, 7
+
+[Begin action 2]
+2,1, 0,0, 7
+2,2, 0,0, 7
+2,3, 0,0, 7
+2,4, 0,0, 7
+
+[Begin action 3]
+3,1, 0,0, 7
+3,2, 0,0, 7
+3,3, 0,0, 7
+3,4, 0,0, 7
+3,5, 0,0, 7
+3,6, 0,0, 7
+3,7, 0,0, 7
+3,8, 0,0, 7
+
+[Begin action 4]
+4,1, 0,0, 7
+4,2, 0,0, 7
+4,3, 0,0, 7
+4,4, 0,0, 7
+4,5, 0,0, 7
+4,6, 0,0, 7
+4,7, 0,0, 7
+4,8, 0,0, 7
+
+[Begin action 5]
+5,1, 0,0, 7
+5,2, 0,0, 7
+5,3, 0,0, 7
+5,4, 0,0, 7
+5,5, 0,0, 7
+5,6, 0,0, 7
+5,7, 0,0, 7
+5,8, 0,0, 7
+
+[Begin action 6]
+6,1, 0,0, 7
+6,2, 0,0, 7
+6,3, 0,0, 7
+6,4, 0,0, 7
+6,5, 0,0, 7
+6,6, 0,0, 7
+6,7, 0,0, 7
+6,8, 0,0, 7
+
+[Begin action 7]
+7,1, 0,0, 7
+7,2, 0,0, 7
+7,3, 0,0, 7
+7,4, 0,0, 7
+7,5, 0,0, 7
+7,6, 0,0, 7
+7,7, 0,0, 7
+7,8, 0,0, 7
+7,9, 0,0, 7
+7,10, 0,0, 7
+7,11, 0,0, 7
+7,12, 0,0, 7
+7,13, 0,0, 7
+7,14, 0,0, 7
+7,15, 0,0, 7
+7,16, 0,0, 7
+
+[Begin action 8]
+8,1, 0,0, 7
+8,2, 0,0, 7
+8,3, 0,0, 7
+8,4, 0,0, 7
+8,5, 0,0, 7
+8,6, 0,0, 7
+8,7, 0,0, 7
+8,8, 0,0, 7
+8,9, 0,0, 7
+8,10, 0,0, 7
+8,11, 0,0, 7
+8,12, 0,0, 7
+8,13, 0,0, 7
+8,14, 0,0, 7
+8,15, 0,0, 7
+8,16, 0,0, 7
+
+[Begin action 9]
+9,1, 0,0, 7
+9,2, 0,0, 7
+9,3, 0,0, 7
+9,4, 0,0, 7
+9,5, 0,0, 7
+9,6, 0,0, 7
+9,7, 0,0, 7
+9,8, 0,0, 7
+9,9, 0,0, 7
+9,10, 0,0, 7
+9,11, 0,0, 7
+9,12, 0,0, 7
+9,13, 0,0, 7
+
+[Begin action 10]
+10,1, 0,0, 7
+
+[Begin action 11]
+11,1, 0,0, 7
+11,2, 0,0, 7
+11,3, 0,0, 7
+11,4, 0,0, 7
+11,5, 0,0, 7
+11,6, 0,0, 7
+11,7, 0,0, 7
+11,8, 0,0, 7
+
+[Begin action 12]
+12,1, 0,0, 7
+12,2, 0,0, 7
+12,3, 0,0, 7
+12,4, 0,0, 7
+
+[Begin action 13]
+12,4, 0,0, 7
+12,3, 0,0, 7
+12,2, 0,0, 7
+12,1, 0,0, 7
+
+
+
+[Begin action 20]
+20,4, 0,0, 7
+20,5, 0,0, 7
+20,6, 0,0, 7
+20,7, 0,0, 7
+20,8, 0,0, 7
+20,1, 0,0, 7
+20,2, 0,0, 7
+20,3, 0,0, 7
+
+[Begin action 21]
+21,1, 0,0, 7
+21,2, 0,0, 7
+21,3, 0,0, 7
+21,4, 0,0, 7
+21,5, 0,0, 7
+21,6, 0,0, 7
+21,7, 0,0, 7
+21,8, 0,0, 7
+
+[Begin action 22]
+22,1, 0,0, 7
+22,2, 0,0, 7
+22,3, 0,0, 7
+22,4, 0,0, 7
+22,5, 0,0, 7
+22,6, 0,0, 7
+22,7, 0,0, 7
+22,8, 0,0, 7
+22,9, 0,0, 7
+22,10, 0,0, 7
+22,11, 0,0, 7
+22,12, 0,0, 7
+22,13, 0,0, 7
+22,14, 0,0, 7
+22,15, 0,0, 7
+22,16, 0,0, 7
+
+[Begin action 23]
+23,1, 0,0, 7
+23,2, 0,0, 7
+23,3, 0,0, 7
+23,4, 0,0, 7
+23,5, 0,0, 7
+23,6, 0,0, 7
+23,7, 0,0, 7
+23,8, 0,0, 7
+23,9, 0,0, 7
+23,10, 0,0, 7
+23,11, 0,0, 7
+23,12, 0,0, 7
+23,13, 0,0, 7
+23,14, 0,0, 7
+23,15, 0,0, 7
+23,16, 0,0, 7
+
+[Begin action 24]
+24,1, 0,0, 7
+24,2, 0,0, 7
+24,3, 0,0, 7
+24,4, 0,0, 7
+24,5, 0,0, 7
+24,6, 0,0, 7
+24,7, 0,0, 7
+24,8, 0,0, 7
+24,9, 0,0, 7
+24,10, 0,0, 7
+24,11, 0,0, 7
+24,12, 0,0, 7
+24,13, 0,0, 7
+
+[Begin action 25]
+25,1, 0,0, 7
+
+[Begin action 26]
+26,1, 0,0, 7
+26,2, 0,0, 7
+26,3, 0,0, 7
+26,4, 0,0, 7
+26,5, 0,0, 7
+26,6, 0,0, 7
+26,7, 0,0, 7
+26,8, 0,0, 7
+
+[Begin action 27]
+27,1, 0,0, 7
+27,2, 0,0, 7
+27,3, 0,0, 7
+27,4, 0,0, 7
+
+[Begin action 28]
+27,4, 0,0, 7
+27,3, 0,0, 7
+27,2, 0,0, 7
+27,1, 0,0, 7
+
+;------------------------
+[Begin action 50]
+5,1, 0,0, 7,H
+5,2, 0,0, 7,H
+5,3, 0,0, 7,H
+5,4, 0,0, 7,H
+5,5, 0,0, 7,H
+5,6, 0,0, 7,H
+5,7, 0,0, 7,H
+5,8, 0,0, 7,H
+
+[Begin action 60]
+6,1, 0,0, 7,H
+6,2, 0,0, 7,H
+6,3, 0,0, 7,H
+6,4, 0,0, 7,H
+6,5, 0,0, 7,H
+6,6, 0,0, 7,H
+6,7, 0,0, 7,H
+6,8, 0,0, 7,H
+
+[Begin action 70]
+7,1, 0,0, 7,H
+7,2, 0,0, 7,H
+7,3, 0,0, 7,H
+7,4, 0,0, 7,H
+7,5, 0,0, 7,H
+7,6, 0,0, 7,H
+7,7, 0,0, 7,H
+7,8, 0,0, 7,H
+7,9, 0,0, 7,H
+7,10, 0,0, 7,H
+7,11, 0,0, 7,H
+7,12, 0,0, 7,H
+7,13, 0,0, 7,H
+7,14, 0,0, 7,H
+7,15, 0,0, 7,H
+7,16, 0,0, 7,H
+
+[Begin action 80]
+8,1, 0,0, 7,H
+8,2, 0,0, 7,H
+8,3, 0,0, 7,H
+8,4, 0,0, 7,H
+8,5, 0,0, 7,H
+8,6, 0,0, 7,H
+8,7, 0,0, 7,H
+8,8, 0,0, 7,H
+8,9, 0,0, 7,H
+8,10, 0,0, 7,H
+8,11, 0,0, 7,H
+8,12, 0,0, 7,H
+8,13, 0,0, 7,H
+8,14, 0,0, 7,H
+8,15, 0,0, 7,H
+8,16, 0,0, 7,H
+
+[Begin action 90]
+9,1, 0,0, 7,H
+9,2, 0,0, 7,H
+9,3, 0,0, 7,H
+9,4, 0,0, 7,H
+9,5, 0,0, 7,H
+9,6, 0,0, 7,H
+9,7, 0,0, 7,H
+9,8, 0,0, 7,H
+9,9, 0,0, 7,H
+9,10, 0,0, 7,H
+9,11, 0,0, 7,H
+9,12, 0,0, 7,H
+9,13, 0,0, 7,H
+
+[Begin action 110]
+11,1, 0,0, 7,H
+11,2, 0,0, 7,H
+11,3, 0,0, 7,H
+11,4, 0,0, 7,H
+11,5, 0,0, 7,H
+11,6, 0,0, 7,H
+11,7, 0,0, 7,H
+11,8, 0,0, 7,H
+
+[Begin action 120]
+12,1, 0,0, 7,H
+12,2, 0,0, 7,H
+12,3, 0,0, 7,H
+12,4, 0,0, 7,H
+
+[Begin action 130]
+12,4, 0,0, 7,H
+12,3, 0,0, 7,H
+12,2, 0,0, 7,H
+12,1, 0,0, 7,H
+
+
+[Begin action 200]
+20,4, 0,0, 7,H
+20,5, 0,0, 7,H
+20,6, 0,0, 7,H
+20,7, 0,0, 7,H
+20,8, 0,0, 7,H
+20,1, 0,0, 7,H
+20,2, 0,0, 7,H
+20,3, 0,0, 7,H
+
+[Begin action 210]
+21,1, 0,0, 7,H
+21,2, 0,0, 7,H
+21,3, 0,0, 7,H
+21,4, 0,0, 7,H
+21,5, 0,0, 7,H
+21,6, 0,0, 7,H
+21,7, 0,0, 7,H
+21,8, 0,0, 7,H
+
+[Begin action 220]
+22,1, 0,0, 7,H
+22,2, 0,0, 7,H
+22,3, 0,0, 7,H
+22,4, 0,0, 7,H
+22,5, 0,0, 7,H
+22,6, 0,0, 7,H
+22,7, 0,0, 7,H
+22,8, 0,0, 7,H
+22,9, 0,0, 7,H
+22,10, 0,0, 7,H
+22,11, 0,0, 7,H
+22,12, 0,0, 7,H
+22,13, 0,0, 7,H
+22,14, 0,0, 7,H
+22,15, 0,0, 7,H
+22,16, 0,0, 7,H
+
+[Begin action 230]
+23,1, 0,0, 7,H
+23,2, 0,0, 7,H
+23,3, 0,0, 7,H
+23,4, 0,0, 7,H
+23,5, 0,0, 7,H
+23,6, 0,0, 7,H
+23,7, 0,0, 7,H
+23,8, 0,0, 7,H
+23,9, 0,0, 7,H
+23,10, 0,0, 7,H
+23,11, 0,0, 7,H
+23,12, 0,0, 7,H
+23,13, 0,0, 7,H
+23,14, 0,0, 7,H
+23,15, 0,0, 7,H
+23,16, 0,0, 7,H
+
+[Begin action 240]
+24,1, 0,0, 7,H
+24,2, 0,0, 7,H
+24,3, 0,0, 7,H
+24,4, 0,0, 7,H
+24,5, 0,0, 7,H
+24,6, 0,0, 7,H
+24,7, 0,0, 7,H
+24,8, 0,0, 7,H
+24,9, 0,0, 7,H
+24,10, 0,0, 7,H
+24,11, 0,0, 7,H
+24,12, 0,0, 7,H
+24,13, 0,0, 7,H
+
+[Begin action 260]
+26,1, 0,0, 7,H
+26,2, 0,0, 7,H
+26,3, 0,0, 7,H
+26,4, 0,0, 7,H
+26,5, 0,0, 7,H
+26,6, 0,0, 7,H
+26,7, 0,0, 7,H
+26,8, 0,0, 7,H
+
+[Begin action 270]
+27,1, 0,0, 7,H
+27,2, 0,0, 7,H
+27,3, 0,0, 7,H
+27,4, 0,0, 7,H
+
+[Begin action 280]
+27,4, 0,0, 7,H
+27,3, 0,0, 7,H
+27,2, 0,0, 7,H
+27,1, 0,0, 7,H

@@ -1,0 +1,411 @@
+; Definition of SLASH's stage
+; *** denotes values you should change/check for each stage.
+; The term "background" is used to mean both backgrounds and foregrounds.
+
+;--------------------------------------------------------
+[Info]
+ ;Name of the stage.
+name = "WAKU7 - Midnight Park"
+
+;--------------------------------------------------------
+[Camera]
+ ;Camera starting position: Usually 0 for both
+ ;***
+startx = 0
+starty = 0
+
+ ;Left and right bound of camera
+ ;You may want to fiddle a bit with these values to make sure the
+ ;background doesn't move too far or too little
+ ;***
+boundleft = -80 ;-60
+boundright = 80 ;60
+
+ ;High and low bound of camera
+ ;High is a negative number. Make is more negative if you want to
+ ;camera to be able to move higher.
+ ;Low should usually be 0.
+ ;If omitted, defaults to -25 and 0 respectively
+ ;***
+boundhigh = -202
+boundlow = -10
+
+ ;This is how much the camera will move vertically towards the
+ ;highest player. Valid values are from 0 to 1. A value of 0 will mean
+ ;the camera does not move up at all. A value of 1 will makes the camera
+ ;follow the highest player.
+ ;Typically .2 for normal-sized backgrounds. You may need to pull this
+ ;value up for taller backgrounds.
+verticalfollow = .5 ;.2
+
+ ;Distance player is from edge before camera starts to move. Typically 50
+tension = 50
+zoomin = 1
+zoomout = 0.8
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+ ;Player 1 starting coordinates.
+ ;p1startx is typically -70 and p2startx is 70.
+ ;p1starty and p1startz should be 0.
+p1startx = -70          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+;Don't change these values.
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+;--------------------------------------------------------
+[Scaling]
+ ;No need to change these values
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1.2     ;Scale to use at bottom
+
+;--------------------------------------------------------
+[Bound]
+ ;Distance from left/right edge of screen that player can move to
+ ;Typically 15
+screenleft = 15    ;Dist from left of screen that player can move to
+screenright = 15   ;Right edge
+
+;--------------------------------------------------------
+[StageInfo]
+ ;Z offset for drawing
+ ;Adjust this value to move the ground level up/down in the screen.
+ ;It's the position where the players stand at.
+ ;Up - smaller, Down - larger
+ ;***
+zoffset = 210 ;200
+
+ ;Leave this at 1. It makes the players face each other
+autoturn = 1
+
+ ;Set the following to 1 to have the background be reset between
+ ;rounds.
+resetBG = 1
+
+;--------------------------------------------------------
+[Shadow]
+ ;This is the shadow color given in r,g,b. Valid values for each
+ ;range from 0 (lightest) to 255 (darkest).
+ ;Defaults to 92,92,92 if omitted.
+color = 32,32,32
+
+ ;This is the scale factor of the shadow. Use a big scale factor
+ ;to make the shadow longer. You can use a NEGATIVE scale factor
+ ;to make the shadow fall INTO the screen.
+ ;Defaults to 0.4 if omitted.
+yscale = .23
+
+ ;Set to 1 to draw "reflection" shadows. Defaults to 0.
+reflect = 0
+
+;--------------------------------------------------------
+[Music]
+ ;Put a filename for an MP3 or MIDI here, or just comment
+ ;it out if you don't want music. If an invalid filename
+ ;is given, then no music will play.
+bgmusic = stages/020.mp3
+
+ ;Adjust the volume. 0 is normal, negative for softer, and
+ ;positive for louder (only for mp3 and mods)
+bgvolume = 255
+
+;========================================================
+;--------------------------------------------------------
+; Background definition
+; ***
+;-------------------------------------
+; [BG x]
+; type = ?       "Normal"/"Parallax"/"Height"  (def: "normal")
+; spriteno = ?, ? Sprite group and number: groupno, imgno  (req'd)
+; start = ?, ?   Starting location (integer)  (def: 0, 0)
+; delta = ?, ?   Change in location per camera unit moved (float)  (def: 1,1)
+; trans = ?      Transparency settings: "none"/"add"/"sub"/"avg" (def: "none")
+; mask = ?       Masking (int): 0 - off, 1 - on  (def: 0)
+; velocity = ?, ? Velocity: x, y (float): speed background moves (def: 0, 0)
+; tile = ?, ?    Tiling: xtile, ytile (int): 0 - off, 1 - infinite,
+;                        >1 - tile that number of times  (def: 0, 0)
+; tilespacing = ?, ? Tiling: x, y (int) : space between tiles (def: 0, 0)
+;  Parallax-only:
+; xscale = ?, ?    Top xscale, bottom xscale (float) (if used, then no tiling)
+; width = ?, ?     Top width, bottom width (int)  (if used, then tiles;
+;                             use either this or above, but not both)
+; yscalestart = ?  Starting y-scale (float, in percent)  (def: 100)
+; yscaledelta = ?  Change in y-scale per unit (float, in percent)  (def: 0)
+;-------------------------------------
+
+;-------------------------------------
+; Main background definition
+[BGdef]
+ ;Filename of sprite data
+spr = stages/waku7-midnightpark.sff
+ ;Set to 1 if you want to clear the screen to magenta before
+ ;drawing layer 0 (the default background). Good for spotting "holes"
+ ;in your background.
+debugbg = 0
+
+;----------
+; Start each background element with the following:
+; Make sure it's "[BG n]", where n is anything you like (it's only used to
+; report errors.) For example, you could use:  [BG TheFloor]
+; Specify as many as you like. This is an example of a normal background:
+;[BG 0]
+
+ ;The background type goes here: for now, only NORMAL and PARALLAX
+ ;If this line is omitted, the type will be assumed to be normal.
+;type  = normal
+
+ ;The sprite number to use for the background (from the SFF specified above)
+ ;It's the group-number, followed by a comma, then the sprite-number
+ ;*** Do not omit this line.
+;spriteno = 0, 0
+
+ ;This is the layer number, which determines where the sprite is drawn to.
+ ;Valid values are 0 and 1.
+ ;0 for background (behind characters), 1 for foreground (in front)
+ ;If this line is omitted, the default value of 0 will be assumed.
+;layerno = 0                
+
+ ;This is the starting location of the background in the format
+ ;x, y
+ ;If this line is omitted, the default value of 0,0 will be assumed.
+;start = 0, 0
+
+ ;These are the number of pixels the background moves for every single unit
+ ;of camera movement, in the format
+ ;x, y
+ ;For the main background (eg. the floor the players stand on) you'll want
+ ;to use a delta of 1,1. Things farther away should have a smaller delta,
+ ;like 0.5 for example. Things near the camera should have a larget delta.
+ ;If this line is omitted, the default value of 1,1 will be assumed.
+;delta = .5,.5
+
+ ;Here is the transparency setting of the background.
+ ;Valid values are:
+ ;"none" for normal drawing
+ ;"add" for colour addition (like a spotlight effect)
+ ;"sub" for colour subtraction (like a shadow effect)
+ ;If this line is omitted, it's assumed that there will be no transparency.
+;trans = none
+
+ ;Mask means whether or not to draw colour zero of a sprite.
+ ;If you turn masking off, the background will take less CPU power to draw,
+ ;so remember to turn it off on sprites that don't use it.
+ ;If this line is omitted, it's assumed that there will be no masking.
+;mask  = 0
+
+ ;The format for tiling is x,y. For each of them, the value is:
+ ;0 to use no tiling, 1 to tile, n where (n>1) to tile n times.
+ ;If this line is omitted, it's assumed that there will be no tiling.
+;tile  = 0, 0
+
+ ;This is the x and y space between each tile, for tiled backgrounds
+ ;If omitted, default value is 0,0
+;tilespacing = 0,0
+
+ ;This defines the drawing space, or "window" of the background. It's
+ ;given in the form
+ ;x1,y1, x2,y2
+ ;where (x1,y1)-(x2,y2) define a rectangular box.
+ ;Make the window smaller if you only want to draw part of the background.
+ ;You normally do not have to change this setting. Value values range from
+ ;0-319 for x, and 0-239 for y. The values are 0,0, 319,239 by default (full
+ ;screen).
+;window = 0,0, 319, 239
+
+ ;Similar to the delta parameter, this one affects the movement of
+ ;the window. Defaults to 0,0
+;windowdelta = 0,0
+
+;----------
+[BG Floor]
+type  = Normal
+spriteno = 1000, 0
+start = -320, -202
+delta = 1, 1
+
+;----------
+[BG GlowingFace]
+type  = Anim
+actionno = 2000
+start = -240, -166
+delta = 1, 1
+
+[Begin Action 2000]
+Loopstart
+2000, 0, 0, 0, 4
+2000, 1, 0, 0, 4
+2000, 2, 0, 0, 4
+2000, 3, 0, 0, 4
+2000, 4, 0, 0, 4
+2000, 5, 0, 0, 4
+2000, 6, 0, 0, 4
+2000, 7, 0, 0, 4
+2000, 8, 0, 0, 4
+2000, 9, 0, 0, 4
+2000,10, 0, 0, 4
+2000,11, 0, 0, 4
+2000,12, 0, 0, 4
+2000,13, 0, 0, 4
+2000,14, 0, 0, 4
+2000,15, 0, 0, 4
+
+;----------
+[BG FarAwayStreetLamp]
+type  = Anim
+actionno = 2100
+start = 243, 80
+delta = 1, 1
+
+[Begin Action 2100]
+Loopstart
+1100, 0, 0, 0, 2
+1100, 1, 0, 0, 2
+
+;----------
+[BG NearStreetLamp]
+type  = Anim
+actionno = 2200
+start = -79, -14
+delta = 1, 1
+
+[Begin Action 2200]
+Loopstart
+1200, 0, 0, 0, 2
+1200, 1, 0, 0, 2
+
+;----------
+[BG ALMUSign]
+type  = Anim
+actionno = 1300
+start = -239, -19
+delta = 1, 1
+
+[Begin Action 1300]
+Loopstart
+1300, 0, 0, 0, 2
+1300, 1, 0, 0, 2
+1300, 0, 0, 0, 2
+1300, 3, 0, 0, 2
+1300, 2, 0, 0, 2
+1300, 3, 0, 0, 2
+1300, 4, 0, 0, 2
+1300, 5, 0, 0, 2
+1300, 4, 0, 0, 2
+1300, 7, 0, 0, 2
+1300, 6, 0, 0, 2
+1300, 7, 0, 0, 2
+1300, 8, 0, 0, 2
+1300, 9, 0, 0, 2
+1300, 8, 0, 0, 2
+1300, 11, 0, 0, 2
+1300, 10, 0, 0, 2
+1300, 11, 0, 0, 2
+1300, 12, 0, 0, 2
+1300, 13, 0, 0, 2
+1300, 12, 0, 0, 2
+1300, 15, 0, 0, 2
+1300, 14, 0, 0, 2
+1300, 15, 0, 0, 2
+
+;----------
+[BG KanjiSign]
+type  = Anim
+actionno = 1400
+start = -320, -202
+delta = 1, 1
+
+[Begin Action 1400]
+Loopstart
+1400, 0, 0, 0, 2
+1400, 1, 0, 0, 2
+1400, 0, 0, 0, 2
+1400, 3, 0, 0, 2
+1400, 2, 0, 0, 2
+1400, 3, 0, 0, 2
+1400, 4, 0, 0, 2
+1400, 5, 0, 0, 2
+1400, 4, 0, 0, 2
+1400, 7, 0, 0, 2
+1400, 6, 0, 0, 2
+1400, 7, 0, 0, 2
+1400, 8, 0, 0, 2
+1400, 9, 0, 0, 2
+1400, 8, 0, 0, 2
+1400, 11, 0, 0, 2
+1400, 10, 0, 0, 2
+1400, 11, 0, 0, 2
+1400, 12, 0, 0, 2
+1400, 13, 0, 0, 2
+1400, 12, 0, 0, 2
+1400, 15, 0, 0, 2
+1400, 14, 0, 0, 2
+1400, 15, 0, 0, 2
+
+;----------
+[BG RHDSign]
+type  = Anim
+actionno = 1500
+start = 240, -165
+delta = 1, 1
+
+[Begin Action 1500]
+Loopstart
+1500, 0, 0, 0, 2
+1500, 1, 0, 0, 2
+1500, 0, 0, 0, 2
+1500, 3, 0, 0, 2
+1500, 2, 0, 0, 2
+1500, 3, 0, 0, 2
+1500, 4, 0, 0, 2
+1500, 5, 0, 0, 2
+1500, 4, 0, 0, 2
+1500, 7, 0, 0, 2
+1500, 6, 0, 0, 2
+1500, 7, 0, 0, 2
+1500, 6, 0, 0, 2
+1500, 7, 0, 0, 2
+1500, 6, 0, 0, 2
+1500, 9, 0, 0, 2
+1500, 8, 0, 0, 2
+1500, 9, 0, 0, 2
+1500, 10, 0, 0, 2
+1500, 11, 0, 0, 2
+1500, 10, 0, 0, 2
+1500, 1, 0, 0, 2
+1500, 0, 0, 0, 2
+1500, 1, 0, 0, 2
+
+;----------
+[BG CatsPlaying]
+type  = Anim
+actionno = 1600
+start = -254, 127
+delta = 1, 1
+
+[Begin Action 1600]
+Loopstart
+1600, 0, 0, 0, 6
+1600, 1, 0, 0, 6
+1600, 2, 0, 0, 6
+1600, 3, 0, 0, 6
+1600, 4, 0, 0, 6
+1600, 5, 0, 0, 6
+1600, 6, 0, 0, 6
+1600, 7, 0, 0, 6

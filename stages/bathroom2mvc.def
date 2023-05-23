@@ -1,0 +1,264 @@
+;Inside the Bathroom, ripado por DonRamon  
+;do jogo Marvel vs Capcom
+;Utilizando o emulador WinKawaks 1.41
+;cenário com visão aérea no super jump
+
+[Info]
+name = "Inside the Bathroom"
+author = "DonRamon" 
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -128
+boundright = 119
+boundhigh = -240
+boundlow = 0
+verticalfollow = .5
+tension = 50
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 221
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+color = 100,190,60
+yscale = .1
+
+[Music]
+bgmusic = sound/bathroom2mvc.mp3
+bgvolume = 0
+
+[BGdef]
+spr = stages/bathroom2mvc.sff
+debugbg = 1
+
+[BG fundo]
+type = normal
+spriteno = 0,0
+delta = 1,1
+start = -289,-240
+mask = 1
+
+[BG quadro]
+type = normal
+spriteno = 1,1
+delta = 1,1
+start = -153,48
+mask = 1
+
+[BG banheira]
+type = anim
+actionno = 2
+delta = 1,1
+start = 95,156
+mask = 1
+
+[BG objetos]
+type = normal
+spriteno = 1,0
+delta = 1,1
+start = -288,-111
+mask = 1
+
+[BG garota]
+type = anim
+actionno = 3
+delta = 1,1
+start = 129,81
+mask = 1
+
+[BG garota2]
+type = anim
+actionno = 4
+delta = 1,1
+start = 175,121
+mask = 1
+
+[BG vovó]
+type = anim
+actionno = 5
+delta = 1,1
+start = 45,126
+mask = 1
+
+[BG criança]
+type = anim
+actionno =6
+delta = 1,1
+start = 22,141
+mask = 1
+
+[BG velha1]
+type = anim
+actionno = 7
+delta = 1,1
+start = -133,86
+mask = 1
+
+[BG velha2]
+type = anim
+actionno = 8
+delta = 1,1
+start = -195,106
+mask =1
+
+[Begin Action 2]
+2,0, 0,0, 8
+2,1, 0,0, 4
+2,2, 0,0, 4
+2,3, 0,0, 8
+2,4, 0,0, 4
+2,5, 0,0, 4
+
+[Begin Action 3]
+3,0, 0,0, 6
+3,1, 0,0, 6
+3,2, 0,0, 7
+3,3, 0,0, 7
+3,4, 0,0, 7
+3,5, 0,0, 6
+
+[Begin Action 4]
+4,0, 0,0, 7
+4,1, 0,0, 7
+4,3, 0,0, 41
+4,2, 0,0, 7
+4,1, 0,0, 7
+4,0, 0,0, 7
+4,4, 0,0, 41
+4,0, 0,0, 7
+4,3, 0,0, 27
+4,4, 0,0, 151
+
+[Begin Action 5]
+5,0, 0,0, 14
+5,1, 0,0, 14
+5,0, 0,0, 14
+5,1, 0,0, 14
+5,0, 0,0, 114
+5,0, 0,0, 14
+5,1, 0,0, 14
+5,0, 0,0, 14
+5,1, 0,0, 14
+5,0, 0,0, 14
+5,1, 0,0, 14
+5,0, 0,0, 14
+5,1, 0,0, 14
+5,0, 0,0, 14
+5,1, 0,0, 14
+5,0, 0,0, 14
+5,1, 0,0, 14
+5,0, 0,0, 114
+5,0, 0,0, 14
+5,1, 0,0, 14
+5,0, 0,0, 14
+5,1, 0,0, 14
+5,0, 0,0, 14
+5,1, 0,0, 14
+5,0, 0,0, 14
+5,1, 0,0, 14
+
+[Begin action 6]
+6,0, 0,0, 14
+6,1, 0,0, 295
+6,0, 0,0, 13
+6,2, 0,0, 41
+
+[Begin Action 7]
+7,0, 0,0, 7
+7,1, 0,0, 7
+7,1, 0,0, 210
+7,0, 0,0, 7
+7,1, 0,0, 7
+7,0, 0,0, 7
+7,1, 0,0, 7
+7,0, 0,0, 7
+7,1, 0,0, 7
+7,0, 0,0, 7
+7,1, 0,0, 7
+7,1, 0,0, 210
+7,0, 0,0, 7
+7,1, 0,0, 7
+7,0, 0,0, 7
+7,1, 0,0, 7
+7,0, 0,0, 7
+7,1, 0,0, 7
+7,1, 0,0, 210
+7,0, 0,0, 7
+7,1, 0,0, 7
+7,0, 0,0, 7
+7,1, 0,0, 7
+7,0, 0,0, 7
+7,1, 0,0, 7
+7,0, 0,0, 7
+7,1, 0,0, 7
+7,0, 0,0, 7
+7,1, 0,0, 7
+7,0, 0,0, 7
+7,1, 0,0, 7
+7,0, 0,0, 7
+7,1, 0,0, 7
+7,1, 0,0, 210
+
+[Begin Action 8]
+8,0, 0,0, 7
+8,1, 0,0, 7
+8,0, 0,0, 7
+8,1, 0,0, 7
+8,0, 0,0, 7
+8,1, 0,0, 7
+8,0, 0,0, 7
+8,1, 0,0, 7
+8,0, 0,0, 7
+8,1, 0,0, 7
+8,0, 0,0, 7
+8,1, 0,0, 7
+8,0, 0,0, 7
+8,1, 0,0, 7
+8,1, 0,0, 140
+8,0, 0,0, 7
+8,1, 0,0, 7
+8,0, 0,0, 7
+8,1, 0,0, 7
+8,0, 0,0, 7
+8,1, 0,0, 7
+8,1, 0,0, 140
+8,0, 0,0, 7
+8,1, 0,0, 7
+8,0, 0,0, 7
+8,1, 0,0, 7
+8,0, 0,0, 7
+8,1, 0,0, 7
+8,0, 0,0, 7
+8,1, 0,0, 7
+8,0, 0,0, 7
+8,1, 0,0, 7
+8,1, 0,0, 140

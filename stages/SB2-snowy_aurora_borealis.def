@@ -1,0 +1,564 @@
+; BackGround - SB2 Snow Storm 2
+
+; Creator: Chrono_Strife
+; E-Mail: chronostrifeff7h@hotmail.com
+; Updated: January 2010
+
+; Web: FFFury 3.0 - http://members.lycos.co.uk/cstrife
+; Ripped: Super Butouden 2, Particle Illusion
+
+;Thanks to RaiTei, Neocide, and ~Sakamoto Miyu-tan~ for ideas.
+;Thanks to NemesisTheory for the sweet Ice Cap remix.
+;--------------------------------------------------------
+[Info]
+;Name of the stage.
+name = "Snowy Night"
+
+[Camera]
+startx = 0
+starty = 0
+
+boundleft =  -1000
+boundright = 1000
+boundhigh = -375
+boundlow = 0
+
+verticalfollow = 0.9
+tension = 50
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+ ;Don't change these values.
+leftbound  = -1400
+rightbound =  1400
+topbound  =  0
+botbound  =  0
+
+;--------------------------------------------------------
+[Scaling]
+ ;No need to change these values
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 15
+screenright = 15
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset   = 195
+autoturn  = 1
+HIres = 1
+
+;--------------------------------------------------------
+[Shadow]
+color = 108,108,108
+yscale = 0.4
+
+;--------------------------------------------------------
+[Music]
+ bgmusic = sound\Speed-Skirmish.mp3
+ bgvolume = 255
+
+;========================================================
+
+; Main background definition
+[BGdef]
+spr = sb2-snowy_aurora_borealis.sff
+
+;Solid Color Dark Blue Sky
+[BG Sky02]
+type  = normal
+spriteno = 3, 1
+layerno = 0                
+start = 0, 0
+delta = 0.1, 0
+trans = none
+mask  = 1
+tile  = 1, 1
+xscale = 1, 1
+yscalestart = 100
+yscaledelta = 0
+
+;Sky Gradient
+[BG Sky01]
+type  = parallax
+spriteno = 3,0
+layerno = 0
+start = 0, 120
+delta = 0.1, 1.5
+velocity = 0,0
+trans = none
+mask  = 1
+tile  = 1, 0
+xscale = 1, 1
+yscalestart = 100
+yscaledelta = 0
+
+[BG Cloud1]
+type  = anim
+actionno = 4
+layerno = 0
+start = 0, -780
+velocity = 0.5, 0
+delta = 0.3, 2
+tile  = 1, 0
+tilespacing = 640,480
+
+[BG Mtns02]
+type  = normal
+spriteno = 2, 1
+layerno = 0                
+start = 0, 179
+delta = 0.75, 1.45
+trans = none
+mask  = 1
+tile  = 1, 0
+xscale = 1, 1
+yscalestart = 100
+yscaledelta = 0
+;------------------------------------------Northern Lights--
+[BG NLights1]
+type  = anim
+actionno = 20
+layerno = 0
+start = 0, -230
+velocity = 0.25, 0
+delta = 0.2, 1.6
+tile  = 1, 0
+tilespacing = 798,500
+
+[BG NLights2]
+type  = anim
+actionno = 30
+layerno = 0
+start = 266, -230
+velocity = 0.25, 0
+delta = 0.2, 1.6
+tile  = 1, 0
+tilespacing = 798,500
+
+[BG NLights3]
+type  = anim
+actionno = 40
+layerno = 0
+start = 532, -230
+velocity = 0.25, 0
+delta = 0.2, 1.6
+tile  = 1, 0
+tilespacing = 798,500
+;-------------------------------------------Back snow layer
+[BG Snow00]
+type  = normal
+spriteno = 11, 0
+layerno = 0                
+start = 0, 0
+delta = 1.3, 1.3
+trans = add
+mask  = 1
+tile  = 1, 1
+velocity = 1,1
+xscale = 1, 1
+yscalestart = 100
+yscaledelta = 0
+;--------------------------------------------
+
+;Mountains
+[BG Mtns01]
+type  = normal
+spriteno = 2, 0
+layerno = 0                
+start = 0, 159
+delta = 1.0, 1.5
+trans = none
+mask  = 1
+tile  = 1, 0
+xscale = 1, 1
+yscalestart = 100
+yscaledelta = 0
+;-------------------------------------------Small snow layers
+[BG Snow01a]
+type  = normal
+spriteno = 8, 0
+layerno = 0                
+start = 0, 0
+delta = 1.7, 1.7
+trans = add
+mask  = 1
+tile  = 1, 1
+velocity = 4,1.5
+xscale = 1, 1
+yscalestart = 100
+yscaledelta = 0
+
+[BG Snow01b]
+type  = normal
+spriteno = 8, 0
+layerno = 0                
+start = 320, 240
+delta = 1.7, 1.7
+trans = add
+mask  = 1
+tile  = 1, 1
+velocity = 2.5,1
+xscale = 1, 1
+yscalestart = 100
+yscaledelta = 0
+;-------------------------------------------
+[BG Arena]
+type  = normal
+spriteno = 1, 0
+layerno = 0                
+start = 0, 294
+delta = 2, 2
+trans = none
+mask  = 1
+tile  = 1, 0
+xscale = 1, 1
+yscalestart = 100
+yscaledelta = 0
+;-------------------------------------------Middle Layer Snow under player
+[BG Snow02a]
+type  = normal
+spriteno = 9, 0
+layerno = 0                
+start = 0, 0
+delta = 2, 2
+trans = add
+mask  = 1
+tile  = 1, 1
+velocity = 7,2
+xscale = 1, 1
+yscalestart = 100
+yscaledelta = 0
+;-------------------------------------------Foreground stuff
+[BG ForeGround]
+type  = normal
+spriteno = 0,1
+layerno = 1
+start = 0, 369
+delta = 2.2, 2.2
+trans = none
+mask  = 1
+tile  = 1, 0
+xscale = 1, 1
+yscalestart = 100
+yscaledelta = 0
+
+;Middle snow layer on top of p1
+[BG Snow02b]
+type  = normal
+spriteno = 9, 0
+layerno = 1                
+start = 320, 240
+delta = 2, 2
+trans = add
+mask  = 1
+tile  = 1, 1
+velocity = 3,2
+xscale = 1, 1
+yscalestart = 100
+yscaledelta = 0
+
+;Top snow layer(large snow)
+[BG Snow03]
+type  = normal
+spriteno = 10, 0
+layerno = 1                
+start = 0, 0
+delta = 2.2, 2.2
+trans = add
+mask  = 1
+tile  = 1, 1
+velocity = 9,3
+xscale = 1, 1
+yscalestart = 100
+yscaledelta = 0
+
+[BG CloudT1]
+type  = anim
+actionno = 5
+layerno = 1
+start = 200, -780
+velocity = 0.6, 0
+delta = 0.4, 2
+tile  = 1, 0
+tilespacing = 640,480
+
+[BG CloudT2]
+type  = anim
+actionno = 5
+layerno = 1
+start = 0, -580
+velocity = 0.5, 0
+delta = 1, 2
+tile  = 1, 0
+tilespacing = 640,480
+
+
+;----------------------------------------------------------------------
+[Begin Action 4]
+4,0, 0,0, -1,,AS256D128
+
+[Begin Action 5]
+5,0, 0,0, -1,,AS256D256
+
+[Begin Action 20]
+20,30, 0,0, 9,,AS256D256
+20,29, 0,0, 9,,AS256D256
+20,28, 0,0, 9,,AS256D256
+20,27, 0,0, 9,,AS256D256
+20,26, 0,0, 9,,AS256D256
+20,25, 0,0, 9,,AS256D256
+20,24, 0,0, 9,,AS256D256
+20,23, 0,0, 9,,AS256D256
+20,22, 0,0, 9,,AS256D256
+20,21, 0,0, 9,,AS256D256
+20,20, 0,0, 9,,AS256D256
+20,19, 0,0, 9,,AS256D256
+20,18, 0,0, 9,,AS256D256
+20,17, 0,0, 9,,AS256D256
+20,16, 0,0, 9,,AS256D256
+20,15, 0,0, 9,,AS256D256
+20,14, 0,0, 9,,AS256D256
+20,13, 0,0, 9,,AS256D256
+20,12, 0,0, 9,,AS256D256
+20,11, 0,0, 9,,AS256D256
+20,10, 0,0, 9,,AS256D256
+20,11, 0,0, 9,,AS256D256
+20,12, 0,0, 9,,AS256D256
+20,13, 0,0, 9,,AS256D256
+20,14, 0,0, 9,,AS256D256
+20,15, 0,0, 9,,AS256D256
+20,16, 0,0, 9,,AS256D256
+20,17, 0,0, 9,,AS256D256
+20,18, 0,0, 9,,AS256D256
+20,19, 0,0, 9,,AS256D256
+20,20, 0,0, 9,,AS256D256
+20,21, 0,0, 9,,AS256D256
+20,22, 0,0, 9,,AS256D256
+20,23, 0,0, 9,,AS256D256
+20,24, 0,0, 9,,AS256D256
+20,25, 0,0, 9,,AS256D256
+20,26, 0,0, 9,,AS256D256
+20,27, 0,0, 9,,AS256D256
+20,28, 0,0, 9,,AS256D256
+20,29, 0,0, 9,,AS256D256
+20,30, 0,0, 9,,AS256D256
+20,31, 0,0, 9,,AS256D256
+20,32, 0,0, 9,,AS256D256
+20,33, 0,0, 9,,AS256D256
+20,34, 0,0, 9,,AS256D256
+20,35, 0,0, 9,,AS256D256
+20,36, 0,0, 9,,AS256D256
+20,37, 0,0, 9,,AS256D256
+20,38, 0,0, 9,,AS256D256
+20,39, 0,0, 9,,AS256D256
+20,40, 0,0, 9,,AS256D256
+20,41, 0,0, 9,,AS256D256
+20,42, 0,0, 9,,AS256D256
+20,43, 0,0, 9,,AS256D256
+20,44, 0,0, 9,,AS256D256
+20,45, 0,0, 9,,AS256D256
+20,46, 0,0, 9,,AS256D256
+20,47, 0,0, 9,,AS256D256
+20,48, 0,0, 9,,AS256D256
+20,49, 0,0, 9,,AS256D256
+20,48, 0,0, 9,,AS256D256
+20,47, 0,0, 9,,AS256D256
+20,46, 0,0, 9,,AS256D256
+20,45, 0,0, 9,,AS256D256
+20,44, 0,0, 9,,AS256D256
+20,43, 0,0, 9,,AS256D256
+20,42, 0,0, 9,,AS256D256
+20,41, 0,0, 9,,AS256D256
+20,40, 0,0, 9,,AS256D256
+20,39, 0,0, 9,,AS256D256
+20,38, 0,0, 9,,AS256D256
+20,37, 0,0, 9,,AS256D256
+20,36, 0,0, 9,,AS256D256
+20,35, 0,0, 9,,AS256D256
+20,34, 0,0, 9,,AS256D256
+20,33, 0,0, 9,,AS256D256
+20,32, 0,0, 9,,AS256D256
+20,31, 0,0, 9,,AS256D256
+
+[Begin Action 30]
+20,10, 0,0, 6,,AS256D256
+20,11, 0,0, 9,,AS256D256
+20,12, 0,0, 9,,AS256D256
+20,13, 0,0, 9,,AS256D256
+20,14, 0,0, 9,,AS256D256
+20,15, 0,0, 9,,AS256D256
+20,16, 0,0, 9,,AS256D256
+20,17, 0,0, 9,,AS256D256
+20,18, 0,0, 9,,AS256D256
+20,19, 0,0, 9,,AS256D256
+20,20, 0,0, 9,,AS256D256
+20,21, 0,0, 9,,AS256D256
+20,22, 0,0, 9,,AS256D256
+20,23, 0,0, 9,,AS256D256
+20,24, 0,0, 9,,AS256D256
+20,25, 0,0, 9,,AS256D256
+20,26, 0,0, 9,,AS256D256
+20,27, 0,0, 9,,AS256D256
+20,28, 0,0, 9,,AS256D256
+20,29, 0,0, 9,,AS256D256
+20,30, 0,0, 9,,AS256D256
+20,31, 0,0, 9,,AS256D256
+20,32, 0,0, 9,,AS256D256
+20,33, 0,0, 9,,AS256D256
+20,34, 0,0, 9,,AS256D256
+20,35, 0,0, 9,,AS256D256
+20,36, 0,0, 9,,AS256D256
+20,37, 0,0, 9,,AS256D256
+20,38, 0,0, 9,,AS256D256
+20,39, 0,0, 9,,AS256D256
+20,40, 0,0, 9,,AS256D256
+20,41, 0,0, 9,,AS256D256
+20,42, 0,0, 9,,AS256D256
+20,43, 0,0, 9,,AS256D256
+20,44, 0,0, 9,,AS256D256
+20,45, 0,0, 9,,AS256D256
+20,46, 0,0, 9,,AS256D256
+20,47, 0,0, 9,,AS256D256
+20,48, 0,0, 9,,AS256D256
+20,49, 0,0, 9,,AS256D256
+20,48, 0,0, 9,,AS256D256
+20,47, 0,0, 9,,AS256D256
+20,46, 0,0, 9,,AS256D256
+20,45, 0,0, 9,,AS256D256
+20,44, 0,0, 9,,AS256D256
+20,43, 0,0, 9,,AS256D256
+20,42, 0,0, 9,,AS256D256
+20,41, 0,0, 9,,AS256D256
+20,40, 0,0, 9,,AS256D256
+20,39, 0,0, 9,,AS256D256
+20,38, 0,0, 9,,AS256D256
+20,37, 0,0, 9,,AS256D256
+20,36, 0,0, 9,,AS256D256
+20,35, 0,0, 9,,AS256D256
+20,34, 0,0, 9,,AS256D256
+20,33, 0,0, 9,,AS256D256
+20,32, 0,0, 9,,AS256D256
+20,31, 0,0, 9,,AS256D256
+20,30, 0,0, 9,,AS256D256
+20,29, 0,0, 9,,AS256D256
+20,28, 0,0, 9,,AS256D256
+20,27, 0,0, 9,,AS256D256
+20,26, 0,0, 9,,AS256D256
+20,25, 0,0, 9,,AS256D256
+20,24, 0,0, 9,,AS256D256
+20,23, 0,0, 9,,AS256D256
+20,22, 0,0, 9,,AS256D256
+20,21, 0,0, 9,,AS256D256
+20,20, 0,0, 9,,AS256D256
+20,19, 0,0, 9,,AS256D256
+20,18, 0,0, 9,,AS256D256
+20,17, 0,0, 9,,AS256D256
+20,16, 0,0, 9,,AS256D256
+20,15, 0,0, 9,,AS256D256
+20,14, 0,0, 9,,AS256D256
+20,13, 0,0, 9,,AS256D256
+20,12, 0,0, 9,,AS256D256
+20,11, 0,0, 9,,AS256D256
+20,10, 0,0, 3,,AS256D256
+
+[Begin Action 40]
+20,20, 0,0, 3,,AS256D256
+20,19, 0,0, 9,,AS256D256
+20,18, 0,0, 9,,AS256D256
+20,17, 0,0, 9,,AS256D256
+20,16, 0,0, 9,,AS256D256
+20,15, 0,0, 9,,AS256D256
+20,14, 0,0, 9,,AS256D256
+20,13, 0,0, 9,,AS256D256
+20,12, 0,0, 9,,AS256D256
+20,11, 0,0, 9,,AS256D256
+20,10, 0,0, 9,,AS256D256
+20,11, 0,0, 9,,AS256D256
+20,12, 0,0, 9,,AS256D256
+20,13, 0,0, 9,,AS256D256
+20,14, 0,0, 9,,AS256D256
+20,15, 0,0, 9,,AS256D256
+20,16, 0,0, 9,,AS256D256
+20,17, 0,0, 9,,AS256D256
+20,18, 0,0, 9,,AS256D256
+20,19, 0,0, 9,,AS256D256
+20,20, 0,0, 9,,AS256D256
+20,21, 0,0, 9,,AS256D256
+20,22, 0,0, 9,,AS256D256
+20,23, 0,0, 9,,AS256D256
+20,24, 0,0, 9,,AS256D256
+20,25, 0,0, 9,,AS256D256
+20,26, 0,0, 9,,AS256D256
+20,27, 0,0, 9,,AS256D256
+20,28, 0,0, 9,,AS256D256
+20,29, 0,0, 9,,AS256D256
+20,30, 0,0, 9,,AS256D256
+20,31, 0,0, 9,,AS256D256
+20,32, 0,0, 9,,AS256D256
+20,33, 0,0, 9,,AS256D256
+20,34, 0,0, 9,,AS256D256
+20,35, 0,0, 9,,AS256D256
+20,36, 0,0, 9,,AS256D256
+20,37, 0,0, 9,,AS256D256
+20,38, 0,0, 9,,AS256D256
+20,39, 0,0, 9,,AS256D256
+20,40, 0,0, 9,,AS256D256
+20,41, 0,0, 9,,AS256D256
+20,42, 0,0, 9,,AS256D256
+20,43, 0,0, 9,,AS256D256
+20,44, 0,0, 9,,AS256D256
+20,45, 0,0, 9,,AS256D256
+20,46, 0,0, 9,,AS256D256
+20,47, 0,0, 9,,AS256D256
+20,48, 0,0, 9,,AS256D256
+20,49, 0,0, 9,,AS256D256
+20,48, 0,0, 9,,AS256D256
+20,47, 0,0, 9,,AS256D256
+20,46, 0,0, 9,,AS256D256
+20,45, 0,0, 9,,AS256D256
+20,44, 0,0, 9,,AS256D256
+20,43, 0,0, 9,,AS256D256
+20,42, 0,0, 9,,AS256D256
+20,41, 0,0, 9,,AS256D256
+20,40, 0,0, 9,,AS256D256
+20,39, 0,0, 9,,AS256D256
+20,38, 0,0, 9,,AS256D256
+20,37, 0,0, 9,,AS256D256
+20,36, 0,0, 9,,AS256D256
+20,35, 0,0, 9,,AS256D256
+20,34, 0,0, 9,,AS256D256
+20,33, 0,0, 9,,AS256D256
+20,32, 0,0, 9,,AS256D256
+20,31, 0,0, 9,,AS256D256
+20,30, 0,0, 9,,AS256D256
+20,29, 0,0, 9,,AS256D256
+20,28, 0,0, 9,,AS256D256
+20,27, 0,0, 9,,AS256D256
+20,26, 0,0, 9,,AS256D256
+20,25, 0,0, 9,,AS256D256
+20,24, 0,0, 9,,AS256D256
+20,23, 0,0, 9,,AS256D256
+20,22, 0,0, 9,,AS256D256
+20,21, 0,0, 9,,AS256D256
+20,20, 0,0, 6,,AS256D256
+

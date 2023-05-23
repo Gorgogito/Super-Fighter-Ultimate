@@ -1,0 +1,205 @@
+;--------------------------------------------------------
+;--------------------------------------------------------
+;         Sprites by Cosumo
+;         KOF 2K2+ EDIT
+;          NO OPENSOURCE
+;--------------------------------------------------------
+;--------------------------------------------------------
+;
+;========================================================
+[Info]
+ ;Name of the stage.
+name = "KOF 2002UM - Dojo - Night"
+
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -225
+boundright = 225
+boundhigh = 0
+boundlow = 0
+verticalfollow = .2
+floortension = 0
+tension = 60
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -70    
+p1starty = 0  
+p1startz = 0    
+p1facing = 1  
+
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0 
+botbound  =  0 
+
+;--------------------------------------------------------
+[Scaling]
+topz     = 0   
+botz     = 50 
+topscale = 1
+botscale = 1.2  
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 15  
+screenright = 15   
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 220
+autoturn = 1
+resetBG = 1
+hires = 0
+
+;--------------------------------------------------------
+[Shadow]
+intensity = 64
+color = 90,90,90
+yscale = .4
+fade.range = -400,-100
+
+;--------------------------------------------------------
+[Reflection]
+intensity = 0
+
+;--------------------------------------------------------
+[Music]
+bgmusic = stages/137.mp3
+bgvolume = 255
+
+;========================================================
+
+[BGdef]
+spr = stages/kof2002um-dojo-night.sff
+debugbg = 0
+
+;--------------------------------------------------------
+[BG CIELO]
+type = normal
+spriteno = 3,0
+start = 0, 0
+delta = 0.8, 0.8
+mask = 1
+trans = none
+layerno = 0
+velocity = 0,0
+tile = 0,0
+
+;--------------------------------------------------------
+[BG ARBOL1]
+type = normal
+spriteno = 1,0
+start = 0, 0
+delta = 0.8, 0.8
+mask = 1
+trans = none
+layerno = 0
+velocity = 0,0
+tile = 0,0
+
+;--------------------------------------------------------
+[BG ARBOL2]
+type = normal
+spriteno = 1,1
+start = 0, 0
+delta = 0.8, 0.8
+mask = 1
+trans = none
+layerno = 0
+velocity = 0,0
+tile = 0,0
+
+;--------------------------------------------------------
+[BG PISO]
+type = normal
+spriteno = 2,0
+start = 0, 0
+delta = 0.9, 0.9
+mask = 1
+trans = none
+layerno = 0
+velocity = 0,0
+tile = 0,0
+
+;--------------------------------------------------------
+[BG MARCO]
+type = normal
+spriteno = 0,0
+start = 0, 0
+delta = 0.9, 0.9
+mask = 1
+trans = none
+layerno = 0
+velocity = 0,0
+tile = 0,0
+
+;--------------------------------------------------------
+[BG EIJI]
+type = normal
+spriteno = 0,1
+start = 0, 0
+delta = 0.9, 0.9
+mask = 1
+trans = none
+layerno = 0
+velocity = 0,0
+tile = 0,0
+
+;--------------------------------------------------------
+[BG TUN FU]
+type = normal
+spriteno = 0,2
+start = 0, 0
+delta = 0.9, 0.9
+mask = 1
+trans = none
+layerno = 0
+velocity = 0,0
+tile = 0,0
+
+;--------------------------------------------------------
+[BG HOTARU]
+type = normal
+spriteno = 0,3
+start = 0, 0
+delta = 0.9, 0.9
+mask = 1
+trans = none
+layerno = 0
+velocity = 0,0
+tile = 0,0
+
+;--------------------------------------------------------
+[BG JUBEI]
+type = normal
+spriteno = 0,4
+start = 0, 0
+delta = 0.9, 0.9
+mask = 1
+trans = none
+layerno = 0
+velocity = 0,0
+tile = 0,0
+
+;--------------------------------------------------------
+[BG port]
+type = normal
+spriteno = 4,0
+start = 0, 0
+delta = 0.9, 0.9
+mask = 1
+trans = add1
+layerno = 1
+velocity = 0,0
+tile = 0,0

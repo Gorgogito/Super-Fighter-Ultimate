@@ -1,0 +1,370 @@
+;=======================================
+[Info]
+name = "Janemba's Stage"
+versiondate=18/11/2009
+mugenversion=04,14,2001
+author= "Tapion =Team OS="
+;=======================================
+[Camera]
+startx = 0
+starty = 0
+
+boundleft = -300
+boundright = 300
+
+boundhigh = -195
+boundlow = 0
+
+verticalfollow = .8
+tension = 50
+floortension = 0
+
+;=======================================
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+;--- Player 2 ---
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+;=======================================
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+;=======================================
+[Bound]
+screenleft = 15
+screenright = 15
+
+;=======================================
+[StageInfo]
+zoffset = 220
+autoturn = 1
+resetBG = 1
+
+;=======================================
+[Shadow]
+color = 80,80,80
+yscale = 0
+reflect = 0
+intensity = 10
+fade.range = -365,-35
+
+[Reflection]
+intensity = 150
+
+;=======================================
+[Music]
+bgmusic = sound/Hell_on_Earth.mp3
+bgvolume = 255
+
+;=======================================
+[BGdef]
+spr = Janemba.sff
+debugbg = 0
+
+;=======================================
+
+
+[BG cielo]
+type        = normal
+spriteno    = 0,1
+layerno     = 0
+start       = -320,-100
+delta       = 0.8,0.8
+trans       = none
+mask        = 0
+tile        = 1
+
+
+[BG colinas]
+type        = normal
+spriteno    = 0,7
+layerno     = 0
+start       = 0,0
+delta       = 0.8,0.8
+trans       = none
+mask        = 1
+tile        = 1
+
+[BG confites]
+type        = normal
+spriteno    = 2,2
+layerno     = 0
+start       = 0,0
+delta       = 0.7,0.7
+trans       = none
+mask        = 1
+tile        = 1
+sin.y=-3,270
+
+[BG confites]
+type        = normal
+spriteno    = 2,7
+layerno     = 0
+start       = 0,0
+delta       = 0.7,0.7
+trans       = none
+mask        = 1
+tile        = 0
+sin.y=-3,270
+
+[BG confites]
+type        = normal
+spriteno    = 2,7
+layerno     = 0
+start       = 1000,0
+delta       = 0.7,0.7
+trans       = none
+mask        = 1
+tile        = 0
+sin.y=-3,270
+
+
+[BG cubos]
+type        = normal
+spriteno    = 1,0
+layerno     = 0
+start       = 92,0
+delta       = 0.8,0.8
+trans       = none
+mask        = 1
+tile        = 0,0
+
+
+[BG confites 2]
+type        = normal
+spriteno    = 2,1
+layerno     = 0
+start       = 0,0
+delta       = 0.8,0.8
+trans       = none
+mask        = 1
+tile        = 1
+sin.y=-10,200
+
+
+[BG confites 3]
+type        = normal
+spriteno    = 2,0
+layerno     = 0
+start       = 0,0
+delta       = 1,1
+trans       = none
+mask        = 1
+tile        = 1
+sin.y=-7,180
+
+[BG verde aereo]
+type        = normal
+spriteno    = 2,6
+layerno     = 0
+start       = -230,-187
+delta       = 1,1
+trans       = none
+mask        = 1
+tile        = 0
+sin.y=-7,180
+
+[BG amarillo aereo]
+type        = normal
+spriteno    = 2,5
+layerno     = 0
+start       = -460,-280
+delta       = 1,1
+trans       = none
+mask        = 1
+tile        = 0
+sin.y=-7,180
+
+[BG amarillo]
+type        = normal
+spriteno    = 2,5
+layerno     = 0
+start       = 250,20
+delta       = 0.8,0.8
+trans       = none
+mask        = 1
+tile        = 0
+
+[BG verde]
+type        = normal
+spriteno    = 2,6
+layerno     = 0
+start       = 0,0
+delta       = 0.8,0.8
+trans       = none
+mask        = 1
+tile        = 0
+
+[BG piramide de bolas con pinches]
+type        = normal
+spriteno    = 3,0
+layerno     = 0
+start       = -60,0
+delta       = 0.8,0.8
+trans       = none
+mask        = 1
+tile        = 0
+
+[BG obstaculos]
+type        = normal
+spriteno    = 1,1
+layerno     = 0
+start       = 0,0
+delta       = 0.8,0.8
+trans       = none
+mask        = 1
+tile        = 1
+
+[BG Estanque]
+type        = normal
+spriteno    = 3,1
+layerno     = 0
+start       = 0,0
+delta       = 0.8,0.8
+trans       = none
+mask        = 1
+tile        = 0
+
+
+[BG Almas]
+type  = Anim
+actionno = 10
+layerno = 0
+start = 70,60;-277, -62
+velocity = 0, 0
+delta = 0.8, 0.8
+trans =  add
+mask  = 1
+tile  = 0, 0
+
+
+
+
+[BG ramas]
+type        = normal
+spriteno    = 0,4
+layerno     = 0
+start       = 0,0
+delta       = 0.9,0.9
+trans       = none
+mask        = 1
+tile        = 1
+
+[BG celeste]
+type        = normal
+spriteno    = 2,3
+layerno     = 1
+start       = 0,0
+delta       = 1.3,1
+trans       = none
+mask        = 1
+tile        = 0
+sin.y=-8,100
+
+[BG rojo]
+type        = normal
+spriteno    = 2,4
+layerno     = 1
+start       = 0,0
+delta       = 1.3,1
+trans       = none
+mask        = 1
+tile        = 0
+sin.y=-8,100
+
+[BG suelo]
+type        = normal
+spriteno    = 0,0
+layerno     = 0
+start       = 0,0
+delta       = 1,1
+trans       = none
+mask        = 1
+tile        = 1,0
+
+[BG diamente]
+type        = normal
+spriteno    = 1,2
+layerno     = 0
+start       = -154,13
+delta       = 1,1
+trans       = none
+mask        = 1
+tile        = 0
+
+[BG diamente]
+type        = normal
+spriteno    = 1,2
+layerno     = 0
+start       = -60,0
+delta       = 1,1
+trans       = none
+mask        = 1
+tile        = 0
+
+[BG diamente]
+type        = normal
+spriteno    = 1,2
+layerno     = 0
+start       = 150,5
+delta       = 1,1
+trans       = none
+mask        = 1
+tile        = 0
+
+[BG diamente]
+type        = normal
+spriteno    = 1,2
+layerno     = 0
+start       = 320,8
+delta       = 1,1
+trans       = none
+mask        = 1
+tile        = 0
+
+[BG diamente]
+type        = normal
+spriteno    = 1,2
+layerno     = 0
+start       = 520,10
+delta       = 1,1
+trans       = none
+mask        = 1
+tile        = 0
+
+[BG diamente]
+type        = normal
+spriteno    = 1,2
+layerno     = 0
+start       = 650,10
+delta       = 1,1
+trans       = none
+mask        = 1
+tile        = 0
+
+[Begin Action 10]
+10,0, 0,0, 10,,AS128D256
+10,1, 0,0, 10,,AS128D256
+10,2, 0,0, 10,,AS128D256
+10,3, 0,0, 10,,AS128D256
+10,4, 0,0,10,,AS128D256
+10,5, 0,0, 10,,AS128D256
+
+;=======================================

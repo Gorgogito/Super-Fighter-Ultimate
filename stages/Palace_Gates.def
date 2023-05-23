@@ -1,0 +1,370 @@
+﻿; Арена: Palace Gates MK1
+; Автор: Emsi-D
+; Рип спрайтов: Fly
+; Улучшения: Le@N (статуя Будды, храм и флаги), Markos (анимированные стражники)
+
+[Info]
+Name = "p4l4ceg4tes"
+Displayname = "Palace Gates"
+Mugenversion = 1.1
+
+[Camera]
+boundleft = -280
+boundright = 506
+boundhigh = -12
+tension = 90
+floortension = 30
+verticalfollow = .2
+overdrawhigh = 20
+overdrawlow = 20
+startzoom = 1
+zoomin = 1
+zoomout = 0.80
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1400
+rightbound = 1400
+
+[Bound]
+screenleft = 48
+screenright = 48
+
+[StageInfo]
+zoffset = 235
+autoturn = 1
+resetBG = 1
+localcoord = 400,254
+
+[Shadow]
+intensity = 190
+yscale = -.125
+
+[Music]
+bgmusic = sound/MK1/mk1_palace_gates.ogg
+bgmloopstart = 309115
+bgmloopend = -1
+
+[BGdef]
+spr = Palace_Gates.sff
+bgclearcolor = 165,231,255
+
+
+[BG Облака]
+type = normal
+spriteno = 0,8
+velocity = .5,0
+delta = 0,1
+start = -260,26
+tile = 1,0
+mask = 1
+
+[Bg Layer #2]
+type  = Normal
+Start = 140,-46
+spriteno = 0,8
+tile = 1,0
+velocity = .5,0
+mask = 1
+delta = 0,1
+trans = addalpha
+alpha = 140,80
+scalestart = .90,1
+
+[BG Горы]
+type = normal
+spriteno = 0,9
+delta = 0,1
+start = -200,98
+mask = 1
+scalestart = .90,1
+
+[BG Храм]
+type = normal
+spriteno = 0,10
+delta = .15,1
+start = -65,55
+mask = 1
+scalestart = .95,.90
+
+[BG Деревья]
+type = normal
+spriteno = 0,11
+delta = .465,1
+start = -359,51
+mask = 1
+scalestart = .91,1
+
+[BG Земля]
+type = parallax
+spriteno = 0,1
+delta = .91,1
+start = -18,187
+width = 56,59
+tile = 1,0
+
+[BG Переход между этажами]
+type = normal
+spriteno = 0,4
+delta = 1,1
+start = 0,250
+tile = 1,0
+
+[BG Пол]
+type = normal;parallax
+spriteno = 0,0
+delta = .96,1
+start = 103,240
+width = 1200,1450
+
+[BG Статуя]
+type = normal
+spriteno = 0,12
+delta = .93,1
+start = -42,89
+mask = 1
+
+[BG Кусты]
+type = normal
+spriteno = 0,16
+delta = .93,1
+start = 169,120
+mask = 1
+scalestart = .90,1
+
+[BG Ограждения]
+type = normal
+spriteno = 0,13
+delta = .93,1
+start = 42,144
+mask = 1
+
+[BG Заборчик за Буддой]
+type = normal
+spriteno = 0,49
+delta = .93,1
+start = 49,147
+mask = 1
+
+[BG Флаг слева]
+type = normal
+spriteno = 0,15
+delta = .93,1
+start = 26,78
+mask = 1
+
+[BG Статуя Будды]
+type = normal
+spriteno = 0,14
+delta = .93,1
+start = 60,54
+mask = 1
+
+[BG Флаг справа]
+type = anim
+actionno = 1
+delta = .93,1
+start = -5,50
+
+[Begin Action 1]
+0,15, 189,28, -1, H
+
+[BG Постаменты,статуи,забор и арка]
+type = normal
+spriteno = 0,2
+delta = .93,1
+start = -530,-29
+mask = 1
+
+[BG Огонь на столбе/Левый угол арены]
+type = anim
+actionno = 0
+delta = .93,1
+start = -313,31
+
+[BG Статуя в правом углу]
+type = normal
+spriteno = 0,3
+layerno = 1
+delta = .93,1
+start = -529,-25
+mask = 1
+
+[BG Огонь на столбе/Правый угол арены]
+type = anim
+actionno = 0
+delta = .93,1
+start = 520,32
+
+[Begin action 0]
+0,17, 0,0, 5
+0,18, 0,0, 4
+0,19, 0,0, 4
+0,20, 0,0, 4
+0,21, 0,0, 5
+0,22, 0,0, 5
+0,23, 0,0, 5
+0,24, 0,0, 4
+
+[BG Статуя в правом углу]
+type = normal
+spriteno = 0,7
+layerno = 1
+delta = .93,1
+start = 640,97
+mask = 1
+scalestart = .90,1
+
+[BG Большой факел]
+type = normal
+spriteno = 0,5
+layerno = 1
+delta = .93,1
+start = 619,39
+mask = 1
+
+[BG Огонь 1/Правый угол арены]
+type = anim
+actionno = 2
+layerno = 1
+delta = .93,1
+start = 602,-61
+
+[Begin action 2]
+0,25, 0,0, 5
+0,26, 0,0, 4
+0,27, 0,0, 4
+0,28, 0,0, 4
+0,29, 0,0, 5
+0,30, 0,0, 5
+0,31, 0,0, 5
+0,32, 0,0, 4
+
+[BG Маленький факел]
+type = normal
+spriteno = 0,6
+delta = .93,1
+start = 545,88
+mask = 1
+
+[BG Огонь 2/Правый угол арены]
+type = anim
+actionno = 3
+delta = .93,1
+start = 535,30
+
+[Begin action 3]
+0,33, 0,0, 5
+0,34, 0,0, 4
+0,35, 0,0, 4
+0,36, 0,0, 4
+0,37, 0,0, 5
+0,38, 0,0, 5
+0,39, 0,0, 5
+0,40, 0,0, 4
+
+[BG Стражник #1]
+type = anim
+actionno = 4
+delta = .935,1
+start = -28,94
+;mask = 11
+scalestart = .92,.97
+
+[Begin Action 4]
+0,41, 0,0, 5
+0,42, 0,0, 100
+0,43, 0,0, 6
+0,44, 0,0, 30
+0,43, 0,0, 6
+0,45, 0,0, 6
+0,46, 0,0, 6
+0,47, 0,0, 100
+0,48, 0,0, 5
+0,47, 0,0, 80
+0,48, 0,0, 5
+0,47, 0,0, 90
+0,46, 0,0, 6
+0,45, 0,0, 6
+0,43, 0,0, 6
+0,44, 0,0, 30
+0,43, 0,0, 6
+0,42, 0,0, 100
+0,41, 0,0, 5
+0,42, 0,0, 70
+
+[BG Стражник #2]
+type = anim
+actionno = 5
+delta = .935,1
+start = 245,94
+scalestart = .92,.97
+
+[Begin Action 5]
+0,47, 0,0, 80, H
+0,48, 0,0, 5, H
+0,47, 0,0, 90, H
+0,46, 0,0, 6, H
+0,45, 0,0, 6, H
+0,43, 0,0, 6, H
+0,44, 0,0, 30, H
+0,43, 0,0, 6, H
+0,42, 0,0, 100, H
+0,41, 0,0, 5, H
+0,42, 0,0, 70, H
+0,41, 0,0, 5, H
+0,42, 0,0, 100, H
+0,43, 0,0, 6, H
+0,44, 0,0, 30, H
+0,43, 0,0, 6, H
+0,45, 0,0, 6, H
+0,46, 0,0, 6, H
+0,47, 0,0, 100, H
+0,48, 0,0, 5, H
+
+[BG Стражник #3]
+type = anim
+actionno = 6
+delta = .935,1
+start = 493,94
+scalestart = .92,.97
+
+[Begin Action 6]
+0,42, 0,0, 250, H
+0,41, 0,0, 6, H
+0,42, 0,0, 500, H
+0,41, 0,0, 6, H
+
+[BG Стражник #4]
+type = anim
+actionno = 7
+delta = .935,1
+start = -280,94
+scalestart = .92,.97
+
+[Begin Action 7]
+0,47, 0,0, 80
+0,48, 0,0, 5
+0,47, 0,0, 90
+0,46, 0,0, 6
+0,45, 0,0, 6
+0,43, 0,0, 6
+0,44, 0,0, 30
+0,43, 0,0, 6
+0,42, 0,0, 100
+0,41, 0,0, 5
+0,42, 0,0, 70
+0,41, 0,0, 5
+0,42, 0,0, 100
+0,43, 0,0, 6
+0,44, 0,0, 30
+0,43, 0,0, 6
+0,45, 0,0, 6
+0,46, 0,0, 6
+0,47, 0,0, 100
+0,48, 0,0, 5

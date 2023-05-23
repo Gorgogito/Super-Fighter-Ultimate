@@ -1,0 +1,341 @@
+;----------------------------------------------------------------------------
+;第２４弾ステージ・・・※Ｄ４専用
+;[たったひとりの最終決戦]
+;製作者・・・YUSUKE
+;****************************************************************************
+;改変・転載は禁止という事で、お願い致します。
+;動画などへの使用は、このサイトアドレスを晒さなければＯＫです。
+;****************************************************************************
+;The 24th creation
+;[A Lonesome, Final Battle]
+;
+;Author = YUSUKE
+;http://freett.com/stages/
+;http://yusuke8.blog.shinobi.jp/
+;*************Special Thanks********************
+;tetsu様・・・音楽提供ありがとうございます
+;http://tetsumugen.blog85.fc2.com/
+;***********************************************
+;更新日・・2010/01/24
+
+[Info]
+name		= "Final Battle HR"
+
+[Camera]
+startx		= 0
+starty		= 0
+boundleft	= -190
+boundright	= 190
+boundhigh	= -180
+boundlow	= 0
+verticalfollow	= 1
+floortension	= 60
+tension		= 40
+
+[PlayerInfo]
+p1startx	= -70
+p1starty	= 0
+p1startz	= 0
+p1facing	= 1
+p2startx	= 70
+p2starty	= 0
+p2startz	= 0
+p2facing	= -1
+
+leftbound	= -1000
+rightbound	= 1000
+topbound	= 0
+botbound	= 0
+
+[Scaling]
+topz		= 0
+botz		= 50
+topscale	= 1
+botscale	= 1.2
+
+[Bound]
+screenleft	= 15
+screenright	= 15
+
+[StageInfo]
+zoffset		= 210
+autoturn	= 1
+resetBG		= 0
+HIres		= 1
+
+[Shadow]
+color		= 38,38,38
+yscale		= .15
+intensity	= 60
+fade.range	= -80,-30
+
+[Music]
+bgmusic		= sound/Dragon Theme.mp3
+bgvolume	= 255
+
+[BGdef]
+spr		= Final_Battle_HR.sff
+debugbg		= 0
+
+[BG 4]
+type		= normal
+spriteno	= 4,0
+start		= 0, 240
+delta		= .3,2.2
+mask		= 1
+
+[BG 4_2]
+type		= normal
+spriteno	= 4,2
+start		= 0, 240
+delta		= .45,2.2
+mask		= 1
+
+[BG 4_1]
+type		= normal
+spriteno	= 4,1
+start		= 0, 240
+delta		= .5,2.3
+mask		= 1
+
+[BG 1_4]
+type		= normal
+spriteno	= 1,4
+start		= -100, 240
+delta		= .65,2.2
+mask		= 1
+
+[BG 0_1]
+type		= normal
+spriteno	= 0,1
+start		= 0, 240
+delta		= .75,2.1
+mask		= 1
+
+[BG 0_0]
+type		= normal
+spriteno	= 0,0
+start		= 0, 240
+delta		= .9,2.1
+mask		= 1
+
+[BG 1_5]
+type		= normal
+spriteno	= 1,5
+start		= 0, 230
+delta		= 1.2,2.1
+mask		= 1
+
+[BG 1_3]
+type		= anim
+actionno	= 3
+start		= -120,240
+delta		= 1.35,2
+mask		= 1
+
+[BG 1_1]
+type		= normal
+spriteno	= 1,1
+start		= 0, 240
+delta		= 1.25,2.1
+mask		= 1
+
+[BG 1_2]
+type		= anim
+actionno	= 2
+start		= 10,230
+delta		= 1.35,2.2
+mask		= 1
+
+[BG 1]
+type		= parallax
+spriteno	= 1,0
+start		= 0, 240
+delta		= 1.3,2
+mask		= 1
+xscale		= .1,.1759
+
+[BG 3_5]
+type		= normal
+spriteno	= 3,5
+start		= 250, 225
+delta		= 1.45,2
+mask		= 1
+trans		= add1
+
+[BG 3_4]
+type		= normal
+spriteno	= 3,4
+start		= 250, 225
+delta		= 1.45,2
+mask		= 1
+
+[BG 3_3]
+type		= normal
+spriteno	= 3,3
+start		= 250, 225
+delta		= 1.5,2
+mask		= 1
+trans		= add1
+
+[BG 3]
+type		= anim
+actionno	= 6
+start		= 250,230
+delta		= 1.5,2
+mask		= 1
+
+[BG 1_8]
+type		= normal
+spriteno	= 1,8
+start		= 0, 240
+delta		= 1.4,2
+mask		= 1
+trans		= add1
+
+[BG 1_7]
+type		= normal
+spriteno	= 1,7
+start		= 0, 240
+delta		= 1.4,2
+mask		= 1
+
+[BG 1_11]
+type		= normal
+spriteno	= 1,11
+start		= -3, 237
+delta		= 1.4,2
+mask		= 1
+trans		= add1
+
+[BG 1_9]
+type		= normal
+spriteno	= 1,9
+start		= 0, 240
+delta		= 1.4,2
+mask		= 1
+
+[BG 1_10]
+type		= anim
+actionno	= 10
+start		= 10,265
+delta		= 1.35,2.2
+mask		= 1
+
+[BG 2_1]
+type		= anim
+actionno	= 5
+start		= 10,265
+delta		= 1.35,2.2
+mask		= 1
+
+[BG 1_6]
+type		= normal
+spriteno	= 1,6
+start		= 0, 240
+delta		= 2.,2.3
+mask		= 1
+
+[BG 1_6]
+type		= normal
+spriteno	= 1,6
+start		= 0, 240
+delta		= 2.,2.3
+mask		= 1
+layerno		= 1
+trans		= addalpha
+alpha		= 150,128
+
+[BG 0_2]
+type		= normal
+spriteno	= 0,2
+start		= 0, 240
+delta		= 2.,2.3
+mask		= 1
+
+[BG 0_2]
+type		= normal
+spriteno	= 0,2
+start		= 0, 240
+delta		= 2.,2.3
+mask		= 1
+layerno		= 1
+trans		= addalpha
+alpha		= 150,128
+
+[Begin Action 2]
+1,2,0, 0,20
+1,2,0,-1,20
+1,2,0,-2,20
+1,2,0,-3,20
+1,2,0,-4,20
+1,2,0,-5,20
+1,2,0,-6,20
+1,2,0,-7,20
+1,2,0,-8,20
+1,2,0,-7,20
+1,2,0,-6,20
+1,2,0,-5,20
+1,2,0,-4,20
+1,2,0,-3,20
+1,2,0,-2,20
+1,2,0,-1,20
+
+[Begin Action 3]
+1,3,0, 0,30
+1,3,0,-1,30
+1,3,0,-2,30
+1,3,0,-3,30
+1,3,0,-4,30
+1,3,0,-5,30
+1,3,0,-6,30
+1,3,0,-7,30
+1,3,0,-8,30
+1,3,0,-7,30
+1,3,0,-6,30
+1,3,0,-5,30
+1,3,0,-4,30
+1,3,0,-3,30
+1,3,0,-2,30
+1,3,0,-1,30
+
+[Begin Action 5]
+2,1,0, 0,20
+2,1,0,-1,20
+2,1,0,-2,20
+2,1,0,-3,20
+2,1,0,-4,20
+2,1,0,-5,20
+2,1,0,-6,20
+2,1,0,-7,20
+2,1,0,-8,20
+2,1,0,-7,20
+2,1,0,-6,20
+2,1,0,-5,20
+2,1,0,-4,20
+2,1,0,-3,20
+2,1,0,-2,20
+2,1,0,-1,20
+
+[Begin Action 6]
+3,0,0,0,20
+3,1,0,0,20
+3,2,0,0,20
+
+[Begin Action 10]
+1,10,0, 0,20
+1,10,0,-1,20
+1,10,0,-2,20
+1,10,0,-3,20
+1,10,0,-4,20
+1,10,0,-5,20
+1,10,0,-6,20
+1,10,0,-7,20
+1,10,0,-8,20
+1,10,0,-7,20
+1,10,0,-6,20
+1,10,0,-5,20
+1,10,0,-4,20
+1,10,0,-3,20
+1,10,0,-2,20
+1,10,0,-1,20

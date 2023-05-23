@@ -1,0 +1,403 @@
+
+[Info]
+name = "New Planet Vegita"
+displayname="New Planet Vegeta HR"
+Autor = "=Tapion=DBZ-TeamOS="
+versiondate=10/08/2010
+mugenversion=04,14,2001
+
+;=======================================
+;            Especial thanks
+;=======================================
+;-A los creadores de los fx de neblina.
+;-A Mugenfan2005: Por los rips del Budokai 3.
+;- ShinRyoga, por el Magma.             (efecto utilizado como mar)
+;- TonyADV, por el FX de Niebla roja.   (efecto utilizado como marea en el mar)
+; A chrono strife por sus rips de BuYuu Retsudan, Street Fighter Alpha,
+; MegaMan X6 and MegaMan X7.
+;- A Master Yoda por los sprites de vegetacion que utilizo el de otros
+;juegos para su stage  "YDA_Corridor".  (sin ese sprite la stage no hubira quedado tan bonita XD)
+;-A los creadores del juego de GBA DBZ Taiketsu el cual me sirvio para hacer unos buenos rips.
+;-A todos mis compañeros del Team Dbz OS por su apoyo y ayuda en cada proyecto.
+;-A todas aquellas personas que lanzan sus trabajo abiertamente sin restricciones para que todos
+;puedan utilizarlos sin ningun tipo de problema.
+;- Y A ti por descargar esta Stage.
+;Salu2 y espero que disfrutes la stage.
+;=======================================
+
+;--------------------------------------------------------
+
+[Camera]
+
+startx = 150
+starty = 0
+boundleft = -95
+boundright = 300
+
+
+boundhigh = -100
+boundlow = 0
+verticalfollow = .50
+floortension = 90
+tension = 50
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = 70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+;--- Player 2 ---
+p2startx = 210
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+;--------------------------------------------------------
+[Scaling]
+
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 15
+screenright = 15
+;--------------------------------------------------------
+[StageInfo]
+
+zoffset = 220
+autoturn = 1
+resetBG = 1
+hires= 1
+;--------------------------------------------------------
+[Shadow]
+color = 128,128,128
+yscale = .3
+reflect = 0
+
+;--------------------------------------------------------
+[Music]
+
+bgmusic = sound/MegatonaFurioso.mp3
+bgvolume = 255
+
+;========================================================
+;--------------------------------------------------------
+; Background definition
+; Main background definition
+[BGdef]
+spr = Nuevo_vegita2.sff
+debugbg = 1
+
+
+;----------
+
+[BG cielo]
+type        = normal
+spriteno    = 0,0
+layerno     = 0
+delta       = 1.3, 1.4
+start       = 0,-160
+trans       = none
+mask        = 0
+tile        = 1
+velocity = 0.030, 0
+
+[BG Nubes]
+type  = normal
+spriteno = 7, 1
+start = 500, -120
+delta = 1.3,1.4
+mask = 1
+trans = add
+velocity = 0.080, 0
+tile = 1, 1
+
+
+[BG Fog02]
+type  = normal
+spriteno = 7, 0
+start = 500,80
+delta = 1.4,1.4
+mask = 1
+trans = add
+velocity = 0.050, 0
+tile = 1, 0
+;tilespacing = 0, 0
+id = 7
+
+[BG montañas]
+type        = normal
+spriteno    = 30,0
+layerno     = 0
+delta       = 1.4, 1.4
+start       = 0,-100
+trans       = none
+mask        = 1
+tile        = 1
+
+[BG Niebla en las montañas]
+type        = normal
+spriteno    = 7,2
+start       = 0,185
+trans       = add
+mask        = 1
+tile        = 1,0
+velocity    = 0.1,0
+delta       = 1.4, 1.4
+
+[BG Mar]
+type        = normal
+spriteno    = 20,0
+start       = -100,240
+delta       = 1.4, 1.4
+mask        = 0
+tile        = 1,0
+
+
+
+
+[BG Marea]
+type        = normal
+spriteno    = 20,1
+layerno     = 0
+start       = 50,240
+trans       = add
+mask        = 0
+delta       = 1.4, 1.4
+tile        = 1,0
+sin.x= -2,100
+
+
+
+
+
+[BG palacio]
+type  = normal
+spriteno = 5, 2
+start = -220,265
+delta = 1.5, 1.5
+mask = 1
+
+
+[BG nave]
+type  = normal
+spriteno = 15, 0
+start = 233, 265
+delta = 1.5, 1.5
+mask = 1
+
+
+[BG tierras]
+type  = normal
+spriteno = 5, 0
+start = 12, 340
+delta = 1.5, 1.6
+mask = 1
+tile = 1,0
+
+
+[BG tierras]
+type  = normal
+spriteno = 0, 1
+start = -230, 223
+delta = 1.6, 1.6
+mask = 1
+tile= 1,0
+
+
+[BG edificios]
+type  = normal
+spriteno = 5, 1
+start = -180, 363
+delta = 1.6, 1.6
+mask = 1
+
+[BG edificios]
+type  = normal
+spriteno = 5, 1
+start = 480, 363
+delta = 1.6, 1.6
+mask = 1
+
+
+[BG edificios]
+type  = normal
+spriteno = 5, 3
+start = 12, 350
+delta = 1.6, 1.6
+mask = 1
+
+[BG edificios]
+type  = normal
+spriteno = 5, 3
+start = 600, 365
+delta = 1.6, 1.6
+mask = 1
+
+[BG edificios]
+type  = normal
+spriteno = 5, 1
+start = -700, 363
+delta = 1.6, 1.6
+mask = 1
+
+;--------------------------------------
+
+;Ruinas en primera perspectiva
+
+[BG edificios]
+type  = normal
+spriteno = 5, 3
+start = -250, 390
+delta = 1.7, 1.6
+mask = 1
+
+[BG edificios]
+type  = normal
+spriteno = 5, 1
+start = -380, 393
+delta = 1.7, 1.6
+mask = 1
+
+[BG edificios]
+type  = normal
+spriteno = 5, 1
+start = 680, 393
+delta = 1.7, 1.6
+mask = 1
+
+
+[BG edificios]
+type  = normal
+spriteno = 5, 3
+start = 270, 390
+delta = 1.7, 1.6
+mask = 1
+
+[BG edificios]
+type  = normal
+spriteno = 5, 1
+start = 30, 393
+delta = 1.7, 1.6
+mask = 1
+
+[BG edificios]
+type  = normal
+spriteno = 5, 3
+start = 780, 400
+delta = 1.7, 1.6
+mask = 1
+
+[BG edificios]
+type  = normal
+spriteno = 5, 1
+start = 380, 415
+delta = 1.7, 1.6
+mask = 1
+
+
+;--------------------------------------
+
+[BG Niebla en las Ruinas]
+type        = normal
+spriteno    = 7,3
+start       = 0,322
+trans       = add
+mask        = 1
+tile        = 1,0
+velocity    = 0.7,0
+delta       = 1.7, 1.6
+
+[BG vegetacion]
+type  = normal
+spriteno = 8, 1
+start = 130, 400
+delta = 1.8, 1.7
+mask = 1
+tile = 1, 0
+
+
+
+[BG pino]
+type  = normal
+spriteno = 8, 0
+start = 12, 490
+delta = 1.9, 1.8
+mask = 1
+tile = 1, 0
+tilespacing= 40
+
+[BG pino]
+type  = normal
+spriteno = 8, 0
+start = 70, 530
+delta = 1.9, 1.8
+mask = 1
+tile = 1, 0
+tilespacing= 40
+
+[BG pino]
+type  = normal
+spriteno = 8, 0
+start = 100, 510
+delta = 1.9, 1.8
+mask = 1
+tile = 1, 0
+tilespacing= 40
+
+[BG pino]
+type  = normal
+spriteno = 8, 0
+start = 130, 500
+delta = 1.9, 1.8
+mask = 1
+tile = 1, 0
+tilespacing= 40
+
+[BG Niebla delante de los pinos]
+type        = normal
+spriteno    = 7,3
+start       = 0,450
+trans       = add
+mask        = 1
+tile        = 1,0
+velocity    = 0.8,0
+delta       = 1.9, 1.8
+
+[BG Suelo de Tierra]
+type  = normal
+spriteno = 0, 3
+start = 0,370
+delta = 2, 2
+mask = 1
+velocity = 0, 0
+tile = 1,0
+
+[BG Suelo de Piedra]
+type  =  normal
+spriteno = 0, 2
+start = 0,437
+delta = 2, 2
+mask = 1
+velocity = 0, 0
+tile = 1,0
+
+
+
+
+
+
+
+

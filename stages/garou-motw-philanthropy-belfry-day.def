@@ -1,0 +1,1355 @@
+;==============================
+;	GAROU OMEGA STAGE
+;==============================
+;Author:	Claudio Toxi
+;Create Date:	2004.11.04
+
+;--------------------------------------------------------
+[Info]
+name = "Garou MOTW - PHILANTHROPY BELFRY - DAY"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -150
+boundright = 150
+boundhigh = -140
+boundlow = 0
+verticalfollow = .3
+floortension = 0
+tension = 50
+
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound = -1000
+rightbound = 1000
+topbound = 0
+botbound = 0
+
+;--------------------------------------------------------
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 15
+screenright = 15
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 210
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+[Shadow]
+intensity = 96
+color = 0,0,0
+yscale = .3
+fade.range = 0,0
+
+;--------------------------------------------------------
+[Reflection]
+intensity = 0
+
+;--------------------------------------------------------
+[Music]
+bgmusic = stages/014.mp3
+bgvolume = 255
+
+;--------------------------------------------------------
+[BGdef]
+spr = garou-motw-philanthropy-belfry-day.sff
+debugbg = 0
+
+[BG Building]
+type = anim
+actionno = 0
+layerno = 0
+start = 0,0
+delta = 1,1
+trans = none
+mask = 0
+tilespacing = 0,0
+[Begin action 0]
+0,0,0,0,10
+0,1,0,0,10
+0,2,0,0,10
+0,3,0,0,10
+
+[BG Belfry]
+type = anim
+actionno = 10
+layerno = 0
+start = -168,-144
+delta = 1,1
+trans = none
+mask = 0
+tilespacing = 0,0
+[Begin action 10]
+10,0,0,0,8
+10,1,0,0,8
+10,2,0,0,8
+10,3,0,0,8
+10,4,0,0,8
+10,5,0,0,8
+10,6,0,0,8
+10,7,0,0,8
+10,8,0,0,8
+10,9,0,0,8
+10,10,0,0,8
+10,11,0,0,8
+10,12,0,0,8
+10,13,0,0,8
+10,14,0,0,8
+10,15,0,0,8
+10,16,0,0,8
+10,17,0,0,8
+10,18,0,0,8
+10,19,0,0,8
+10,20,0,0,8
+10,21,0,0,8
+10,22,0,0,8
+10,23,0,0,8
+10,24,0,0,8
+10,25,0,0,8
+10,26,0,0,8
+10,27,0,0,8
+10,28,0,0,8
+10,29,0,0,8
+10,30,0,0,8
+10,31,0,0,8
+10,32,0,0,8
+10,33,0,0,8
+10,34,0,0,8
+10,35,0,0,8
+10,36,0,0,8
+10,37,0,0,8
+10,38,0,0,8
+10,39,0,0,8
+10,40,0,0,8
+10,41,0,0,8
+10,42,0,0,8
+10,43,0,0,8
+10,44,0,0,8
+10,45,0,0,8
+10,46,0,0,8
+10,47,0,0,8
+10,48,0,0,8
+10,49,0,0,8
+10,50,0,0,8
+10,51,0,0,8
+10,52,0,0,8
+10,53,0,0,8
+10,54,0,0,8
+10,55,0,0,8
+10,56,0,0,8
+10,57,0,0,8
+10,58,0,0,8
+10,59,0,0,8
+10,60,0,0,80
+
+[BG Pigeon 1]
+type = anim
+actionno = 21
+layerno = 0
+start = 300,-110
+delta = 1,1
+trans = none
+mask = 0
+tilespacing = 0,0
+ID = 1
+
+[BG Pigeon 2]
+type = anim
+actionno = 21
+layerno = 0
+start = 200,-120
+delta = 1,1
+trans = none
+mask = 0
+tilespacing = 0,0
+ID = 2
+
+[BG Pigeon 3]
+type = anim
+actionno = 21
+layerno = 0
+start = 250,-100
+delta = 1,1
+trans = none
+mask = 0
+tilespacing = 0,0
+ID = 3
+
+[BG Pigeon 4]
+type = anim
+actionno = 41
+layerno = 0
+start = -300,-110
+delta = 1,1
+trans = none
+mask = 0
+tilespacing = 0,0
+ID = 4
+
+[BG Pigeon 5]
+type = anim
+actionno = 41
+layerno = 0
+start = -200,-115
+delta = 1,1
+trans = none
+mask = 0
+tilespacing = 0,0
+ID = 5
+
+[BG Pigeon 6]
+type = anim
+actionno = 41
+layerno = 0
+start = -250,-105
+delta = 1,1
+trans = none
+mask = 0
+tilespacing = 0,0
+ID = 6
+
+[BG Pigeon 7]
+type = anim
+actionno = 31
+layerno = 0
+start = 275,-105
+delta = 1,1
+trans = none
+mask = 0
+tilespacing = 0,0
+ID = 7
+
+[BG Pigeon 8]
+type = anim
+actionno = 31
+layerno = 0
+start = 260,-107
+delta = 1,1
+trans = none
+mask = 0
+tilespacing = 0,0
+ID = 8
+
+[BG Pigeon 9]
+type = anim
+actionno = 31
+layerno = 0
+start = 305,-102
+delta = 1,1
+trans = none
+mask = 0
+tilespacing = 0,0
+ID = 9
+
+[BG Pigeon 10]
+type = anim
+actionno = 51
+layerno = 0
+start = -288,-101
+delta = 1,1
+trans = none
+mask = 0
+tilespacing = 0,0
+ID = 10
+
+[BG Pigeon 11]
+type = anim
+actionno = 51
+layerno = 0
+start = -346,-106
+delta = 1,1
+trans = none
+mask = 0
+tilespacing = 0,0
+ID = 11
+
+[BG Pigeon 12]
+type = anim
+actionno = 51
+layerno = 0
+start = -223,-107
+delta = 1,1
+trans = none
+mask = 0
+tilespacing = 0,0
+ID = 12
+
+[Begin action 20]
+20,0,0,0,4
+20,1,0,0,4
+20,2,0,0,4
+20,3,0,0,4
+[Begin action 21]
+21,0,0,0,4
+21,1,0,0,4
+21,2,0,0,4
+21,3,0,0,4
+[Begin action 22]
+22,0,0,0,3
+22,1,0,0,3
+22,2,0,0,3
+22,3,0,0,3
+[Begin action 23]
+23,0,0,0,4
+23,1,0,0,4
+23,2,0,0,4
+23,3,0,0,4
+[Begin action 24]
+24,0,0,0,200
+24,1,0,0,4
+24,2,0,0,4
+24,3,0,0,4
+[Begin action 25]
+25,0,0,0,4
+25,1,0,0,4
+25,2,0,0,4
+[Begin action 26]
+26,0,0,0,4
+26,1,0,0,4
+26,2,0,0,4
+26,3,0,0,4
+
+[Begin action 30]
+30,0,0,0,4
+30,1,0,0,4
+30,2,0,0,4
+30,3,0,0,4
+[Begin action 31]
+31,0,0,0,4
+31,1,0,0,4
+31,2,0,0,4
+31,3,0,0,4
+[Begin action 32]
+32,0,0,0,3
+32,1,0,0,3
+32,2,0,0,3
+32,3,0,0,3
+[Begin action 33]
+33,0,0,0,4
+33,1,0,0,4
+33,2,0,0,4
+33,3,0,0,4
+[Begin action 34]
+34,0,0,0,200
+34,1,0,0,4
+34,2,0,0,4
+34,3,0,0,4
+[Begin action 35]
+35,0,0,0,12
+;35,1,0,0,4
+;35,2,0,0,4
+[Begin action 36]
+36,0,0,0,4
+36,1,0,0,4
+36,2,0,0,4
+36,3,0,0,4
+
+[Begin action 40]
+20,0,0,0,4,H
+20,1,0,0,4,H
+20,2,0,0,4,H
+20,3,0,0,4,H
+[Begin action 41]
+21,0,0,0,4,H
+21,1,0,0,4,H
+21,2,0,0,4,H
+21,3,0,0,4,H
+[Begin action 42]
+22,0,0,0,3,H
+22,1,0,0,3,H
+22,2,0,0,3,H
+22,3,0,0,3,H
+[Begin action 43]
+23,0,0,0,4,H
+23,1,0,0,4,H
+23,2,0,0,4,H
+23,3,0,0,4,H
+[Begin action 44]
+24,0,0,0,200,H
+24,1,0,0,4,H
+24,2,0,0,4,H
+24,3,0,0,4,H
+[Begin action 45]
+25,0,0,0,4,H
+25,1,0,0,4,H
+25,2,0,0,4,H
+[Begin action 46]
+26,0,0,0,4,H
+26,1,0,0,4,H
+26,2,0,0,4,H
+26,3,0,0,4,H
+
+[Begin action 50]
+30,0,0,0,4,H
+30,1,0,0,4,H
+30,2,0,0,4,H
+30,3,0,0,4,H
+[Begin action 51]
+31,0,0,0,4,H
+31,1,0,0,4,H
+31,2,0,0,4,H
+31,3,0,0,4,H
+[Begin action 52]
+32,0,0,0,3,H
+32,1,0,0,3,H
+32,2,0,0,3,H
+32,3,0,0,3,H
+[Begin action 53]
+33,0,0,0,4,H
+33,1,0,0,4,H
+33,2,0,0,4,H
+33,3,0,0,4,H
+[Begin action 54]
+34,0,0,0,200,H
+34,1,0,0,4,H
+34,2,0,0,4,H
+34,3,0,0,4,H
+[Begin action 55]
+35,0,0,0,12,H
+;35,1,0,0,4,H
+;35,2,0,0,4,H
+[Begin action 56]
+36,0,0,0,4,H
+36,1,0,0,4,H
+36,2,0,0,4,H
+36,3,0,0,4,H
+
+;-----------------------------
+
+[BGctrldef P1]
+CtrlID = 1
+looptime = 1196
+
+[BGctrl P1]
+type = Velset
+time = 0
+x = -1
+y = 1
+
+[BGctrl P1]
+type = Velset
+time = 288
+x = 0
+y = 0
+
+[BGCtrl P1]
+type = anim
+time = 240
+value = 22
+
+[BGCtrl P1]
+type = anim
+time = 272
+value = 23
+
+[BGCtrl P1]
+type = anim
+time = 288
+value = 24
+
+[BGCtrl P1]
+type = anim
+time = 500
+value = 25
+
+[BGctrl P1]
+type = Velset
+time = 500
+x = -0.2
+
+[BGctrl P1]
+type = Velset
+time = 692
+x = 0
+y = 0
+
+[BGCtrl P1]
+type = anim
+time = 692
+value = 24
+
+[BGCtrl P1]
+type = anim
+time = 892
+value = 26
+
+[BGCtrl P1]
+type = anim
+time = 908
+value = 20
+
+[BGctrl P1]
+type = Velset
+time = 908
+x = -1.5
+y = -1.5
+
+[BGctrl P1]
+type = Velset
+time = 1190
+x = 0
+y = 0
+
+[BGctrl P1]
+type = Posset
+time = 1190
+x = 0
+y = 0
+
+;-----------------------------
+
+[BGctrldef P2]
+CtrlID = 2
+looptime = 1226
+
+[BGctrl P2]
+type = Velset
+time = 30
+x = -1
+y = 1
+
+[BGctrl P2]
+type = Velset
+time = 318
+x = 0
+y = 0
+
+[BGCtrl P2]
+type = anim
+time = 270
+value = 22
+
+[BGCtrl P2]
+type = anim
+time = 302
+value = 23
+
+[BGCtrl P2]
+type = anim
+time = 318
+value = 24
+
+[BGCtrl P2]
+type = anim
+time = 530
+value = 25
+
+[BGctrl P2]
+type = Velset
+time = 530
+x = -0.2
+
+[BGctrl P2]
+type = Velset
+time = 722
+x = 0
+y = 0
+
+[BGCtrl P2]
+type = anim
+time = 722
+value = 24
+
+[BGCtrl P2]
+type = anim
+time = 922
+value = 26
+
+[BGCtrl P2]
+type = anim
+time = 938
+value = 20
+
+[BGctrl P2]
+type = Velset
+time = 938
+x = -1.5
+y = -1.5
+
+[BGctrl P2]
+type = Velset
+time = 1220
+x = 0
+y = 0
+
+[BGctrl P2]
+type = Posset
+time = 1220
+x = 0
+y = 0
+
+;-----------------------------
+
+[BGctrldef P3]
+CtrlID = 3
+looptime = 1326
+
+[BGctrl P3]
+type = Velset
+time = 130
+x = -1
+y = 1
+
+[BGctrl P3]
+type = Velset
+time = 418
+x = 0
+y = 0
+
+[BGCtrl P3]
+type = anim
+time = 370
+value = 22
+
+[BGCtrl P3]
+type = anim
+time = 402
+value = 23
+
+[BGCtrl P3]
+type = anim
+time = 418
+value = 24
+
+[BGCtrl P3]
+type = anim
+time = 630
+value = 25
+
+[BGctrl P3]
+type = Velset
+time = 630
+x = -0.2
+
+[BGctrl P3]
+type = Velset
+time = 822
+x = 0
+y = 0
+
+[BGCtrl P3]
+type = anim
+time = 822
+value = 24
+
+[BGCtrl P3]
+type = anim
+time = 1022
+value = 26
+
+[BGCtrl P3]
+type = anim
+time = 1038
+value = 20
+
+[BGctrl P3]
+type = Velset
+time = 1038
+x = -1.5
+y = -1.5
+
+[BGctrl P3]
+type = Velset
+time = 1320
+x = 0
+y = 0
+
+[BGctrl P3]
+type = Posset
+time = 1320
+x = 0
+y = 0
+
+;-----------------------------
+
+[BGctrldef P4]
+CtrlID = 4
+looptime = 1204
+
+[BGctrl P4]
+type = Velset
+time = 8
+x = 1
+y = 1
+
+[BGctrl P4]
+type = Velset
+time = 296
+x = 0
+y = 0
+
+[BGCtrl P4]
+type = anim
+time = 248
+value = 42
+
+[BGCtrl P4]
+type = anim
+time = 280
+value = 43
+
+[BGCtrl P4]
+type = anim
+time = 296
+value = 44
+
+[BGCtrl P4]
+type = anim
+time = 508
+value = 45
+
+[BGctrl P4]
+type = Velset
+time = 508
+x = 0.2
+
+[BGctrl P4]
+type = Velset
+time = 700
+x = 0
+y = 0
+
+[BGCtrl P4]
+type = anim
+time = 700
+value = 44
+
+[BGCtrl P4]
+type = anim
+time = 900
+value = 46
+
+[BGCtrl P4]
+type = anim
+time = 916
+value = 40
+
+[BGctrl P4]
+type = Velset
+time = 916
+x = 1.5
+y = -1.5
+
+[BGctrl P4]
+type = Velset
+time = 1198
+x = 0
+y = 0
+
+[BGctrl P4]
+type = Posset
+time = 1198
+x = 0
+y = 0
+
+;-----------------------------
+
+[BGctrldef P5]
+CtrlID = 5
+looptime = 1304
+
+[BGctrl P5]
+type = Velset
+time = 108
+x = 1
+y = 1
+
+[BGctrl P5]
+type = Velset
+time = 396
+x = 0
+y = 0
+
+[BGCtrl P5]
+type = anim
+time = 348
+value = 42
+
+[BGCtrl P5]
+type = anim
+time = 380
+value = 43
+
+[BGCtrl P5]
+type = anim
+time = 396
+value = 44
+
+[BGCtrl P5]
+type = anim
+time = 608
+value = 45
+
+[BGctrl P5]
+type = Velset
+time = 608
+x = 0.2
+
+[BGctrl P5]
+type = Velset
+time = 800
+x = 0
+y = 0
+
+[BGCtrl P5]
+type = anim
+time = 800
+value = 44
+
+[BGCtrl P5]
+type = anim
+time = 1000
+value = 46
+
+[BGCtrl P5]
+type = anim
+time = 1016
+value = 40
+
+[BGctrl P5]
+type = Velset
+time = 1016
+x = 1.5
+y = -1.5
+
+[BGctrl P5]
+type = Velset
+time = 1298
+x = 0
+y = 0
+
+[BGctrl P5]
+type = Posset
+time = 1298
+x = 0
+y = 0
+
+;-----------------------------
+
+[BGctrldef P6]
+CtrlID = 6
+looptime = 1354
+
+[BGctrl P6]
+type = Velset
+time = 158
+x = 1
+y = 1
+
+[BGctrl P6]
+type = Velset
+time = 446
+x = 0
+y = 0
+
+[BGCtrl P6]
+type = anim
+time = 398
+value = 42
+
+[BGCtrl P6]
+type = anim
+time = 430
+value = 43
+
+[BGCtrl P6]
+type = anim
+time = 446
+value = 44
+
+[BGCtrl P6]
+type = anim
+time = 658
+value = 45
+
+[BGctrl P6]
+type = Velset
+time = 658
+x = 0.2
+
+[BGctrl P6]
+type = Velset
+time = 850
+x = 0
+y = 0
+
+[BGCtrl P6]
+type = anim
+time = 850
+value = 44
+
+[BGCtrl P6]
+type = anim
+time = 1050
+value = 46
+
+[BGCtrl P6]
+type = anim
+time = 1066
+value = 40
+
+[BGctrl P6]
+type = Velset
+time = 1066
+x = 1.5
+y = -1.5
+
+[BGctrl P6]
+type = Velset
+time = 1348
+x = 0
+y = 0
+
+[BGctrl P6]
+type = Posset
+time = 1348
+x = 0
+y = 0
+
+;-----------------------------
+
+[BGctrldef P7]
+CtrlID = 7
+looptime = 1596
+
+[BGctrl P7]
+type = Velset
+time = 400
+x = -1
+y = 1
+
+[BGctrl P7]
+type = Velset
+time = 688
+x = 0
+y = 0
+
+[BGCtrl P7]
+type = anim
+time = 640
+value = 32
+
+[BGCtrl P7]
+type = anim
+time = 672
+value = 33
+
+[BGCtrl P7]
+type = anim
+time = 688
+value = 34
+
+[BGCtrl P7]
+type = anim
+time = 900
+value = 35
+
+[BGCtrl P7]
+type = anim
+time = 1092
+value = 34
+
+[BGCtrl P7]
+type = anim
+time = 1292
+value = 36
+
+[BGCtrl P7]
+type = anim
+time = 1308
+value = 30
+
+[BGctrl P7]
+type = Velset
+time = 1308
+x = -1.5
+y = -1.5
+
+[BGctrl P7]
+type = Velset
+time = 1590
+x = 0
+y = 0
+
+[BGctrl P7]
+type = Posset
+time = 1590
+x = 0
+y = 0
+
+;-----------------------------
+
+[BGctrldef P8]
+CtrlID = 8
+looptime = 1646
+
+[BGctrl P8]
+type = Velset
+time = 450
+x = -1
+y = 1
+
+[BGctrl P8]
+type = Velset
+time = 738
+x = 0
+y = 0
+
+[BGCtrl P8]
+type = anim
+time = 690
+value = 32
+
+[BGCtrl P8]
+type = anim
+time = 722
+value = 33
+
+[BGCtrl P8]
+type = anim
+time = 738
+value = 34
+
+[BGCtrl P8]
+type = anim
+time = 950
+value = 35
+
+[BGCtrl P8]
+type = anim
+time = 1142
+value = 34
+
+[BGCtrl P8]
+type = anim
+time = 1342
+value = 36
+
+[BGCtrl P8]
+type = anim
+time = 1358
+value = 30
+
+[BGctrl P8]
+type = Velset
+time = 1358
+x = -1.5
+y = -1.5
+
+[BGctrl P8]
+type = Velset
+time = 1640
+x = 0
+y = 0
+
+[BGctrl P8]
+type = Posset
+time = 1640
+x = 0
+y = 0
+
+;-----------------------------
+
+[BGctrldef P9]
+CtrlID = 9
+looptime = 1546
+
+[BGctrl P9]
+type = Velset
+time = 350
+x = -1
+y = 1
+
+[BGctrl P9]
+type = Velset
+time = 638
+x = 0
+y = 0
+
+[BGCtrl P9]
+type = anim
+time = 590
+value = 32
+
+[BGCtrl P9]
+type = anim
+time = 622
+value = 33
+
+[BGCtrl P9]
+type = anim
+time = 638
+value = 34
+
+[BGCtrl P9]
+type = anim
+time = 850
+value = 35
+
+[BGCtrl P9]
+type = anim
+time = 1042
+value = 34
+
+[BGCtrl P9]
+type = anim
+time = 1242
+value = 36
+
+[BGCtrl P9]
+type = anim
+time = 1258
+value = 30
+
+[BGctrl P9]
+type = Velset
+time = 1258
+x = -1.5
+y = -1.5
+
+[BGctrl P9]
+type = Velset
+time = 1540
+x = 0
+y = 0
+
+[BGctrl P9]
+type = Posset
+time = 1540
+x = 0
+y = 0
+
+;-----------------------------
+
+[BGctrldef P10]
+CtrlID = 10
+looptime = 1446
+
+[BGctrl P10]
+type = Velset
+time = 250
+x = 1
+y = 1
+
+[BGctrl P10]
+type = Velset
+time = 538
+x = 0
+y = 0
+
+[BGCtrl P10]
+type = anim
+time = 480
+value = 53
+
+[BGCtrl P10]
+type = anim
+time = 422
+value = 52
+
+[BGCtrl P10]
+type = anim
+time = 538
+value = 54
+
+[BGCtrl P10]
+type = anim
+time = 750
+value = 55
+
+[BGCtrl P10]
+type = anim
+time = 942
+value = 54
+
+[BGCtrl P10]
+type = anim
+time = 1142
+value = 56
+
+[BGCtrl P10]
+type = anim
+time = 1158
+value = 50
+
+[BGctrl P10]
+type = Velset
+time = 1158
+x = 1.5
+y = -1.5
+
+[BGctrl P10]
+type = Velset
+time = 1440
+x = 0
+y = 0
+
+[BGctrl P10]
+type = Posset
+time = 1440
+x = 0
+y = 0
+
+;-----------------------------
+
+[BGctrldef P11]
+CtrlID = 11
+looptime = 1496
+
+[BGctrl P11]
+type = Velset
+time = 300
+x = 1
+y = 1
+
+[BGctrl P11]
+type = Velset
+time = 588
+x = 0
+y = 0
+
+[BGCtrl P11]
+type = anim
+time = 530
+value = 53
+
+[BGCtrl P11]
+type = anim
+time = 472
+value = 52
+
+[BGCtrl P11]
+type = anim
+time = 588
+value = 54
+
+[BGCtrl P11]
+type = anim
+time = 800
+value = 55
+
+[BGCtrl P11]
+type = anim
+time = 992
+value = 54
+
+[BGCtrl P11]
+type = anim
+time = 1192
+value = 56
+
+[BGCtrl P11]
+type = anim
+time = 1208
+value = 50
+
+[BGctrl P11]
+type = Velset
+time = 1208
+x = 1.5
+y = -1.5
+
+[BGctrl P11]
+type = Velset
+time = 1490
+x = 0
+y = 0
+
+[BGctrl P11]
+type = Posset
+time = 1490
+x = 0
+y = 0
+
+;-----------------------------
+
+[BGctrldef P12]
+CtrlID = 12
+looptime = 1596
+
+[BGctrl P12]
+type = Velset
+time = 400
+x = 1
+y = 1
+
+[BGctrl P13]
+type = Velset
+time = 688
+x = 0
+y = 0
+
+[BGCtrl P12]
+type = anim
+time = 630
+value = 53
+
+[BGCtrl P12]
+type = anim
+time = 572
+value = 52
+
+[BGCtrl P12]
+type = anim
+time = 688
+value = 54
+
+[BGCtrl P12]
+type = anim
+time = 900
+value = 55
+
+[BGCtrl P12]
+type = anim
+time = 1092
+value = 54
+
+[BGCtrl P12]
+type = anim
+time = 1292
+value = 56
+
+[BGCtrl P12]
+type = anim
+time = 1308
+value = 50
+
+[BGctrl P12]
+type = Velset
+time = 1308
+x = 1.5
+y = -1.5
+
+[BGctrl P12]
+type = Velset
+time = 1590
+x = 0
+y = 0
+
+[BGctrl P12]
+type = Posset
+time = 1590
+x = 0
+y = 0

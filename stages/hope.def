@@ -1,0 +1,255 @@
+;Dragon Ball Z 2 (Arcade) - Trunks Stage(round 2)
+;by CHOUJIN
+;http://choujin.mpage.jp
+;choujin@hotmail.com
+
+;--------------------------------------------------------
+[Info]
+name = "Future"
+
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -224
+boundright = 224
+boundhigh = -36
+boundlow = 0
+verticalfollow = .2;.138
+floortension = 0
+tension = 50
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+;--- Player 2 ---
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+leftbound  = -1000
+rightbound =  1000
+topbound  = 0
+botbound  = 0
+
+;--------------------------------------------------------
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 18;24
+screenright = 18;24
+
+[StageInfo]
+zoffset = 210
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+intensity = 96
+color = 0,0,0
+yscale = .3
+reflect = 0
+
+[Music]
+bgmusic = sound/DBZ_Trunks_Powerup.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/hope.sff
+
+
+[BG sky];空
+type= normal
+spriteno = 0,0
+start = 0, 0
+delta = .8,.8
+mask = 1
+
+[BG stage];ステージ
+type = normal
+spriteno = 0,1
+start = 0, 0
+delta = 1,1
+mask = 1
+
+[BG groundleft];地面左
+type= anim
+actionno = 1
+start = 0,0
+delta = 1,1
+mask = 1
+
+[BG groundright];地面右
+type= anim
+actionno = 2
+start = 0,0
+delta = 1,1
+mask = 1
+
+[BG trash];ゴミ箱
+type= anim
+actionno = 3
+start = 0,0
+delta = 1,1
+mask = 1
+
+[BG window];窓
+type= anim
+actionno = 4
+start = 0,0
+delta = 1,1
+mask = 1
+
+[BG timemachine];タイムマシン
+type= anim
+actionno = 5
+start = 0,0
+delta = 1,1
+mask = 1
+
+[BG smoke];煙
+type= anim
+actionno = 6
+start = 0,0
+delta = 1,1
+mask = 1
+
+[BG house-left];家左
+type= anim
+actionno = 7
+start = 0,0
+delta = 1,1
+mask = 1
+
+[BG house-right];家右
+type= anim
+actionno = 8
+start = 0,0
+delta = 1,1
+mask = 1
+
+[BG rain1];雨1
+type= anim
+actionno = 9
+start = 0,0
+layerno = 1
+mask = 0
+
+[BG rain2];雨2
+type= anim
+actionno = 10
+start = 0,0
+layerno = 1
+mask = 0
+
+;------------------------------動作
+
+[Begin action 1];地面左
+1,0, 0,0, 5
+1,1, 0,0, 5
+1,2, 0,0, 5
+1,3, 0,0, 5
+1,4, 0,0, 5
+
+[Begin action 2];地面右
+2,0, 0,0, 5
+2,1, 0,0, 5
+2,2, 0,0, 5
+2,3, 0,0, 5
+2,4, 0,0, 5
+
+[Begin action 3];ゴミ箱
+3,0, 0,0, 7
+-1,0, 0,0, 7
+3,1, 0,0, 7
+-2,0, 0,0, 7
+
+[Begin action 4];窓
+4,0, 0,0, 7
+-1,0, 0,0, 7
+4,1, 0,0, 7
+-2,0, 0,0, 7
+
+[Begin action 5];タイムマシン
+5,0, 0,0, 7
+-1,0, 0,0, 7
+5,1, 0,0, 7
+-2,0, 0,0, 7
+
+[Begin action 6];煙
+6,0, 0,0, 12
+6,1, 0,0, 12
+6,2, 0,0, 12
+6,3, 0,0, 12
+
+[Begin action 7];家左
+-1,0, 0,0, 7
+7,0, 0,0, 7
+-2,0, 0,0, 7
+7,1, 0,0, 7
+
+[Begin action 8];家右
+-1,0, 0,0, 7
+8,0, 0,0, 7
+-2,0, 0,0, 7
+8,1, 0,0, 7
+
+[Begin action 9];雨1
+9,0, 0,0, 1
+9,1, 25,0, 1
+9,0, 192,0, 1
+9,1, 217,0, 1
+9,0, -192,0, 1
+9,1, -217,0, 1
+9,0, 0,203, 1, HV
+9,1, 25,203, 1, HV
+9,0, 192,203, 1, HV
+9,1, 217,203, 1, HV
+9,0, -192,203, 1, HV
+9,1, -217,-203, 1, HV
+9,1, 0,0, 1
+9,0, 25,0, 1
+9,1, 192,0, 1
+9,0, 217,0, 1
+9,1, -192,0, 1
+9,0, -217,0, 1
+9,1, 0,203, 1, HV
+9,0, 25,203, 1, HV
+9,1, 192,203, 1, HV
+9,0, 217,203, 1, HV
+9,1, -192,203, 1, HV
+9,0, -217,-203, 1, HV
+
+[Begin action 10];雨2
+-1,0, 0,0, 2;中
+9,0, -384,0, 1;右
+9,1, -409,0, 1;右
+9,0, 384,0, 1;左
+9,1, 409,0, 1;左
+-2,0, 0,203, 2, HV;中
+9,0, -384,203, 1, HV;右
+9,1, -409,203, 1, HV;右
+9,0, 384,203, 1, HV;左
+9,1, 409,-203, 1, HV;左
+-1,0, 0,0, 2;中
+9,1, -384,0, 1;右
+9,0, -409,0, 1;右
+9,1, 384,0, 1;左
+9,0, 409,0, 1;左
+-2,0, 0,203, 2, HV;中
+9,1, -384,203, 1, HV;右
+9,0, -409,203, 1, HV;右
+9,1, 384,203, 1, HV;左
+9,0, 409,-203, 1, HV;左

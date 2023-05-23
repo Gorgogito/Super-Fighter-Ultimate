@@ -1,0 +1,155 @@
+﻿; Арена: Bell Tower MK3
+; Автор: Emsi-D
+; Рип спрайтов: Fly
+; Улучшения: Markos (колокола)
+
+[Info]
+Name = "b3ll_t0wer"
+Displayname = "Bell Tower"
+Mugenversion = 1.1
+
+[Camera]
+boundleft = -350
+boundright = 353
+boundhigh = -20
+boundlow = 900
+tension = 100
+verticalfollow = 0.0001
+floortension = -110000
+overdrawhigh = 20
+overdrawlow = 20
+startzoom = 1
+zoomin = 1
+zoomout = 0.85
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1400
+rightbound = 1400
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+[StageInfo]
+zoffset = 222
+autoturn = 1
+resetBG = 1
+localcoord = 400,254
+
+[Shadow]
+intensity = 190
+yscale = .20
+
+[Music]
+bgmusic = sound/MK3/mk3_the_rooftop.ogg
+bgmloopstart = 105703
+bgmloopend = -1
+
+[BGdef]
+spr = Bell_Tower.sff
+bgclearcolor = 0,0,33
+
+
+[BG Луна]
+type = normal
+spriteno = 0,6
+delta = .195,1
+start = 10,22
+mask = 1
+scalestart = .86,1
+
+[BG Стена]
+type = normal
+spriteno = 0,5
+delta = .34,1
+start = -2,-65
+mask = 1
+scalestart = 1.04,1
+
+[BG Дальние столбы]
+type = normal
+spriteno = 0,4
+delta = .62,1
+start = -1,-59
+mask = 1
+scalestart = .94,1
+
+[BG 3 колокола]
+type = normal
+spriteno = 0,9
+delta = .71,1
+start = 69,-53
+mask = 1
+scalestart = .94,1
+
+[BG Верёвки за ограждением]
+type = normal
+spriteno = 0,3
+delta = .765,1
+start = 0,-56
+mask = 1
+scalestart = .94,1
+
+[BG 4 колокола]
+type = normal
+spriteno = 0,8
+delta = .735,1
+start = 36,-53
+mask = 1
+scalestart = .94,1
+
+[BG 4 колокола]
+type = normal
+spriteno = 0,11
+delta = 1.535,1;.735,1
+start = 438,-53
+mask = 1
+layerno = 1
+scalestart = .94,1
+
+[BG Центральный колокол]
+type = normal
+spriteno = 0,7
+delta = .620,1
+start = -56,-65
+mask = 1
+scalestart = .94,1
+
+[BG Переход между этажами]
+type = normal
+spriteno = 0,10
+delta = .9,1
+start = 87,243
+tile = 1,0
+scalestart = .94,1
+
+[BG Пол]
+type = parallax
+spriteno = 0,0
+delta = .9,1
+start = 0,221
+width = 1180,1300
+scalestart = .94,1
+
+[BG Столбы и ограждение]
+type = normal
+spriteno = 0,1
+delta = .91,1
+start = 0,-60
+mask = 1
+scalestart = .94,1
+
+[BG Верёвки]
+type = normal
+spriteno = 0,2
+delta = 1.535,1
+start = -1,-59
+mask = 1
+layerno = 1
+scalestart = .94,1

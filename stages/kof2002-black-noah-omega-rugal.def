@@ -1,0 +1,290 @@
+;--------------------------------------------------------
+;RUGAL'S PLANE 2K2 STAGE BY CIRIO
+;--------------------------------------------------------
+;e-mail:  cirio@rome.com
+;website: www.ciriomugen.com
+;--------------------------------------------------------
+[Info]
+name = "KOF 2002 - Black Noah - Omega Rugal"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -216
+boundright = 216
+boundhigh = -8
+boundlow = 0
+verticalfollow = .1
+floortension = 0
+tension = 60
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -70          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+;--------------------------------------------------------
+[Scaling]
+topz     = 0       
+botz     = 50      
+topscale = 1       
+botscale = 1.2     
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 15    ;Dist from left of screen that player can move to
+screenright = 15   ;Right edge
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 215
+autoturn = 1
+resetBG = 0
+
+;--------------------------------------------------------
+[Shadow]
+color = 50,50,50
+yscale = -0.12
+reflect = 0
+
+;--------------------------------------------------------
+[Music]
+bgmusic = stages/110.mp3
+bgvolume = 255
+
+
+[BGdef]
+spr = stages/kof2002-black-noah-omega-rugal.sff
+
+
+debugbg = 0
+
+;----------
+[BG 1]
+type  = normal
+spriteno = 0,1
+start = -264, -8
+mask = 0
+delta = .481
+
+[BG 2]
+type  = anim
+actionno = 2
+start = -264, 83
+mask = 0
+delta = .481
+
+[BG 2]
+type  = anim
+actionno = 3
+start = -120, -8
+mask = 1
+delta = .481
+
+[BG 8]
+type  = anim
+actionno = 8
+start = 0, -8
+delta = .481
+mask = 1
+
+[BG 9]
+type  = anim
+actionno = 9
+start = -160, -8
+mask = 0
+delta = 0
+
+
+[BG 4]
+type  = anim
+actionno = 4
+start = -376, 48
+mask = 1
+
+[BG 6]
+type  = anim
+actionno = 5
+start = -336, 176
+mask = 1
+
+[BG 5]
+type  = anim
+actionno = 6
+start = -119, 48
+mask = 1
+
+
+[BG 7]
+type  = anim
+actionno = 7
+start = 87, 192
+mask = 1
+
+[BG 1]
+type  = normal
+spriteno = 1,1
+start = -376, 64
+mask = 1
+layerno = 1
+
+[BG 1]
+type  = normal
+spriteno = 1,2
+start = 160, 208
+mask = 1
+layerno = 1
+
+[BG 1]
+type  = normal
+spriteno = 1,3
+start = -376, -8
+mask = 1
+layerno = 1
+
+[BG 1]
+type  = normal
+spriteno = 1,4
+start = 160, -8
+mask = 1
+layerno = 1
+
+[Begin action 2]
+2,1, 0,0, 3
+2,2, 0,0, 3
+2,3, 0,0, 3
+2,4, 0,0, 3
+2,5, 0,0, 3
+2,6, 0,0, 3
+2,7, 0,0, 3
+2,8, 0,0, 3
+
+
+[Begin action 3]
+3,1, 0,0, 3
+3,2, 0,0, 3
+3,3, 0,0, 3
+3,4, 0,0, 3
+3,5, 0,0, 3
+3,6, 0,0, 3
+3,7, 0,0, 3
+3,8, 0,0, 3
+
+[Begin action 4]
+4,1, 0,0, 3
+4,2, 0,0, 3
+4,3, 0,0, 3
+4,4, 0,0, 3
+4,5, 0,0, 3
+4,6, 0,0, 3
+4,7, 0,0, 3
+4,8, 0,0, 3
+
+
+[Begin action 5]
+5,1, 0,0, 8
+5,2, 0,0, 8
+5,3, 0,0, 8
+5,4, 0,0, 8
+
+
+[Begin action 6]
+6,3, 0,0, 3
+6,4, 0,0, 3
+6,5, 0,0, 3
+6,6, 0,0, 3
+6,7, 0,0, 3
+6,8, 0,0, 3
+6,1, 0,0, 3
+6,2, 0,0, 3
+
+[Begin action 7]
+7,1, 0,0, 8
+7,2, 0,0, 8
+7,3, 0,0, 8
+7,4, 0,0, 8
+
+
+[Begin action 8]
+10000,0,0,0,100
+Loopstart
+8,1, 0,0, 3
+8,2, 0,0, 3
+8,3, 0,0, 3
+8,4, 0,0, 3
+10000,0,0,0,200
+8,1, 100,0, 3
+8,2, 100,0, 3
+8,3, 100,0, 3
+8,4, 100,0, 3
+10000,0,0,0,200
+8,1, -30,0, 3
+8,2, -30,0, 3
+8,3, -30,0, 3
+8,4, -30,0, 3
+10000,0,0,0,200
+8,1, -90,0, 3
+8,2, -90,0, 3
+8,3, -90,0, 3
+8,4, -90,0, 3
+10000,0,0,0,200
+8,1, 40,0, 3
+8,2, 40,0, 3
+8,3, 40,0, 3
+8,4, 40,0, 3
+10000,0,0,0,200
+8,1, 150,0, 3
+8,2, 150,0, 3
+8,3, 150,0, 3
+8,4, 150,0, 3
+10000,0,0,0,200
+8,1, -10,0, 3
+8,2, -10,0, 3
+8,3, -10,0, 3
+8,4, -10,0, 3
+10000,0,0,0,200
+8,1, 70,0, 3
+8,2, 70,0, 3
+8,3, 70,0, 3
+8,4, 70,0, 3
+10000,0,0,0,200
+8,1, -110,0, 3
+8,2, -110,0, 3
+8,3, -110,0, 3
+8,4, -110,0, 3
+10000,0,0,0,200
+8,1, -60,0, 3
+8,2, -60,0, 3
+8,3, -60,0, 3
+8,4, -60,0, 3
+10000,0,0,0,200
+8,1, 50,0, 3
+8,2, 50,0, 3
+8,3, 50,0, 3
+8,4, 50,0, 3
+10000,0,0,0,200
+
+[Begin action 9]
+10000,0,0,0,103
+Loopstart
+9,1, 0,0, 3,,A2
+9,2, 0,0, 3,,A2
+9,3, 0,0, 3,,A2
+9,2, 0,0, 3,,A2
+9,1, 0,0, 3,,A2
+10000,0,0,0,197

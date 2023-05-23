@@ -1,0 +1,197 @@
+-----------------------------------------------------------------------\
+Hotest news from Mugen world? sure! Mugen Warriors Union! Join us!     |
+-----------------------------------------------------------------------|                                                                  
+ ____   _   _   ____  _____  ____   _ _ _  _   _    ____  ___   ____   |
+|    \ | | | | / _  || ___ ||  _ \ | | | || | | |  / ___)/ _ \ |    \  |
+| | | || |_| |( (_| || ____|| | | || | | || |_| |_( (___| |_| || | | | |
+|_|_|_||____/  \___ ||_____)|_| |_| \___/ |____/(_)\____)\___/ |_|_|_| |
+              (_____|                                                  |
+-----------------------------------------------------------------------/
+| MUGENWU.com | Tuffle Planet stage | by DooM and Kratos | MUGENWU.COM |
+-----------------------------------------------------------------------/
+
+[Info]
+name = "Tuffle Planet"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -107
+boundright = 340
+boundhigh = -200
+boundlow = 0
+verticalfollow = .8
+floortension = 30
+tension = 160
+
+[PlayerInfo]
+p1startx = -90          
+p1starty = 0           
+p1startz = 0            
+p1facing = 1           
+p2startx = 90
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound  = -1000 
+rightbound =  1000
+topbound  =  -200     
+botbound  =  0     
+
+[Scaling]
+topz     = 0       
+botz     = 50      
+topscale = 1      
+botscale = 1.2     
+
+[Bound]
+screenleft = 15    
+screenright = 15
+
+[Music]
+bgmusic = sound/Dragon_Ball_GT_Theme.mp3
+bgvolume = 50   
+
+[StageInfo]
+zoffset = 210
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+color = 96,96,96
+yscale = -.1
+reflect = 0
+intensity = 10
+
+[Reflection]
+intensity = 0
+
+[BGdef]
+spr = tufflep.sff
+
+[BG Background]
+type  = anim
+actionno = 1
+start = -268, -15
+delta = 1, 1
+mask = 0
+
+[BG Buildings]
+type  = anim
+actionno = 5              
+start = -268, -15
+delta = 1,1
+trans = none
+mask  = 1
+tile  = 0, 0
+tilespacing = 0,0
+
+[BG Buildings]
+type  = anim
+actionno = 4              
+start = -268, -15
+delta = 1,1
+trans = none
+mask  = 1
+tile  = 0, 0
+tilespacing = 0,0
+
+[BG Droid Patrol]
+type  = anim
+actionno = 8              
+start = -290, 110
+delta = 1,1
+trans = none
+mask  = 1
+tile  = 0, 0
+tilespacing = 0,0
+ID = 8
+
+[BG Bulma]
+type  = anim
+actionno = 7              
+start = -200, 70
+delta = 1,1
+trans = none
+mask  = 1
+tile  = 0, 0
+tilespacing = 0,0
+
+[BG Buildings2]
+type  = anim
+actionno = 3              
+start = -268, -15
+delta = 1,1.1
+trans = none
+mask  = 1
+tile  = 0, 0
+tilespacing = 0,0
+
+[BG Pan and Gill]
+type  = anim
+actionno = 6              
+start = 469, 105
+delta = 1,1.1
+trans = none
+mask  = 1
+tile  = 0, 0
+tilespacing = 0,0
+
+[BG Ground]
+type  = anim
+actionno = 2              
+start = -268, -15
+delta = 1,1
+trans = none
+mask  = 1
+tile  = 0, 0
+tilespacing = 0,0
+
+[BgCtrlDef]
+looptime = 3000
+CtrlID = 8
+
+[BgCtrl]
+type = VelSet
+time = 1
+x = 3
+
+[BgCtrl]
+type = PosSet
+time = 1100
+x = 0
+
+[Begin action 1]
+0,0, 0,0, 8
+
+[Begin action 2]
+1,0, 0,0, 8
+
+[Begin action 3]
+2,0, 0,0, 8
+
+[Begin action 4]
+3,0, 0,0, 8
+
+[Begin action 5]
+4,0, 0,0, 8
+
+[Begin action 6]
+5,0, 0,0, 16, H
+5,1, 0,0, 16, H
+5,2, 0,0, 16, H
+5,3, 0,0, 16, H
+
+[Begin action 7]
+6,0, 0,0, 16
+6,1, 0,0, 16
+6,2, 0,0, 16
+6,3, 0,0, 16
+6,2, 0,0, 16
+6,1, 0,0, 16
+
+[Begin action 8]
+7,0, 0,0, 16
+7,1, 0,0, 16
+7,2, 0,0, 16
+7,3, 0,0, 16

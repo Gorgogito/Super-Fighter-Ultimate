@@ -1,0 +1,444 @@
+﻿; Арена: The Tower MK2
+; Автор: Emsi-D
+; Рип спрайтов: Fly
+; Улучшения: xTH@Wk (статуи), Markos (статуи на 4-ом этаже)
+
+[Info]
+Name = "t0w3r"
+Displayname = "The Tower"
+Mugenversion = 1.1
+
+[Camera]
+boundleft = -240
+boundright = 260
+boundhigh = -1641
+tension = 90
+verticalfollow = .1
+overdrawhigh = 20
+overdrawlow = 20
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1400
+rightbound = 1400
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+[StageInfo]
+zoffset = 236
+autoturn = 1
+resetbg = 1
+localcoord = 400,254
+
+[Shadow]
+intensity = 165
+yscale = -.14
+
+[Music]
+bgmusic = sound/MK2/mk2_the_tower.ogg
+;bgmloopstart = 517327
+;bgmloopend = -1
+
+[BGdef]
+spr = The_Tower.sff
+bgclearcolor = 57,74,99
+
+
+[BG Облака/Дальний слой]
+type = normal
+spriteno = 0,5
+velocity = 1.49,0
+delta = .875,0;1
+start = -94,13
+tile = 1,0
+mask = 1
+scalestart= .90,1
+
+[BG Облака/Ближний слой]
+type = normal
+spriteno = 0,5
+velocity = 3,0
+delta = .875,0;1
+start = -133,55
+tile = 1,0
+mask = 1
+scalestart= .90,1
+
+[BG Облака/оч Ближний слой]
+type = normal
+spriteno = 0,5
+velocity = 4,0
+delta = .875,0;1
+start = -233,145
+tile = 1,0
+mask = 1
+scalestart= .90,1
+
+[BG Переход между этажами/Внизу экрана]
+type = normal
+spriteno = 0,1
+delta = 1,1
+start = 0,247
+tile = 1,0
+
+[BG Пол]
+type = parallax
+spriteno = 0,0
+delta = .875,1
+start = 0,245
+width = 1200,1380
+
+[BG Плинтус]
+type = normal
+spriteno = 0,2
+delta = .875,1
+start = -50,174
+tile = 1,0
+
+[BG Стена]
+type = normal
+spriteno = 0,4
+delta = .875,1
+start = 8,-67
+mask = 1
+scalestart = .90,1
+
+[BG Колонны]
+type = normal
+spriteno = 0,3
+delta = .9,1
+start = 0,-17
+mask = 1
+scalestart= .90,1
+
+[BG Священник Тени]
+type = anim
+actionno = 0
+delta = .875,1
+start = -25,86
+sin.y = 8,130
+scalestart= .95,1.05
+
+[Begin Action 0]
+0,6, 0,0, 5
+0,7, 0,0, 5
+0,8, 0,0, 5
+0,9, 0,0, 5
+0,10, 0,0, 5
+0,11, 0,0, 5
+0,12, 0,0, 5
+
+[BG Дальняя статуя 1]
+type = normal
+spriteno = 0,13
+delta = .9,1
+start = 385,41
+mask = 1
+scalestart= .90,1
+
+[BG Дальняя статуя 2]
+type = normal
+spriteno = 0,13
+delta = .9,1
+start = 331,41
+mask = 1
+scalestart= .90,1
+
+[BG Дальняя статуя 3]
+type = normal
+spriteno = 0,13
+delta = .9,1
+start = 277,41
+mask = 1
+scalestart= .90,1
+
+[BG Дальняя статуя 4]
+type = normal
+spriteno = 0,13
+delta = .9,1
+start = 223,41
+mask = 1
+scalestart= .90,1
+
+[BG Ближняя статуя 1]
+type = normal
+spriteno = 0,14
+delta = 0.94,1
+start = 376,25
+mask = 1
+scalestart= .90,1
+
+[BG Ближняя статуя 2]
+type = normal
+spriteno = 0,14
+delta = 0.94,1
+start = 315,25
+mask = 1
+scalestart= .90,1
+
+[BG Ближняя статуя 3]
+type = normal
+spriteno = 0,14
+delta = 0.94,1
+start = 254,25
+mask = 1
+scalestart= .90,1
+
+[BG Переход между этажами]
+type = normal
+spriteno = 0,1
+delta = 1,1
+start = 0,-130
+tile = 1,0
+mask = 1
+
+;====================
+; Башня/Второй этаж
+;====================
+
+[ Облака/Дальний слой]
+type = normal
+spriteno = 0,5
+velocity = 1.49,0
+delta = .875,1
+start = -94,-365
+tile = 1,0
+mask = 1
+scalestart= .90,1
+
+[ Облака/Ближний слой]
+type = normal
+spriteno = 0,5
+velocity = 3,0
+delta = .875,1
+start = -133,-323
+tile = 1,0
+mask = 1
+scalestart= .90,1
+
+[BG Второй этаж]
+type = normal
+spriteno = 1,0
+delta = 1,1
+start = 10,-493
+mask = 1
+scalestart = .90,1
+
+[BG Священник Тени]
+type = anim
+scalestart = 0.35,0.4
+actionno = 0
+delta = 1,1
+start = -7,-314
+sin.y = 6,130
+
+[BG Переход между этажами]
+type = normal
+spriteno = 0,1
+delta = 1,1
+start = 0,-556
+tile = 1,0
+mask = 1
+
+;====================
+; Башня/Третий этаж
+;====================
+
+[ Облака/Дальний слой]
+type = normal
+spriteno = 0,5
+velocity = 1.49,0
+delta = .875,1
+start = -94,-805
+tile = 1,0
+mask = 1
+scalestart= .90,1
+
+[ Облака/Ближний слой]
+type = normal
+spriteno = 0,5
+velocity = 3,0
+delta = .875,1
+start = -133,-763
+tile = 1,0
+mask = 1
+scalestart= .90,1
+
+[BG Третий этаж]
+type = normal
+spriteno = 2,0
+delta = 1,1
+start = 10,-919
+mask = 1
+scalestart= .90,1
+
+[BG Священник Тени слева]
+type = anim
+scalestart = 0.65,0.75 
+actionno = 1
+delta = 1,1
+start = -84,-840
+sin.y = 8,130
+
+[Begin Action 1]
+0,6, 0,0, 5
+0,7, 0,0, 5
+0,8, 0,0, 5
+0,9, 0,0, 5
+0,10, 0,0, 5
+0,11, 0,0, 5
+0,12, 0,0, 5
+
+[BG Священник Тени справа]
+type = anim
+scalestart = 0.65,0.75
+actionno = 0
+delta = 1,1
+start = 52,-840
+sin.y = 8,130
+
+[BG Стена с символом МК]
+type = normal
+spriteno = 2,9
+delta = 1,1
+start = 1,-772
+mask = 1
+scalestart = .90,1 
+
+[BG Пламя свечи]
+type = anim
+actionno = 2
+delta = 1,1
+start = -3,-697
+
+[Begin action 2]
+2,1, 0,0, 5
+2,2, 0,0, 4
+2,3, 0,0, 4
+2,4, 0,0, 4
+2,5, 0,0, 5
+2,6, 0,0, 5
+2,7, 0,0, 5
+2,8, 0,0, 4
+
+[BG Переход между этажами]
+type = normal
+spriteno = 0,1
+delta = 1,1
+start = 0,-982
+tile = 1,0
+mask = 1
+
+;=======================
+; Башня/Четвёртый этаж
+;=======================
+
+[ Облака/Дальний слой]
+type = normal
+spriteno = 0,5
+velocity = 1.49,0
+delta = .875,1
+start = -94,-1215
+tile = 1,0
+mask = 1
+scalestart= .90,1
+
+[ Облака/Ближний слой]
+type = normal
+spriteno = 0,5
+velocity = 3,0
+delta = .875,1
+start = -133,-1173
+tile = 1,0
+mask = 1
+scalestart= .90,1
+
+[BG Четвёртый этаж]
+type = normal
+spriteno = 3,0
+delta = 1,1
+start = 12,-1285
+mask = 1
+scalestart= .90,1
+
+[BG Дальняя статуя слева]
+type = normal
+spriteno = 3,1
+delta = 1,1
+start = -377,-1170
+mask = 1
+scalestart= .90,1
+
+[BG Дальняя статуя справа]
+type = anim
+actionno = 3
+delta = 1,1
+scalestart= .90,1
+;start = 40,0
+
+[Begin Action 3]
+3,1, 435,-1170,-1,H
+
+[BG Ближняя статуя слева]
+type = normal
+spriteno = 3,2
+delta = 1,1
+start = -151,-1182
+mask = 1
+scalestart= .90,1
+
+[BG Ближняя статуя справа]
+type = anim
+actionno = 4
+delta = 1,1
+scalestart= .90,1
+
+[Begin Action 4]
+3,2, 184,-1182,-1,H
+
+[BG Переход между этажами]
+type = normal
+spriteno = 0,1
+delta = 1,1
+start = 0,-1348
+tile = 1,0
+mask = 1
+
+;===================
+; Башня/Пятый этаж
+;===================
+
+[ Облака/Дальний слой]
+type = normal
+spriteno = 0,5
+velocity = 1.49,0
+delta = .875,1
+start = -94,-1624
+tile = 1,0
+mask = 1
+scalestart= .90,1
+
+[ Облака/Ближний слой]
+type = normal
+spriteno = 0,5
+velocity = 3,0
+delta = .875,1
+start = -133,-1582
+tile = 1,0
+mask = 1
+scalestart= .90,1
+
+[BG Пятый этаж]
+type = normal
+spriteno = 4,0
+delta = 1,1
+start = 0,-1728
+mask = 1
+scalestart= 1,1.02

@@ -1,0 +1,178 @@
+[Info]
+name = "Raditz Arrived HR"
+author= "crazy_logic"
+[Camera]
+startx = 0
+starty = 0
+
+boundleft  = -300
+boundright = 340
+boundhigh = -146
+boundlow  = 0
+verticalfollow = .6
+tension = 50
+;------------------------------------------------------------------
+[PlayerInfo]
+p1startx = -70
+p1starty = 0  
+p1startz = 0  
+p1facing = 1  
+;------------------------------------------------------------------
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+;------------------------------------------------------------------
+leftbound  = -1000 
+rightbound =  1000 
+topbound   =  0    
+botbound   =  0    
+;------------------------------------------------------------------
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1 
+botscale = 1.2
+;------------------------------------------------------------------
+[Bound]
+screenleft  = 15
+screenright = 15
+;------------------------------------------------------------------
+[StageInfo]
+zoffset   = 200
+autoturn  = 1 
+Hires = 1
+;------------------------------------------------------------------
+[Shadow]
+color  = 40,40,40
+yscale = .2
+;------------------------------------------------------------------
+[Music]
+bgmusic =sound/08. Earth Raditz.mp3
+resetbg =1
+;------------------------------------------------------------------
+[BGdef]
+spr = stages/raditz_arrived.sff
+
+[BG 0]
+type     = normal
+spriteno = 0, 3
+layerno  = 0
+start    = 500, -4
+delta    = 2.3, 1.8
+trans    = none
+mask     = 0
+tile     = 1, 0
+velocity = 0.2, 0
+
+
+[BG tono]
+type = anim
+actionno = 91
+start = 0, 0
+delta = 0, 0
+
+[BG 3]
+type     = normal
+spriteno = 0, 4
+layerno  = 0
+start    = 500, -4
+delta    = 2.2, 1.9.1
+trans    = add
+mask     = 1
+tile     = 1, 0
+velocity = -.1, 0
+
+[BG 2]
+type     = normal
+spriteno = 0, 1
+layerno  = 0
+start    = 500, -4
+delta    = 2.1, 1.9
+trans    = none
+mask     = 1
+tile     = 1, 0
+
+[BG tono]
+type = anim
+actionno = 91
+start = 0, 0
+delta = 0, 0
+
+[BG 2]
+type     = normal
+spriteno = 0, 50
+layerno  = 0
+start    = 500, -4
+delta    = 2.1, 1.9
+trans    = add
+mask     = 1
+velocity = .1
+tile     = 1, 0
+
+[BG 4]
+type     = normal
+spriteno = 0,0
+layerno  = 0                
+start    = 500, -4
+delta    = 2, 2
+trans    = none
+mask     = 1
+tile     = 1, 0
+
+[BG 5]
+type     = anim
+actionno = 6
+start    = 100, 0
+delta    = 2.3, 1.8
+mask     = 1
+
+[Begin action 6]
+0,5,0,0,5,,A
+0,6,0,0,5,,A
+0,7,0,0,5,,A
+0,8,0,0,5,,A
+
+[BG tono]
+type = anim
+actionno = 90
+start = 0, 0
+layerno = 1
+delta = 0, 0
+trans = add
+
+
+[BG tono]
+type = anim
+actionno = 92
+start = 0, 0
+layerno = 1
+delta = 0, 0
+
+[Begin Action 90]
+0,144, 0,0, 20, , AS5D255
+0,144, 0,0, 20, , AS10D255
+0,144, 0,0, 20, , AS15D255
+0,144, 0,0, 20, , AS20D255
+0,144, 0,0, 20, , AS25D255
+0,144, 0,0, 20, , AS30D255
+0,144, 0,0, 20, , AS35D255
+0,144, 0,0, -1, , AS40D255
+
+[Begin Action 91]
+0,144, 0,0, 20, , AS5D255
+0,144, 0,0, 20, , AS10D255
+0,144, 0,0, 20, , AS15D255
+0,144, 0,0, 20, , AS20D255
+0,144, 0,0, 20, , AS25D255
+0,144, 0,0, 20, , AS30D255
+0,144, 0,0, 20, , AS35D255
+0,144, 0,0, 20, , AS40D255
+0,144, 0,0, -1, , AS45D255
+
+[Begin Action 92]
+0,144, 0,0, 20, , AS5D255
+0,144, 0,0, 20, , AS10D255
+0,144, 0,0, 20, , AS15D255
+0,144, 0,0, -1, , AS20D255
+

@@ -1,0 +1,378 @@
+; Арена: Kuatan Palace MK5
+; Автор: Adriano GT
+; Улучшения: Blacksaibot (концепт,спрайты), Kaandorpius (спрайты огня), Halil Atilmis (пламя лавы)
+
+[Info]
+Name = "ku4t4n"
+Displayname = "Kuatan Palace MK5"
+Mugenversion = 1.1
+
+[Camera]
+boundleft = -350
+boundright = 350
+boundhigh = -68
+tension = 100
+floortension = 30
+verticalfollow = .2
+overdrawhigh = 20
+overdrawlow = 20
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1400
+rightbound = 1400
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+[StageInfo]
+zoffset = 235
+autoturn = 1
+resetBG = 0
+localcoord = 400,254
+
+[Shadow]
+intensity = 150
+color = 128,128,128
+yscale = .3
+
+[Music]
+bgmusic = sound/MK5/mk5_kuatan_palace.ogg
+bgmloopstart = 2372420
+bgmloopend = -1
+bgmvolume = 100
+
+[BGdef]
+spr = Kuatan_Palace.sff
+bgclearcolor = 0,0,0
+
+
+[BG Небо/Слой 1]
+type = normal
+scalestart = .7,.7
+spriteno = 1,0
+delta = .5,.9
+scalestart = .90,1
+
+[BG Небо/Слой 2]
+type = normal
+scalestart = .7,.7
+spriteno = 1,1
+delta = .5,.9
+trans = add
+scalestart = .90,1
+ 
+[BG Небо/Слой 3]
+type = normal
+scalestart = .7,.7
+spriteno = 1,2
+delta = .5,.9
+trans = add
+scalestart = .90,1
+
+[BG Ограждение/Задний план]
+type = normal
+spriteno = 1,4
+delta = .65,1
+mask = 1
+tile = 1
+scalestart = .85,1
+
+[BG Лава #1]
+type = normal
+spriteno = 2,1
+delta = .9,1
+mask = 1
+tile = 1
+velocity = .1,0
+scalestart = .60,1
+
+[BG Лава #2]
+type = normal
+spriteno = 2,1
+delta = .9,1
+mask = 1
+tile = 1
+velocity = -.1,0
+trans = add1
+alpha = 100,140
+scalestart = .60,1
+
+[BG Трон]
+type = normal
+spriteno = 1,5
+delta = .78,1
+mask = 1
+scalestart = .90,1
+
+[BG Пол перед троном]
+type = parallax
+spriteno = 1,6
+delta = .78,1
+xscale = 1,1.07
+mask = 1
+scalestart = .90,1
+
+[BG Стенка бассейна]
+type = normal
+spriteno = 2,3
+delta = .85,1
+mask = 1
+scalestart = .90,1
+
+[BG Ковёр]
+type = normal
+spriteno = 1,7
+delta = .85,1
+mask = 1
+scalestart = .85,1
+
+[BG Арка]
+type = normal
+spriteno = 1,3
+delta = .78,1
+mask = 1
+scalestart = .88,1
+
+[BG Колонны]
+type = normal
+spriteno = 1,11
+delta = .8,1
+mask = 1
+scalestart = .90,1
+
+[BG Флаги]
+type = normal
+spriteno = 1,8
+delta = .78,1
+mask = 1
+scalestart = .90,1
+
+[BG Ограждения перед троном]
+type = normal
+spriteno = 1,10
+delta = .82,1
+mask = 1
+scalestart = .84,1
+
+[BG Свет]
+type = normal
+spriteno = 1,15
+delta = .82,1
+trans = add
+tile = 1
+tilespacing = 490
+scalestart = .90,1
+
+[BG Лампы]
+type = normal
+spriteno = 1,9
+delta = .82,1
+mask = 1
+scalestart = .90,1
+
+[BG Свет ламп]
+type = normal
+spriteno = 1,14
+delta = .82,1
+mask = 1
+trans = add
+alpha = 60,240
+tile = 1
+tilespacing = 622
+scalestart = .90,1
+
+[BG Левая колонна с лицом Горо]
+type = normal
+spriteno = 1,12
+delta = .85,1
+start = -472,3
+mask = 1
+scalestart = .90,1
+
+[BG Правая колонна с лицом Горо]
+type = anim
+actionno = 0
+delta = .85,1
+start = 472,3
+scalestart = .90,1
+
+[Begin Action 0]
+1,12, 0,0, -1,h
+
+[BG Огонь справа]
+type = anim
+actionno = 1
+start = 437,45
+delta = .85,1
+trans = addalpha
+alpha = 200,240
+scalestart = .90,1
+
+[BG Огонь слева]
+type = anim
+actionno = 1
+start = -458,45
+delta = .85,1
+trans = addalpha
+alpha = 200,240
+scalestart = .90,1
+
+
+[Begin Action 1]
+3,0, 0,0, 2,,a
+3,1, 0,0, 2,,a
+3,2, 0,0, 2,,a
+3,3, 0,0, 2,,a
+3,4, 0,0, 2,,a
+3,5, 0,0, 2,,a
+3,6, 0,0, 2,,a
+3,7, 0,0, 2,,a
+3,8, 0,0, 2,,a
+3,9, 0,0, 2,,a
+3,10, 0,0, 2,,a
+3,11, 0,0, 2,,a
+3,12, 0,0, 2,,a
+3,13, 0,0, 2,,a
+3,14, 0,0, 2,,a
+3,15, 0,0, 2,,a
+3,16, 0,0, 2,,a
+3,17, 0,0, 2,,a
+3,18, 0,0, 2,,a
+3,19, 0,0, 2,,a
+3,20, 0,0, 2,,a
+3,21, 0,0, 2,,a
+3,22, 0,0, 2,,a
+3,23, 0,0, 2,,a
+3,24, 0,0, 2,,a
+3,25, 0,0, 2,,a
+3,26, 0,0, 2,,a
+3,27, 0,0, 2,,a
+3,28, 0,0, 2,,a
+3,29, 0,0, 2,,a
+3,30, 0,0, 2,,a
+3,31, 0,0, 2,,a
+3,32, 0,0, 2,,a
+3,33, 0,0, 2,,a
+3,34, 0,0, 2,,a
+3,35, 0,0, 2,,a
+3,36, 0,0, 2,,a
+3,37, 0,0, 2,,a
+3,38, 0,0, 2,,a
+3,39, 0,0, 2,,a
+3,40, 0,0, 2,,a
+3,41, 0,0, 2,,a
+3,42, 0,0, 2,,a
+3,43, 0,0, 2,,a
+3,44, 0,0, 2,,a
+3,45, 0,0, 2,,a
+3,46, 0,0, 2,,a
+3,47, 0,0, 2,,a
+3,48, 0,0, 2,,a
+3,49, 0,0, 2,,a
+3,50, 0,0, 2,,a
+3,51, 0,0, 2,,a
+3,52, 0,0, 2,,a
+3,53, 0,0, 2,,a
+3,54, 0,0, 2,,a
+3,55, 0,0, 2,,a
+3,56, 0,0, 2,,a
+3,57, 0,0, 2,,a
+3,58, 0,0, 2,,a
+3,59, 0,0, 2,,a
+3,60, 0,0, 2,,a
+3,61, 0,0, 2,,a
+3,62, 0,0, 2,,a
+3,63, 0,0, 2,,a
+3,64, 0,0, 2,,a
+3,65, 0,0, 2,,a
+3,66, 0,0, 2,,a
+3,67, 0,0, 2,,a
+3,68, 0,0, 2,,a
+3,69, 0,0, 2,,a
+3,70, 0,0, 2,,a
+3,71, 0,0, 2,,a
+3,72, 0,0, 2,,a
+3,73, 0,0, 2,,a
+3,74, 0,0, 2,,a
+3,75, 0,0, 2,,a
+3,76, 0,0, 2,,a
+3,77, 0,0, 2,,a
+3,78, 0,0, 2,,a
+3,79, 0,0, 2,,a
+3,80, 0,0, 2,,a
+3,81, 0,0, 2,,a
+3,82, 0,0, 2,,a
+3,83, 0,0, 2,,a
+3,84, 0,0, 2,,a
+3,85, 0,0, 2,,a
+3,86, 0,0, 2,,a
+3,87, 0,0, 2,,a
+3,88, 0,0, 2,,a
+3,89, 0,0, 2,,a
+3,90, 0,0, 2,,a
+
+[BG Факельницы]
+type = normal
+spriteno = 1,13
+delta = .85,1
+mask = 1
+scalestart = .90,1
+
+[BG Факельницы]
+type = normal
+spriteno = 1,16
+delta = .85,1
+mask = 1
+scalestart = .90,1
+
+
+[BG Пламя лавы]
+type = anim
+actionno = 2
+delta = .9,1
+start = 0,200
+trans = addalpha
+alpha = 200,240
+tile = 1
+tilespacing = 130
+scalestart = .40,.50
+
+[Begin Action 2]
+5,0, 0,0, 4
+5,1, 0,0, 4
+5,2, 0,0, 4
+5,3, 0,0, 4
+5,4, 0,0, 4
+5,5, 0,0, 4
+5,6, 0,0, 4
+5,7, 0,0, 4
+5,8, 0,0, 4
+5,9, 0,0, 4
+5,10, 0,0, 4
+5,11, 0,0, 4
+5,12, 0,0, 4
+5,13, 0,0, 4
+5,14, 0,0, 4
+5,15, 0,0, 4
+
+[BG Переход между этажами]
+type = normal
+spriteno = 2,4
+delta = 1,1
+start = 0,247
+tile = 1,0
+scalestart = .90,1
+
+[BG Пол]
+type = normal
+spriteno = 2,0
+delta = 1,1
+mask = 1
+scalestart = .89,1

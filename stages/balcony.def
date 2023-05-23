@@ -1,0 +1,322 @@
+;--------------------------------------------------------
+
+[Info]
+Name = "b4lc0ny"
+displayname = "Motaro's Lair - Boss"
+Author: "HANZO Hasashi"
+Special thanks to Sannamy for his sprites (fire).
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -290
+boundright = 290
+boundhigh = -25
+verticalfollow = .2
+floortension = 30
+tension = 100
+startzoom = 1
+zoomin = 1
+zoomout = 0.85
+
+
+[PlayerInfo]
+p1startx = -98
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 96
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound = -1000
+rightbound = 1000
+topbound  =  0
+botbound  =  0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0       
+botz     = 50     
+topscale = 1       
+botscale = 1.2     
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft = 42
+screenright = 42
+
+;--------------------------------------------------------
+
+[StageInfo]
+zoffset = 231
+autoturn = 1
+resetBG = 1
+localcoord = 400,254
+
+;--------------------------------------------------------
+
+[Shadow]
+intensity = 160
+color = 0,0,0
+yscale = .2
+reflect = 0
+fade.range = -50,0
+;--------------------------------------------------------
+
+[Music]
+bgmusic = sound/MK3/mk3_the_pit_3.ogg
+bgmloopstart = 1511650
+bgmloopend = -1
+bgmvolume = 110
+
+;--------------------------------------------------------
+
+[BGdef]
+spr = balcony.sff
+debugbg = 0
+
+;--------------------------------------------------------
+
+[BG Candelabro]
+type  = normal
+spriteno = 2,0
+start = 0,0
+delta = .60,1
+mask  = 0
+
+[BG Candelabro luces]
+type  = normal
+actionno = 3
+start = 0,0
+delta = .60,1
+mask  = 0
+
+;luces 1
+[Begin Action 3]
+2,2, 0,0, 7,, AS150D255
+2,2, 0,0, 3,, AS175D255
+2,2, 0,0, 3,, AS200D255
+2,2, 0,0, 7,, AS225D255
+2,2, 0,0, 15,, AS255D255
+2,2, 0,0, 7,, AS225D255
+2,2, 0,0, 3,, AS200D255
+2,2, 0,0, 3,, AS175D255
+
+[BG columna]
+type  = normal
+spriteno = 2,1
+start = 0,0
+delta = .75,1
+mask  = 1
+
+[BG columna luces]
+type  = normal
+actionno = 4
+start = 0,0
+delta = .75,1
+mask  = 1
+
+;luces 2
+[Begin Action 4]
+2,3, 0,0, 4,, AS200D255
+2,3, 0,0, 4,, AS175D255
+2,3, 0,0, 8,, AS150D255
+2,3, 0,0, 4,, AS175D255
+2,3, 0,0, 4,, AS200D255
+2,3, 0,0, 8,, AS225D255
+2,3, 0,0, 15,, AS255D255
+2,3, 0,0, 8,, AS225D255
+
+[BG poso]
+type  = normal
+spriteno = 0,1
+start = 0,-1
+delta = .80,1
+mask  = 0
+start = 0,-15
+
+[BG Piso]
+type  = normal
+spriteno = 0,2
+start = 0,-5
+delta = 1,1
+mask  = 1
+
+[BG luz verde]
+type  = anim
+actionno = 2
+delta = .85, 1
+mask  = 1
+start = 0,0
+
+[BG Pared]
+type  = normal
+spriteno = 0,5
+start = 0,-5
+delta = 1,1
+mask  = 1
+
+[BG fuego 01]
+type  = anim
+actionno = 1
+start = -601, -55
+delta = 1,1
+mask  = 1
+
+[BG fuego 02]
+type  = anim
+actionno = 1
+start = -07, -55
+delta = 1,1
+mask  = 1
+
+[BG shrinelements FX]
+type  = anim
+actionno = 12
+start = -04,-61
+delta = 1.0, 1.0
+mask = 1
+
+[BG shrinelements FX]
+type  = anim
+actionno = 13
+start = -04,-61
+delta = 1.0, 1.0
+mask = 1
+
+[BG shrinelements FX]
+type  = anim
+actionno = 12
+start = -601,-58
+delta = 1.0, 1.0
+mask = 1
+
+[BG shrinelements FX]
+type  = anim
+actionno = 13
+start = -601,-58
+delta = 1.0, 1.0
+mask = 1
+
+[BG shrinelements FX]
+type  = anim
+actionno = 12
+start = -04,-61
+delta = 1.0, 1.0
+mask = 1
+
+[BG shrinelements FX]
+type  = anim
+actionno = 13
+start = -04,-61
+delta = 1.0, 1.0
+mask = 1
+
+[BG shrinelements FX]
+type  = anim
+actionno = 12
+start = -601,-61
+delta = 1.0, 1.0
+mask = 1
+trans = add
+
+[BG shrinelements FX]
+type  = anim
+actionno = 13
+start = -601,-61
+delta = 1.0, 1.0
+mask = 1
+
+[BG luz]
+type  = normal
+spriteno = 0,8
+start = 0,-38
+layerno = 1
+delta = 1,1
+mask = 1
+trans = sub
+scalestart = 1,1.28
+
+;antorchas 
+[Begin Action 1]
+6,0, 0,0, 3,, A
+6,1, 0,0, 3,, A
+6,2, 0,0, 3,, A
+6,3, 0,0, 3,, A
+6,4, 0,0, 3,, A
+6,5, 0,0, 3,, A
+6,6, 0,0, 3,, A
+6,7, 0,0, 3,, A
+6,8, 0,0, 3,, A
+6,9, 0,0, 3,, A
+6,10, 0,0, 3,, A
+6,11, 0,0, 3,, A
+6,12, 0,0, 3,, A
+6,13, 0,0, 3,, A
+6,14, 0,0, 3,, A
+6,15, 0,0, 3,, A
+
+;[BG luz verde]
+;type  = anim
+;actionno = 2
+;delta = .85, 1
+;mask  = 1
+
+;luces verdes
+[Begin Action 2]
+8,34, 0,0, 19,, AS100D255
+8,34, 0,0, 12,, AS110D255
+8,34, 0,0, 7,, AS120D255
+8,34, 0,0, 7,, AS130D255
+8,34, 0,0, 7,, AS140D255
+8,34, 0,0, 7,, AS150D255
+8,34, 0,0, 7,, AS160D255
+8,34, 0,0, 10,, AS170D255
+8,34, 0,0, 15,, AS180D255
+8,34, 0,0, 19,, AS190D255
+8,34, 0,0, 25,, AS200D255
+8,34, 0,0, 19,, AS190D255
+8,34, 0,0, 15,, AS180D255
+8,34, 0,0, 10,, AS170D255
+8,34, 0,0, 7,, AS160D255
+8,34, 0,0, 7,, AS150D255
+8,34, 0,0, 7,, AS140D255
+8,34, 0,0, 7,, AS130D255
+8,34, 0,0, 7,, AS120D255
+8,34, 0,0, 12,, AS110D255
+
+;[Begin Action 2]
+;8, 36, 0, 0, 70000,,a
+;8, 37, 0, 0, 100,,a
+
+;random torch 01
+[Begin Action 12]
+23,0, 0,0, 2,, AS125D255
+23,0, 0,0, 2,, AS150D255
+23,0, 0,0, 2,, AS125D255
+23,0, 0,0, 2,, AS100D255
+23,0, 0,0, 2,, AS75D255
+23,0, 0,0, 2,, AS50D255
+23,0, 0,0, 2,, AS75D255
+23,0, 0,0, 2,, AS100D255
+
+;random torch 02
+[Begin Action 13]
+23,0, 0,0, 3,, AS150D255
+23,0, 0,0, 3,, AS125D255
+23,0, 0,0, 3,, AS100D255
+23,0, 0,0, 3,, AS75D255
+23,0, 0,0, 3,, AS50D255
+23,0, 0,0, 3,, AS75D255
+23,0, 0,0, 3,, AS100D255
+23,0, 0,0, 3,, AS125D255
+23,0, 0,0, 3,, AS150D255
+
+;--------------------------------------------------------

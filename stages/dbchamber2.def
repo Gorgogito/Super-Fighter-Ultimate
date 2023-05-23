@@ -1,0 +1,491 @@
+;================================================================
+;MADE BY:  DAERON          specially fot the z2 chars!
+;================================================================
+
+[info]
+name ="Dragon Ball-Hyperbolic time chamber (nigth)"
+displayname="Dragon Ball-Hyperbolic time chamber (night)"
+versiondate=22/09/2012
+mugenversion=04,14,2001
+author="Daeron"
+pal.defaults=1,2,3,4,5
+
+[camera]
+startx = -16
+starty = 0
+boundleft = -240
+boundright = 208
+boundhigh = -230
+boundlow = 0
+verticalfollow = .75
+tension = 50
+floortension 	= 90
+
+
+;--------------------------------------------------------
+[playerinfo]
+p1startx = -86          ;starting x coordinates
+p1starty = 0            ;starting y coordinates
+p1startz = 0            ;starting z coordinates
+p1facing = 1            ;direction player faces: 1=right, -1=left
+
+p2startx = 54
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000 ;left bound (x-movement)
+rightbound =  1000 ;right bound
+topbound  =  0   ;Top bound (z-movement)
+botbound  =  0    ;Bottom bound
+
+;--------------------------------------------------------
+[scaling]
+topz     = 0       ;top z-coordinate for scaling
+botz     = 50      ;bottom z-coordinate for scaling
+topscale = 1       ;scale to use at top
+botscale = 1.2     ;scale to use at bottom
+
+;--------------------------------------------------------
+[bound]
+screenleft = 15    ;dist from left of screen that player can move to
+screenright = 15   ;right edge
+
+;--------------------------------------------------------
+[stageinfo]
+ 
+zoffset = 210
+autoturn = 1
+resetbg = 0
+
+;--------------------------------------------------------
+[shadow]
+intensity = 40
+color = 30,0,10
+fade.range = 0,-50
+yscale = 0.4
+;--------------------------------------------------------
+[Reflection]
+ ;Intensity of reflection (from 0 to 256). Set to 0 to have no
+ ;reflection. Defaults to 0.
+intensity = 0
+
+
+
+;--------------------------------------------------------
+[music]
+
+bgmusic = sound/20_flight_in_the_dark_side.ogg
+bgvolume = 800
+
+;========================================================
+;-------------------------------------
+; main background definition
+[bgdef]
+spr = stages/dbchamber2.sff
+debugbg = 0
+
+;----------
+
+
+ [bg sky]
+type = normal
+spriteno = 0,3
+start = 0, -142
+delta = 0.3,0.3
+mask = 0
+layerno = 0
+sin.x = 0, 920
+velocity = -0.2, 0
+tile = 1,0
+
+
+ [bg floor]
+type = normal
+spriteno = 1,0
+start = 0, -142
+delta = 0.4,0.4
+mask = 0
+layerno = 0
+tile = 1,0
+
+
+
+[BG Estrellitas]
+type = anim
+actionno = 2
+start = 0,-142
+delta = 0.2,0.3
+layerno = 0
+
+
+
+
+
+
+[BG aurora borealis]
+type = anim
+actionno = 3
+start = 120,20
+delta = 0.3,0.3
+layerno = 0
+sin.x = 20,800
+sin.y = 5,600
+velocity = -0.5, 0
+tile = 1,0
+tilespacing = 453
+
+
+
+[bg Lampbrillo]
+type = normal
+spriteno = 1,8
+start = 0, -142
+delta = 0.47,0.5
+mask = 1
+layerno = 0
+tile = 0,0
+trans = addalpha
+alpha = 170,90
+
+[bg Lamp]
+type = normal
+spriteno = 1,5
+start = 0, -142
+delta = 0.47,0.5
+mask = 1
+layerno = 0
+tile = 0,0
+
+
+
+
+[bg Sandclock]
+type = normal
+spriteno = 1,4
+start = 0, -142
+delta = 0.48,0.5
+mask = 1
+layerno = 0
+tile = 0,0
+
+
+[bg Sandclockbrillo]
+type = normal
+spriteno = 1,10
+start = 0, -142
+delta = 0.48,0.5
+mask = 1
+layerno = 0
+tile = 0,0
+trans = addalpha
+alpha = 70,160
+
+[BG sand2]
+type = anim
+actionno = 5
+start = 0,-142
+delta = 0.48,0.5
+layerno = 0
+
+
+
+[bg chamber]
+type = normal
+spriteno = 1,1
+start = 0, -142
+delta = 0.5,0.5
+mask = 1
+layerno = 0
+tile = 0,0
+
+[BG reloj]
+type = anim
+actionno = 4
+start = 0,-142
+delta = 0.5,0.5
+layerno = 0
+
+[bg stairs]
+type = normal
+spriteno = 1,6
+start = 0, -142
+delta = 0.46,0.5
+mask = 1
+layerno = 0
+tile = 0,0
+
+
+[bg clockbrillo]
+type = normal
+spriteno = 1,9
+start = 0, -142
+delta = 0.53,0.5
+mask = 1
+layerno = 0
+tile = 0,0
+trans = addalpha
+alpha = 90,160
+
+[BG sand]
+type = anim
+actionno = 1
+start = 0,-142
+delta = 0.53,0.5
+layerno = 0
+
+[bg Sand2]
+type = normal
+spriteno = 3,10
+start = 0, -142
+delta = 0.53,0.5
+mask = 1
+layerno = 0
+tile = 0,0
+
+[bg Sandclock]
+type = normal
+spriteno = 1,2
+start = 0, -142
+delta = 0.53,0.5
+mask = 1
+layerno = 0
+tile = 0,0
+
+
+
+
+[bg Lamp]
+type = normal
+spriteno = 1,3
+start = 0, -142
+delta = 0.56,0.5
+mask = 1
+layerno = 0
+tile = 0,0
+
+[bg Lampbrillo]
+type = normal
+spriteno = 1,7
+start = 0, -142
+delta = 0.56,0.5
+mask = 1
+layerno = 0
+tile = 0,0
+trans = addalpha
+alpha = 170,110
+
+[bg food]
+type = normal
+spriteno = 7,2
+start = 0, -142
+delta = 0.6,0.6
+mask = 1
+layerno = 0
+tile = 0,0
+
+
+
+[bg supply crate]
+type = normal
+spriteno = 7,0
+start = 0, -142
+delta = 0.7,0.7
+mask = 1
+layerno = 0
+tile = 0,0
+
+[bg target cell]
+type = normal
+spriteno = 7,3
+start = 0, -142
+delta = 0.7,0.7
+mask = 1
+layerno = 0
+tile = 0,0
+
+[bg target freeza]
+type = normal
+spriteno = 7,4
+start = 0, -142
+delta = 0.8,0.8
+mask = 1
+layerno = 0
+tile = 0,0
+
+
+
+
+[bg bag]
+type = normal
+spriteno = 7,1
+start = 0, -142
+delta = 0.7,0.7
+mask = 1
+layerno = 0
+tile = 0,0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==================================================
+
+; sand
+[Begin Action 1]
+
+2,1, 0,0, 5, ,
+2,2, 0,0, 5, ,
+2,3, 0,0, 5, ,
+2,4, 0,0, 5, ,
+2,5, 0,0, 5, ,
+2,6, 0,0, 5, ,
+2,7, 0,0, 5, ,
+2,8, 0,0, 5, ,
+2,9, 0,0, 5, ,
+2,10, 0,0, 5, ,
+
+; Estrellitas
+[Begin Action 2]
+
+0,1, 0,0, 2, ,AS70D255
+0,1, 0,0, 2, ,AS50D255
+
+
+; Aurora
+[Begin Action 3]
+
+
+LoopStart
+0,2, 0,0, 2,,AS65D255
+0,2, 0,0, 2,,AS64D255
+0,2, 0,0, 2,,AS63D255
+0,2, 0,0, 2,,AS62D255
+0,2, 0,0, 2,,AS61D255
+0,2, 0,0, 2,,AS60D255
+0,2, 0,0, 2,,AS59D255
+0,2, 0,0, 2,,AS58D255
+0,2, 0,0, 2,,AS57D255
+0,2, 0,0, 2,,AS56D255
+0,2, 0,0, 2,,AS55D255
+
+
+0,2, 0,0, 2,,AS56D255
+0,2, 0,0, 2,,AS57D255
+0,2, 0,0, 2,,AS58D255
+0,2, 0,0, 2,,AS59D255
+0,2, 0,0, 2,,AS60D255
+0,2, 0,0, 2,,AS61D255
+0,2, 0,0, 2,,AS62D255
+0,2, 0,0, 2,,AS63D255
+0,2, 0,0, 2,,AS64D255
+0,2, 0,0, 2,,AS65D255
+
+
+; reloj
+[Begin Action 4]
+
+5,1, 0,0, 120, ,
+5,2, 0,0, 120, ,
+5,3, 0,0, 120, ,
+5,4, 0,0, 120, ,
+5,5, 0,0, 120, ,
+5,6, 0,0, 120, ,
+5,7, 0,0, 120, ,
+5,8, 0,0, 120, ,
+5,9, 0,0, 120, ,
+5,10, 0,0, 120, ,
+5,11, 0,0, 120, ,
+5,12, 0,0, 120, ,
+
+; sand2
+[Begin Action 5]
+6,1, 0,0, 5, ,
+6,2, 0,0, 5, ,
+6,3, 0,0, 5, ,
+6,4, 0,0, 5, ,
+6,5, 0,0, 5, ,
+6,6, 0,0, 5, ,
+6,7, 0,0, 5, ,
+6,8, 0,0, 5, ,
+6,9, 0,0, 5, ,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

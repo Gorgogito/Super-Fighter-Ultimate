@@ -1,0 +1,282 @@
+;==============================
+;	GAROU OMEGA STAGE
+;==============================
+;Author:	Claudio Toxi
+;Create Date:	2004.11.09
+
+;--------------------------------------------------------
+[Info]
+name = "Garou MOTW - FREIGHT EXPRESS - SEA"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -150
+boundright = 150
+boundhigh = -140
+boundlow = 0
+verticalfollow = .3
+floortension = 0
+tension = 50
+
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound = -1000
+rightbound = 1000
+topbound = 0
+botbound = 0
+
+;--------------------------------------------------------
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 15
+screenright = 15
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 210
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+[Shadow]
+intensity = 96
+color = 0,0,0
+yscale = .3
+fade.range = 0,0
+
+;--------------------------------------------------------
+[Reflection]
+intensity = 0
+
+;--------------------------------------------------------
+[Music]
+bgmusic = stages/010.mp3
+bgvolume = 255
+
+;--------------------------------------------------------
+[BGdef]
+spr = garou-motw-freight-express-sea.sff
+debugbg = 0
+
+[BG Sea]
+type = anim
+actionno = 0
+layerno = 0
+start = 0,0
+delta = 0,1
+trans = none
+mask = 0
+tile = 0,0
+tilespacing = 0,0
+[Begin action 0]
+0,0,0,0,3
+0,1,0,0,3
+0,2,0,0,3
+0,3,0,0,3
+
+[BG Sunrise]
+type = anim
+actionno = 1
+layerno = 0
+start = 0,0
+delta = 0,1
+trans = none
+mask = 0
+tilespacing = 0,0
+[Begin action 1]
+1,0,0,0,50
+1,1,0,0,50
+1,2,0,0,50
+1,3,0,0,50
+1,4,0,0,50
+1,5,0,0,50
+1,6,0,0,50
+1,7,0,0,50
+1,8,0,0,50
+1,9,0,0,50
+1,10,0,0,50
+1,11,0,0,50
+1,12,0,0,50
+1,13,0,0,50
+1,14,0,0,50
+1,15,0,0,50
+1,16,0,0,50
+1,17,0,0,50
+1,18,0,0,50
+1,19,0,0,50
+1,20,0,0,50
+1,21,0,0,50
+1,22,0,0,50
+1,23,0,0,50
+1,24,0,0,50
+1,25,0,0,50
+1,26,0,0,50
+1,27,0,0,50
+1,28,0,0,50
+1,29,0,0,50
+1,30,0,0,50
+1,31,0,0,50
+1,32,0,0,50
+1,33,0,0,50
+1,34,0,0,50
+1,35,0,0,50
+1,36,0,0,50
+1,37,0,0,50
+1,38,0,0,50
+1,39,0,0,50
+1,40,0,0,50
+1,41,0,0,50
+1,42,0,0,50
+1,43,0,0,50
+1,44,0,0,50
+1,45,0,0,50
+1,46,0,0,50
+1,47,0,0,50
+1,48,0,0,50
+1,49,0,0,50
+1,50,0,0,50
+1,51,0,0,50
+1,52,0,0,50
+1,53,0,0,50
+1,54,0,0,50
+1,55,0,0,50
+1,56,0,0,50
+1,57,0,0,50
+1,58,0,0,50
+1,59,0,0,-1
+
+[BG Express Train Beach]
+type = anim
+actionno = 10
+layerno = 0
+start = 0,0
+delta = 0.5,1
+trans = none
+mask = 1
+tilespacing = 0,0
+ID = 10
+[Begin action 10]
+10,0,0,0,-1
+
+[BGctrldef 10]
+CtrlID = 10
+looptime = 1500
+
+[BGctrl 10]
+type = Velset
+time = 0
+x = -12
+
+[BGctrl 10]
+type = Posset
+time = 1499
+x = 0
+y = 0
+
+[BG Express Train Body]
+type = anim
+actionno = 20
+layerno = 0
+start = 0,0
+delta = 1,1
+trans = none
+mask = 1
+tilespacing = 0,0
+[Begin action 20]
+20,0,0,0,40
+20,1,0,0,5
+20,2,0,0,5
+20,1,0,0,5
+20,0,0,0,60
+
+[BG Express Train Chump]
+type = anim
+actionno = 21
+layerno = 0
+start = -310,50
+delta = 1,1
+trans = none
+mask = 1
+tilespacing = 0,0
+[Begin action 21]
+21,0,0,0,60
+21,1,0,0,5
+21,2,0,0,5
+21,1,0,0,5
+21,0,0,0,40
+
+[BG Express Train Body]
+type = anim
+actionno = 22
+layerno = 0
+start = 0,0
+delta = 1,1
+trans = none
+mask = 1
+tilespacing = 0,0
+[Begin action 22]
+22,0,0,0,50
+22,0,0,1,5
+22,0,0,-1,5
+22,0,0,1,5
+22,0,0,0,50
+
+[BG Express Train Front]
+type = anim
+actionno = 23
+layerno = 0
+start = 0,0
+delta = 1,1
+trans = none
+mask = 1
+tilespacing = 0,0
+[Begin action 23]
+23,0,0,0,50
+23,0,0,-1,5
+23,0,0,1,5
+23,0,0,-1,5
+23,0,0,0,50
+
+[BG Rope]
+type = anim
+actionno = 24
+layerno = 0
+start = 0,0
+delta = 1,1
+trans = none
+mask = 1
+tilespacing = 0,0
+[Begin action 24]
+24,3,0,0,10
+24,0,0,0,10
+24,1,0,0,10
+24,2,0,0,10
+24,3,0,0,10
+24,0,0,-1,5
+24,0,0,1,5
+24,1,0,-1,5
+24,1,0,0,5
+24,2,0,0,10
+24,3,0,0,10
+24,0,0,0,10
+24,1,0,0,10
+24,2,0,0,5

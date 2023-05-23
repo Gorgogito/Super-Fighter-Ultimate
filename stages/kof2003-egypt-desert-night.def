@@ -1,0 +1,157 @@
+[Info]
+name = "KOF 2003 - Egypt Desert - Night"
+[Camera]
+startx = 0
+starty = 0
+boundleft = -188
+boundright = 188
+boundhigh = -16
+boundlow = 0
+verticalfollow = .1
+tension = 180
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 218
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+color = 100,128,100
+yscale = .2
+
+[Music]
+bgmusic = stages/150.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/kof2003-egypt-desert-night.sff
+debugbg = 1
+
+[BG 0]
+type  = normal
+spriteno = 0, 0
+layerno = 0                
+start = 0, 0
+delta = 1, 1
+mask  = 0
+
+[BG 0]
+type  = normal
+spriteno = 0, 1
+layerno = 0                
+start = 0, 0
+delta = 1, 1
+mask  = 0
+
+[BG 0]
+type  = normal
+spriteno = 0, 2
+layerno = 0                
+start = 0, 0
+delta = 1, 1
+mask  = 0
+
+[BG 0]
+type  = normal
+spriteno = 0, 3
+layerno = 0                
+start = 0, 0
+delta = 1, 1
+mask  = 0
+
+[BG 2]
+type  = normal
+spriteno = 2, 0
+layerno = 0                
+start = 0, 0
+delta = 1, 1
+mask  = 0
+
+[BG 2]
+type  = normal
+spriteno = 2, 1
+layerno = 0                
+start = 0, 0
+delta = 1, 1
+mask  = 0
+
+[BG 2]
+type  = normal
+spriteno = 2, 2
+layerno = 0                
+start = 0, 0
+delta = 1, 1
+mask  = 0
+
+
+[BG 2]
+type  = normal
+spriteno = 2, 3
+layerno = 0                
+start = 0, 0
+delta = 1, 1
+mask  = 0
+
+
+
+[BG 1]
+type  = anim
+actionno = 1
+layerno = 0                
+start = 0, 0
+delta = 1, 1
+mask  = 0
+
+[Begin action 1]
+1,0,0,0,16
+1,1,0,0,16
+1,2,0,0,16
+1,3,0,0,16
+1,4,0,0,16
+1,5,0,0,16
+1,6,0,0,16
+1,7,0,0,16
+
+[BG 3]
+type  = anim
+actionno = 3
+layerno = 0                
+start = 0, 0
+delta = 1, 1
+mask  = 0
+
+[Begin action 3]
+3,0,0,0,16
+3,1,0,0,16
+3,2,0,0,16
+3,3,0,0,16
+3,4,0,0,16
+3,5,0,0,16
+3,6,0,0,16
+3,7,0,0,16

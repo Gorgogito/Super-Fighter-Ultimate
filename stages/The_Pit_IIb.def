@@ -1,0 +1,218 @@
+; Арена: The Pit MK2
+; Автор: Emsi-D
+; Рип спрайтов: Fly, Le@K
+; Edited Stage by LeandroTM
+
+[Info]
+Name = "p1t-2dark"
+Displayname = "The Pit II"
+Mugenversion = 1.1
+
+[Camera]
+boundleft = -548
+boundright = 544
+boundhigh = 0
+boundlow = 1600
+tension = 100
+verticalfollow = 1
+overdrawhigh = 20
+overdrawlow = 4444
+startzoom = 1
+zoomin = 1
+zoomout = 0.69
+
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1600
+rightbound = 1600
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+[StageInfo]
+zoffset = 220
+autoturn = 1
+resetbg = 1
+localcoord = 400,254
+
+[Shadow]
+intensity = 190
+yscale = .10
+fade.range = -80,-20
+
+[Music]
+bgmusic = sound/MK2/mk2_wasteland.ogg
+bgmloopstart = 752942
+bgmloopend = -1
+bgmvolume = 117
+
+[BGdef]
+spr = The_Pit_IIb.sff
+bgclearcolor = 0,0,0
+
+[BG Back]
+type = normal
+spriteno = 0,0
+delta = 0,0
+start = 0,200
+mask = 1
+
+[BG Back]
+type = normal
+spriteno = 0,100
+delta = 0,0
+start = 0,254
+mask = 1
+
+[BG Луна]
+type = normal
+spriteno = 0,1
+delta = 0,0
+start = 33,10
+trans = add
+alpha = 180,256
+scalestart = .97,1.18
+
+[BG Облака - слой 1]
+type = normal
+spriteno = 0,5
+delta = 0,0
+start = -2,79
+mask = 1
+velocity = 0.027,0
+tile = 1,0
+scalestart = .90,1
+
+[BG Облака - слой 2]
+type = normal
+spriteno = 0,6
+delta = 0,0
+start = -1,85
+mask = 1
+velocity = .04,0
+tile = 1,0
+scalestart = .90,1
+
+[BG Облака - слой 3]
+type = normal
+spriteno = 0,7
+delta = .045,0
+start = -1,151
+mask = 1
+velocity = 0.06,0
+tile = 1,0
+scalestart = .90,1
+
+[BG Горы и мост на бэкграунде]
+type = normal
+spriteno = 0,9
+delta = .108,0
+start = -2,15
+mask = 1
+
+[BG Хорнбакл]
+type = anim
+actionno = 0
+delta = .108,0
+start = -22,100
+scalestart = 0.90,1
+
+[Begin Action 0]
+0,10, 0,0, 6
+0,11, 0,0, 6
+0,12, 0,0, 6
+0,13, 0,0, 6
+0,14, 0,0, 6
+0,15, 0,0, 6
+0,16, 0,0, 6
+
+[BG Блэйз]
+type = anim
+actionno = 1
+delta = .108,0
+start = 10,91
+scalestart = 0.90,1
+
+[Begin Action 1]
+0,17, 0,0, 6
+0,18, 0,0, 6
+0,19, 0,0, 6
+0,20, 0,0, 6
+0,21, 0,0, 6
+0,22, 0,0, 6
+0,23, 0,0, 6
+
+[BG Хорнбакл]
+type = anim
+actionno = 5
+delta = .108,0
+start = -2,15
+
+[BG Облака - слой 4]
+type = normal
+spriteno = 0,8
+delta = .232,0
+start = -2,175
+mask = 1
+velocity = 0.09,0
+tile = 1,0
+scalestart = .90,1
+
+[BG Облака - слой 4]
+type = normal
+spriteno = 0,8
+delta = 1,0
+start = -2,240
+scalestart = 1.90,2
+mask = 1
+velocity = 0.14,0
+tile = 1,0
+layerno = 1
+scalestart = .90,1
+
+[BG Мост на переднем плане - слой 1]
+type = normal
+spriteno = 0,3
+delta = 1,1
+start = -1,171
+mask = 1
+scalestart = .90,1
+
+[BG Мост на переднем плане - слой 2]
+type = normal
+spriteno = 0,2
+layerno = 1
+delta = 1,1
+start = -5,216
+mask = 1
+scalestart = .90,1
+
+[BG Колонны]
+type = normal
+spriteno = 0,4
+layerno = 1
+delta = 1,1
+start = -5,283
+mask = 1
+
+[Begin Action 2]
+0,24, 0,0, 3, , AS128D256
+0,24, 0,0, 4, , AS200D256
+
+[Begin Action 5]
+0,26, 0,0, 3, , A
+0,26, 0,0, 4, , AS200D256
+
+[BG Хорнбакл]
+type = anim
+actionno = 2
+delta = 1,1
+start = -1,171
+scalestart = .90,1

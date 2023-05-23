@@ -1,0 +1,194 @@
+;come from The King of Fighters 2003
+;06/25/2004  By Misamu
+;homepage:http://mugenchina.mgbr.net
+;-----------------------------------------------------------------------------------------------------------
+[Info]
+name = "KOF 2003 - Mexico Graveyard - Night"
+;name = "#i"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -216
+boundright = 216
+boundhigh = -108
+boundlow = 0
+verticalfollow = .2
+tension = 50
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound = -1000
+rightbound = 1000
+topbound = 0
+botbound = 0
+
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 25  
+screenright = 25
+
+[StageInfo]
+zoffset = 220
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+color = 38,38,38
+yscale = -.05
+
+[Music]
+bgmusic = stages/155.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/kof2003-mexico-graveyard-night.sff
+debugbg = 0
+
+[BG bg0]
+type  = normal
+spriteno = 0,0
+start = 0,244
+MASK=0
+delta = .66,1
+
+[BG bg1chara1]
+type  = anim
+actionno = 2
+start = 0,244
+MASK=1
+delta = .66,1
+
+
+[BG bg1]
+type  = normal
+spriteno = 1, 0
+start = 0,244
+MASK=1
+
+[BG bg1chara1]
+type  = anim
+actionno = 3
+start = 0,244
+MASK=1
+
+[BG bg1chara1]
+type  = anim
+actionno = 4
+start = 0,244
+MASK=1
+
+[BG bg1chara1]
+type  = anim
+actionno = 5
+start = 0,244
+MASK=1
+
+[BG bg1chara1]
+type  = anim
+actionno = 6
+start = 0,244
+MASK=1
+
+[BG bg1chara1]
+type  = anim
+actionno = 7
+start = 0,244
+MASK=1
+
+[BG bg0]
+type  = anim
+actionno = 8
+start = 0,234
+id = 8
+velocity =-.5,0
+
+[BG bg0]
+type  = anim
+actionno = 8
+start = -672,234
+id = 9
+velocity =-.5,0
+
+[BG bg0]
+type  = anim
+actionno = 8
+start = 672,234
+id = 10
+velocity =-.5,0
+
+
+[Begin action 2]
+0,8,0,0,4
+0,1,0,0,4
+0,2,0,0,4
+0,3,0,0,4
+0,4,0,0,4
+0,5,0,0,4
+0,6,0,0,4
+0,7,0,0,4
+
+[Begin action 3]
+10,0,0,0,1
+10,1,0,0,4
+10,0,0,0,3
+
+[Begin action 4]
+10,2,0,0,6
+10,3,0,0,4
+10,4,0,0,4
+10,3,0,0,4
+10,5,0,0,4
+10,2,0,0,6
+
+[Begin action 5]
+12,0,0,0,4
+12,1,0,0,20
+12,2,0,0,4
+12,3,0,0,4
+
+[Begin action 6]
+13,0,0,0,2
+13,1,0,0,4
+13,2,0,0,4
+13,3,0,0,4
+13,4,0,0,4
+13,5,0,0,4
+13,6,0,0,4
+13,0,0,0,2
+
+[Begin action 7]
+14,0,0,0,4
+14,1,0,0,4
+14,2,0,0,4
+14,3,0,0,4
+14,4,0,0,4
+14,5,0,0,4
+14,6,0,0,4
+
+[Begin action 8]
+2,0,0,0,1
+2,1,0,0,1
+
+[BGCtrlDef Peregrinator]
+looptime = 1345
+ctrlID = 8,9,10
+
+[BGCtrl Visible]
+type = posadd
+time = 1344
+x = 672
+

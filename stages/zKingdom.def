@@ -1,0 +1,179 @@
+Cenário: Reino Lunar
+Por ZiR
+email para contato: zir1402@yahoo.com.br
+Cenário do jogo: Bishoujo Senshi Sailor Moon Super S: Various Emotion
+=======================================================================================
+[Info]
+name = "zKingdom"
+=======================================================================================
+[Camera]
+startx = 0
+starty = 0
+boundleft = -96
+boundright = 96
+boundhigh = -25
+boundlow = 0
+verticalfollow = 0
+tension = 50
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+topbound = 0
+botbound = 0
+
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 20
+screenright = 20
+
+[StageInfo]
+zoffset = 220
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+intensity = 40
+color = 92,92,92
+yscale = .0
+
+[Reflection]
+intensity = 10
+
+[Music]
+bgmusic = sound/jupiter.mp3
+bgvolume = 0
+
+[BGdef]
+spr = stages/zKingdom.sff
+debugbg = 0
+
+
+[BG Fundo]
+type = normal
+spriteno = 1,0
+start = 0, 0
+delta = 0.05, 0.05
+mask = 0
+trans = none
+layerno = 0
+
+[BG Piso]
+type = normal
+spriteno = 0,0
+start = 0, 10
+delta = 1.0, 1.0
+mask = 1
+trans = none
+layerno = 0
+
+[BG BACK 02];--------------------
+type  = anim
+actionno = 2
+layerno = 0                
+start = 0, 10
+delta = 1,1
+mask  = 1
+
+[Begin Action 2]
+2,0, 0,0, 8
+2,1, 0,0, 8
+2,2, 0,0, 8
+2,3, 0,0, 8
+2,4, 0,0, 8
+2,5, 0,0, 8
+2,6, 0,0, 8
+2,7, 0,0, 8
+2,8, 0,0, 8
+2,0, 0,0, 8
+2,7, 0,0, 8
+2,1, 0,0, 8
+2,0, 0,0, 8
+2,1, 0,0, 8
+2,0, 0,0, 8
+2,1, 0,0, 8
+2,0, 0,0, 8
+2,1, 0,0, 8
+2,7, 0,0, 8
+2,8, 0,0, 8
+2,0, 0,0, 8
+2,1, 0,0, 8
+2,0, 0,0, 8
+2,1, 0,0, 8
+2,7, 0,0, 8
+2,8, 0,0, 8
+
+[BG BACK 05];--------------------
+type  = anim
+actionno = 5
+layerno = 0                
+start = 0, 10
+delta = 1,1
+mask  = 1
+
+[Begin Action 5]
+5,0, 0,0, 10
+
+[BG BACK 07];--------------------
+type  = anim
+actionno = 7
+layerno = 0                
+start = 0, 10
+delta = 1,1
+mask  = 1
+
+[Begin Action 7]
+7,0, 0,0, 10
+
+[BG BACK 04];--------------------
+type  = anim
+actionno = 4
+layerno = 0                
+start = 0, 10
+delta = 1,1
+mask  = 1
+
+[Begin Action 4]
+4,0, 0,0, 10
+
+[BG BACK 03];--------------------
+type  = anim
+actionno = 3
+layerno = 0                
+start = 0, 10
+delta = 1,1
+mask  = 1
+
+[Begin Action 3]
+3,0, 0,0, 10
+
+
+[BG BACK 06];--------------------
+type  = anim
+actionno = 6
+layerno = 0                
+start = 0, 10
+delta = 1,1
+mask  = 1
+
+[Begin Action 6]
+6,0, 0,0, 10
+
+
+
+
+
+

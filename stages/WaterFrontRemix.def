@@ -1,0 +1,148 @@
+;--------------------------------------------------------
+; Stage      : WaterFront UMK3 Remix
+; Author      : .eternal
+;--------------------------------------------------------
+
+[Info]
+name = "w4terfr0ntnigh1"
+displayname = "The Waterfront at Night"
+
+;--------------------------------------------------------
+
+[Camera]
+startx         = 0
+starty         = 0
+boundleft = -430
+boundright = 276
+boundhigh      = -12;-27
+verticalfollow = .2
+floortension  = 30
+tension        = 100
+startzoom = 1
+zoomin = 1
+zoomout = 0.75
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx       = -98
+p1starty       = 0
+p1startz       = 1
+p1facing       = 1
+
+p2startx       = 96
+p2starty       = 0
+p2startz       = 1
+p2facing       = -1
+
+leftbound      = -1000 
+rightbound     =  1000 
+topbound       =  0
+botbound       =  0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz           = 0       
+botz           = 50     
+topscale       = 1       
+botscale       = 1.2     
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft     = 35
+screenright    = 35
+
+;--------------------------------------------------------
+
+[StageInfo]
+zoffset        = 239
+autoturn       = 1
+resetBG        = 1
+localcoord     = 400,254
+
+;--------------------------------------------------------
+
+[Shadow]
+color = 100,100,100
+intensity = 177
+yscale = -.22
+xshear = 0.5
+fade.range = -150,-20
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic = sound/Other/TheSubwayRemix.ogg
+bgmloopstart = 3473320
+bgmloopend = -1
+bgmvolume = 120
+;--------------------------------------------------------
+
+[BGdef]
+spr            = WaterFrontRemix.sff
+debugbg        = 0
+
+;--------------------------------------------------------
+
+[BG 1]
+type           = normal
+spriteno       = 0,3
+delta          = .09,1
+tile           = 1,0
+scalestart = .90,1.52
+start = 0,-47
+
+[BG 2]
+type           = normal
+spriteno       = 0,4
+delta          = .15,1
+mask = 1
+scalestart = .90,1
+
+[BG Water]
+type           = anim
+actionno       = 1
+start          = 23,130
+delta          = .42,1
+tile           = 1,0
+tilespacing    = 68,0
+mask           = 1
+scalestart = .90,1
+
+[BG Na Mean]
+type           = normal
+spriteno       = 0,0
+delta          = .42,1
+mask           = 1
+scalestart = .90,1
+
+[BG Boss]
+type           = normal
+spriteno       = 0,1
+start          = -298,09
+delta          = .70,1
+mask           = 1
+scalestart = .90,1.09
+
+[BG Dun]
+type           = normal
+spriteno       = 0,2
+start          = -77,5
+delta          = 1,1;.77,1
+mask           = 1
+
+;--------------------------------------------------------
+
+[Begin action 1]
+
+1,0, 0,0, 8
+1,1, 0,0, 8
+1,2, 0,0, 8
+1,3, 0,0, 8
+1,4, 0,0, 8
+1,5, 0,0, 8
+1,6, 0,0, 8
+1,8, 0,0, 8
+
+;--------------------------------------------------------

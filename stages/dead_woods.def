@@ -1,0 +1,147 @@
+
+[Info]
+name = "D34d_W00ds"
+displayname = "Dead Woods MKX"
+versiondate = 08,11,2016
+mugenversion = 1.1
+author = "Adriano GT"
+;concept & props/sprites by "BlackSaibot"
+;http://blacksaibot.deviantart.com/art/Dead-Woods-MKX-626152767
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -275
+boundright = 256
+boundhigh = -20
+boundlow = 0
+floortension = 30
+verticalfollow = .2
+tension = 100
+startzoom = 1
+zoomin = 1
+zoomout = 0.80
+
+[PlayerInfo]
+p1startx = -98
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 96
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound = -1000
+rightbound = 1000
+topbound = 0
+botbound = 0
+
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+[StageInfo]
+zoffset = 234
+autoturn = 1
+resetBG = 0
+localcoord = 400,254
+
+[Shadow]
+intensity = 155
+yscale = .2
+
+[Music]
+bgmusic = sound/other/wolves.ogg
+;bgvolume = 75
+bgmloopstart = 384750
+bgmloopend = -1
+
+[BGdef]
+spr = dead woods.sff
+bgclearcolor = 255,0,255
+
+[bg background]
+type = normal
+start = 0,-60
+spriteno = 1,2
+delta = .05,.58
+mask = 0
+scalestart = .99,1.18
+
+[bg little trees]
+type = normal
+start = 0,-15
+spriteno = 1,3
+delta = .4,.75
+mask = 1
+scalestart = 1,1.40
+
+[bg middle trees]
+type = n
+spriteno = 1,7
+delta = .5,.8
+mask = 1
+
+[bg big trees]
+type = normal
+start = 0,-10
+spriteno = 1,5
+delta = .6,.85
+mask = 1
+scalestart = 1,1.25
+
+[bg snowy hill]
+type = normal
+start = 1,-33
+spriteno = 1,4
+delta = .75,.94
+mask = 1
+scalestart = 1.19,1.17
+
+[bg left front tree]
+type = normal
+start = 0,-20
+spriteno = 1,6
+delta = .83,.97
+mask = 1
+scalestart = 1,1.15
+
+[bg right front tree]
+type = normal
+spriteno = 1,6
+delta = .83,.97
+mask = 1z
+start = 400,-20
+scalestart = 1,1.15
+
+[bg frozen corpse]
+type = normal
+start = 50,-62
+spriteno = 1,8
+delta = .83,.97
+mask = 1
+scalestart = .95,1
+sin.x = 4,180
+
+[bg wall]
+type = n
+spriteno = 1,1
+delta = .876,1
+mask = 1
+tile = 1
+
+[bg floor]
+type = parallax
+start = 0,-8
+spriteno = 1,0
+delta = .876,1
+xscale = 32,38
+tile = 0
+width = 1010,960

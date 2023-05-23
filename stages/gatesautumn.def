@@ -1,0 +1,327 @@
+; Original stage by Sub-Zera
+; New Background and Optimization by borissuworov
+
+[Info]
+Name = "g4tesautumn"
+displayname = "Gates Autumn"
+mugenversion = 1.1
+
+[Camera]
+boundleft      = -294
+boundright     =  264
+tension = 100
+verticalfollow = .2
+floortension = 40
+overdrawhigh = 20
+overdrawlow = 20
+startzoom = 1
+zoomin = 1
+zoomout = 0.80
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1400
+rightbound = 1400
+
+[Scaling]
+topz           = 0       
+botz           = 50     
+topscale       = 1       
+botscale       = 1.2     
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+[StageInfo]
+zoffset        = 235
+autoturn       = 1
+localcoord = 400,254
+xscale = .9
+yscale = .9
+
+[Shadow]
+intensity = 150
+color = 100,100,100
+yscale = -.14
+reflect = 0
+
+[Music]
+bgmusic        = sound\SuworovStagepack\gatesautumn.ogg
+bgmvolume       = 90
+
+[BGdef]
+spr            = GatesAutumn.sff
+debugbg        = 0
+
+[BG Fondo 1]
+type  = normal
+spriteno = 0,1
+delta = .35,1
+start = 0,45
+mask  = 0
+trans = add
+
+[BG Fondo 2]
+type  = normal
+spriteno = 0,2
+delta = .35,1
+start = 0,45
+mask  = 0
+trans = add
+
+[BG Fondo]
+type  = normal
+spriteno = 0,3
+delta = .35,1
+start = 0,45
+mask  = 0
+trans = add
+
+[BG fog 1]
+type  = Normal
+spriteno = 0,13
+start = -65, 1
+tile = 1,0
+velocity = .500, 0
+mask = 1
+trans = add
+
+[BG fog 2]
+type  = Normal
+start = -44, -20
+spriteno = 0,13
+tile = 1,0
+velocity = .600, 0
+mask = 1
+trans = add
+
+[BG fog 3]
+type  = Normal
+spriteno = 0,13
+start = 0,45
+tile = 1,0
+velocity = .300, 0
+mask = 1
+trans = add
+
+[BG arbol]
+type  = normal
+spriteno = 0,4
+delta = 0.6,1
+start = 0,45
+mask  = 1
+
+[BG arbol]
+type  = normal
+spriteno = 0,10
+delta = 0.7,1
+start = 0,45
+mask  = 1
+scalestart = .90,1
+
+[BG arbol]
+type  = normal
+spriteno = 0,10
+delta = 0.7,1
+mask  = 1
+start = -700,45
+scalestart = .90,1
+
+[BG arbol]
+type  = normal
+spriteno = 0,10
+delta = 0.7,1
+mask  = 1
+start = -500,45
+scalestart = .90,1
+
+[BG arbol]
+type  = normal
+spriteno = 0,10
+delta = 0.7,1
+mask  = 1
+start = -300,45
+scalestart = .90,1
+
+[BG arbol]
+type  = normal
+spriteno = 0,10
+delta = 0.7,1
+mask  = 1
+start = 300,45
+scalestart = .90,1
+
+[BG arbol]
+type  = normal
+spriteno = 0,10
+delta = 0.7,1
+mask  = 1
+start = 500,45
+scalestart = .90,1
+
+[BG arbol]
+type  = normal
+spriteno = 0,10
+delta = 0.7,1
+mask  = 1
+start = 700,75
+scalestart = .90,1
+
+[BG arbol]
+type  = normal
+spriteno = 0,10
+delta = 0.5,1
+mask  = 1
+start = 820,45
+scalestart = .90,1
+
+[BG Temple]
+type  = normal
+spriteno = 0,6
+delta = 0.8,1
+start = 0,45
+mask  = 1
+
+[BG Stage]
+type  = normal
+spriteno = 0,5
+delta = 1,1
+start = 0,45
+mask  = 1
+
+[bg Flame 1]
+type  = anim
+actionno = 0
+start = 75,42
+delta = 1,1
+trans = addalpha
+alpha = 210,80
+
+[bg Flame 3] ;esquerda
+type  = anim
+actionno = 1
+start = 0,43
+delta = 1,1
+trans = addalpha
+alpha = 210,80
+
+[bg Flame 2]
+type  = anim
+actionno = 2
+start = 21,43
+delta = 1,1
+trans = addalpha
+alpha = 210,80
+
+[bg Extra Flame]
+type  = anim
+actionno = 2
+start = -416,105
+delta = 1,1
+trans = addalpha
+alpha = 210,80
+
+[BG trees front 1] 
+type  = normal
+spriteno = 0,4
+start = -900, 155
+delta = .90,1
+layerno = 1
+mask  = 1
+trans = addalpha
+alpha   = 250, 73
+scalestart = .90,1
+
+[BG trees front 2]   
+type  = normal
+spriteno = 0,4
+start = 0, 155
+delta = .90,1
+layerno = 1
+mask  = 1
+trans = addalpha
+alpha   = 250, 73
+scalestart = .90,1
+
+[BG trees front 3]   
+type  = normal
+spriteno = 0,4
+start = 900, 155
+delta = .90,1
+layerno = 1
+mask  = 1
+trans = addalpha
+alpha   = 250, 73
+scalestart = .90,1
+
+[BG leafs small] 
+type  = normal
+spriteno = 400,0
+start = -900, 125
+velocity = .100, .400
+delta = 2,1
+tile = 1,1
+layerno = 1
+trans = add
+mask  = 1
+scalestart = .90,1
+
+[BG leafs middle]
+type  = normal
+spriteno = 400,1
+start = -900, 125
+velocity = .50, .200
+delta = 3,2
+tile = 1,1
+layerno = 1
+trans = add
+mask  = 1
+scalestart = .90,1
+
+[BG leafs big]                         
+type  = normal
+spriteno = 400,2
+start = -900, 125
+velocity = .25, .50
+delta = 4,1;
+tile = 1,1
+layerno = 1
+trans = add
+mask  = 1
+scalestart = .90,1
+
+[Begin action 0]
+3,0, 0,0, 4
+3,1, 0,0, 4
+3,2, 0,0, 4
+3,3, 0,0, 4
+3,4, 0,0, 4
+3,5, 0,0, 4
+3,6, 0,0, 4
+3,7, 0,0, 4
+
+[Begin action 1]
+2,0, 0,0, 4
+2,1, 0,0, 4
+2,2, 0,0, 4
+2,3, 0,0, 4
+2,4, 0,0, 4
+2,5, 0,0, 4
+2,6, 0,0, 4
+2,7, 0,0, 4
+
+[Begin action 2]
+2,0, 0,0, 4, h
+2,1, 0,0, 4, h
+2,2, 0,0, 4, h
+2,3, 0,0, 4, h
+2,4, 0,0, 4, h
+2,5, 0,0, 4, h
+2,6, 0,0, 4, h
+2,7, 0,0, 4, h

@@ -1,0 +1,323 @@
+;--------------------------------------------------------------
+;/Stage: Palace Gates (Night)
+;/Author: Kage
+;/Links: Mortal Kombat Trilogy Extended
+;/Version: 1.0
+;/Date: 
+;--------------------------------------------------------------
+[Info]
+Name = "palacegenes1s"
+Displayname = "Palace Gates - Night"
+mugenversion = 1.0
+;--------------------------------------------------------------
+[Camera]
+BoundLeft = -280
+BoundRight = 490
+BoundHigh = -17
+Tension = 100
+floortension = 30
+verticalfollow = .2
+overdrawhigh = 20
+overdrawlow = 20
+startzoom = 1
+zoomin = 1
+zoomout = 0.80
+
+;--------------------------------------------------------------
+[PlayerInfo]
+P1StartX = -98
+P1StartY = 0
+P1StartZ = 0
+P1Facing = 1
+;--------------------------------------------------------------
+P2StartX = 96
+P2StartY = 0
+P2StartZ = 0
+P2Facing = -1
+;--------------------------------------------------------------
+LeftBound = -1470
+RightBound = 1470
+;--------------------------------------------------------------
+[Bound]
+ScreenLeft = 47
+ScreenRight = 47
+;--------------------------------------------------------------
+[StageInfo]
+Zoffset = 237
+LocalCoord = 400,266
+AutoTurn = 1
+ResetBg = 1
+;--------------------------------------------------------------
+[Shadow]
+Intensity = 160
+Yscale = .17
+;--------------------------------------------------------------
+[Music]
+BgMusic = sound/Genesis Music/MK1 Genesis Palace Gates.ogg
+bgmvolume = 85
+;--------------------------------------------------------------
+[BGdef]
+Spr = palace_gates_night.sff
+BgClearColor = 0,0,49
+;--------------------------------------------------------------
+;Луна
+[Bg Layer #1]
+Type = Normal
+SpriteNo = 0,60
+Delta = 0,1
+LayerNo = 0
+Mask = 1
+scalestart = .97,1
+;Луна 2
+
+[Bg Anim #1]
+Type = Anim
+ActionNo = 3
+Delta = 0,1
+Mask = 1
+scalestart = .97,1
+
+[Begin Action 3]
+0,61, 0,0, 4, , AS206D256
+
+;Гора
+[Bg Layer #1]
+Type = Normal
+SpriteNo = 0,1
+Delta = 0,1
+LayerNo = 0
+Mask = 1
+scalestart = .90,1
+
+;Облака
+[Bg Layer #2]
+type  = Normal
+spriteno = 0,51
+tile = 1,0
+velocity = .500,0
+mask = 1
+delta = 1,1
+trans = addalpha
+alpha = 190,180
+scalestart = .90,1
+
+[Bg Layer #2]
+type  = Normal
+Start = 250,-70
+spriteno = 0,51
+tile = 1,0
+velocity = .500,0
+mask = 1
+delta = 1,1
+trans = addalpha
+alpha = 220,180
+scalestart = .90,1
+
+;Храм (Неизвестная дельта)
+[Bg Layer #2]
+Type = Normal
+SpriteNo = 0,7
+Delta = .1,1
+Mask = 1
+scalestart = .90,1
+
+;Полы и Земля
+[Bg Layer #3]
+Type = Normal
+SpriteNo = 0,0
+Delta = 1,1
+Mask = 1
+
+;Кусты!
+[Bg Layer #4]
+Type = Normal
+SpriteNo = 0,11
+Delta = .5,1
+Mask = 1
+scalestart = .90,1
+
+;Статичные Кусты
+[Bg Layer #5]
+Type = Normal
+SpriteNo = 0,12
+Delta = 1,1
+Mask = 1
+scalestart = .90,1
+
+;Каменный бортик Будды
+[Bg Layer #6]
+Type = Normal
+SpriteNo = 0,9
+Delta = 1,1
+Mask = 1
+
+;Будда
+[Bg Layer #7]
+Type = Normal
+SpriteNo = 0,8
+Delta = 1,1
+Mask = 1
+scalestart = .95,1
+
+;Красный заборчик
+[Bg Layer #8]
+Type = Normal
+SpriteNo = 0,4
+Delta = 1,1
+Mask = 1
+
+;Каменный бортик
+[Bg Layer #9]
+Type = Normal
+SpriteNo = 0,10
+Delta = 1,1
+Mask = 1
+
+;Идолы на подставке
+[Bg Layer #10]
+Type = Normal
+SpriteNo = 0,2
+Delta = 1,1
+Mask = 1
+
+;Флажки
+[Bg Layer #11]
+Type = Normal
+SpriteNo = 0,6
+Delta = 1,1
+Mask = 1
+
+;Стражники
+;[Bg Layer #12]
+;Type = Normal
+;SpriteNo = 0,5
+;Delta = 1,1
+;Mask = 1
+
+;Каменные фалосы
+[Bg Layer #13]
+Type = Normal
+SpriteNo = 0,13
+Delta = 1,1
+Mask = 1
+
+;Огонь на правом фалосе
+[Bg Anim #14]
+Type = Anim
+ActionNo = 2
+Delta = 1,1
+Mask = 1
+
+;Огонь на левом фалосе
+[Bg Anim #15]
+Type = Anim
+ActionNo = 2
+Delta = 1,1
+Start = -833,-1
+Mask = 1
+
+;Торцевые каменные бортики
+[Bg Layer #16]
+Type = Normal
+SpriteNo = 0,18
+Delta = 1,1
+Mask = 1
+
+;Каменные арки
+[Bg Layer #17]
+Type = Normal
+SpriteNo = 0,14
+Delta = 1,1
+Mask = 1
+
+;Каменная арка (Ближняя)
+[Bg Layer #18]
+Type = Normal
+SpriteNo = 0,50
+Delta = 1,1
+LayerNo = 1
+Mask = 1
+
+;Дверь
+[Bg Layer #19]
+Type = Normal
+SpriteNo = 0,17
+Delta = 1,1
+Mask = 1
+
+;Дальний факел
+[Bg Layer #20]
+Type = Normal
+SpriteNo = 0,19
+Delta = 1,1
+Mask = 1
+
+;Дальний каменный старик
+[Bg Layer #21]
+Type = Normal
+SpriteNo = 0,15
+Delta = 1,1
+Mask = 1
+
+;Ближний каменный старик
+[Bg Layer #22]
+Type = Normal
+SpriteNo = 0,16
+Delta = 1,1
+start = 50,5
+LayerNo = 1
+Mask = 1
+scalestart = .93,1
+
+;Огонь дальнего факела
+[Bg Anim #23]
+Type = Anim
+ActionNo = 1
+Delta = 1,1
+Mask = 1
+
+;Ближний факел
+[Bg Layer #24]
+Type = Normal
+SpriteNo = 0,20
+Delta = 1,1
+;LayerNo = 1
+Mask = 1
+
+;Огонь ближнего факела
+[Bg Layer #25]
+Type = Anim
+ActionNo = 0
+Delta = 1,1
+;LayerNo = 1
+Mask = 1
+
+[Begin Action 0]
+0,21, 0,0, 4
+0,22, 0,0, 4
+0,23, 0,0, 4
+0,24, 0,0, 4
+0,25, 0,0, 4
+0,26, 0,0, 4
+0,27, 0,0, 4
+0,28, 0,0, 4
+
+[Begin Action 1]
+0,40, 0,0, 4
+0,41, 0,0, 4
+0,42, 0,0, 4
+0,43, 0,0, 4
+0,44, 0,0, 4
+0,45, 0,0, 4
+0,46, 0,0, 4
+0,47, 0,0, 4
+
+[Begin Action 2]
+0,30, 0,0, 4
+0,31, 0,0, 4
+0,32, 0,0, 4
+0,33, 0,0, 4
+0,34, 0,0, 4
+0,35, 0,0, 4
+0,36, 0,0, 4
+0,37, 0,0, 4

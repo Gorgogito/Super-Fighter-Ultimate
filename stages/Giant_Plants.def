@@ -1,0 +1,118 @@
+[Info]
+name = "Giant Plants Planet"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -77
+boundright = 78
+boundhigh = -65
+boundlow = 0
+verticalfollow = 1.20
+floortension = 60
+tension = 80
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 00
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 00
+p2startz = 0
+p2facing = -1
+
+leftbound = -1200
+rightbound = 1200
+topbound = 100
+botbound = 0
+
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 18
+screenright = 18
+
+[StageInfo]
+zoffset = 205  
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+color = 26,26,26
+yscale = .20
+
+[Music]
+bgmusic =sound/DBGT_Intro_BGM.mp3
+bgvolume =255
+
+;========================================================
+;-------------------------------------
+; Main background definition
+[BGdef]
+spr = Giant_Plants.sff
+debugbg = 0
+
+[BG 1]
+type  = normal
+spriteno = 0,0
+layerno= 0
+start = 0,0
+trans= none
+delta = 1,1
+mask = 1
+tile = 1,1
+
+
+
+[BG 0]
+type  = normal
+spriteno = 0,1
+layerno= 0
+start = 0,0
+delta = 1,1
+mask = 1
+trans= none
+tile = 0,0
+
+[BG 2]
+type  = anim
+spriteno = 8, 0
+actionno= 8
+layerno= 0
+start = 0,0
+trans=none
+delta = 1,1
+mask = 1
+tile = 0, 0
+
+[Begin action 8]
+8,0,0,0,15
+8,1,0,0,15
+8,2,0,0,15
+8,3,0,0,15
+8,0,0,0,15
+8,0,0,0,15
+8,0,0,0,15
+8,0,0,0,15
+8,0,0,0,15
+8,0,0,0,15
+8,0,0,0,15
+8,0,0,0,15
+8,0,0,0,15
+
+[BG 3]
+type  = normal
+spriteno = 0,2
+layerno= 1
+start = 245,0
+trans=none
+delta = 1,1
+mask = 1
+tile = 1
+  

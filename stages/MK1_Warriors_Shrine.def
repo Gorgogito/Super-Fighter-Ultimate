@@ -1,0 +1,287 @@
+;--------------------------------------------------------
+; Stage   : Warriors Shrine MK1
+; Version : 3.0
+; Autor   : Sub-Zera
+; Mail    : subzera@mail.ru
+; Web     : 
+;--------------------------------------------------------
+
+[Info]
+Name = "w4rri0rs_shr1neNight"
+displayname = "Warrior Shrine Dark"
+
+;--------------------------------------------------------
+
+[Camera]
+startx         = 0
+starty         = 0
+boundleft      = -380;-360
+boundright     =  383;373
+boundhigh      = -20
+boundlow       = -3;-13
+floortension = 30
+verticalfollow = .2
+tension        = 100
+
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx       = -98
+p1starty       = 0
+p1startz       = 0
+p1facing       = 1
+
+p2startx       = 96
+p2starty       = 0
+p2startz       = 0
+p2facing       = -1
+
+leftbound  = -1000 
+rightbound = 1000
+topbound       =  0
+botbound       =  0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1.2     ;Scale to use at bottom
+;--------------------------------------------------------
+
+[Bound]
+screenleft  = 40
+screenright = 40
+
+;--------------------------------------------------------
+
+[StageInfo]
+zoffset = 230
+autoturn = 1
+resetBG = 1
+localcoord = 400,254
+
+;--------------------------------------------------------
+
+[Shadow]
+intensity = 180
+color = 100,100,100
+yscale = -.16
+reflect = 0       = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic = sound/Genesis Music/WarriorsShrineGenesis.ogg
+bgmloopstart = 338770
+bgmloopend = -1
+bgmvolume = 90
+;--------------------------------------------------------
+
+[BGdef]
+spr            = mk1_Warriors_Shrine.sff
+debugbg        = 0
+
+;--------------------------------------------------------
+ 
+;[BG Fondo]
+;type  = normal
+;spriteno = 2,2
+;delta = 1,1
+;mask  = 0
+
+[BG Montaña]
+type  = normal
+spriteno = 1,2
+start = 0,-2
+delta = 0,0
+mask  = 1
+tile = 1,1
+
+[BG Luna]
+type  = normal
+spriteno = 1,1
+delta = 0,1
+mask  = 1
+
+[BG Objetos]
+type = anim
+actionno = 0
+delta = 1,1
+start = -570,0
+velocity = 1.2,0
+tile = 1,0
+mask = 1
+tilespacing = 1200, 0
+
+[BG nube 1]
+type  = Normal
+spriteno = 1,3
+tile = 1,0
+velocity = .250, 0
+trans = sub
+mask = 1
+
+[BG nube 1]
+type  = Normal
+spriteno = 1,4
+tile = 1,0
+velocity = .350, 0
+trans = sub
+mask = 1
+
+[BG nube 1]
+type  = Normal
+spriteno = 1,5
+tile = 1,0
+velocity = .150, 0
+trans = sub
+mask = 1
+
+;[BG nube 2]
+;type  = Normal
+;spriteno = 1,4
+;tile = 1,0
+;velocity = .300, 0
+;mask = 1
+
+[BG arbol 1]
+type  = normal
+spriteno = 1,6
+delta = 0.2,.710
+trans = add
+mask  = 1
+
+[BG arbol 2]
+type  = normal
+spriteno = 1,7
+delta = 0.3,.710
+trans = add
+mask  = 1
+scalestart = .90,1
+
+[BG arbol 3]
+type  = normal
+spriteno = 1,8
+delta = 0.4,.710
+trans = add
+mask  = 1
+scalestart = .90,1
+
+[BG arbol 4]
+type  = normal
+spriteno = 1,9
+delta = 0.4,.710
+trans = add
+mask  = 1
+scalestart = .90,1
+
+;[BG arbol 5]
+;type  = normal
+;spriteno = 1,6
+;delta = .380,.710
+;mask  = 1
+
+[BG rojo]
+type  = normal
+spriteno = 2,1
+delta = 0.5, 1
+mask  = 1
+
+[BG ban 1]
+type  = normal
+spriteno = 2,3
+delta = 0.7, 1
+mask  = 1
+
+[BG ban 2]
+type  = normal
+spriteno = 2,4
+delta = 0.7, 1
+mask  = 1
+
+[BG Pared]         ;ñòîëáö
+type  = normal
+spriteno = 2,6
+delta = 0.7, 1
+mask  = 1
+
+[BG Pared]         ;ïîë
+type  = normal
+spriteno = 2,0
+delta = 1, 1
+mask  = 1
+
+
+
+[BG Fuego 1]
+type = anim
+actionno = 1
+trans = add
+delta = 1,1
+
+[BG Fuego 2]
+type = anim
+actionno = 2
+start = -142,0
+trans = add
+delta = 1,1
+
+[BG Fuego 3]
+type = anim
+actionno = 2
+start = -488,-21
+trans = add
+delta = 1,1
+
+[BG Fuego 4]
+type = anim
+actionno = 2
+start = 345,-21
+trans = add
+delta = 1,1
+
+;--------------------------------------------------------
+
+[Begin action 0]
+0,5, 0,0, 1000
+0,6, 0,0, 1000
+0,7, 0,0, 1000
+0,8, 0,0, 1000
+0,9, 0,0, 1000
+
+[Begin action 1]
+3,0, 0,0, 6,, A
+3,1, 0,0, 6,, A
+3,2, 0,0, 6,, A
+3,3, 0,0, 6,, A
+3,4, 0,0, 6,, A
+
+
+[Begin action 2]
+3,2, 0,0, 6,, A
+3,0, 0,0, 6,, A
+3,1, 0,0, 6,, A
+3,4, 0,0, 6,, A
+3,3, 0,0, 6,, A
+
+[Begin action 3]
+3,2, 0,0, 6,h, A
+3,0, 0,0, 6,h, A
+3,1, 0,0, 6,h, A
+3,4, 0,0, 6,h, A
+3,3, 0,0, 6,h, A
+
+[Begin action 4]
+4,0, 0,0, 6, h
+4,1, 0,0, 6, h
+4,2, 0,0, 6, h
+4,3, 0,0, 6, h
+4,4, 0,0, 6, h
+4,5, 0,0, 6, h
+4,6, 0,0, 6, h
+4,7, 0,0, 6, h
+
+;--------------------------------------------------------

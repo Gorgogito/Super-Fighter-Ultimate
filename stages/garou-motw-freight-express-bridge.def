@@ -1,0 +1,225 @@
+;==============================
+;	GAROU OMEGA STAGE
+;==============================
+;Author:	Claudio Toxi
+;Create Date:	2004.11.10
+
+;--------------------------------------------------------
+[Info]
+name = "Garou MOTW - FREIGHT EXPRESS - BRIDGE"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -150
+boundright = 150
+boundhigh = -50
+boundlow = 0
+verticalfollow = .3
+floortension = 0
+tension = 50
+
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound = -1000
+rightbound = 1000
+topbound = 0
+botbound = 0
+
+;--------------------------------------------------------
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 15
+screenright = 15
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 210
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+[Shadow]
+intensity = 96
+color = 0,0,0
+yscale = .3
+fade.range = 0,0
+
+;--------------------------------------------------------
+[Reflection]
+intensity = 0
+
+;--------------------------------------------------------
+[Music]
+bgmusic = stages/009.mp3
+bgvolume = 255
+
+;--------------------------------------------------------
+[BGdef]
+spr = garou-motw-freight-express-bridge.sff
+debugbg = 0
+
+[BG City]
+type = normal
+spriteno = 0,0
+layerno = 0
+start = 0,0
+delta = 0.1,1
+trans = none
+mask = 0
+tile = 1,0
+ID = 1
+
+[BGctrldef City]
+CtrlID = 1
+looptime = -1
+
+[BGctrl City]
+type = Velset
+time = 0
+x = -0.1
+
+[BG Airship]
+type = anim
+actionno = 1
+layerno = 0
+start = 0,0
+delta = 0,1
+trans = none
+mask = 0
+tile = 0,0
+tilespacing = 0,0
+
+[Begin action 1]
+1,0,0,0,20
+1,1,0,0,20
+1,2,0,0,12
+1,3,0,0,12
+1,4,0,0,6
+1,5,0,0,6
+1,6,0,0,6
+1,7,0,0,3
+1,8,0,0,3
+1,9,0,0,6
+1,10,0,0,6
+1,11,0,0,6
+1,12,0,0,12
+1,13,0,0,12
+1,14,0,0,20
+1,15,0,0,40
+1,14,0,0,20
+1,13,0,0,12
+1,12,0,0,12
+1,11,0,0,6
+1,10,0,0,6
+1,9,0,0,6
+1,8,0,0,3
+1,7,0,0,3
+1,6,0,0,6
+1,5,0,0,6
+1,4,0,0,6
+1,3,0,0,12
+1,2,0,0,12
+1,1,0,0,20
+1,0,0,0,20
+
+[BG Bridge]
+type = anim
+actionno = 10
+layerno = 0
+start = 0,-20
+delta = 0,1
+trans = none
+mask = 1
+tilespacing = 0,0
+[Begin action 10]
+10,0,0,0,1
+10,1,0,0,1
+10,2,0,0,1
+10,3,0,0,1
+10,4,0,0,1
+10,5,0,0,1
+10,6,0,0,1
+10,7,0,0,1
+
+[BG Express Train Body]
+type = anim
+actionno = 20
+layerno = 0
+start = 0,0
+delta = 1,1
+trans = none
+mask = 1
+tilespacing = 0,0
+[Begin action 20]
+20,0,0,0,40
+20,1,0,0,5
+20,2,0,0,5
+20,1,0,0,5
+20,0,0,0,60
+
+[BG Express Train Chump]
+type = anim
+actionno = 21
+layerno = 0
+start = -310,50
+delta = 1,1
+trans = none
+mask = 1
+tilespacing = 0,0
+[Begin action 21]
+21,0,0,0,60
+21,1,0,0,5
+21,2,0,0,5
+21,1,0,0,5
+21,0,0,0,40
+
+[BG Express Train Body]
+type = anim
+actionno = 22
+layerno = 0
+start = 0,0
+delta = 1,1
+trans = none
+mask = 1
+tilespacing = 0,0
+[Begin action 22]
+22,0,0,0,50
+22,0,0,1,5
+22,0,0,-1,5
+22,0,0,1,5
+22,0,0,0,50
+
+[BG Express Train Front]
+type = anim
+actionno = 23
+layerno = 0
+start = 0,0
+delta = 1,1
+trans = none
+mask = 1
+tilespacing = 0,0
+[Begin action 23]
+23,0,0,0,50
+23,0,0,-1,5
+23,0,0,1,5
+23,0,0,-1,5
+23,0,0,0,50

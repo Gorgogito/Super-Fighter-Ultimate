@@ -1,0 +1,217 @@
+[Info]
+name            = "Snakeway HR"
+Author (Current Edited Version)   = Legend Ivanhoe
+Original Author = ?
+
+
+[Camera]
+startx = -350
+starty = 0
+boundleft = -1275
+boundright = 300
+boundhigh = -80
+boundlow = 0
+verticalfollow = .3
+tension = 50
+floortension = 50
+
+[PlayerInfo]
+p1startx = -470
+p1starty = 00
+p1startz = 0
+p1facing = 1
+
+p2startx = -190
+p2starty = 00
+p2startz = 0
+p2facing = -1
+
+leftbound = -1275
+rightbound = 1275
+topbound = 0
+botbound = 0
+
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 430
+autoturn = 1
+resetBG = 0
+localcoord 	= 640, 480
+xscale 		= 1
+yscale 		= 1
+
+[Shadow]
+intensity = 15
+yscale = .09
+
+;--------------------------------------------------------
+[Music]
+ ;Put a filename for an MP3 or MIDI here, or just comment
+ ;it out if you don't want music. If an invalid filename
+ ;is given, then no music will play.
+ bgmusic = sound/DBZ_Pikkon's_Theme.mp3
+
+;========================================================
+;-------------------------------------
+; Main background definition
+[BGdef]
+spr = SnakewayHR.sff
+debugbg = 0
+
+[BG ceu]
+type            = normal
+spriteno        = 1,0
+layerno         = 0 
+start           = -75, 250
+delta           = .25, 1
+
+[BG ceu]
+type  		= normal
+spriteno 	= 1, 1
+start 		= -75,250
+delta 		= .25, 1
+trans		= add
+
+[BG ceu]
+type  		= normal
+spriteno 	= 1, 2
+start 		= -75,250
+delta 		= .25, 1
+trans		= add
+
+;----------------------------------
+
+
+;-----------------------------------
+
+
+[BG clouds]
+type  		= normal
+spriteno 	= 3, 0
+start 		= 0,-200
+delta 		= .25, 1
+trans		= addalpha
+alpha           = 190, 256
+velocity        = .10
+tile            = 1, 0
+
+[BG Planet]
+type  		= normal
+spriteno 	= 1, 4
+start 		= -5,250
+delta 		= .25, 1.1
+mask            = 1
+
+[BG plataforma]
+type  = anim
+actionno = 0
+start = 175, 396
+delta = 1, 1
+
+[Begin Action 0]
+10,0, 0,0, 4
+10,1, 0,0, 4
+10,2, 0,0, 4
+10,3, 0,0, 4
+10,4, 0,0, 4
+10,5, 0,0, 4
+10,6, 0,0, 4
+10,7, 0,0, 4
+10,8, 0,0, 4
+10,9, 0,0, 4
+10,10, 0,0, 4
+10,11, 0,0, 4
+10,12, 0,0, 4
+10,13, 0,0, 4
+
+[BG plataforma]
+type  = anim
+actionno = 10
+start = -825, 396
+delta = 1, 1
+
+[Begin Action 10]
+10,0, 0,0, 4,
+10,1, 0,0, 4,
+10,2, 0,0, 4,
+10,3, 0,0, 4,
+10,4, 0,0, 4,
+10,5, 0,0, 4,
+10,6, 0,0, 4,
+10,7, 0,0, 4,
+10,8, 0,0, 4,
+10,9, 0,0, 4,
+10,10, 0,0, 4,
+10,11, 0,0, 4,
+10,12, 0,0, 4,
+10,13, 0,0, 4,
+
+[BG Snake Head]
+type     = normal
+spriteno = 1, 3
+layerno  = 0
+start    = -900, 320
+delta    = 1, 1
+mask     = 1
+
+[BG plataforma fente]
+type  = anim
+actionno = 11
+start = -825, 395
+delta = 1, 1
+
+[BG plataforma fente]
+type  = anim
+actionno = 11
+start = 175, 395
+delta = 1, 1
+
+[Begin Action 11]
+4,1, 0,0, -1,
+
+[BG luz]
+type = anim
+actionno = 2
+layerno = 1
+start = 0, 220
+delta = 0, 1
+trans = add
+
+[Begin Action 2]
+2,0, 0,0, 8, ,A
+2,1, 0,0, 6, ,A
+2,2, 0,0, 4, ,A
+2,3, 0,0, 4, ,A
+2,4, 0,0, 3, ,A
+2,0, 0,0, 300, ,A
+2,0, 0,0, 8, ,A
+2,1, 0,0, 6, ,A
+2,2, 0,0, 4, ,A
+2,3, 0,0, 4, ,A
+2,0, 0,0, 100, ,A
+
+[BG plataforma frente]
+type = normal
+spriteno = 4,0
+layerno = 1
+start = 175, 396
+delta = 1, 1
+mask = 1
+
+[BG plataforma fente]
+type  = anim
+actionno = 11
+start = -825, 396
+delta = 1, 1
+
+[Begin Action 11]
+4,0, 0,0, -1,H

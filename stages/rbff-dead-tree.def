@@ -1,0 +1,207 @@
+;========================================================
+;
+; A dead cherry tree in a japanese courtyard.
+;
+;
+; Sokaku Mochizuki's stage from the game Real Bout Fatal Fury 2 by SNK-Playmore.
+;
+; M.U.G.E.N. adaptation by R.o.q.u.e.
+;
+; Special thanks to :
+;  - SNK-Playmore for the Real Bout series
+;  - ElSemi, for Nebula
+;  - Corel, for Paint Shop Pro
+;  - Sés, for M.C.M.
+;  - Christophe and Winane, for SFFExtract
+;  - Elecbyte, for Sprmaker
+;
+; For more M.U.G.E.N. material, visit the website : http://alice-games.org
+;
+; Notes : In the original game, there are two versions of this stage : one with hardly any rain and 
+; another with a downpour. This stage is the second version.
+;
+;========================================================
+
+
+;--------------------------------------------------------
+[Info]
+name = "rbff - Dead Tree"
+
+
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+
+boundleft = -160
+boundright = 160
+boundhigh = -80
+boundlow = 0
+
+verticalfollow = 0.2
+floortension = 0
+tension = 70
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -80          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+ ;Don't change these values.
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+
+;--------------------------------------------------------
+[Scaling]
+ ;No need to change these values
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1.2     ;Scale to use at bottom
+
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 28    ;Dist from left of screen that player can move to
+screenright = 28   ;Right edge
+
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 200
+autoturn = 1
+resetBG = 1
+
+
+;--------------------------------------------------------
+[Shadow]
+intensity = 0
+color = 35,35,16
+yscale = -0.25
+fade.range = -100,-20
+
+
+;--------------------------------------------------------
+[Reflection]
+intensity = 0
+
+
+;--------------------------------------------------------
+[Music]
+bgmusic = stages/198.mp3
+bgvolume = 255
+
+
+;--------------------------------------------------------
+[BGdef]
+spr = stages/rbff-dead-tree.sff
+debugbg = 0
+
+[BG Left water]
+type = anim
+actionno = 20
+start = 0, 0
+delta = 1,1
+
+[BG Right water]
+type = anim
+actionno = 21
+start = 0, 0
+delta = 1,1
+
+[BG Garden]
+type  = normal
+spriteno = 0, 0
+layerno = 0
+start = 0, 0
+delta = 1, 1
+trans = none
+mask  = 1
+window = 0,0, 319, 239
+
+[BG Tree]
+type  = normal
+spriteno = 10, 0
+layerno = 0
+start = 0, 0
+delta = 1,1
+trans = none
+mask  = 1
+window = 0,0, 319, 239
+windowdelta = 0,0
+
+[BG Rain]
+type = anim
+actionno = 30
+layerno = 1
+start = -160, 0
+delta = 0,0
+
+
+;--------------------------------------------------------
+[Begin action 20]
+20,1, 0,0, 3
+20,2, 0,0, 3
+20,3, 0,0, 3
+20,4, 0,0, 3
+20,5, 0,0, 3
+20,6, 0,0, 3
+20,7, 0,0, 3
+20,8, 0,0, 3
+
+[Begin action 21]
+21,1, 0,0, 3
+21,2, 0,0, 3
+21,3, 0,0, 3
+21,4, 0,0, 3
+21,5, 0,0, 3
+21,6, 0,0, 3
+21,7, 0,0, 3
+21,8, 0,0, 3
+
+[Begin action 30]
+30,1, 0,0, 1
+30,1, 80,0, 1
+30,1, 160,0, 1
+
+30,2, 240,0, 1
+30,2, 0,0, 1
+30,2, 80,0, 1
+
+30,3, 160,0, 1
+30,3, 240,0, 1
+30,3, 0,0, 1
+
+30,4, 80,0, 1
+30,4, 160,0, 1
+30,4, 240,0, 1
+
+30,5, 0,0, 1
+30,5, 80,0, 1
+30,5, 160,0, 1
+
+30,6, 240,0, 1
+30,6, 0,0, 1
+30,6, 80,0, 1
+
+30,7, 160,0, 1
+30,7, 240,0, 1
+30,7, 0,0, 1
+
+30,8, 80,0, 1
+30,8, 160,0, 1
+30,8, 240,0, 1

@@ -1,0 +1,204 @@
+[Info]
+Name = "tox1cswamp"
+Displayname = "Toxic Swamp"      
+Mugenversion = 1.1
+Author = "Nintality"
+
+[Camera]
+boundleft = -285
+boundright = 285
+boundhigh = -33
+boundlow = -13
+floortension = -130
+tension = 100
+verticalfollow = .13
+overdrawhigh = 20
+overdrawlow = 20
+startzoom = 1
+zoomin = 1
+zoomout = 0.73
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1400
+rightbound = 1400
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+[StageInfo]
+zoffset = 210
+autoturn = 1
+resetBG = 1
+localcoord = 400,254
+
+[Shadow]
+intensity = 185
+yscale = -.2
+;fade.range = -100,-50
+
+[Music]
+bgmusic = sound/Other/torture.ogg
+bgmloopstart = 2149090
+bgmloopend = -1
+
+[BGdef]
+spr = forest_ruins.sff
+
+
+[BG Bforest]
+type = normal
+spriteno = 2,3
+delta = .25, 1
+tile=1,0
+mask = 0
+scalestart = .90,1
+
+[BG BClouds]
+type  = normal
+spriteno = 0,6
+start = 0, -20
+delta = .30,1
+velocity = .3,0
+tile = 1,0
+trans = add
+scalestart = .90,1
+
+[BG FClouds]
+type = normal
+start = 0,-22
+spriteno = 2,0
+delta = .55, 1
+velocity = .5,0
+tile = 1,0
+mask = 1
+trans = add
+scalestart = .90,1
+
+[BG BTree]
+type = normal
+spriteno = 2,4
+delta = .40, 1
+mask = 1
+scalestart = .90,1
+
+[BG LTree]
+type = normal
+spriteno = 2,1
+delta = .42, 1
+mask = 1
+scalestart = .90,1
+
+[BG MTree]
+type = normal
+spriteno = 2,2
+delta = .50, 1
+mask = 1
+scalestart = .90,1
+
+[BG FDarkness]
+type  = Normal
+spriteno = 0,1
+start = 0, 2
+tile = 1,0
+delta = 1,1
+mask = 1
+trans = addalpha
+alpha = 5,5
+
+[BG MWall]
+type  = Normal
+spriteno = 0,3
+delta = .61,1
+mask = 1
+scalestart = .90,1
+
+[BG Wall]
+type  = Normal
+spriteno = 0,2
+delta = .61,1
+mask = 1
+scalestart = .90,1
+
+[BG Floor]
+type = Parallax
+spriteno = 0,0
+delta = .76,1
+xscale = .74, 1
+yscalestart = 100
+width = 1100,1360
+mask = 1
+scalestart = .90,1
+
+[BG MGreen]
+type = normal
+spriteno = 4,0
+delta = .67,1
+velocity = .7,0
+tile = 1,0
+mask = 1
+trans = add
+scalestart = .90,1
+
+[BG MBlue]
+type = normal
+spriteno = 4,1
+delta = 1.1,1
+velocity = .9,0
+tile = 1,0
+layerno = 1
+mask = 1
+trans = add
+scalestart = .90,1
+
+[BG Edge]
+type = normal
+spriteno = 0,5
+delta = 1.2,1
+layerno = 1
+mask = 1
+scalestart = .90,1
+start = -52,0
+
+[BG Edge]
+type = normal
+spriteno = 0,4
+delta = 1.2,1
+layerno = 1
+mask = 1
+scalestart = .90,1
+start = 50,0
+
+[BG Rock]
+type = normal
+spriteno = 1,1
+delta = 1.3,1
+layerno = 1
+mask = 1
+scalestart = .90,1
+
+[begin action 1]
+1,0,0,0,220,,A
+1,1,0,0,7,,A
+1,0,0,0,3,,A
+1,2,0,0,7,,A
+1,0,0,0,220,,A
+1,3,0,0,7,,A
+1,0,0,0,3,,A
+1,3,0,0,7,,A
+1,0,0,0,220,,A
+1,4,0,0,7,,A
+1,0,0,0,3,,A
+1,2,0,0,7,,A
+
+[begin action 2]
+6,0,0,0,220,,A
+6,1,0,0,7,,A
+6,0,0,0,3,,A
+6,1,0,0,7,,A

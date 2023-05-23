@@ -1,0 +1,141 @@
+﻿ ;Арена: Kombat Tomb MK2
+; Автор: Emsi-D
+; Рип спрайтов: Fly
+
+[Info]
+Name = "K0mbat_T0mb"
+Displayname = "Kombat Tomb"
+Mugenversion = 1.1
+
+[Camera]
+boundleft = -334
+boundright = 349
+boundhigh = -77
+tension = 100
+verticalfollow = 0.0001
+overdrawhigh = 400
+overdrawlow = 20
+startzoom = 1
+zoomin = 1
+zoomout = 0.74
+
+
+[PlayerInfo]
+p1startx = -98
+p1starty = N/A
+p1facing = 1
+p2startx = 96
+p2starty = N/A
+p2facing = -1
+leftbound = -1400
+rightbound = 1400
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+[StageInfo]
+zoffset = 233
+autoturn = 1
+resetBG = 1
+localcoord = 400,254
+
+[Shadow]
+intensity = 180
+yscale = -.20
+
+[Music]
+bgmusic = sound/MK2/mk2_kombat_tomb.ogg
+
+[BGdef]
+spr = Kombat_Tomb.sff
+bgclearcolor = 1,0,0
+
+
+[BG Небо]
+type = normal
+spriteno = 0,2
+delta = 0,1
+start = -200,60
+mask = 1
+
+[BG Мелкий дракон]
+type = anim
+actionno = 4
+velocity = .89,0
+delta = 1,1
+start = -250,94
+tilespacing = 565,0
+tile = 1,0
+scalestart = 1,1.06
+
+
+[Begin action 4]
+0,6, 0,0, 7
+0,7, 0,0, 7
+0,8, 0,0, 7
+0,9, 0,0, 7
+0,10, 0,0, 7
+0,11, 0,0, 7
+0,12, 0,0, 7
+0,13, 0,0, 7
+
+[BG Большой дракон]
+type = anim
+actionno = 5
+velocity = -1.9,0
+delta = 1,1
+start = 270,56
+tilespacing = 625,0
+tile = 1,0
+scalestart = 1,1.06
+
+
+[Begin action 5]
+0,14, 0,0, 6
+0,15, 0,0, 6
+0,16, 0,0, 6
+0,17, 0,0, 6
+0,18, 0,0, 6
+0,19, 0,0, 6
+0,20, 0,0, 6
+0,21, 0,0, 6
+
+[BG Переход между этажами]
+type = normal
+spriteno = 0,4
+delta = 1,1
+start = 0,247
+tile = 1,0
+
+[BG Пол]
+type = parallax
+spriteno = 0,0
+delta = .94,1
+start = 0,234
+width = 1200,1380
+
+[BG Заборчик]
+type = normal
+spriteno = 0,3
+delta = .595,1
+start = -82,121
+tile = 1,0
+mask = 1
+
+[BG Стена]
+type = normal
+spriteno = 0,1
+delta = .89,1
+start = 6,-90
+mask = 1
+
+[BG Лезвия на переднем плане]
+type = normal
+spriteno = 0,5
+layerno = 1
+delta = .89,1
+start = -50,-90
+tilespacing = 11,0
+tile = 1,0
+mask = 1

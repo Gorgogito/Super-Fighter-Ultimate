@@ -1,0 +1,88 @@
+;New York City Skyline, ripado por DonRamon  
+;do jogo Marvel vs Capcom
+;Utilizando o emulador WinKawaks 1.42
+;cenário com visão aérea no super jump
+
+[Info]
+name = "Rooftop by Central Park"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -224
+boundright = 224
+boundhigh = -234
+boundlow = 0
+verticalfollow = .5
+tension = 50
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 218
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+color = 37,145,85
+yscale =.2
+reflect = 0
+
+[Music]
+bgmusic = sound/nycmvc.mp3
+bgvolume = 0
+
+[BGdef]
+spr = stages/nycmvc.sff
+debugbg = 1
+
+[BG céu]
+type = normal
+spriteno = 1,1
+start = -264,-144
+delta = .465,.615
+
+[BG fundo]
+type = normal
+spriteno = 0,0
+delta = .50,.855
+start = -272,-205
+mask = 1
+
+[BG máquina]
+type = normal
+spriteno = 1,0
+delta = 1,1 
+start = 243,21
+mask = 1
+
+[BG chão]
+type = normal
+spriteno = 0,1
+delta = 1,1
+start = -384,164
+mask = 1

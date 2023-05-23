@@ -1,0 +1,185 @@
+; Арена: Prison Break
+; Автор: HALILSCORPION
+
+[Info]
+Name = "pr150nbr34k"
+Displayname = "Prison Break MKM"
+Mugenversion = 1.1
+   
+[Camera]
+boundleft = -1100
+boundright = 1200
+boundhigh = -120
+boundlow = 0
+tension = 180
+verticalfollow = .2
+floortension = 30
+overdrawhigh = 20
+overdrawlow = 20
+startzoom = 1
+zoomin = 1
+zoomout = 0.75
+
+
+[PlayerInfo]
+p1startx = -200
+p1starty = N/A
+p1facing = 1
+p2startx = 200
+p2starty = N/A
+p2facing = -1
+leftbound = -2200
+rightbound = 2200
+
+[Bound]
+screenleft = 80
+screenright = 80
+
+[StageInfo]
+zoffset = 415
+localcoord = 800,508
+xscale = 1.13637
+yscale = 1.13637
+autoturn = 1
+resetBG = 1
+     
+[Shadow]
+intensity = 250
+color = 0,0,0
+yscale = .06
+fade.range = -400,-100
+
+[Music]
+bgmusic = sound/Other/prision.ogg
+
+[BGdef]
+spr = Prison_Break.sff
+
+
+[BG SKY]
+type = normal
+zoomdelta = 0
+spriteno = 3,1
+delta = .030,0
+scalestart = .90,1
+
+[BG CLOUDS 3 OVERLAY]
+type = normal
+spriteno = 1,1
+velocity = 2.9,0
+layerno = 1
+trans = addalpha
+alpha = 256,256
+delta = 1,1
+start = 320,280
+tilespacing = 1,0
+tile = 1,1
+scalestart = .90,1
+
+[BG PIT]
+type = normal
+spriteno = 3,2
+delta = .25,.2
+start = 0,110
+mask = 1
+scalestart = .90,1
+
+[BG PIT]
+type = normal
+spriteno = 4,5
+start = -200,0
+delta = .7,1
+scalestart = .90,1
+
+[BG PIT]
+type = normal
+spriteno = 4,3
+delta = 1,1
+scalestart = .90,1
+
+[BG PIT]
+type = normal
+spriteno = 4,7
+scalestart = 1,1
+start = -40,0
+delta = 0.85,1
+scalestart = .90,1
+
+[BG PIT]
+type = normal
+spriteno = 5,0
+start = 110,0
+delta = 1,1
+mask = 1
+scalestart = .90,1
+
+[BG PIT]
+type = normal
+spriteno = 5,1
+start = 160,0
+delta = 1,1
+mask = 1
+scalestart = .90,1
+
+[BG PIT]
+type = normal
+spriteno = 4,0
+start = 205,388
+scalestart = 1.235,1
+delta = 1.05,1
+mask = 1
+scalestart = .90,1
+
+[BG PIT]
+type = normal
+spriteno = 4,1
+start = -309,388
+scalestart = 1.235,1
+delta = 1.05,1
+mask = 1
+scalestart = .90,1
+
+[BG PIT]
+type = parallax
+spriteno = 4,6
+start = 0,388
+width = 2810,4000
+delta = 0.85,1
+mask = 1
+
+[BG PIT]
+type = normal
+spriteno = 4,2
+start = -67,443
+scalestart = 1.42,1
+delta = 1.22,1
+mask = 1
+
+[BG PIT]
+type = normal
+spriteno = 2,2
+start = 91,442
+scalestart = 1.129,1
+scaledelta = 0.00133,0
+delta = 1.22,1
+mask = 1
+scalestart = .90,1
+
+[BG PIT]
+type = normal
+spriteno = 2,1
+start = -222,443
+scalestart = 0.9,1
+scaledelta = -0.00138,0
+delta = 1.22,1
+mask = 1
+
+[BG OVERLAY]
+type = normal
+zoomdelta = 0
+spriteno = 3,0
+layerno = 1
+trans = addalpha
+alpha = 0,250
+delta = .030,.030
+scalestart = .90,1

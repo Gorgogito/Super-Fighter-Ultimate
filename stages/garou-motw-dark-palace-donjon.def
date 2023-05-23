@@ -1,0 +1,220 @@
+;==============================
+;	GAROU OMEGA STAGE
+;==============================
+;Author:	Claudio Toxi
+;Create Date:	2004.11.02
+
+;--------------------------------------------------------
+[Info]
+name = "Garou MOTW - DARK PALACE DONJON"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -150
+boundright = 150
+boundhigh = -150
+boundlow = 0
+verticalfollow = .3
+floortension = 0
+tension = 50
+
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound = -1000
+rightbound = 1000
+topbound = 0
+botbound = 0
+
+;--------------------------------------------------------
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 5
+screenright = 5
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 210
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+[Shadow]
+intensity = 128
+color = 171,148,93
+fade.range = 0,0
+yscale = .15
+reflect = 1
+
+;--------------------------------------------------------
+[Reflection]
+intensity = 128
+yscale = .15
+
+;--------------------------------------------------------
+[Music]
+bgmusic = stages/008.mp3
+bgvolume = 255
+
+;--------------------------------------------------------
+[BGdef]
+spr = garou-motw-dark-palace-donjon.sff
+debugbg = 0
+
+[BG Moon]
+type = anim
+actionno = 0
+layerno = 0
+start = 0,0
+delta = 0.8,1
+trans = none
+mask = 0
+tilespacing = 0,0
+[Begin action 0]
+0,0,0,0,10
+0,1,0,0,10
+0,2,0,0,10
+0,3,0,0,10
+0,4,0,0,10
+0,5,0,0,10
+0,6,0,0,10
+0,7,0,0,10
+
+[BG Falling Star 1]
+type = anim
+actionno = 1
+layerno = 0
+start = -149,-150
+delta = 0.8,1
+trans = none
+mask = 0
+tilespacing = 0,0
+[Begin action 1]
+1,0,0,0,3
+1,1,0,0,3
+1,2,0,0,3
+1,3,0,0,3
+1,4,0,0,3
+1,5,0,0,3
+1,6,0,0,3
+1,7,0,0,3
+1,8,0,0,3
+1,9,0,0,3
+1,10,0,0,3
+1,11,0,0,3
+1,12,0,0,3
+1,13,0,0,3
+1,14,0,0,3
+1,15,0,0,200
+
+[BG Falling Star 2]
+type = anim
+actionno = 2
+layerno = 0
+start = 80,-150
+delta = 0.8,1
+trans = none
+mask = 0
+tilespacing = 0,0
+[Begin action 2]
+2,15,0,0,100
+2,0,0,0,3
+2,1,0,0,3
+2,2,0,0,3
+2,3,0,0,3
+2,4,0,0,3
+2,5,0,0,3
+2,6,0,0,3
+2,7,0,0,3
+2,8,0,0,3
+2,9,0,0,3
+2,10,0,0,3
+2,11,0,0,3
+2,12,0,0,3
+2,13,0,0,3
+2,14,0,0,3
+2,15,0,0,100
+
+[BG Falling Star 3]
+type = anim
+actionno = 3
+layerno = 0
+start = -20,-150
+delta = 0.8,1
+trans = none
+mask = 0
+tilespacing = 0,0
+[Begin action 3]
+3,15,0,0,100
+3,0,0,0,3
+3,1,0,0,3
+3,2,0,0,3
+3,3,0,0,3
+3,4,0,0,3
+3,5,0,0,3
+3,6,0,0,3
+3,7,0,0,3
+3,8,0,0,3
+3,9,0,0,3
+3,10,0,0,3
+3,11,0,0,3
+3,12,0,0,3
+3,13,0,0,3
+3,14,0,0,3
+3,15,0,0,100
+
+[BG Donjon]
+type = anim
+actionno = 10
+layerno = 0
+start = 0,0
+delta = 1,1
+mask = 1
+velocity = 0,0
+tilespacing = 0,0
+[Begin action 10]
+10,0,0,0,10
+10,1,0,0,10
+10,2,0,0,10
+10,3,0,0,10
+10,4,0,0,10
+10,5,0,0,10
+10,6,0,0,10
+10,7,0,0,10
+
+[BG Mist]
+type = anim
+actionno = 20
+layerno = 0
+start = 0,0
+delta = 1,1
+mask = 1
+velocity = 0,0
+tilespacing = 0,0
+[Begin action 20]
+20,0,0,0,7,,A
+20,1,0,0,7,,A
+20,2,0,0,7,,A
+20,3,0,0,7,,A
+20,4,0,0,7,,A
+20,5,0,0,7,,A
+20,6,0,0,7,,A
+20,7,0,0,7,,A

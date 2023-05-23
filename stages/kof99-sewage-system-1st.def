@@ -1,0 +1,184 @@
+;==============================
+;	MUGEN OMEGA STAGE
+;==============================
+;Author:	Claudio Toxi
+;Create Date:	2007.03.16
+
+;--------------------------------------------------------
+[Info]
+name = "KOF 99 - Sewage System - 1st"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -270
+boundright = 270
+boundhigh = -150
+boundlow = 0
+verticalfollow = 0
+floortension = 0
+tension = 50
+
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound = -1000
+rightbound = 1000
+topbound = 0
+botbound = 0
+
+;--------------------------------------------------------
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 15
+screenright = 15
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 204
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+[Shadow]
+intensity = 136
+color = 0,0,0
+yscale = .3
+fade.range = 0,0
+
+;--------------------------------------------------------
+[Reflection]
+intensity = 0
+
+;--------------------------------------------------------
+[Music]
+bgmusic = stages/082.mp3
+bgvolume = 255
+
+;--------------------------------------------------------
+[BGdef]
+spr = stages/kof99-sewage-system-1st.sff
+debugbg = 0
+
+[BG Sewer]
+type = anim
+actionno = 0
+layerno = 0
+start = 0,0
+delta = 0.8,1
+trans = none
+mask = 0
+tilespacing = 0,0
+[Begin action 0]
+0,0,0,0,7,,
+0,1,0,0,7,,
+0,2,0,0,7,,
+0,3,0,0,7,,
+0,4,0,0,7,,
+0,5,0,0,7,,
+0,6,0,0,7,,
+0,7,0,0,7,,
+
+[BG Box]
+type = anim
+actionno = 1
+layerno = 0
+start = 0,0
+delta = 0.8,1
+trans = none
+mask = 1
+tilespacing = 0,0
+[Begin action 1]
+1,0,0,0,7,,
+1,1,0,0,7,,
+1,2,0,0,7,,
+1,3,0,0,7,,
+1,4,0,0,7,,
+1,5,0,0,7,,
+1,6,0,0,7,,
+1,7,0,0,7,,
+
+[BG Water]
+type = anim
+actionno = 2
+layerno = 0
+start = 0,0
+delta = 0.8,1
+trans = none
+mask = 1
+tilespacing = 0,0
+[Begin action 2]
+2,0,0,0,3,,
+2,1,0,0,3,,
+2,2,0,0,3,,
+2,3,0,0,3,,
+2,4,0,0,3,,
+2,5,0,0,3,,
+2,6,0,0,3,,
+2,7,0,0,3,,
+
+[BG Matel]
+type = normal
+spriteno = 21,0
+layerno = 0
+start = 55,0
+delta = 1,1
+trans = none
+mask = 1
+tilespacing = 0,0
+
+[BG Pipe A]
+type = normal
+spriteno = 22,0
+layerno = 1
+start = 0,0
+delta = 0.8,1
+trans = none
+mask = 1
+tilespacing = 0,0
+
+[BG Pipe B]
+type = normal
+spriteno = 23,0
+layerno = 0
+start = 0,0
+delta = 1,1
+trans = none
+mask = 1
+tilespacing = 0,0
+
+[BG Smoke]
+type = anim
+actionno = 20
+layerno = 1
+start = 55,0
+delta = 1,1
+trans = none
+mask = 1
+tilespacing = 0,0
+[Begin action 20]
+20,0,0,0,6,,A
+20,1,0,0,6,,A
+20,2,0,0,6,,A
+20,3,0,0,6,,A
+20,4,0,0,6,,A
+20,5,0,0,6,,A
+20,6,0,0,6,,A
+20,7,0,0,6,,A

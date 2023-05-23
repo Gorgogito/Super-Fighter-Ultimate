@@ -1,0 +1,285 @@
+;------------------------------------------------------------------------------
+;------------餓狼伝説3 遙かなる闘い--Yamazaki Stage（山崎 竜二ステージ）-------
+;製作：RYO 2005-----8月16日製作終了--------------------------------------------
+
+[Info]        
+name           = "rbff - south station" 
+
+;------------------------------------------------------------------------------
+[Camera]
+startx         = 0         
+starty         = 0           
+                             
+boundleft      = -311        
+boundright     = 311        
+boundhigh      = -10          
+boundlow       = 0          
+verticalfollow = 0           
+tension        = 50          
+
+;------------------------------------------------------------------------------
+[PlayerInfo]
+;--- プレイヤー１ ---           
+p1startx       = -70        
+p1starty       = 0           
+p1startz       = 0           
+p1facing       = 1  
+         
+;--- プレイヤー２ ---             
+p2startx       = 70         
+p2starty       = 0           
+p2startz       = 0           
+p2facing       = -1  
+        
+;--- Common ---              
+leftbound      = -1000       
+rightbound     = 1000        
+topbound       = 0           
+botbound       = 0           
+
+;------------------------------------------------------------------------------
+[Scaling]
+topz           = 0           
+botz           = 50         
+topscale       = 1           
+botscale       = 1.2        
+
+;------------------------------------------------------------------------------
+[Bound]
+screenleft     = 20          
+screenright    = 20          
+
+;------------------------------------------------------------------------------
+[StageInfo]
+zoffset        = 0;220;立ち位置は下の[BG Dummy]で再定義する。だから、０
+autoturn       = 1
+zoffsetlink    = 20   ;キャラの立ち位置を、idが30番のオブジェクトとリンクさせる          
+;resetBG       = 1           
+
+;------------------------------------------------------------------------------
+[Shadow]
+
+color = 256,256,256
+                            
+yscale         = 0.2         
+          
+;------------------------------------------------------------------------------
+;--- 背景音楽指定         
+[Music]
+bgmusic = stages/216.mp3
+bgvolume       = 255
+
+;------------------------------------------------------------------------------
+;---sffファイル指定
+[BGdef]
+spr            = stages/rbff-south-station.sff
+debugbg        = 1              
+
+;------------------------------------------------------------------------------
+[BG 0];最背景・黒
+type = normal
+spriteno = 0,0
+layerno = 0
+start = 0,240
+delta = .48,0
+trans = none
+mask = 1
+tile = 0
+
+;------------------------------------------------------------------------------
+[BG 5];背景・ディーゼル列車
+type = anim
+actionno = 5 
+layerno = 0
+start = 600,240
+delta = .55,1
+trans = none
+mask =1
+id = 5
+
+[BGCtrlDef 5]
+CtrlID = 5
+loopTime = 5000
+
+[BGCtrl 5]
+type = posset
+time = 1
+x = 0
+y = 0
+
+[BGCtrl 5]
+type = velset
+time = 1
+x = -1
+
+[Begin action 5];ディーゼル列車・アニメーション
+5,0.,0,0,7
+5,1.,0,0,7
+5,2.,0,0,7
+5,3.,0,0,7
+
+;------------------------------------------------------------------------------
+[BG 10];背景・機関車
+type = anim
+actionno = 10 
+layerno = 0
+start = -600,240
+delta = .55,1
+trans = none
+mask =1
+id = 10
+
+[BGCtrlDef 10]
+CtrlID = 10
+loopTime = 5000
+
+[BGCtrl 10]
+type = posset
+time = 2500
+x = 0
+y = 0
+
+[BGCtrl 10]
+type = velset
+time = 2500
+x = 1
+
+[Begin action 10];機関車・アニメーション
+10,0.,0,0,7
+10,1.,0,0,7
+10,2.,0,0,7
+10,3.,0,0,7
+
+;------------------------------------------------------------------------------
+[BG 15];背景・停車場
+type = normal
+spriteno = 15,0
+layerno = 0
+start = 0,240
+delta = .74,1
+trans = none
+mask = 1
+tile = 0
+
+;------------------------------------------------------------------------------
+[BG 20];背景・バトルフィールド
+type = normal
+spriteno = 20,0
+layerno = 0
+start = 0,240
+delta = 1,1
+trans = none
+mask = 1
+tile = 0
+sin.y = 0, 0
+
+[BG Dummy];足場を背景の動きとリンクさせる
+type  = dummy
+id = 20
+start = 0,-20;上記のオブジェクトの初期位置を0とする。
+positionlink = 1
+
+;------------------------------------------------------------------------------
+[BG 25];背景・機関車
+type = anim
+actionno = 25 
+layerno = 0
+start = 1200,240
+delta = 1,1
+trans = none
+mask =1
+id = 25
+
+[BGCtrlDef 25]
+CtrlID = 25
+loopTime = 5500
+
+[BGCtrl 25]
+type = velset
+time = 0
+x = 0
+
+[BGCtrl 25]
+type = posset
+time = 0
+x = 0
+y = 0
+
+[BGCtrl 25]
+type = velset
+time = 500
+x = -7
+
+[Begin action 25];機関車・アニメーション
+25,0.,0,0,7
+25,1.,0,0,7
+25,2.,0,0,7
+25,3.,0,0,7
+25,4.,0,0,7
+25,5.,0,0,7
+25,6.,0,0,7
+25,7.,0,0,7
+
+;------------------------------------------------------------------------------
+[BG 30];背景・貨物
+type = anim
+actionno = 30 
+layerno = 0
+start = 1200,240
+delta = 1,1
+trans = none
+mask =1
+id = 30
+
+[BGCtrlDef 30]
+CtrlID = 30
+loopTime = 5500
+
+[BGCtrl 30]
+type = velset
+time = 0
+x = 0
+
+[BGCtrl 30]
+type = posset
+time = 0
+x = 0
+y = 0
+
+[BGCtrl 30]
+type = velset
+time = 500
+x = -7
+
+[Begin action 30];貨物・アニメーション
+30,0.,0,0,7
+30,1.,0,0,7
+
+;--------------
+[BGCtrlDef 35];画面振動用（酔ってしまう方、揺れが気になる方はここから下の、SinX、SinYのvalueと言う値を全て0にして下さい。)
+loopTime = 5500
+
+[BGCtrl 35, 0]
+type = SinY
+time = 0
+value = 0, 0
+
+[BGCtrl 35, 0]
+type = SinY
+time = 150
+value = 1, 4
+
+[BGCtrl 35, 0]
+type = SinY
+time = 500
+value = 2, 3
+
+[BGCtrl 35, 0]
+type = SinY
+time = 2100
+value = 1, 4
+
+[BGCtrl 35, 0]
+type = SinY
+time = 2450
+value = 0, 0

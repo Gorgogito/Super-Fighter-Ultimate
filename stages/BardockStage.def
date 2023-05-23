@@ -1,0 +1,390 @@
+;========================================================
+;Bardock Stage By Crazy Logic
+;========================================================
+;Gracias especiales:
+;A ti por descargar este release
+;a toda la comunidad MuegenGenerations
+;enjoy!
+;--------------------------------------------------------
+[Info]
+name = "Bardock Stage HR"
+author= "Crazy_Logic"
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -150
+boundright = 150
+boundhigh = -150
+boundlow = 0
+verticalfollow = .8
+floortension = 60
+tension = 30
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+;--- Common ---
+leftbound  = -1500
+rightbound =  1500
+topbound =   0
+botbound  =  0
+;--------------------------------------------------------
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+;--------------------------------------------------------
+[Bound]
+screenleft = 15
+screenright = 15
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 205
+autoturn = 1
+resetBG = 1
+HIRES = 1
+;--------------------------------------------------------
+[Shadow]
+intensity = 100
+color = 50,50,50
+;--------------------------------------------------------
+[Reflection]
+intensity = 0
+;--------------------------------------------------------
+[Music]
+bgmusic = sound/DBZ_Episode_of_Bardock.mp3
+bgvolume = 255
+;========================================================
+;-------------------------------------
+[BGdef]
+spr = BardockStage.sff
+debugbg = 0
+;----------
+[BG 0]
+type  = normal
+spriteno = 1,0
+delta = 1.8, 1.6
+layerno = 0
+start = 0,95
+tile= 1,0
+velocity = .3
+
+[BG 1]
+type  = normal
+spriteno = 0,15
+start = 0,78
+delta = 2, 2
+mask  = 1
+trans = add
+velocity = .6
+tile = 1,1
+layerno = 1
+tilespacing = 0,0
+
+[BG 2]
+type  = normal
+spriteno = 0,10
+layerno = 0
+start = 0,95
+delta = 1.7, 1.9
+mask  = 1
+trans = add
+tilespacing = 0,0
+
+[BG 3]
+type  = normal
+spriteno = 1, 56
+start = 0,150
+delta = 1.7,1.8
+trans = add
+velocity = 0.1,0
+mask  = 1
+tile  = 1, 0
+
+[BG 4]
+type  = normal
+spriteno = 1, 3
+layerno = 0
+start = 0,95
+Velocity = .2
+delta = 1.8, 1.8
+mask  = 1
+trans = add
+tile  = 1, 1
+tilespacing = 0,0
+
+[BG 5]
+type  = normal
+spriteno = 0,6
+layerno = 0
+start = 0,95
+delta = 1.7, 1.9
+mask  = 1
+tilespacing = 0,0
+
+[BG 6]
+type  = normal
+spriteno = 0,14
+start = 0,95
+delta = 2, 2
+mask  = 1
+trans = add
+velocity = .9,
+tile = 1,1
+tilespacing = 0,0
+
+[BG tono]
+type  = anim
+actionno = 10
+start = 0,95
+delta = 1.7,1.8
+
+[BG tono]
+type  = anim
+actionno = 11
+start = 0,95
+delta = 1.7,1.9
+
+[BG 7]
+type  = normal
+spriteno = 0,60
+layerno = 1
+trans = add
+start = 0,95
+delta = 1.7, 1.9
+mask  = 1
+tilespacing = 0,0
+
+[BG 8]
+type  = normal
+spriteno = 0,8
+layerno = 0
+start = 0,95
+delta = 1.7, 1.8
+mask  = 1
+trans = add
+tilespacing = 0,0
+
+[BG 9]
+type  = normal
+spriteno = 0,2
+layerno = 0
+start = 0,95
+delta = 1.8, 1.6
+mask  = 1
+trans = add
+sin.y= 5, 200
+velocity = .3
+tile  = 1, 0
+tilespacing = 0,0
+
+[BG 10]
+type  = normal
+spriteno = 0,2
+layerno = 0
+start = 0,95
+delta = 1.9, 1.4
+mask  = 1
+trans = add
+velocity = .5
+tile  = 1, 0
+tilespacing = 0,0
+
+[BG 11]
+type  = normal
+spriteno = 0,11
+layerno = 0
+start = 0,95
+delta = 1.7, 1.7
+sin.y = 1,300
+mask  = 1
+velocity = .1
+tile  = 1, 0
+tilespacing = 0,0
+
+[BG 12]
+type  = normal
+spriteno = 0,5
+layerno = 0
+start = 0,95
+delta = 1.8, 1.6
+sin.y = 2,300
+mask  = 1
+velocity = .2
+tile  = 1, 0
+tilespacing = 0,0
+
+
+[BG 13]
+type  = normal
+spriteno = 1, 2
+layerno = 0
+start = 0,95
+delta = 2, 1.8
+mask  = 1
+trans = add
+tile  = 1, 0
+tilespacing = 0,0
+
+[BG 13]
+type  = normal
+spriteno = 1, 34
+layerno = 0
+start = 0,95
+delta = 1.5, 1.5
+sin.x= 10, 200
+mask  = 1
+trans = add
+tile  = 1, 0
+tilespacing = 0,0
+
+[BG 14]
+type  = normal
+spriteno = 1234, 1
+start = 0,85
+delta = 2,2
+trans = add
+layerno = 1
+velocity = 2,0
+mask  = 1
+tile  = 1, 0
+
+[BG 14]
+type  = normal
+spriteno = 1234, 1
+start = 0,95
+delta = 2,2
+sin.y= 4, 200
+trans = add
+layerno = 0
+velocity = 3,0
+mask  = 1
+tile  = 1, 0
+
+[BG 14]
+type  = normal
+spriteno = 1234, 2
+start = 0,95
+delta = 2,2
+trans = add
+layerno = 1
+velocity = 2,0
+mask  = 1
+tile  = 1, 0
+
+[BG 14]
+type  = normal
+spriteno = 1, 1
+start = 0,95
+delta = 2,1.9
+trans = add
+velocity = 0.5,0
+mask  = 1
+tile  = 1, 0
+
+[BG 17]
+type  = normal
+spriteno = 0,12
+layerno = 0
+start = 500,125
+delta = 2.1, 2.2
+sin.y = 20,900
+mask  = 1
+velocity = 1
+tile  = 1, 0
+tilespacing = 1900,0
+
+
+[BG 18]
+type  = normal
+spriteno = 123, 0
+layerno = 0
+start = 0,95
+mask  = 1
+tile  = 0, 0
+delta= 2,2
+sin.y =1,200
+tilespacing = 0,0
+
+[BG 18]
+type  = normal
+spriteno = 1232, 0
+layerno = 0
+start = 0,95
+mask  = 1
+tile  = 0, 0
+trans = add
+delta= 2,2
+sin.y =2,300
+tilespacing = 0,0
+
+;========================================================
+;                  BG_ANIMATIONS
+;--------------------------------------------------------
+[Begin action 7]
+0,1,0,0,-1,,AS70D255
+
+[Begin action 8]
+1,368,0,0,-1,,AS60D255
+
+[Begin action 10]
+10,19,0,0,5,,A
+10,20,0,0,5,,A
+10,21,0,0,5,,A
+10,22,0,0,5,,A
+10,23,0,0,5,,A
+10,24,0,0,5,,A
+10,25,0,0,5,,A
+10,26,0,0,5,,A
+10,27,0,0,5,,A
+10,28,0,0,5,,A
+10,29,0,0,5,,A
+10,30,0,0,5,,A
+10,29,0,0,5,,A
+10,28,0,0,5,,A
+10,27,0,0,5,,A
+10,26,0,0,5,,A
+10,25,0,0,5,,A
+10,24,0,0,5,,A
+10,23,0,0,5,,A
+10,22,0,0,5,,A
+10,21,0,0,5,,A
+10,20,0,0,5,,A
+
+[BG tono]
+type  = anim
+actionno = 102
+start = 0,0
+layerno = 1
+delta = 0,0
+
+[BG tono]
+type  = anim
+actionno = 101
+start = 0,0
+layerno = 1
+delta = 0,0
+
+[Begin action 11]
+35,6,0,0,5,,A
+
+[Begin Action 101] ;star
+-1, -1, 0, 0,40, ,
+7001, 1, 0, 0,320, ,
+-1, -1, 0, 0,-1, ,
+
+[Begin Action 102] ;star
+-1, -1, 0, 0,40, ,
+7000, 0, 0, 0,320, ,sub
+-1, -1, 0, 0,-1, ,
+

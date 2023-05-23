@@ -1,0 +1,160 @@
+[Info]
+name = "KOF 99 - Training Simulation Room"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -72
+boundright = 72
+boundhigh = 0
+boundlow = 0
+verticalfollow = .2
+floortension = 0
+tension = 50
+
+[PlayerInfo]
+
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1.2     ;Scale to use at bottom
+
+[Bound]
+
+screenleft = 15    ;Dist from left of screen that player can move to
+screenright = 15   ;Right edge
+
+[StageInfo]
+
+zoffset = 220
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+
+intensity = 96
+color = 0,0,0
+yscale = .3
+fade.range = 0,0
+
+[Reflection]
+
+intensity = 0
+
+[Music]
+
+bgmusic = stages/084.mp3
+bgvolume = 255
+
+[BGdef]
+
+spr = Stages/kof99-training-simulation-room.sff
+debugbg = 0
+
+[BG 7]
+type  = normal
+spriteno = 2, 7             
+start = 0, 0
+tile = 1,1
+
+[BG 2]
+type  = normal
+spriteno = 2, 1             
+start = 0, 207
+tile = 1,0
+
+[BG 3]
+type  = normal
+spriteno = 2, 2
+start = 203, 48
+tile = 0,1
+
+[BG 10]
+type  = normal
+spriteno = 4, 2
+start = -205, 48
+tile = 0,1
+
+[BG 6]
+type  = anim
+actionno = 51
+start = -110,60
+delta = -.05
+
+[BG 13]
+type  = anim
+actionno = 53
+start = 140,170
+delta = -.05
+
+[BG 4]
+type  = normal
+spriteno = 2, 3
+start = 221, 48
+tile = 0,1
+
+[BG 9]
+type  = normal
+faceno = -1
+spriteno = 4, 3
+start = -222, 0
+tile = 0,1
+
+[BG 8]
+type  = normal
+spriteno = 2, 4
+mask = 1             
+tile = 1,1
+
+[BG 0]
+type  = normal
+spriteno = 2, 0              
+start = 0, 240
+
+[BG 1]
+type  = normal
+spriteno = 2, 5           
+start = 0, 33
+
+[BG 5]
+type  = anim
+actionno = 5
+start = -120,162
+layerno = 1
+delta = -.2
+
+[BG 11]
+type  = anim
+actionno = 52
+start = 110,125
+layerno = 1
+delta = -.2
+
+[Begin Action 5]
+3,0,0,0,-1,,A
+
+[Begin Action 51]
+3,1,0,0,-1,V,,A
+
+[Begin Action 52]
+3,2,0,0,-1,,A
+
+[Begin Action 53]
+3,3,0,0,-1,,A
