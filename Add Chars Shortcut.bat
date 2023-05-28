@@ -1,1 +1,0 @@
-notepad "data/Kireishito multiverse/select.def"
