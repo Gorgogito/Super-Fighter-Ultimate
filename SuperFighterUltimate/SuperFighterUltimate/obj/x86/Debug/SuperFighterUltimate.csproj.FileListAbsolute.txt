@@ -1,0 +1,9 @@
+D:\Mys Proyectos\Super-Fighter-Ultimate\SuperFighterUltimate\SuperFighterUltimate\SuperFighterUltimate\bin\x86\Debug\Content\Fonts\MenuFont.xnb
+D:\Mys Proyectos\Super-Fighter-Ultimate\SuperFighterUltimate\SuperFighterUltimate\SuperFighterUltimate\bin\x86\Debug\SuperFighterUltimate.exe
+D:\Mys Proyectos\Super-Fighter-Ultimate\SuperFighterUltimate\SuperFighterUltimate\SuperFighterUltimate\bin\x86\Debug\SuperFighterUltimate.pdb
+D:\Mys Proyectos\Super-Fighter-Ultimate\SuperFighterUltimate\SuperFighterUltimate\SuperFighterUltimate\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\Mys Proyectos\Super-Fighter-Ultimate\SuperFighterUltimate\SuperFighterUltimate\SuperFighterUltimate\obj\x86\Debug\SuperFighterUltimate.exe
+D:\Mys Proyectos\Super-Fighter-Ultimate\SuperFighterUltimate\SuperFighterUltimate\SuperFighterUltimate\obj\x86\Debug\SuperFighterUltimate.pdb
+D:\Mys Proyectos\Super-Fighter-Ultimate\SuperFighterUltimate\SuperFighterUltimate\SuperFighterUltimate\bin\x86\Debug\Content\Images\FondoIni.xnb
+D:\Mys Proyectos\Super-Fighter-Ultimate\SuperFighterUltimate\SuperFighterUltimate\SuperFighterUltimate\bin\x86\Debug\Content\Images\blank.xnb
+D:\Mys Proyectos\Super-Fighter-Ultimate\SuperFighterUltimate\SuperFighterUltimate\SuperFighterUltimate\bin\x86\Debug\Content\Images\ButtonRegular.xnb

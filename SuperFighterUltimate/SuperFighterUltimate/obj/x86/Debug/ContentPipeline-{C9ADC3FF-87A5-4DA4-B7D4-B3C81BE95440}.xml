@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Fonts\MenuFont.spritefont</Source>
+      <Name>Fonts\MenuFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Mys Proyectos\Super-Fighter-Ultimate\SuperFighterUltimate\SuperFighterUltimate\SuperFighterUltimate\bin\x86\Debug\Content\Fonts\MenuFont.xnb</Output>
+      <Time>2023-05-27T14:32:30.6076267-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\FondoIni.jpg</Source>
+      <Name>Images\FondoIni</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Mys Proyectos\Super-Fighter-Ultimate\SuperFighterUltimate\SuperFighterUltimate\SuperFighterUltimate\bin\x86\Debug\Content\Images\FondoIni.xnb</Output>
+      <Time>2023-05-27T14:52:31.9865157-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\blank.png</Source>
+      <Name>Images\blank</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Mys Proyectos\Super-Fighter-Ultimate\SuperFighterUltimate\SuperFighterUltimate\SuperFighterUltimate\bin\x86\Debug\Content\Images\blank.xnb</Output>
+      <Time>2023-05-27T16:27:54.2442433-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\ButtonRegular.png</Source>
+      <Name>Images\ButtonRegular</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Mys Proyectos\Super-Fighter-Ultimate\SuperFighterUltimate\SuperFighterUltimate\SuperFighterUltimate\bin\x86\Debug\Content\Images\ButtonRegular.xnb</Output>
+      <Time>2023-05-27T19:07:07.116308-05:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{C9ADC3FF-87A5-4DA4-B7D4-B3C81BE95440}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>D:\Mys Proyectos\Super-Fighter-Ultimate\SuperFighterUltimate\SuperFighterUltimate\SuperFighterUltimateContent\</RootDirectory>
+      <LoggerRootDirectory>D:\Mys Proyectos\Super-Fighter-Ultimate\SuperFighterUltimate\SuperFighterUltimate\SuperFighterUltimate\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\Mys Proyectos\Super-Fighter-Ultimate\SuperFighterUltimate\SuperFighterUltimate\SuperFighterUltimate\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\Mys Proyectos\Super-Fighter-Ultimate\SuperFighterUltimate\SuperFighterUltimate\SuperFighterUltimate\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T16:22:30-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T16:22:30-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T16:22:30-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T16:22:30-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T16:22:30-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T16:22:30-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2023-05-24T18:45:48.9030877-05:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

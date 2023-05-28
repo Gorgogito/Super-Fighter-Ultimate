@@ -1,0 +1,4 @@
+Content\Fonts\MenuFont.xnb
+Content\Images\FondoIni.xnb
+Content\Images\blank.xnb
+Content\Images\ButtonRegular.xnb
